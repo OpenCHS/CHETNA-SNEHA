@@ -1,0 +1,13 @@
+[
+    {
+      "uuid": "fb8ab460-56ec-4734-a1be-fb39e446d2b3",
+      "name": "admin@chetna",
+      "password": "password",
+      "email": "openchssupport+chetna+admin@samanvayfoundation.org",
+      "phoneNumber": "+919999999999",
+      "organisationUUID": "28435bdb-0152-4175-a4e6-ed233372d3a7",
+      "operatingIndividualScope": "None",
+      "admin": false,
+      "orgAdmin": true
+    }
+  ]

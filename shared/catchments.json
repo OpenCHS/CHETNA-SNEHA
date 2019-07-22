@@ -1,0 +1,20 @@
+{
+  "organisation": "CHETNA-SNEHA",
+  "catchments": [
+    {
+      "name": "1",
+      "uuid": "5486f44a-f853-4c45-92c9-f9f9dcb256ee",
+      "type": "Area",
+      "locations": [
+        {
+          "uuid": "efd1101a-d354-4660-8342-d2f12e9931d0",
+          "comment": "Subcenter - 1"
+        },
+        {
+          "uuid": "33fc8bab-35f5-47ef-bd22-fed7c5c0c435",
+          "comment": "Subcenter - 2"
+        }
+      ]
+    }
+  ]
+}

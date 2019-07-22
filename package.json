@@ -1,0 +1,16 @@
+{
+  "name": "chetna-sneha-config",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenCHS/CHETNA-SNEHA.git"
+  },
+  "license": "AGPL-3.0",
+  "scripts": {},
+  "dependencies": {
+    "openchs-idi": "github:openchs/openchs-idi#02649a4a8d28200e7c35a6babd9151808acf3977",
+    "rules-config": "github:openchs/rules-config#c83e1e47f1618c56c5839de6708915d76db32056",
+    "webpack": "^4.12.0"
+  }
+}

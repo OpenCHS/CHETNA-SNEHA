@@ -1,0 +1,18 @@
+[
+  {
+    "uuid": "00af0575-d3c8-4658-a221-4fd6761d84b9",
+    "name": "dev@chetna",
+    "password": "password",
+    "email": "openchssupport+chetna+test+1@samanvayfoundation.org",
+    "phoneNumber": "+919999999999",
+    "organisationUUID": "28435bdb-0152-4175-a4e6-ed233372d3a7",
+    "catchmentUUID": "5486f44a-f853-4c45-92c9-f9f9dcb256ee",
+    "operatingIndividualScope": "ByCatchment",
+    "isAdmin": false,
+    "isOrgAdmin": false,
+    "settings": {
+      "trackLocation": false,
+      "locale": "en"
+    }
+  }
+]

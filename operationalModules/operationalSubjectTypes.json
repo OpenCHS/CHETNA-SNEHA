@@ -1,0 +1,12 @@
+{
+    "organisationUUID": "28435bdb-0152-4175-a4e6-ed233372d3a7",
+    "operationalSubjectTypes": [
+      {
+        "uuid": "a125d0ab-b5fd-4730-9a2e-5042d0588e45",
+        "name": "Individual",
+        "subjectType": {
+          "uuid": "2e530e5d-bc33-4bdd-8f7d-e151bb45fc4c"
+        }
+      }
+    ]
+  }

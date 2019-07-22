@@ -1,0 +1,192 @@
+{
+  "name": "Registration",
+  "uuid": "b92e78da-efd2-4ac6-8a4b-21cad94e9a78",
+  "formType": "IndividualProfile",
+  "formElementGroups": [
+    {
+      "uuid": "86c30145-45da-42ba-9501-95b74eaeed5a",
+      "name": "Background",
+      "display": "Background",
+      "displayOrder":1 ,
+      "formElements": [
+        {
+          "name": "Address",
+          "uuid": "7c7cf17c-faf5-4415-a751-c9ba3c49af0d",
+          "keyValues": [],
+          "concept": {
+            "name": "Address",
+            "uuid": "5f28bfdc-b4f4-4560-bafa-66690d9a9dcc"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Household number",
+          "uuid": "9b2e8f44-dd69-41f9-a7fc-1146af43dbfe",
+          "keyValues": [],
+          "concept": {
+            "name": "Household number",
+            "uuid": "24dabc3a-6562-4521-bd42-5fff11ea5c46"
+          },
+          "displayOrder":2,
+          "mandatory": true
+        },
+        {
+          "name": "Mobile Number",
+          "uuid": "f63cdd77-82ec-496f-90af-3a8e7b730288",
+          "keyValues": [],
+          "concept": {
+            "name": "Contact Number",
+            "uuid": "82fa0dbb-92f9-4ec2-9263-49054e64d909"
+          },
+          "displayOrder":3,
+          "mandatory": true
+        },
+        {
+          "name": "Type of Mobile",
+          "uuid": "98a497d6-04ca-4639-b47a-632a78dc87a8",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Type of Mobile",
+            "uuid": "abd9ef3b-381a-4545-ab55-3b29f5f78f67"
+          },
+          "displayOrder":4,
+          "mandatory": true 
+        },
+        {
+          "name": "Education",
+          "uuid": "9c7f36e2-b98b-4b9e-9927-847cc58a6060",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Education",
+            "uuid": "39595a16-a9c6-49a5-a42b-3f462607058c"
+          },
+          "displayOrder":5,
+          "mandatory": true
+        },
+        {
+          "name": "Where are you currently staying?",
+          "uuid": "44177a7c-78bf-4d42-9e2c-e54759c82f60",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name":"Staying with",
+            "uuid": "eb47f6b7-1f64-4008-87f3-a781c7c342cd"
+          },
+          "displayOrder":6,
+          "mandatory":true
+        }
+      ]
+    },
+    {
+      "uuid": "422138ac-77c8-41d8-93d4-ef2ad2c964aa",
+      "name": "Family Information",
+      "display": "Family Information",
+      "displayOrder":2,
+      "formElements": [
+        {
+          "name": "Type of family",
+          "uuid": "17ab8cb4-e4aa-4cfb-a3d5-f4164532c0dc",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Type of family",
+            "uuid": "632d8c63-291f-4da0-9696-6d5eee034fed"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Total male members in the family",
+          "uuid": "e37665a3-b5ff-445d-a215-69ef550b11b2",
+          "keyValues": [],
+          "concept": {
+            "name": "Total male members in the family",
+            "uuid": "cb15c9d1-b92b-4997-8c74-34b2a7477723"
+          },
+          "displayOrder":2,
+          "mandatory": true
+        },
+        {
+          "name": "Total female members in the family",
+          "uuid": "59aaa3d1-3705-4eb5-b4de-a8eac717799f",
+          "keyValues": [],
+          "concept": {
+            "name": "Total female members in the family",
+            "uuid": "1a4b04d6-9d76-4ac8-9664-68d1c8930eef"
+          },
+          "displayOrder":3 ,
+          "mandatory": true
+        },
+        {
+          "name": "Type of resident",
+          "uuid": "2a2bee96-44ed-42eb-8de1-c86748b9022f",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Type of resident",
+            "uuid": "1e242e8d-03f1-461f-8a42-b1a9f30476c2"
+          },
+          "displayOrder":4,
+          "mandatory": true
+        },
+        {
+          "name": "Type of ration card",
+          "uuid": "20fc8332-74e9-44d6-9434-c8bf11101b40",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Ration Card",
+            "uuid": "476a0b71-485b-4a0a-ba6f-4f3cf13568ca"
+          },
+          "displayOrder":5,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "e8d246ba-a673-42bf-b731-3351778a1af3",
+      "name": "Marital Information",
+      "display": "Marital Information",
+      "displayOrder": 3,
+      "formElements": [
+        {
+          "name": "Marital status",
+          "uuid": "3df21fba-a8c2-4c93-ab77-d1856d3e93f5",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Marital status",
+            "uuid": "aa6687c9-ba4d-49a3-9b3e-bba266eb6f32"
+          },
+          "displayOrder":1,
+          "mandatory": true
+        },
+        {
+          "name": "Age at marriage",
+          "uuid": "8e46e7a4-5500-484a-b09c-c5994cd725ba",
+          "keyValues": [],
+          "concept": {
+            "name": "Age at marriage",
+            "uuid": "ce235c58-c84b-4cda-b600-305ebf7091e4"
+          },
+          "displayOrder":2,
+          "mandatory": true
+        },
+        {
+          "name": "Current age of your husband",
+          "uuid": "967cdd27-9528-48a8-9296-bc83a42c8e4a",
+          "keyValues": [],
+          "concept": {
+            "name": "Current age of your husband",
+            "uuid": "b3fec147-001e-42b0-a04c-285337a6ca4d"
+          },
+          "displayOrder":3,
+          "mandatory": true
+        }        
+      ]
+    }    
+  ]
+}
