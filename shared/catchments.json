@@ -3,16 +3,12 @@
   "catchments": [
     {
       "name": "1",
-      "uuid": "5486f44a-f853-4c45-92c9-f9f9dcb256ee",
+      "uuid": "3ddb2d1a-0f2e-4c84-b376-c9457a1a3763",
       "type": "Area",
       "locations": [
         {
-          "uuid": "efd1101a-d354-4660-8342-d2f12e9931d0",
-          "comment": "Subcenter - 1"
-        },
-        {
-          "uuid": "33fc8bab-35f5-47ef-bd22-fed7c5c0c435",
-          "comment": "Subcenter - 2"
+          "uuid": "4a7f5c0d-a800-4710-a9bf-a2a7c153f830",
+          "comment": "Area 1"
         }
       ]
     }

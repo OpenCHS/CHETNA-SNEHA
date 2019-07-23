@@ -1,87 +1,89 @@
-{
-  "uuid": "f44f1417-6a4a-41a0-ac0b-a5e4962260f9",
-  "name": "Android phone"
-},
-{
-"uuid": "5717a76c-ad72-4901-b155-c5bef7f6db4f",
-"name": "Feature phone"
-},
-{
-  "name": "Type of Mobile",
-  "uuid": "abd9ef3b-381a-4545-ab55-3b29f5f78f67",
-  "dataType": "Coded",
-  "answers": [
-     {
+[
+  {
+    "uuid": "f44f1417-6a4a-41a0-ac0b-a5e4962260f9",
+    "name": "Android phone"
+  },
+  {
+    "uuid": "5717a76c-ad72-4901-b155-c5bef7f6db4f",
+    "name": "Feature phone"
+  },
+  {
+    "name": "Type of Mobile",
+    "uuid": "abd9ef3b-381a-4545-ab55-3b29f5f78f67",
+    "dataType": "Coded",
+    "answers": [
+      {
         "uuid": "f44f1417-6a4a-41a0-ac0b-a5e4962260f9",
         "name": "Android phone"
       },
       {
-      "uuid": "5717a76c-ad72-4901-b155-c5bef7f6db4f",
-      "name": "Feature phone"
+        "uuid": "5717a76c-ad72-4901-b155-c5bef7f6db4f",
+        "name": "Feature phone"
       }
-  ]
-},
-{
-"uuid": "17e3866e-a94e-44f0-b66b-a28e9a165749",
-"name": "Joint Family"
-},
-{
-"uuid": "a4605e2c-557f-42f4-9483-371111459478",
-"name": "Nuclear Family"
-},
-{
-"name": "Type of family",
-"uuid": "632d8c63-291f-4da0-9696-6d5eee034fed",
-"dataType": "Coded",
-"answers": [
-       {
+    ]
+  },
+  {
+    "uuid": "17e3866e-a94e-44f0-b66b-a28e9a165749",
+    "name": "Joint Family"
+  },
+  {
+    "uuid": "a4605e2c-557f-42f4-9483-371111459478",
+    "name": "Nuclear Family"
+  },
+  {
+    "name": "Type of family",
+    "uuid": "632d8c63-291f-4da0-9696-6d5eee034fed",
+    "dataType": "Coded",
+    "answers": [
+      {
         "uuid": "17e3866e-a94e-44f0-b66b-a28e9a165749",
         "name": "Joint Family"
-        },
-        {
+      },
+      {
         "uuid": "a4605e2c-557f-42f4-9483-371111459478",
         "name": "Nuclear Family"
-        }
-]
-},
-{
-"name": "Total male members in the family",
-"uuid": "cb15c9d1-b92b-4997-8c74-34b2a7477723",
-"dataType": "Numeric"
-},
- {
-"name": "Total female members in the family",
-"uuid": "1a4b04d6-9d76-4ac8-9664-68d1c8930eef",
-"dataType": "Numeric"
-},
-{
-"uuid": "ed614257-0645-43c7-8185-01f1eaa550ac",
-"name": "Own house"
-},
-{
-"uuid": "ea35a866-df7f-46d8-9c57-02250eddd104",
-"name": "Live in rented place"
-},
-{
-"name": "Type of resident",
-"uuid": "1e242e8d-03f1-461f-8a42-b1a9f30476c2",
-"dataType": "Coded",
-"answers": [
-       {
+      }
+    ]
+  },
+  {
+    "name": "Total male members in the family",
+    "uuid": "cb15c9d1-b92b-4997-8c74-34b2a7477723",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Total female members in the family",
+    "uuid": "1a4b04d6-9d76-4ac8-9664-68d1c8930eef",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "ed614257-0645-43c7-8185-01f1eaa550ac",
+    "name": "Own house"
+  },
+  {
+    "uuid": "ea35a866-df7f-46d8-9c57-02250eddd104",
+    "name": "Live in rented place"
+  },
+  {
+    "name": "Type of resident",
+    "uuid": "1e242e8d-03f1-461f-8a42-b1a9f30476c2",
+    "dataType": "Coded",
+    "answers": [
+      {
         "uuid": "ed614257-0645-43c7-8185-01f1eaa550ac",
         "name": "Own house"
-        },
-        {
+      },
+      {
         "uuid": "ea35a866-df7f-46d8-9c57-02250eddd104",
         "name": "Live in rented place"
-        }
+      }
+    ]
+  },
+  {
+    "name": "Current age of your husband",
+    "uuid": "b3fec147-001e-42b0-a04c-285337a6ca4d",
+    "dataType": "Numeric"
+  }
 ]
-},
-{
-"name": "Current age of your husband",
-"uuid": "b3fec147-001e-42b0-a04c-285337a6ca4d",
-"dataType": "Numeric"
-}
 
 
 
