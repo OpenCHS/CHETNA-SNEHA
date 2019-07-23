@@ -21,7 +21,7 @@ module.exports = IDI.configure({
         "concepts": [
             "./registration/registrationConcepts.json"
         ],
-        "locations": ["./locations/locations.json"],
+        "locations": [],
         "programs": [],
         "encounterTypes": [],
         "operationalEncounterTypes": [],
@@ -31,7 +31,7 @@ module.exports = IDI.configure({
             "dev": ["./users/dev-users.json"]
         },
         "rules": [
-          /*  "./shared/rules/index.js",*/
+            "./shared/rules/index.js",
         ],
         "organisationSql": [],
     }

@@ -82,7 +82,60 @@
     "name": "Current age of your husband",
     "uuid": "b3fec147-001e-42b0-a04c-285337a6ca4d",
     "dataType": "Numeric"
-  }
+  },
+  {
+    "name": "No name of her in the card",
+    "uuid": "d5eae1f3-c218-411b-9859-1d9e6a911d2d"
+  },
+  {
+    "name": "Ration Card",
+    "dataType": "Coded",
+    "uuid": "476a0b71-485b-4a0a-ba6f-4f3cf13568ca",
+    "answers": [
+      {
+        "name": "No name of her in the card",
+        "uuid": "d5eae1f3-c218-411b-9859-1d9e6a911d2d"
+      }
+    ]
+  },
+  {
+    "uuid": "89d267ba-9bd0-46ae-8423-92d8ec9eb7ef",
+    "name": "At in-laws place"
+  },
+  {
+    "uuid": "544af493-69e2-4924-a398-c6c3748b5306",
+    "name": "At natal place"
+  },
+  {
+    "name": "Currently staying with",
+    "uuid": "5587a4a2-a1c0-451f-842b-49fd7efa405d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "89d267ba-9bd0-46ae-8423-92d8ec9eb7ef",
+        "name": "At in-laws place"
+      },
+      {
+        "uuid": "544af493-69e2-4924-a398-c6c3748b5306",
+        "name": "At natal place"
+      }
+    ]
+  },
+  {
+    "name": "Mother's education Level",
+    "uuid": "ffd6b888-b2b5-4fcb-82fc-1f81c4c5e620",
+    "dataType": "Coded",
+    "answers": [
+      {
+      "name": "Illiterate",
+      "uuid": "e7116c89-7fc5-406c-b2ab-c022fd84fb1a"
+      },
+      {
+      "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+      "name": "Other"
+      }
+    ]
+  } 
 ]
 
 

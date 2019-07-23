@@ -60,23 +60,11 @@
           "type": "SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Education",
-            "uuid": "39595a16-a9c6-49a5-a42b-3f462607058c"
+            "name": "Mother's education Level",
+            "uuid": "ffd6b888-b2b5-4fcb-82fc-1f81c4c5e620"
           },
           "displayOrder":5,
           "mandatory": true
-        },
-        {
-          "name": "Where are you currently staying?",
-          "uuid": "44177a7c-78bf-4d42-9e2c-e54759c82f60",
-          "type": "SingleSelect",
-          "keyValues": [],
-          "concept": {
-            "name":"Staying with",
-            "uuid": "eb47f6b7-1f64-4008-87f3-a781c7c342cd"
-          },
-          "displayOrder":6,
-          "mandatory":true
         }
       ]
     },
@@ -185,7 +173,19 @@
           },
           "displayOrder":3,
           "mandatory": true
-        }        
+        },
+        {
+          "name": "Where are you currently staying?",
+          "uuid": "d13e1754-1662-4329-8c97-ee0e700fd484",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Currently staying with",
+            "uuid": "5587a4a2-a1c0-451f-842b-49fd7efa405d"
+          },
+          "displayOrder":4,
+          "mandatory":true
+        }     
       ]
     }    
   ]
