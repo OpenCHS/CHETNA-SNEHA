@@ -487,36 +487,36 @@
       "displayOrder":8,
       "formElements": [
         {
-          "name": "Have you taken decision for place of delivery?",
+          "name": "Is decision taken for place of delivery",
           "uuid": "95260ebc-13ee-44a5-87d1-702bf7d1d97a",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Decision taken for place of delivery",
+            "name": "Is decision taken for place of delivery",
             "uuid": "5f35af9e-e9b1-4016-9541-2a15473df37b"
           },
           "displayOrder":1,
           "mandatory": true
         },
         {
-          "name": "Who took the decision?",
+          "name": "Who took the decision",
           "uuid": "eec990ba-d36a-4860-bb71-a9101f5b3a9b",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Decision taken for place of delivery by",
+            "name": "Who took the decision",
             "uuid": "ef62b009-9285-4c4b-9dd0-2c315f0b9098"
           },
           "displayOrder":2,
           "mandatory": true
         },
         {
-          "name": "At which place you will do your delivery?",
+          "name": "At which place you will do your delivery",
           "uuid": "24e48dca-0e5a-4fbd-9e08-5ab27655a488",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Place you will do your delivery",
+            "name": "At which place you will do your delivery",
             "uuid": "2685ed67-a36c-46f1-8b75-309db0d3a325"
           },
           "displayOrder":3,
@@ -528,14 +528,14 @@
           "keyValues": [],
           "concept": {
             "uuid": "2f3f4973-4e6e-48e2-acbe-41d060cb9f83",
-            "name": "Other place you will do your delivery"
+            "name": "Specify ,Other place you will do your delivery"
 
           },
           "displayOrder":4,
           "mandatory": false
         },
         {
-          "name": "What are the reasons to choose this place?",
+          "name": "Reasons to choose this place for delivery",
           "uuid": "2e6b50af-1955-4439-9758-643b5d78cabd",
           "keyValues": [],
           "concept": {
@@ -551,28 +551,28 @@
           "keyValues": [],
           "concept": {
             "uuid": "577c3fb0-296a-48e6-819b-a3d318103059",
-            "name": "Other reasons to choose place of delivery"
+            "name": "Specify, Other reasons to choose place of delivery"
           },
           "displayOrder":6,
           "mandatory": false
         },
         {
-          "name": "Do you get services of mamta divas?",
+          "name": "Do you get services of mamta divas",
           "uuid": "66f6cc18-b182-45ae-a20a-e50dfeba853a",
           "keyValues": [],
           "concept": {
-            "name": "Services of mamta divas received",
+            "name": "Do you get services of mamta divas",
             "uuid": "1fdcfcb5-ca7e-4bc9-9f89-242cb4a8af03"
           },
           "displayOrder":7,
           "mandatory": true
         },
         {
-          "name": "What are the services you get on mamta divas?",
+          "name": "What are the services you get on mamta divas",
           "uuid": "6f56c1df-adbf-4ba5-a499-2deaec43aab8",
           "keyValues": [],
           "concept": {
-            "name": "Services you get on mamta divas",
+            "name": "What are the services you get on mamta divas",
             "uuid": "b954b62b-77f3-4ee8-aac8-b854d3d2f9c4"
           },
           "displayOrder":8,
@@ -590,11 +590,11 @@
           "mandatory": false
         },
         {
-          "name": "Who are available on mamta divas?",
+          "name": "Who are available on mamta divas",
           "uuid": "54fc3356-f54a-492c-b46e-5f9e88159f67",
           "keyValues": [],
           "concept": {
-            "name": "Available on mamta divas",
+            "name": "Who are available on mamta divas",
             "uuid": "931dfe8e-6244-47c6-8a79-6b80684046d0"
           },
           "displayOrder":10,
@@ -612,11 +612,11 @@
           "mandatory": false
         },
         {
-          "name": "Why you do not attend mamta divas?",
+          "name": "Why you do not attend mamta divas",
           "uuid": "6843b966-a644-4eb7-aff0-19f949fc4730",
           "keyValues": [],
           "concept": {
-            "name": "Reason for not attending mamta divas",
+            "name": "Why you do not attend mamta divas",
             "uuid": "bb3542c7-e855-4d0f-91e8-a6b5e376558a"
           },
           "displayOrder":12,
@@ -634,11 +634,11 @@
           "mandatory": false
         },
         {
-          "name": "Do you get nutrition/snacks from anganwadi center?",
+          "name": "Do you get nutrition/snacks from anganwadi center",
           "uuid": "93b4639d-a81d-4fb5-8172-acfbfd81644a",
           "keyValues": [],
           "concept": {
-            "name": "Received nutrition/snacks from anganwadi center",
+            "name": "Do you get nutrition/snacks from anganwadi center",
             "uuid": "7f61c9a4-5958-4abd-9906-44b9f7e4361c"
           },
           "displayOrder":14,
@@ -649,7 +649,7 @@
           "uuid": "5fed9b06-5bbf-4449-a178-2f639805bba7",
           "keyValues": [],
           "concept": {
-            "name": "What did you get in snacks",
+            "name": "What do you get as a snacks",
             "uuid": "5fe0c780-042a-448f-b7d5-50c3a01a9fea"
           },
           "displayOrder":15,
@@ -765,7 +765,7 @@
       "displayOrder":9,
       "formElements": [
         {
-          "name": "What should be given to the child soon after birth?",
+          "name": "What should be given to the child soon after birth",
           "uuid": "cc9e5223-954c-4e4d-b5f0-63ddb69df572",
           "type": "SingleSelect",
           "keyValues": [],
@@ -777,7 +777,7 @@
           "mandatory": true
         },
         {
-          "name": "For how long child should be breast fed exclusively?",
+          "name": "For how long child should be breast fed exclusively",
           "uuid": "8b1fa437-baf3-42a4-8a6c-69bf046652b2",
           "type": "SingleSelect",
           "keyValues": [],
@@ -789,7 +789,7 @@
           "mandatory": true
         },
         {
-          "name": "At what age child should be given water?",
+          "name": "At what age child should be given water",
           "uuid": "ca2535f7-3918-4060-a459-caebe7f3a828",
           "type": "SingleSelect",
           "keyValues": [],
@@ -801,7 +801,7 @@
           "mandatory": true
         },
         {
-          "name": "At what age child should be given complementary food?",
+          "name": "At what age child should be given complementary food",
           "uuid": "91a74454-3c08-461c-a9c0-d0fb77d30dac",
           "type": "SingleSelect",
           "keyValues": [],
@@ -813,7 +813,7 @@
           "mandatory": true
         },
         {
-          "name": "What should be kept in mind when preparing a food for child?",
+          "name": "What should be kept in mind when preparing a food for child",
           "uuid": "dc39d92b-f2a2-4131-ae37-a006b3c51a9d",
           "type": "MultiSelect",
           "keyValues": [],
@@ -825,7 +825,7 @@
           "mandatory": true
         },
         {
-          "name": "What should be kept in mind while feed the child?",
+          "name": "What should be kept in mind while feed the child",
           "uuid": "1f30aa77-8aa6-42c0-a71f-fa3f8eac97c8",
           "type": "MultiSelect",
           "keyValues": [],
@@ -837,7 +837,7 @@
           "mandatory": true
         },
         {
-          "name": "What types of complementary food should be given to the child?",
+          "name": "What types of complementary food should be given to the child",
           "uuid": "8593ddb6-3737-4de4-b074-b733780949b8",
           "type": "MultiSelect",
           "keyValues": [],
@@ -854,7 +854,7 @@
           "keyValues": [],
           "concept": {
             "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-            "name": "Other types of complementary food that should be given to the child"
+            "name": "Specify Other types of complementary food that should be given to the child"
 
           },
           "displayOrder":8,
@@ -873,7 +873,7 @@
           "mandatory":true
         },
         {
-          "name": "How much food should be given to the child?",
+          "name": "How much food should be given to the child",
           "uuid": "feb54b7c-fca1-46ed-a47f-dfe3ac4348fb",
           "type": "SingleSelect",
           "keyValues": [],
@@ -885,7 +885,7 @@
           "mandatory": true
         },
         {
-          "name": "How long child should be breast fed?",
+          "name": "How long child should be breast fed",
           "uuid": "75f63861-baa5-471c-824c-e9da1d1ca243",
           "type": "SingleSelect",
           "keyValues": [],
@@ -897,7 +897,7 @@
           "mandatory": true
         },
         {
-          "name": "Can we give mother’s milk to child if child is sick?",
+          "name": "Can we give mother’s milk to child if child is sick",
           "uuid": "9c281a3b-3904-47eb-a7fa-dd4232bf880c",
           "type": "SingleSelect",
           "keyValues": [],
@@ -909,7 +909,7 @@
           "mandatory":true
         },
         {
-          "name": "Can we give mother’s milk to child if mother is sick?",
+          "name": "Can we give mother’s milk to child if mother is sick",
           "uuid": "86dcf553-0bae-4b68-9ec0-755cc156e455",
           "type": "SingleSelect",
           "keyValues": [],
@@ -921,7 +921,7 @@
           "mandatory": true
         },
         {
-          "name": "In which illness you cannot give mother’s milk to the child?",
+          "name": "In which illness you cannot give mother’s milk to the child",
           "uuid": "e21da22a-ccdf-4e66-912d-c38894749d1f",
           "type": "MultiSelect",
           "keyValues": [],
@@ -941,7 +941,7 @@
       "displayOrder": 10,
       "formElements": [
         {
-          "name": "Did you use any method of contraception before pregnancy?",
+          "name": "Did you use any method of contraception before pregnancy",
           "uuid": "4c403647-7be0-4faa-a5b6-1f737f5eb388",
           "type":"SingleSelect",
           "keyValues": [],
@@ -953,7 +953,7 @@
           "mandatory": true
         },
         {
-          "name": "What did you use?",
+          "name": "What did you use",
           "uuid": "d40d359f-5d40-4874-a7e6-167cebe50da9",
           "type":"MultiSelect",
           "keyValues": [],
@@ -965,12 +965,12 @@
           "mandatory": true
         },
         {
-          "name": "From where and by whom you got the information?",
+          "name": "From where and by whom you got the information",
           "uuid": "03856a83-42c5-4f58-99c7-53c009ad823f",
           "type":"MultiSelect",
           "keyValues": [],
           "concept": {
-            "name": "From where and by whom you got the information?",
+            "name": "From where and by whom you got the information",
             "uuid": "18ad6262-1688-48d4-a584-84958ebdeb0c"
           },
           "displayOrder": 3,
@@ -1020,7 +1020,7 @@
       "displayOrder": 11,
       "formElements": [
         {
-          "name": "Do you have any addiction?",
+          "name": "Do you have any addiction",
           "uuid": "2353a9fc-0ec6-4af9-8d30-b553525f6941",
           "keyValues": [],
           "concept": {
@@ -1031,11 +1031,11 @@
           "mandatory": true
         },
         {
-          "name": "What do you consume?",
+          "name": "What do you consume",
           "uuid": "1acd6069-73f2-496f-a1cb-5b05a42f5a5a",
           "keyValues": [],
           "concept": {
-            "name": "What do you consume?",
+            "name": "What do you consume",
             "uuid": "b0607fe4-6c72-47c5-9661-e44d6560fb1b"
           },
           "displayOrder":2,

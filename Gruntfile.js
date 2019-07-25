@@ -30,17 +30,17 @@ module.exports = IDI.configure({
             "./lactatingMother/lactatingMotherConcepts.json"
         ],
         "locations": ["./locations/locations.json"],
-        "programs": ["programs.json"],
+        "programs": ["./programs.json"],
         "encounterTypes": [],
         "operationalEncounterTypes": [],
-        "operationalPrograms": ["operationalModules/operationalPrograms.json"],
+        "operationalPrograms": ["./operationalModules/operationalPrograms.json"],
         "operationalSubjectTypes": ["./operationalModules/operationalSubjectTypes.json"],
         "users": {
-            "dev": ["./users/dev-users.json"],
+            "dev": ["./users/dev-users.json"]
             // "staging": ["./users/staging-users.json"]
         },
         "rules": [
-            "./shared/rules/index.js",
+            "./shared/rules/index.js"
         ],
         "organisationSql": [],
     }

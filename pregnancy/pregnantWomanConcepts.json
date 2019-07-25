@@ -503,7 +503,7 @@
     ]
   },
   {
-    "name": "Decision taken for place of delivery",
+    "name": "Is decision taken for place of delivery",
     "uuid": "5f35af9e-e9b1-4016-9541-2a15473df37b",
     "dataType": "Coded",
     "answers": [
@@ -532,7 +532,7 @@
     "name": "Her own self"
   },
   {
-    "name": "Decision taken for place of delivery by",
+    "name": "Who took the decision",
     "uuid": "ef62b009-9285-4c4b-9dd0-2c315f0b9098",
     "dataType": "Coded",
     "answers": [
@@ -555,7 +555,7 @@
     ]
   },
   {
-    "name": "Place you will do your delivery",
+    "name": "At which place you will do your delivery",
     "uuid": "2685ed67-a36c-46f1-8b75-309db0d3a325",
     "dataType": "Coded",
     "answers": [
@@ -575,7 +575,7 @@
   },
   {
     "uuid": "2f3f4973-4e6e-48e2-acbe-41d060cb9f83",
-    "name": "Other place you will do your delivery",
+    "name": "Specify ,Other place you will do your delivery",
     "dataType": "Text"
   },
   {
@@ -627,7 +627,7 @@
     "dataType": "Text"
   },
   {
-    "name": "Services of mamta divas received",
+    "name": "Do you get services of mamta divas",
     "uuid": "1fdcfcb5-ca7e-4bc9-9f89-242cb4a8af03",
     "dataType": "Coded",
     "answers": [
@@ -640,7 +640,7 @@
     ]
   },
   {
-    "name": "Services you get on mamta divas",
+    "name": "What are the services you get on mamta divas",
     "uuid": "b954b62b-77f3-4ee8-aac8-b854d3d2f9c4",
     "dataType": "Coded",
     "answers": [
@@ -692,7 +692,7 @@
     "dataType": "Text"
   },
   {
-    "name": "Available on mamta divas",
+    "name": "Who are available on mamta divas",
     "uuid": "931dfe8e-6244-47c6-8a79-6b80684046d0",
     "dataType": "Coded",
     "answers": [
@@ -740,7 +740,7 @@
     "name": "Family not allowed"
   },
   {
-    "name": "Reason for not attending mamta divas",
+    "name": "Why you do not attend mamta divas",
     "uuid": "bb3542c7-e855-4d0f-91e8-a6b5e376558a",
     "dataType": "Coded",
     "answers": [
@@ -776,7 +776,7 @@
     "dataType": "Text"
   },
   {
-    "name": "Received nutrition/snacks from anganwadi center",
+    "name": "Do you get nutrition/snacks from anganwadi center",
     "uuid": "7f61c9a4-5958-4abd-9906-44b9f7e4361c",
     "dataType": "Coded",
     "answers": [
@@ -805,7 +805,7 @@
     "name": "Salt"
   },
   {
-    "name": "What did you get in snacks",
+    "name": "What do you get as a snacks",
     "uuid": "5fe0c780-042a-448f-b7d5-50c3a01a9fea",
     "dataType": "Coded",
     "answers": [
@@ -1317,7 +1317,7 @@
   },
   {
     "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-    "name": "Other types of complementary food that should be given to the child"
+    "name": "Specify Other types of complementary food that should be given to the child"
   },
   {
     "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",
@@ -1526,7 +1526,7 @@
     "name": "Smoking tobacco product"
   },
   {
-    "name": "What do you consume?",
+    "name": "What do you consume",
     "uuid": "b0607fe4-6c72-47c5-9661-e44d6560fb1b",
     "dataType": "Coded",
     "answers": [
@@ -1618,7 +1618,7 @@
   },
 
   {
-    "name": "From where and by whom you got the information?",
+    "name": "From where and by whom you got the information",
     "uuid": "18ad6262-1688-48d4-a584-84958ebdeb0c",
     "dataType": "Coded",
     "answers": [
