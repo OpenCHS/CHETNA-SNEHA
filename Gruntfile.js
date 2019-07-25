@@ -15,7 +15,8 @@ module.exports = IDI.configure({
             "./registration/registrationForm.json",
             "./pregnancy/pregnantWomanEnrolment.json",
             "./lactatingMother/lactatingMotherEnrolment.json",
-            "./child/checklistForm.json"
+            "./child/checklistForm.json",
+            "./child/childrenEnrolment.json"
         ],
         "formMappings": ["./shared/formMappings.json"],
         "formDeletions": [],
@@ -27,7 +28,8 @@ module.exports = IDI.configure({
             "./registration/registrationConcepts.json",
             "./shared/commonConcepts.json",
             "./pregnancy/pregnantWomanConcepts.json",
-            "./lactatingMother/lactatingMotherConcepts.json"
+            "./lactatingMother/lactatingMotherConcepts.json",
+            "./child/childrenEnrolmentConcepts.json"
         ],
         "locations": ["./locations/locations.json"],
         "programs": ["./programs.json"],

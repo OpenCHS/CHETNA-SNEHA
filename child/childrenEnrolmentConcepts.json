@@ -1,0 +1,297 @@
+[
+  {
+    "name": "Current nutritional status of child",
+    "uuid": "7f9f9b4e-682c-4330-984f-fe6140699e06",
+    "dataType": "Numeric"
+  },
+
+  {
+    "uuid": "bdfb4b5e-0017-4670-bdaf-ba715c24903d",
+    "name": "Bhuva"
+  },
+   {
+    "name": "Where do you take your child if he/she is sick",
+    "uuid": "924b44a6-37f6-4ba5-a27e-2f4e0c5c60b6",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "name": "Government Hospital",
+            "uuid": "df6303d5-0b78-48e0-8a3c-1a7fec61a9f1"
+          },
+          {
+            "name": "Private hospital",
+            "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+          },
+          {
+            "uuid": "bdfb4b5e-0017-4670-bdaf-ba715c24903d",
+            "name": "Bhuva"
+          }
+
+    ]
+  },
+  {
+    "name": "Did child fall a sick in the last 3 months",
+    "uuid": "ba0cb62f-5487-4f5b-b769-79fca2b9f14a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Do you breastfeed when a child is sick",
+    "uuid": "bc934dac-a129-47da-a155-a2438f470094",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Do you give food when a child is sick",
+    "uuid": "8c7739bd-102d-4566-8bc6-c24119e7e385",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "682378fd-59da-413b-b7fa-3cc4610c2ffb",
+    "name": "Fruits"
+  },
+  {
+    "uuid": "fcbd4f55-271c-49ce-8b50-57cdcc1d7b1e",
+    "name": "Khichadi"
+  },
+  {
+    "uuid": "a8789de3-fa81-4b4c-bd75-7befecce4e13",
+    "name": "Milk"
+  },
+  {
+    "name": "What do you feed to the child",
+    "uuid": "bc4aa445-334a-4ae3-a8be-41879d991af3",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "682378fd-59da-413b-b7fa-3cc4610c2ffb",
+            "name": "Fruits"
+          },
+          {
+            "uuid": "fcbd4f55-271c-49ce-8b50-57cdcc1d7b1e",
+            "name": "Khichadi"
+          },
+          {
+            "uuid": "937ca13a-d0a1-435b-9c41-3658ae5cbfab",
+            "name": "Less spicy food"
+          },
+          {
+            "uuid": "a8789de3-fa81-4b4c-bd75-7befecce4e13",
+            "name": "Milk"
+          },
+          {
+            "name": "Other",
+            "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+          }       
+    ]
+  },
+  {
+    "name": "Does child demand more food after sickness",
+    "uuid": "5db293bb-ec47-4ba6-b39f-824f0db80836",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Do you feed more food to your child after illness",
+    "uuid": "992f6e17-f458-402d-8cad-01202ead4dc4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Is the child suffered warm infestation",
+    "uuid": "57154ca9-f412-45ef-9923-611e266331ce",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "84ae89f1-b140-462e-b91d-a11c4043bc35",
+    "name": "Gave medicine"
+  },
+  {
+    "uuid": "9e8f950a-1e21-42b2-a9eb-5f9011e18cab",
+    "name": "No treatment given"
+  },
+  {
+    "uuid": "f334ff65-ce30-4373-bf30-cfc28ab17cac",
+    "name": "Maintain cleanliness"
+  },
+  {
+    "name": "What was the treatment",
+    "uuid": "6c055b6b-eaa0-4f03-b660-5a9974c7b5ee",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "84ae89f1-b140-462e-b91d-a11c4043bc35",
+            "name": "Gave medicine"
+          },
+          {
+            "uuid": "9e8f950a-1e21-42b2-a9eb-5f9011e18cab",
+            "name": "No treatment given"
+          },
+          {
+            "uuid": "f334ff65-ce30-4373-bf30-cfc28ab17cac",
+            "name": "Maintain cleanliness"
+          },
+          {
+            "name": "Other",
+            "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+          }  
+    ]
+  },
+  {
+    "uuid": "68948d10-4b52-47fc-a1bc-2ba86fbae451",
+    "name": "Specify other treatment given",
+    "dataType":"Text"
+  },
+  {
+    "name": "Does child register in anganwadi center",
+    "uuid": "dd8c46a3-5b76-4e4c-9547-79e2821ec702",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Does the child get snacks as Take Home Ration from Anganwadi regularly",
+    "uuid": "0686d1f3-8f38-4429-a5a1-1e70f4d120bd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "39fbaffd-038f-42e6-8193-0dc1dbb2d25a",
+    "name": "What do you cook from that snacks for a child",
+    "dataType":"Text"
+  },
+  {
+    "name": "Does your child go to the Anganwadi center regularly",
+    "uuid": "c9483833-fc57-4475-8128-dcb7aef559a9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "9a14fc46-bcfd-4abe-8dd8-724cb76b7c22",
+    "name": "Going to the school"
+  },
+  {
+    "uuid": "8ac02d0d-ec31-438f-9f84-c0cb3b5dc422",
+    "name": "AWC is not available"
+  },
+  {
+    "uuid": "816dd929-09b2-407c-8113-672bd7577bb3",
+    "name": "AWC is far"
+  },
+  {
+    "uuid": "11945990-981a-4e41-b46f-2c17cb8440eb",
+    "name": "No one can drop the child"
+  },
+  {
+    "uuid": "b00a500f-3be1-40f4-b69b-4f0f76bef572",
+    "name": "Child is not seating alone in AWC"
+  },
+  {
+    "uuid": "f6789200-e3ff-4424-9777-96d648d8addd",
+    "name": "Safety issue"
+  },
+  {
+    "name": "If no than why",
+    "uuid": "6f5125a7-1e92-41d7-b1f7-c76e4d4d41f5",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "9a14fc46-bcfd-4abe-8dd8-724cb76b7c22",
+            "name": "Going to the school"
+          },
+          {
+            "uuid": "8ac02d0d-ec31-438f-9f84-c0cb3b5dc422",
+            "name": "AWC is not available"
+          },
+          {
+            "uuid": "816dd929-09b2-407c-8113-672bd7577bb3",
+            "name": "AWC is far"
+          },
+          {
+            "uuid": "11945990-981a-4e41-b46f-2c17cb8440eb",
+            "name": "No one can drop the child"
+          },
+          {
+            "uuid": "b00a500f-3be1-40f4-b69b-4f0f76bef572",
+            "name": "Child is not seating alone in AWC"
+          },
+          {
+            "uuid": "f6789200-e3ff-4424-9777-96d648d8addd",
+            "name": "Safety issue"
+          },
+          {
+            "name": "Other",
+            "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+          }  
+    ]
+  },
+  {
+    "uuid": "b8655b58-fc9b-4938-b4a5-395634c7c8f1",
+    "name": "Specify other reason for not going to Anganwadi center regularly",
+    "dataType":"Text"
+  } 
+]

@@ -4,7 +4,7 @@
     {
       "uuid": "8cbfca3a-f936-4408-b873-87c7286ed642",
       "name": "Pregnancy",
-      "programSubjectLabel": "Pregnant",
+      "programSubjectLabel": "Pregnant Woman",
       "program": {
         "uuid": "076ddb2d-a499-4314-af95-4178553d279b",
         "comment": "Mother from core"
@@ -15,12 +15,14 @@
       "name": "Lactating mother",
       "programSubjectLabel": "Lactating mother",
       "program": {
-        "uuid": "798a853e-c335-4d32-95d7-9425ee614657"
+        "uuid": "798a853e-c335-4d32-95d7-9425ee614657",
+        "name": "Lactating mother"
       }
     },
     {
       "uuid": "32bc625d-2dec-471f-ac54-62f21b5ad57e",
       "name": "Child",
+      "programSubjectLabel": "Child",
       "program": {
         "uuid": "352d906c-b386-496c-ba23-91b1468a5613",
         "comment": "Child from core"

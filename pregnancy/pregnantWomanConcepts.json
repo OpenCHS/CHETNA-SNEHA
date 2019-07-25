@@ -789,49 +789,6 @@
     ]
   },
   {
-    "uuid": "fdbcf8d1-1438-498e-9e89-8ef4ae83608c",
-    "name": "Oil"
-  },
-  {
-    "uuid": "f57a2ec2-024f-4c69-bb3d-9598a98104f6",
-    "name": "Wheat (cereal)"
-  },
-  {
-    "uuid": "e2b76701-fd5b-4821-92b1-9c1509ae77dd",
-    "name": "Pulses"
-  },
-  {
-    "uuid": "7996b361-856d-4923-a94c-428adb71a79d",
-    "name": "Salt"
-  },
-  {
-    "name": "What do you get as a snacks",
-    "uuid": "5fe0c780-042a-448f-b7d5-50c3a01a9fea",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "fdbcf8d1-1438-498e-9e89-8ef4ae83608c",
-        "name": "Oil"
-      },
-      {
-        "uuid": "f57a2ec2-024f-4c69-bb3d-9598a98104f6",
-        "name": "Wheat (cereal)"
-      },
-      {
-        "uuid": "e2b76701-fd5b-4821-92b1-9c1509ae77dd",
-        "name": "Pulses"
-      },
-      {
-        "uuid": "7996b361-856d-4923-a94c-428adb71a79d",
-        "name": "Salt"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
-      }
-    ]
-  },
-  {
     "uuid": "8c895b21-e6fa-416a-ac16-f2671b2de416",
     "name": "Other snacks received",
     "dataType": "Text"
@@ -1276,10 +1233,7 @@
     "uuid": "0914ac28-e59a-4e19-a3da-ea131406177e",
     "name": "Liquid food"
   },
-  {
-    "uuid": "937ca13a-d0a1-435b-9c41-3658ae5cbfab",
-    "name": "Less spicy food"
-  },
+  
   {
     "uuid": "e868c0e0-12dc-43fa-8af8-f1c9de260acc",
     "name": "All food groups should be covered"
