@@ -8,7 +8,8 @@ module.exports = IDI.configure({
     "secrets": '../secrets.json',
     "files": {
         "adminUsers": {
-            "dev": ["./users/dev-admin-user.json"]
+            "dev": ["./users/dev-admin-user.json"],
+            "staging": ["./users/dev-admin-user.json"]
         },
         "forms": [
             "./registration/registrationForm.json"
@@ -21,14 +22,15 @@ module.exports = IDI.configure({
         "concepts": [
             "./registration/registrationConcepts.json"
         ],
-        "locations": [],
+        "locations": ["./locations/locations.json"],
         "programs": [],
         "encounterTypes": [],
         "operationalEncounterTypes": [],
         "operationalPrograms": [],
         "operationalSubjectTypes": ["./operationalModules/operationalSubjectTypes.json"],
         "users": {
-            "dev": ["./users/dev-users.json"]
+            "dev": ["./users/dev-users.json"],
+            "staging": ["./users/staging-users.json"]
         },
         "rules": [
             "./shared/rules/index.js",
