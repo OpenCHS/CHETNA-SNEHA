@@ -14,14 +14,16 @@ module.exports = IDI.configure({
         "forms": [
             "./registration/registrationForm.json",
             "./pregnancy/pregnantWomanEnrolment.json",
-            "./lactatingMother/lactatingMotherEnrolment.json"
+            "./lactatingMother/lactatingMotherEnrolment.json",
+            "./child/checklistForm.json"
         ],
         "formMappings": ["./shared/formMappings.json"],
         "formDeletions": [],
         "formAdditions": [],
         "catchments": ["./shared/catchments.json"],
-        "checklistDetails": [],
+        "checklistDetails": ["./child/checklist.json"],
         "concepts": [
+            "./child/checklistConcepts.json",
             "./registration/registrationConcepts.json",
             "./shared/commonConcepts.json",
             "./pregnancy/pregnantWomanConcepts.json",
