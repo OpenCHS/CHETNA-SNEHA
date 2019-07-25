@@ -30,7 +30,7 @@ module.exports = IDI.configure({
         "operationalSubjectTypes": ["./operationalModules/operationalSubjectTypes.json"],
         "users": {
             "dev": ["./users/dev-users.json"],
-            "staging": ["./users/staging-users.json"]
+            // "staging": ["./users/staging-users.json"]
         },
         "rules": [
             "./shared/rules/index.js",
