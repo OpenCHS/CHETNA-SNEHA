@@ -1,3 +1,12 @@
 [
-
+  {
+    "name": "Number of alive children",
+    "uuid": "85a2e410-411d-4243-bef9-d5d047bde636",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "If a child has died, tell the reason",
+    "uuid": "f995ca8f-c075-4f87-a349-cf7d3cec79c3",
+    "dataType": "Text"
+  }
 ]

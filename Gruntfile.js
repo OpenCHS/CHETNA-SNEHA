@@ -12,7 +12,9 @@ module.exports = IDI.configure({
             "staging": ["./users/dev-admin-user.json"]
         },
         "forms": [
-            "./registration/registrationForm.json"
+            "./registration/registrationForm.json",
+            /*"./pregnancy/pregnantWomanEnrolment.json",*/
+            "./lactatingMother/lactatingMotherEnrolment.json"
         ],
         "formMappings": ["./shared/formMappings.json"],
         "formDeletions": [],
@@ -20,13 +22,16 @@ module.exports = IDI.configure({
         "catchments": ["./shared/catchments.json"],
         "checklistDetails": [],
         "concepts": [
-            "./registration/registrationConcepts.json"
+            "./registration/registrationConcepts.json",
+            "./shared/commonConcepts.json",
+            /*"./pregnancy/pregnantWomanConcepts.json",*/
+            "./lactatingMother/lactatingMotherConcepts.json"
         ],
         "locations": ["./locations/locations.json"],
-        "programs": [],
+        "programs": ["programs.json"],
         "encounterTypes": [],
         "operationalEncounterTypes": [],
-        "operationalPrograms": [],
+        "operationalPrograms": ["operationalModules/operationalPrograms.json"],
         "operationalSubjectTypes": ["./operationalModules/operationalSubjectTypes.json"],
         "users": {
             "dev": ["./users/dev-users.json"],
