@@ -124,7 +124,7 @@
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Have mamta card",
+            "name": "Whether have mamta card",
             "uuid": "3299cda4-3c1a-4dd7-8a69-5d756136a5cd"
           },
           "displayOrder":5,
@@ -147,7 +147,7 @@
           "uuid": "4840526c-6cfc-44a2-82c3-c9ed84efe8f0",
           "keyValues": [],
           "concept": {
-            "name": "Reason of not having mamta card",
+            "name": "Reason for not having mamta card",
             "uuid": "b94c9eba-9c44-4262-a870-56b0257cc115"
           },
           "displayOrder":7,
@@ -156,7 +156,6 @@
         {
           "name": "Specify, Other reason of not having mamta card",
           "uuid": "b697e17f-0ebb-4bb6-98d9-08680e6f2c2f",
-          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "uuid": "b2789df2-9751-435a-974b-02f50d30f450",
@@ -185,7 +184,7 @@
           "mandatory": true
         },
         {
-          "name": "How many live children do you have?",
+          "name": "Number of live children you have",
           "uuid": "2b55d041-b6ff-4f54-a631-4e591c96daaa",
           "keyValues": [],
           "concept": {
@@ -198,7 +197,14 @@
         {
           "name": "Age of youngest child",
           "uuid": "f622d7a0-f16e-4171-8613-21436ecce87f",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": [
+                "months"
+              ]
+            }
+          ],
           "concept": {
             "name": "Age of youngest child",
             "uuid": "305f693c-c8b6-4e3e-9a82-a6e91a3e462f"
@@ -268,18 +274,6 @@
       "display": "Services Received in Current Pregnancy",
       "displayOrder": 5,
       "formElements": [
-        {
-          "name": "Which services did you get during antenatal check-ups?",
-          "uuid": "87bc2ead-d00e-46a5-903d-99ba94b07682",
-          "type":"MultiSelect",
-          "keyValues": [],
-          "concept": {
-            "name": "Services received during antenatal check-ups",
-            "uuid": "52e6d4ea-390c-4335-9f0c-f8fdf360193e"
-          },
-          "displayOrder":1,
-          "mandatory":true
-        },
         {
           "name": "Number of times weight measurement",
           "uuid": "1daebe39-2627-435a-ab1d-e8ef71a30452",
@@ -667,7 +661,7 @@
           "mandatory": false
         },
         {
-          "name": "How many times do you get this snack/nutrition in the month?",
+          "name": "How many times do you get this snack/nutrition in the month",
           "uuid": "f40fbd71-87c7-4714-b5b8-fe7ab1a53ad6",
           "keyValues": [],
           "concept": {

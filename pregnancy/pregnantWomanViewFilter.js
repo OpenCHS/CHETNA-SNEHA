@@ -5,7 +5,15 @@ import {
     WithName
 } from 'rules-config/rules';
 
-const WithRegistrationStatusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
+const lmp = (programEnrolment) => {
+    return programEnrolment.getObservationValue('Last menstrual period');
+};
+
+const estimatedDateOfDelivery = (programEnrolment) => {
+    return C.addDays(C.addMonths(lmp(programEnrolment), 9), 7);
+};
+
+const statusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
 const PregnantWomenViewFilter = RuleFactory("1d08e3e9-30a0-4fee-b1ce-55aeec627ea1", "ViewFilter");
 
 @PregnantWomenViewFilter("12f9a59e-b0f9-4a1c-abe1-591c320cf199", "Pregnant Woman Enrolment", 100.0, {})
@@ -14,87 +22,93 @@ class PregnantWomenEnrolmentViewHandler {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new PregnantWomenEnrolmentViewHandler(), programEnrolment, formElementGroup);
     }    
-
+    
+    eDD(programEnrolment, formElement) {
+        const lmpDate = programEnrolment.getObservationValue('Last menstrual period');
+        return _.isNil(lmpDate) ?
+            new FormElementStatus(formElement.uuid, true) :
+            new FormElementStatus(formElement.uuid, true, estimatedDateOfDelivery(programEnrolment));
+    }
    
     @WithName('Specify Other, pregnancy registered to where/whom')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a11([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Pregnancy registered to")
         .containsAnswerConceptName("Other");
     }  
  
     @WithName('Specify, Other reason of not having mamta card')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a12([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Reason of not having mamta card")
+        statusBuilder.show().when.valueInEnrolment("Reason for not having mamta card")
         .containsAnswerConceptName("Other");
     }  
 
     @WithName('Specify Other, who did investigation')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a13([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Investigation done by")
         .containsAnswerConceptName("Other");
     } 
 
     @WithName('Specify, Other place form where IFA tablets received')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a14([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("IFA tablets received from")
         .containsAnswerConceptName("Other");
     } 
 
     @WithName('Specify ,Other place you will do your delivery')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a15([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("At which place you will do your delivery")
         .containsAnswerConceptName("Other");
     } 
 
     @WithName('Specify, Other reasons to choose place of delivery')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a16([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Reasons to choose this place for delivery")
         .containsAnswerConceptName("Other");
     }
 
     @WithName('Specify,Other services you get on mamta divas')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a17([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Other services you get on mamta divas")
         .containsAnswerConceptName("Other");
     }
 
     @WithName('Specify, who other are available on mamta divas')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a18([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Who are available on mamta divas")
         .containsAnswerConceptName("Other");
     }
     
     @WithName('Specify,Other reason for not attending mamta divas')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a19([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Reason for not attending mamta divas")
         .containsAnswerConceptName("Other");
     }
 
     @WithName('Specify, Other snacks received')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a20([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Other");
     }
 
     @WithName('Specify Other, who gave you information about government programme/scheme')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a21([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Information about government programme/scheme received from")
         .containsAnswerConceptName("Other");
     }
 
     @WithName('Specify Other reason for not getting benefits')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a22([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Reason for not getting benefits")
         .containsAnswerConceptName("Other");
@@ -102,277 +116,215 @@ class PregnantWomenEnrolmentViewHandler {
     
 
     @WithName('Specify Other types of complementary food that should be given to the child')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a23([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What types of complementary food should be given to the child")
         .containsAnswerConceptName("Other");
     }
 
     @WithName('Specify Other source from where and by whom you got the information')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a24([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("From where and by whom you got the information")
         .containsAnswerConceptName("Other");
     }
 
     @WithName('Specify Other reason for not using any contraception method')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a25([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Why you did not use any contraception method")
         .containsAnswerConceptName("Other");
     }
 
     @WithName('In which month did you register pregnancy?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a26([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Is pregnancy registered").is.yes;
     }
 
     @WithName('Where/Whom to registered your pregnancy?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a27([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Is pregnancy registered").is.yes;
     }
 
 
     @WithName('Is mamta card updated with information about availed government services? (Please check Mamta card)')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a28([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Have mamta card").is.yes;
+        statusBuilder.show().when.valueInEnrolment("Whether have mamta card").is.yes;
     }
 
     @WithName('Why you don’t have mamta card?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a29([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Have mamta card").is.no;
+        statusBuilder.show().when.valueInEnrolment("Whether have mamta card").is.no;
     }
 
-    @WithName('How many live children do you have?')
-    @WithRegistrationStatusBuilder
+    @WithName('Number of live children you have')
+    @statusBuilder
     a30([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
     }
 
-    @WithName('How old is your youngest child?')
-    @WithRegistrationStatusBuilder
+    @WithName('Age of youngest child')
+    @statusBuilder
     a31([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
     }
 
     @WithName('How many times you did checkup from doctor?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a32([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
     }
 
     @WithName('Who did you get the investigation?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a33([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
     }
 
-    @WithName('Which services did you get during antenatal check-ups?')
-    @WithRegistrationStatusBuilder
-    a34([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
-    }
-
-    @WithName('Number of times weight measurement')
-    @WithRegistrationStatusBuilder
-    a35([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Services received during antenatal check-ups")
-        .containsAnswerConceptName("Weight measurement");
-    }
-
-    @WithName('Number of times BP measurement')
-    @WithRegistrationStatusBuilder
-    a36([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Services received during antenatal check-ups")
-        .containsAnswerConceptName("BP measurement");
-    }
-
-    @WithName('Got TT vaccines')
-    @WithRegistrationStatusBuilder
-    a37([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Services received during antenatal check-ups")
-        .containsAnswerConceptName("TT vaccines");
-    }
-
-    @WithName('Number of times blood test')
-    @WithRegistrationStatusBuilder
-    a38([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Services received during antenatal check-ups")
-        .containsAnswerConceptName("Blood test");
-    }
-
-    @WithName('Number of times urine test')
-    @WithRegistrationStatusBuilder
-    a39([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Services received during antenatal check-ups")
-        .containsAnswerConceptName("Urine test");
-    }
-
-    @WithName('Have got Calcium supplement')
-    @WithRegistrationStatusBuilder
-    a40([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Services received during antenatal check-ups")
-        .containsAnswerConceptName("Calcium supplement");
-    }
-
-    @WithName('Number of times ultrasound scan')
-    @WithRegistrationStatusBuilder
-    a42([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Services received during antenatal check-ups")
-        .containsAnswerConceptName("Ultrasound scan");
-    }
-
-    @WithName('Number of time abdominal check-ups')
-    @WithRegistrationStatusBuilder
-    a43([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Services received during antenatal check-ups")
-        .containsAnswerConceptName("Abdominal check-ups");
-    }
-
     @WithName('Which are the services you availed in previous pregnancy?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a44([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1)
         .and.when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no;
-    }
+    }    
 
     @WithName('Number of IFA pills (every month)')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a54([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Received IFA tablets at every month").is.yes;
     }
 
     @WithName('From where did you get?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a55([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Received IFA tablets at every month").is.yes;
     }
 
     @WithName('Do you consume IFA tablets? (check the strip of IFA tablet)')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a56([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Received IFA tablets at every month").is.yes;
     }
 
     @WithName('When do you consume IFA tablet?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a57([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Consumed IFA tablets").is.yes;
     }
 
     @WithName('Why you did not consume IFA tablets?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a58([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Consumed IFA tablets").is.no;
     }
 
 
-    @WithName('Who took the decision?')
-    @WithRegistrationStatusBuilder
+    @WithName('Who took the decision')
+    @statusBuilder
     a59([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Is decision taken for place of delivery").is.yes;
     }
 
     @WithName('At which place you will do your delivery')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a60([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Is decision taken for place of delivery").is.yes;
     }
 
-    @WithName('What are the reasons to choose this place')
-    @WithRegistrationStatusBuilder
+    @WithName('Reasons to choose this place for delivery')
+    @statusBuilder
     a61([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Is decision taken for place of delivery").is.yes;
     }
 
     @WithName('What are the services you get on mamta divas')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a62([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas?").is.yes;
     }
 
      @WithName('Who are available on mamta divas')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a64([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas?").is.yes;
     }
 
     @WithName('Why you do not attend mamta divas')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a65([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas?").is.no;
     }
 
     @WithName('What do you get as a snacks and how much quantity you get? (Check snacks)')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a67([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi center")
         .is.yes;
     }
 
-    @WithName('How many times do you get this snack/nutrition in the month?')
-    @WithRegistrationStatusBuilder
+    @WithName('How many times do you get this snack/nutrition in the month')
+    @statusBuilder
     a69([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi center")
         .is.yes;
     }
 
     @WithName('Who gave you information about government programme/scheme?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a70([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Have you got any benefits of government programme/scheme?")
+        statusBuilder.show().when.valueInEnrolment("Benefits of government programme/scheme received")
         .is.yes;
     }
 
     @WithName('Under which government programme/scheme you got entitlements?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a72([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Have you got any benefits of government programme/scheme?")
+        statusBuilder.show().when.valueInEnrolment("Benefits of government programme/scheme received")
         .is.yes;
     }
 
     @WithName('Why you did not get benefits?')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a73([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Have you got any benefits of government programme/scheme?")
+        statusBuilder.show().when.valueInEnrolment("Benefits of government programme/scheme received")
         .is.no;
     }
 
    
     @WithName('In which illness you cannot give mother’s milk to the child')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a74([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Can we give mother’s milk to child if mother is sick")
         .is.no;
     }
 
     @WithName('What did you use')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a75([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
         .is.yes;
     }
 
     @WithName('From where and by whom you got the information')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a76([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
         .is.yes;
     }
 
     @WithName('Why you did not use any contraception method')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a77([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
         .is.no;
     }
 
     @WithName('What do you consume')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     a78([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you have any addiction").is.yes;
     }
