@@ -1,6 +1,6 @@
 {
   "name": "Lactating Mothers Enrolment",
-  "uuid": "",
+  "uuid": "96dae617-1b01-4de7-a783-627e2a78277c",
   "formType": "ProgramEnrolment",
   "formElementGroups": [
     {
@@ -76,8 +76,25 @@
           },
           "displayOrder": 6,
           "mandatory": false
+        },
+        {
+          "name": "Age of youngest child",
+          "uuid": "77824550-9703-441c-b6f3-9bcba1078ff8",
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": [
+                "months"
+              ]
+            }
+          ],
+          "concept": {
+            "name": "Age of youngest child",
+            "uuid": "305f693c-c8b6-4e3e-9a82-a6e91a3e462f"
+          },
+          "displayOrder": 7,
+          "mandatory": true
         }
-
       ]
     }
   ]

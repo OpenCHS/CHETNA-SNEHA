@@ -86,46 +86,6 @@
     ]
   },
   {
-    "uuid": "11208e37-0933-4a21-9a6d-9bdc4e2b58f0",
-    "name": "Lost"
-  },
-  {
-    "uuid": "8091b14b-005d-44e4-b549-73408e13eb80",
-    "name": "No ANC"
-  },
-  {
-    "uuid": "74b5d3c0-829c-46d5-a9f8-4290397fb038",
-    "name": "At other place"
-  },
-  {
-    "name": "Reason for not having mamta card",
-    "uuid": "b94c9eba-9c44-4262-a870-56b0257cc115",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "11208e37-0933-4a21-9a6d-9bdc4e2b58f0",
-        "name": "Lost"
-      },
-      {
-        "uuid": "8091b14b-005d-44e4-b549-73408e13eb80",
-        "name": "No ANC"
-      },
-      {
-        "uuid": "74b5d3c0-829c-46d5-a9f8-4290397fb038",
-        "name": "At other place"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
-      }
-    ]
-  },
-  {
-    "uuid": "b2789df2-9751-435a-974b-02f50d30f450",
-    "name": "Other reason of not having mamta card",
-    "dataType": "Text"
-  },
-  {
     "name": "Done checkup by doctor in current pregnancy",
     "uuid": "4dce18e6-b92f-4e8e-ae1e-a1882b0e58c0",
     "dataType": "Coded",
