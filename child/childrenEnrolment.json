@@ -10,7 +10,7 @@
       "displayOrder": 1,
       "formElements": [
         {
-          "name": "Weight of child at birth (Kg)",
+          "name": "Weight of child at birth",
           "uuid": "f48d970c-9072-4919-a494-67b40cde14d5",
           "keyValues": [],
           "concept": {
@@ -21,7 +21,7 @@
           "mandatory": true
         },
         {
-          "name": "Current weight of child (Kg)",
+          "name": "Current weight of child",
           "uuid": "d6ef5c3a-e216-4e67-90a8-9439cf4a3042",
           "keyValues": [],
           "concept": {
@@ -255,7 +255,7 @@
           "mandatory": true
         },
         {
-          "name": "Other specify",
+          "name": "Specify other reason for not going to Anganwadi center regularly",
           "uuid": "44876f32-c6cc-41b8-8f94-5c699cf4c36d",
           "keyValues": [],
           "concept": {

@@ -18,5 +18,12 @@
     "programUUID": "798a853e-c335-4d32-95d7-9425ee614657",
     "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Lactating mother enrolment"
+  },
+  {
+    "uuid": "c2d5a23e-cbb3-4eea-923c-6d92af1ca27b",
+    "formUUID": "d440e0b4-a404-4bdf-ba5e-f1e5d5cf5cc0",
+    "programUUID": "62755a29-d197-419a-b944-ed665a367787",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
+    "comment": "Children enrolment"
   }
 ]

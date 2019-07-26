@@ -39,9 +39,23 @@ class ChildrenEnrolmentViewHandler {
     
     @WithName('If no than why')
     @WithRegistrationStatusBuilder
-    ab13([], statusBuilder) {
+    ab14([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Does your child go to the Anganwadi center regularly")
-        .is.yes;
+        .is.no;
+    } 
+
+    @WithName('Specify other reason for not going to Anganwadi center regularly')
+    @WithRegistrationStatusBuilder
+    ab15([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("If no than why")
+        .containsAnswerConceptName("Other");
+    } 
+
+    @WithName('Specify other treatment given')
+    @WithRegistrationStatusBuilder
+    ab16([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What was the treatment")
+        .containsAnswerConceptName("Other");
     } 
 }
 

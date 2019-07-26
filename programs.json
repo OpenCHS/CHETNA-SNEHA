@@ -8,5 +8,10 @@
     "name": "Pregnant Woman",
     "uuid": "82951774-884e-46c4-873b-d18d29327cb7",
     "colour": "darkmagenta"
+  },
+  {
+    "name": "Child",
+    "uuid": "62755a29-d197-419a-b944-ed665a367787",
+    "colour": "darkorange"
   }
 ]
