@@ -300,6 +300,67 @@
           },
           "displayOrder": 1,
           "mandatory": true
+        },
+        {
+          "name": "Till which age your child has breastfed exclusively",
+          "uuid": "0bbb3a29-e331-4ca6-bbe9-9b603d24b1df",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Till which age your child has breastfed exclusively",
+            "uuid": "1cbb5491-2f4d-4e00-817a-8df6279557f2"
+
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "When did you give water to the child",
+          "uuid": "625c3492-4831-4da5-aa03-cc7299e0ced4",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "When did you give water to the child",
+            "uuid": "a8d4d72a-3122-4d21-9c84-303fb9cb9916"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "When did you start giving complementary food to the child",
+          "uuid": "d11683bb-7001-4350-828f-199a44f34b63",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "When did you start giving complementary food to the child",
+            "uuid": "0b1e1783-428b-4428-8de1-4d32525c675a"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Who has taken decision to start complementary food to the child",
+          "uuid": "d24f2182-9e26-4f75-8ec9-92e003a1654e",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Who has taken decision to start complementary food to the child",
+            "uuid": "f13da8ee-65da-41a8-bf1c-d31672400a78"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "What type of food do you give to the child as complementary food",
+          "uuid": "c1c0584a-36e0-428d-a757-e04c072dcf4c",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "What type of food do you give to the child as complementary food",
+            "uuid": "045d4a3c-9b74-4e6f-96f8-da8f5a88547a"
+          },
+          "displayOrder": 8,
+          "mandatory": true
         }
       ]
     },

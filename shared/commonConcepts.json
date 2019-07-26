@@ -608,7 +608,8 @@
   },
   {
     "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-    "name": "Specify Other types of complementary food that should be given to the child"
+    "name": "Specify Other types of complementary food that should be given to the child",
+    "dataType": "Text"
   },
   {
     "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",

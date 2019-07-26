@@ -130,7 +130,157 @@
         "name": "Injection"
       }
     ]
+  },
+  {
+    "name": "Till which age your child has breastfed exclusively",
+    "uuid": "1cbb5491-2f4d-4e00-817a-8df6279557f2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "8bf71992-501f-441e-a1a9-c7056a07a873",
+        "name": "Till completion of 6 months"
+      },
+      {
+        "uuid": "0640d99b-9325-41b5-9fd6-a1472ec64c0b",
+        "name": "3 months"
+      },
+      {
+        "uuid": "d324810f-0cc9-423d-bf24-4db041990d1d",
+        "name": "9 months"
+      },
+      {
+        "uuid": "dd941f24-f63f-44c0-a784-fbd75b6df171",
+        "name": "1 year"
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+      }
+    ]
+  },
+  {
+    "name": "When did you give water to the child",
+    "uuid": "a8d4d72a-3122-4d21-9c84-303fb9cb9916",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "df5252dc-9cc6-4478-9db6-b9ed27e8b6e4",
+        "name": "Before 6 months"
+      },
+      {
+        "uuid": "439cfb65-b652-441b-8a04-d87d81316313",
+        "name": "After 6 months"
+      }
+    ]
+  },
+  {
+    "uuid": "b9cd1809-3b93-46d0-8e4c-f59ed5059147",
+    "name": "After completion of 6 months"
+  },
+  {
+    "uuid": "fa6b5601-184b-4637-b4ac-784adb6604ae",
+    "name": "After 9 months"
+  },
+  {
+    "uuid": "4ee05a70-cebb-4c60-9d22-624e7e26255c",
+    "name": "After 1 year"
+  },
+  {
+    "name": "When did you start giving complementary food to the child",
+    "uuid": "0b1e1783-428b-4428-8de1-4d32525c675a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "df5252dc-9cc6-4478-9db6-b9ed27e8b6e4",
+        "name": "Before 6 months"
+      },
+      {
+        "uuid": "b9cd1809-3b93-46d0-8e4c-f59ed5059147",
+        "name": "After completion of 6 months"
+      },
+      {
+        "uuid": "fa6b5601-184b-4637-b4ac-784adb6604ae",
+        "name": "After 9 months"
+      },
+      {
+        "uuid": "4ee05a70-cebb-4c60-9d22-624e7e26255c",
+        "name": "After 1 year"
+      }
+    ]
+  },
+  {
+    "uuid": "51ab2ea8-12fc-4271-b6c5-29a34acbc712",
+    "name": "Mother"
+  },
+  {
+    "uuid": "cf301a64-d0f7-4da9-82bf-3bebfda66687",
+    "name": "Father"
+  },
+  {
+    "uuid": "bc2baaeb-1859-4db5-9313-43907ab16e8d",
+    "name": "Grandparents"
+  },
+  {
+    "uuid": "ee896b1c-d770-4ed9-b7f4-f5673a46f53c",
+    "name": "Parents of child"
+  },
+  {
+    "name": "Who has taken decision to start complementary food to the child",
+    "uuid": "f13da8ee-65da-41a8-bf1c-d31672400a78",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "51ab2ea8-12fc-4271-b6c5-29a34acbc712",
+        "name": "Mother"
+      },
+      {
+        "uuid": "cf301a64-d0f7-4da9-82bf-3bebfda66687",
+        "name": "Father"
+      },
+      {
+        "uuid": "bc2baaeb-1859-4db5-9313-43907ab16e8d",
+        "name": "Grandparents"
+      },
+      {
+        "uuid": "ee896b1c-d770-4ed9-b7f4-f5673a46f53c",
+        "name": "Parents of child"
+      }
+    ]
+  },
+  {
+    "name": "What type of food do you give to the child as complementary food",
+    "uuid": "045d4a3c-9b74-4e6f-96f8-da8f5a88547a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "e7a25858-0322-4fe3-94a9-26ae09002698",
+        "name": "Semi-solid food"
+      },
+      {
+        "uuid": "0914ac28-e59a-4e19-a3da-ea131406177e",
+        "name": "Liquid food"
+      },
+      {
+        "uuid": "937ca13a-d0a1-435b-9c41-3658ae5cbfab",
+        "name": "Less spicy food"
+      },
+      {
+        "uuid": "e868c0e0-12dc-43fa-8af8-f1c9de260acc",
+        "name": "All food groups should be covered"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+      }
+    ]
+  },
+  {
+    "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
+    "name": "Specify Other types of complementary food given to the child",
+    "dataType": "Text"
   }
-
-
 ]
