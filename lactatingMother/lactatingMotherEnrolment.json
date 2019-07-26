@@ -18,7 +18,7 @@
             "uuid": "dc2c23e9-19ad-471f-81d1-213069ccc975"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Number of alive children",
@@ -29,7 +29,7 @@
             "uuid": "85a2e410-411d-4243-bef9-d5d047bde636"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "If a child has died, tell the reason",
@@ -40,7 +40,7 @@
             "uuid": "f995ca8f-c075-4f87-a349-cf7d3cec79c3"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Whether have mamta card",
@@ -75,8 +75,32 @@
             "name": "Other reason for not having mamta card"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
+        {
+          "name": "Place of delivery",
+          "uuid": "cb256fdb-e513-4916-96cb-166528f60ed3",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "a0405799-1e3c-40ef-90ba-84c9c0931660"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Type of delivery",
+          "uuid": "8bb92c3d-2a3d-4da1-ad07-fc358664c3d2",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Type of delivery",
+            "uuid": "69d0acf1-c32b-4694-9bc2-874b5e7a44c8"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        },
+
         {
           "name": "Age of youngest child",
           "uuid": "77824550-9703-441c-b6f3-9bcba1078ff8",
@@ -92,7 +116,258 @@
             "name": "Age of youngest child",
             "uuid": "305f693c-c8b6-4e3e-9a82-a6e91a3e462f"
           },
-          "displayOrder": 7,
+          "displayOrder": 9,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "023295dc-fafa-4db1-a3f8-2dcfbf8de86b",
+      "name": "Information about knowledge on breastfeeding and complementary food",
+      "display": "Information about knowledge on breastfeeding and complementary food",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "What should be given to the child soon after birth",
+          "uuid": "5a5f5d27-a815-408d-8526-f4cf72b67dcd",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "What should be given to the child soon after birth",
+            "uuid": "cdb77995-68f1-4d61-877e-dcb4bf46cdad"
+          },
+          "displayOrder":1,
+          "mandatory": true
+        },
+        {
+          "name": "For how long child should be breast fed exclusively",
+          "uuid": "74ed759c-b759-428f-b264-7f8889c09a1b",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "For how long child should be breast fed exclusively",
+            "uuid": "48cc9d87-5009-4539-b9f7-f910240d23ce"
+          },
+          "displayOrder":2,
+          "mandatory": true
+        },
+        {
+          "name": "How often child should be breastfed in a day",
+          "uuid": "a6fb6c03-e6f9-494f-a925-7dcd3e2b60ab",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "How often child should be breastfed in a day",
+            "uuid": "fc6632c3-1cd7-463d-af28-fba15a9aab67"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Should child be breastfed on demand",
+          "uuid": "1eb57df7-a23b-429b-ba74-168b28edee3e",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Should child be breastfed on demand",
+            "uuid": "99296030-ffc3-46dd-92cf-e2de907f93bc"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Should child be breastfed on certain time",
+          "uuid": "98d78f25-b2f4-4931-80ea-82e0929e8459",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Should child be breastfed on certain time",
+            "uuid": "a8b1b330-a3ca-431b-9dac-5ffa8c247418"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "At what age child should be given water",
+          "uuid": "041a25a8-18cb-4bee-9d21-b19927c118b6",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "At what age child should be given water",
+            "uuid": "b806f1ac-aa9b-45b9-917b-6fc050afd9cc"
+          },
+          "displayOrder":6,
+          "mandatory": true
+        },
+        {
+          "name": "At what age child should be given complementary food",
+          "uuid": "505f1c7f-2bf3-497e-891c-d47f0efa5429",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "At what age child should be given complementary food",
+            "uuid": "f8954994-e228-48b8-aa01-70c45ab41046"
+          },
+          "displayOrder":7,
+          "mandatory": true
+        },
+        {
+          "name": "What should be kept in mind when preparing a food for child",
+          "uuid": "1ba1e5b3-fd18-4720-b944-652fabd190a2",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "What should be kept in mind when preparing a food for child",
+            "uuid": "5940388f-21a8-4d83-b2ec-376cd13a5197"
+          },
+          "displayOrder":8,
+          "mandatory": true
+        },
+        {
+          "name": "What should be kept in mind while feed the child",
+          "uuid": "29bfb199-00f0-4902-b587-3cbb63230722",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "What should be kept in mind while feed the child",
+            "uuid": "27070a2b-1e0f-4d27-ab3a-1dd0280dcb44"
+          },
+          "displayOrder":9,
+          "mandatory": true
+        },
+        {
+          "name": "What types of complementary food should be given to the child",
+          "uuid": "448718d7-9513-43f8-8bc1-7da5d2bbb057",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "What types of complementary food should be given to the child",
+            "uuid": "6d5a9fdc-4e64-452a-92f1-20c9fdca5f1f"
+          },
+          "displayOrder":10,
+          "mandatory": true
+        },
+        {
+          "name": "Specify Other types of complementary food that should be given to the child",
+          "uuid": "c51fb5c6-4895-4749-87c8-17409d505c9c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
+            "name": "Specify Other types of complementary food that should be given to the child"
+
+          },
+          "displayOrder":11,
+          "mandatory": false
+        },
+        {
+          "name": "How often food should be given to the child? (Use bowl and ask the quantity and frequency of food)",
+          "uuid": "297da531-b890-49cc-979c-49ddb6a8f43b",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "How often food should be given to the child",
+            "uuid": "30f00327-3e73-4579-9d30-071d2ff355e6"
+          },
+          "displayOrder":12,
+          "mandatory":true
+        },
+        {
+          "name": "How much food should be given to the child",
+          "uuid": "4e4a0074-af5f-4b0e-93bc-a919b482b407",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "How much food should be given to the child",
+            "uuid": "e0d8f6f0-06f3-4bec-9ac6-62518390de02"
+          },
+          "displayOrder":13,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "09c780a4-5346-4d2c-b2be-982ad10e5bfb",
+      "name": "Information about practices followed by mother",
+      "display": "Information about practices followed by mother",
+      "displayOrder": 3,
+      "formElements": [
+        {
+          "name": "What did you give to the child at birth",
+          "uuid": "10207af8-052f-4cae-91ba-e4aab1edf865",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "What did you give to child at birth",
+            "uuid": "a19b424b-33df-44aa-8f52-b24e3bf492a0"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "cd710019-549b-4beb-8144-06d3a8dd5fd3",
+      "name": "Services for lactating mother",
+      "display": "Services for lactating mother",
+      "displayOrder": 4,
+      "formElements": [
+        {
+          "name": "Do you get snacks as Take home ration from Anganwadi centre",
+          "uuid": "851c8d52-cef9-4a3d-91cd-3469cc0ba67b",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Do you get snacks as Take home ration from Anganwadi centre",
+            "uuid": "095d492c-92da-4194-a130-bb48a64a2c02"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "d2d99f6d-a136-409c-922e-7735873ac61c",
+      "name": "Information about uses of contraception",
+      "display": "Information about uses of contraception",
+      "displayOrder": 5,
+      "formElements": [
+        {
+          "name": "Did you use any method of contraception before pregnancy",
+          "uuid": "864659ba-504f-4517-88e1-69f61d1f06ba",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Did you use any method of contraception before pregnancy",
+            "uuid": "b27c26df-c639-4596-97e7-91ab818b7bff"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "2b6f8233-b708-4a8c-a57e-f0acdf02372d",
+      "name": "Information about addiction",
+      "display": "Information about addiction",
+      "displayOrder": 6,
+      "formElements": [
+        {
+          "name": "Do you have any addiction",
+          "uuid": "c6925c72-f0db-4dce-a9d6-01f106238989",
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Do you have any addiction",
+            "uuid": "4f541cf6-629f-49ae-a1fd-609b04d8ce23"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "What do you consume",
+          "uuid": "f5a9a9db-be8e-45eb-ba9d-f99d0b9f633f",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "What do you consume",
+            "uuid": "b0607fe4-6c72-47c5-9661-e44d6560fb1b"
+          },
+          "displayOrder": 2,
           "mandatory": true
         }
       ]

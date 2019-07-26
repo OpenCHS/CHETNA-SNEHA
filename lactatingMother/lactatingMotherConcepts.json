@@ -8,5 +8,80 @@
     "name": "If a child has died, tell the reason",
     "uuid": "f995ca8f-c075-4f87-a349-cf7d3cec79c3",
     "dataType": "Text"
+  },
+  {
+    "name": "Should child be breastfed on demand",
+    "uuid": "99296030-ffc3-46dd-92cf-e2de907f93bc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Should child be breastfed on certain time",
+    "uuid": "a8b1b330-a3ca-431b-9dac-5ffa8c247418",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "What did you give to child at birth",
+    "uuid": "a19b424b-33df-44aa-8f52-b24e3bf492a0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "cacfbbe8-cd8e-4f1e-aed5-2daf3be2f422",
+        "name": "Colostrum"
+      },
+      {
+        "uuid": "396b92a8-9778-4b90-8cfc-b3674b5f7989",
+        "name": "Honey water"
+      },
+      {
+        "uuid": "81dec7a1-ef03-4a18-8c4b-3f930c4f2c1e",
+        "name": "Jaggery water"
+      },
+      {
+        "uuid": "cbfffbc6-9774-46e8-ad5a-7a9e4efabc5e",
+        "name": "Pre lacteal"
+      },
+      {
+        "uuid": "19057653-56d7-483d-ae27-a746b9693fe1",
+        "name": "Cow's milk"
+      },
+      {
+        "uuid": "77476e1e-3e8e-48e4-b0b1-0756c305a550",
+        "name": "Bottle water"
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+      }
+    ]
+  },
+  {
+    "name": "Do you get snacks as Take home ration from Anganwadi centre",
+    "uuid": "095d492c-92da-4194-a130-bb48a64a2c02",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
   }
+
 ]
