@@ -82,6 +82,55 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
+  },
+  {
+    "name": "Do you use any contraception",
+    "uuid": "10091249-a947-455b-b502-b8adff507a9e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "If yes, what do you use",
+    "uuid": "7491c731-9292-4d66-9c00-1b7fe6c2e02f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Condom",
+        "uuid": "8f975508-8179-450b-9a27-d11b7818677b"
+      },
+      {
+        "uuid": "b8c121f8-15b9-44ef-a5ee-cb7ed1acf452",
+        "name": "Pills"
+      },
+      {
+        "uuid": "55b8cfad-07f7-40f8-9124-af08d04cc330",
+        "name": "Emergency pills"
+      },
+      {
+        "uuid": "5dab1778-260e-486b-b971-95365ab52ff6",
+        "name": "Copper-T"
+      },
+      {
+        "uuid": "8b952b29-be71-4962-98ba-1518818ca540",
+        "name": "PPIUCD"
+      },
+      {
+        "uuid": "72248b1e-d6c0-4758-bd60-b56b754ef342",
+        "name": "Natural contraception"
+      },
+      {
+        "uuid": "fcab55b3-a924-4c0c-9521-1d8e82e15dff",
+        "name": "Injection"
+      }
+    ]
   }
+
 
 ]

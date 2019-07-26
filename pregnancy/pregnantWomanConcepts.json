@@ -928,30 +928,6 @@
     "dataType": "Text"
   },
   {
-    "uuid": "b8c121f8-15b9-44ef-a5ee-cb7ed1acf452",
-    "name": "Pills"
-  },
-  {
-    "uuid": "55b8cfad-07f7-40f8-9124-af08d04cc330",
-    "name": "Emergency pills"
-  },
-  {
-    "uuid": "5dab1778-260e-486b-b971-95365ab52ff6",
-    "name": "Copper-T"
-  },
-  {
-    "uuid": "8b952b29-be71-4962-98ba-1518818ca540",
-    "name": "PPIUCD"
-  },
-  {
-    "uuid": "72248b1e-d6c0-4758-bd60-b56b754ef342",
-    "name": "Natural contraception"
-  },
-  {
-    "uuid": "fcab55b3-a924-4c0c-9521-1d8e82e15dff",
-    "name": "Injection"
-  },
-  {
     "name": "What did you use",
     "uuid": "da34325f-e742-426e-a832-748ab06e73db",
     "dataType": "Coded",
@@ -985,64 +961,6 @@
         "name": "Injection"
       }
     ]
-  },
-  {
-    "uuid": "8f44e655-232c-4b46-953d-1ada155219d8",
-    "name": "Elder family members"
-  },
-
-  {
-    "name": "From where and by whom you got the information",
-    "uuid": "18ad6262-1688-48d4-a584-84958ebdeb0c",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "d707926c-044b-4c15-b4a9-21ec59d2e9e8",
-        "name": "Social Media"
-      },
-      {
-        "uuid": "89741af9-598c-434c-94e3-2f1a086e540c",
-        "name": "ASHA"
-      },
-      {
-        "uuid": "98dcc24f-8e6e-4ced-a040-41dfccd79806",
-        "name": "AWW"
-      },
-      {
-        "uuid": "66b0a2f2-ba1d-4a8d-a049-03a2c27b7527",
-        "name": "ANM"
-      },
-      {
-        "name": "Government Hospital",
-        "uuid": "df6303d5-0b78-48e0-8a3c-1a7fec61a9f1"
-      },
-      {
-        "name": "Private hospital",
-        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
-      },
-      {
-
-        "uuid": "08d13f12-89eb-4a50-933b-e5462d953292",
-        "name": "Print or electronic media"
-      },
-      {
-        "uuid": "df891109-b1f5-45ad-b7fa-1b7518ce27af",
-        "name": "Friend"
-      },
-      {
-        "uuid": "8f44e655-232c-4b46-953d-1ada155219d8",
-        "name": "Elder family members"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
-      }
-
-    ]
-  },
-  {
-    "uuid": "5cbcfde1-db48-4f24-a66d-c7416ec3237a",
-    "name": "Specify Other source from where and by whom you got the information"
   },
   {
     "uuid": "b5fbd822-0b06-423d-9c4e-f26e2dc97e64",
