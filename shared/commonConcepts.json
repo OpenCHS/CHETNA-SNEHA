@@ -10,6 +10,42 @@
     "dataType": "Numeric"
   },
   {
+    "uuid": "e4c340f0-3c78-4062-b889-d84ade45b908",
+    "name": "Anganwadi centre"
+  },
+  {
+    "uuid": "5d5f9607-a2b5-443d-b0df-5e5902743352",
+    "name": "Urban Health centre"
+  },
+  {
+    "uuid": "89741af9-598c-434c-94e3-2f1a086e540c",
+    "name": "ASHA"
+  },
+  {
+    "uuid": "98dcc24f-8e6e-4ced-a040-41dfccd79806",
+    "name": "AWW"
+  },
+  {
+    "uuid": "d707926c-044b-4c15-b4a9-21ec59d2e9e8",
+    "name": "Social Media"
+  },
+  {
+    "uuid": "08d13f12-89eb-4a50-933b-e5462d953292",
+    "name": "Print or electronic media"
+  },
+  {
+    "uuid": "df891109-b1f5-45ad-b7fa-1b7518ce27af",
+    "name": "Friend"
+  },
+  {
+    "uuid": "66b0a2f2-ba1d-4a8d-a049-03a2c27b7527",
+    "name": "ANM"
+  },
+  {
+    "uuid": "a824c362-dc01-430e-8287-add2c813a1a4",
+    "name": "ANC"
+  },
+  {
     "name": "Whether have mamta card",
     "uuid": "3299cda4-3c1a-4dd7-8a69-5d756136a5cd",
     "dataType": "Coded",
@@ -273,7 +309,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       },
       {
         "name": "Don't know",
@@ -320,7 +357,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
@@ -489,41 +527,6 @@
     "name": "Add different food groups in the food"
   },
   {
-    "name": "What should be kept in mind when preparing a food for child",
-    "uuid": "5940388f-21a8-4d83-b2ec-376cd13a5197",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "289c20d9-e652-4774-96d7-79c1b3e8df7f",
-        "name": "Washing hands with soap"
-      },
-      {
-        "uuid": "f9a420a2-bf77-41c4-9130-0632e3503cda",
-        "name": "Washing vegetables"
-      },
-      {
-        "uuid": "1e07f0d0-5360-42e3-af5f-0845d0131d70",
-        "name": "Clean utensils"
-      },
-      {
-        "uuid": "41e81cd1-f451-4738-b2b2-db6f8cf9f792",
-        "name": "Keep place clean"
-      },
-      {
-        "uuid": "9f68fab2-4e86-41df-94ca-7878673ce74a",
-        "name": "Add different food groups in the food"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
-      },
-      {
-        "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
-      }
-    ]
-  },
-  {
     "uuid": "1e2313d4-1028-4715-8c08-2625ff680d1d",
     "name": "Playing with the child"
   },
@@ -554,7 +557,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique" : true
       },
       {
         "name": "Don't know",
@@ -598,7 +602,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique" :true
       },
       {
         "name": "Don't know",
@@ -923,6 +928,10 @@
         "name": "ANM"
       },
       {
+        "name": "Doctor",
+        "uuid": "062071e7-85a9-4da0-9d59-c27b00e53a60"
+      },
+      {
         "name": "Government Hospital",
         "uuid": "df6303d5-0b78-48e0-8a3c-1a7fec61a9f1"
       },
@@ -945,7 +954,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
 
     ]

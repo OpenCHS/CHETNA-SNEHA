@@ -2,16 +2,10 @@ import {
     StatusBuilderAnnotationFactory, 
     RuleFactory,  
     FormElementsStatusHelper,
-    WithName
+    WithName,
+    FormElementStatus
 } from 'rules-config/rules';
-
-const lmp = (programEnrolment) => {
-    return programEnrolment.getObservationValue('Last menstrual period');
-};
-
-const estimatedDateOfDelivery = (programEnrolment) => {
-    return C.addDays(C.addMonths(lmp(programEnrolment), 9), 7);
-};
+import lib from '../lib';
 
 const statusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
 const PregnantWomenViewFilter = RuleFactory("1d08e3e9-30a0-4fee-b1ce-55aeec627ea1", "ViewFilter");
@@ -23,11 +17,11 @@ class PregnantWomenEnrolmentViewHandler {
             .getFormElementsStatusesWithoutDefaults(new PregnantWomenEnrolmentViewHandler(), programEnrolment, formElementGroup);
     }    
     
-    eDD(programEnrolment, formElement) {
+    edd(programEnrolment, formElement) {
         const lmpDate = programEnrolment.getObservationValue('Last menstrual period');
         return _.isNil(lmpDate) ?
             new FormElementStatus(formElement.uuid, true) :
-            new FormElementStatus(formElement.uuid, true, estimatedDateOfDelivery(programEnrolment));
+            new FormElementStatus(formElement.uuid, true, lib.calculations.estimatedDateOfDelivery(programEnrolment));
     }
    
     @WithName('Specify Other, pregnancy registered to where/whom')
@@ -244,22 +238,22 @@ class PregnantWomenEnrolmentViewHandler {
     @WithName('What are the services you get on mamta divas')
     @statusBuilder
     a62([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas?").is.yes;
+        statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas").is.yes;
     }
 
      @WithName('Who are available on mamta divas')
     @statusBuilder
     a64([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas?").is.yes;
+        statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas").is.yes;
     }
 
     @WithName('Why you do not attend mamta divas')
     @statusBuilder
     a65([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas?").is.no;
+        statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas").is.no;
     }
 
-    @WithName('What do you get as a snacks and how much quantity you get? (Check snacks)')
+    @WithName('What do you get as a snacks?')
     @statusBuilder
     a67([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi center")
@@ -328,6 +322,74 @@ class PregnantWomenEnrolmentViewHandler {
     a78([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you have any addiction").is.yes;
     }
+
+    @WithName('How much quantity of Other snacks you get? (Check snacks)')
+    @statusBuilder
+    a79([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        .containsAnswerConceptName("Other");
+    }
+
+    @WithName('How much quantity of Oil you get? (Check snacks)')
+    @statusBuilder
+    a80([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        .containsAnswerConceptName("Oil");
+    }
+
+    @WithName('Specify other quantity of Oil received')
+    @statusBuilder
+    a81([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("How much quantity of Oil you get? (Check snacks)")
+        .containsAnswerConceptName("Other");
+    }
+
+    @WithName('How much quantity of Wheat you get? (Check snacks)')
+    @statusBuilder
+    a82([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        .containsAnswerConceptName("Wheat (cereal)");
+    }
+
+    @WithName('Specify other quantity of Wheat received')
+    @statusBuilder
+    a83([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("How much quantity of Wheat you get? (Check snacks)")
+        .containsAnswerConceptName("Other");
+    }
+
+    @WithName('How much quantity of Pulse you get? (Check snacks)')
+    @statusBuilder
+    a84([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        .containsAnswerConceptName("Pulses");
+    }
+
+
+    @WithName('Specify other quantity of Pulses received')
+    @statusBuilder
+    a85([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("How much quantity of Pulse you get? (Check snacks)")
+        .containsAnswerConceptName("Other");
+    }
+
+    @WithName('How much quantity of Salt you get? (Check snacks)')
+    @statusBuilder
+    a86([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        .containsAnswerConceptName("Salt");
+    }
+
+    @WithName('Specify other quantity of Salt received')
+    @statusBuilder
+    a87([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("How much quantity of Salt you get? (Check snacks)")
+        .containsAnswerConceptName("Other");
+    }
+
+
+
+
 }
 
 module.exports = {PregnantWomenEnrolmentViewHandler};

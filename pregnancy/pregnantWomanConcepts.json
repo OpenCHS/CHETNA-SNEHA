@@ -24,18 +24,7 @@
     "dataType": "Numeric",
     "unit": "month"
   },
-  {
-    "uuid": "e4c340f0-3c78-4062-b889-d84ade45b908",
-    "name": "Anganwadi centre"
-  },
-  {
-    "uuid": "5d5f9607-a2b5-443d-b0df-5e5902743352",
-    "name": "Urban Health centre"
-  },
-  {
-    "uuid": "89741af9-598c-434c-94e3-2f1a086e540c",
-    "name": "ASHA"
-  },
+ 
   {
     "name": "Pregnancy registered to",
     "uuid": "17b01907-dab2-4c56-8c69-1f9e801aac33",
@@ -103,14 +92,7 @@
     "uuid": "6b1d9de0-d6e1-46b3-825a-82c1c3cde764",
     "dataType": "Numeric"
   },
-  {
-    "uuid": "66b0a2f2-ba1d-4a8d-a049-03a2c27b7527",
-    "name": "ANM"
-  },
-  {
-    "uuid": "a824c362-dc01-430e-8287-add2c813a1a4",
-    "name": "ANC"
-  },
+  
   {
     "name": "Investigation done by",
     "uuid": "e8eb0140-1cb6-4900-a60e-61a055c440d0",
@@ -602,6 +584,14 @@
     ]
   },
   {
+    "uuid": "5d9aebed-9d4e-4693-bdb9-4a12e934f4b2",
+    "name": "Counselling"
+  },
+  {
+    "uuid": "4cdd11de-bb29-4638-b897-c398c5032cf3",
+    "name": "Supplementary food"
+  },
+  {
     "name": "What are the services you get on mamta divas",
     "uuid": "b954b62b-77f3-4ee8-aac8-b854d3d2f9c4",
     "dataType": "Coded",
@@ -619,14 +609,6 @@
         "name": "TT vaccines"
       },
       {
-        "uuid": "e71ed526-d852-45e0-884f-72711dfb7591",
-        "name": "Blood test"
-      },
-      {
-        "uuid": "efe33b08-58f3-4c4f-aef9-feedca53b8f4",
-        "name": "Urine test"
-      },
-      {
         "uuid": "6e1162e6-017a-4f85-81c1-19002e07e9b4",
         "name": "IFA tablets"
       },
@@ -635,12 +617,16 @@
         "name": "Calcium supplement"
       },
       {
-        "uuid": "726097dc-10d6-47a1-85a1-9c5c2e625ecb",
-        "name": "Ultrasound scan"
-      },
-      {
         "uuid": "7e67e0c1-67ad-4ef6-a213-a29ca4885b3b",
         "name": "Abdominal check-ups"
+      },
+      {
+        "uuid": "5d9aebed-9d4e-4693-bdb9-4a12e934f4b2",
+        "name": "Counselling"
+      },
+      {
+        "uuid": "4cdd11de-bb29-4638-b897-c398c5032cf3",
+        "name": "Supplementary food"
       },
       {
         "name": "Other",
@@ -778,22 +764,7 @@
       }
     ]
   },
-  {
-    "uuid": "98dcc24f-8e6e-4ced-a040-41dfccd79806",
-    "name": "AWW"
-  },
-  {
-    "uuid": "d707926c-044b-4c15-b4a9-21ec59d2e9e8",
-    "name": "Social Media"
-  },
-  {
-    "uuid": "08d13f12-89eb-4a50-933b-e5462d953292",
-    "name": "Print or electronic media"
-  },
-  {
-    "uuid": "df891109-b1f5-45ad-b7fa-1b7518ce27af",
-    "name": "Friend"
-  },
+  
   {
     "name": "Information about government programme/scheme received from",
     "uuid": "9a1fe15b-19ad-4782-af86-f3e3d3741a1e",
@@ -968,57 +939,6 @@
     "uuid": "8f44e655-232c-4b46-953d-1ada155219d8",
     "name": "Elder family members"
   },
-
-  {
-    "name": "From where and by whom you got the information",
-    "uuid": "18ad6262-1688-48d4-a584-84958ebdeb0c",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "d707926c-044b-4c15-b4a9-21ec59d2e9e8",
-        "name": "Social Media"
-      },
-      {
-        "uuid": "89741af9-598c-434c-94e3-2f1a086e540c",
-        "name": "ASHA"
-      },
-      {
-        "uuid": "98dcc24f-8e6e-4ced-a040-41dfccd79806",
-        "name": "AWW"
-      },
-      {
-        "uuid": "66b0a2f2-ba1d-4a8d-a049-03a2c27b7527",
-        "name": "ANM"
-      },
-      {
-        "name": "Government Hospital",
-        "uuid": "df6303d5-0b78-48e0-8a3c-1a7fec61a9f1"
-      },
-      {
-        "name": "Private hospital",
-        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
-      },
-      {
-
-        "uuid": "08d13f12-89eb-4a50-933b-e5462d953292",
-        "name": "Print or electronic media"
-      },
-      {
-        "uuid": "df891109-b1f5-45ad-b7fa-1b7518ce27af",
-        "name": "Friend"
-      },
-      {
-        "uuid": "8f44e655-232c-4b46-953d-1ada155219d8",
-        "name": "Elder family members"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
-      }
-
-    ]
-  },
   {
     "uuid": "5cbcfde1-db48-4f24-a66d-c7416ec3237a",
     "name": "Specify Other source from where and by whom you got the information"
@@ -1070,13 +990,128 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
   {
     "uuid": "8e49ba64-90a4-417e-9b5a-8aa19406936f",
-    "name": "Specify Other reason for not using any contraception method"
+    "name": "Specify Other reason for not using any contraception method",
+    "dataType":"Text"
+  },
+  {
+    "uuid": "b89dee88-41e9-418b-8a0c-88e765110f1d",
+    "name": "How much quantity of Other snacks you get? (Check snacks)",
+    "dataType":"Text"
+  },
+  {
+    "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+    "name": "1 Packet"
+  },
+  {
+    "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+    "name": "2 Packets"
+  },
+  {
+    "name": "How much quantity of Oil you get? (Check snacks)",
+    "uuid": "8dcd7314-2ff9-4185-965f-311e989f6500",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "How much quantity of Wheat you get? (Check snacks)",
+    "uuid": "12ef4b24-859b-4de6-89fa-785c1c818c17",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "How much quantity of Pulse you get? (Check snacks)",
+    "uuid": "aec2dbaa-2947-4fff-9b99-130dc90a6fd7",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "How much quantity of Salt you get? (Check snacks)",
+    "uuid": "57b590fc-e84d-4345-954a-b7c162fe3c23",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Specify other quantity of Oil received",
+    "uuid": "5cdbfc85-cf5a-48e3-81ed-352940475141",
+    "dataType":"Text"
+  },
+  {
+    "name": "Specify other quantity of Wheat received",
+    "uuid": "6488ba4d-9e30-4a16-92ea-f6a6d0351cb7",
+    "dataType":"Text"
+  },
+  {
+    "name": "Specify other quantity of Pulses received",
+    "uuid": "9707a83e-5999-42d1-ad22-5bd266149915",
+    "dataType":"Text"
+  },
+  {
+    "name": "Specify other quantity of Salt received",
+    "uuid": "531d2956-3656-4bfb-a5cf-fb64417c866b",
+    "dataType":"Text"
   }
 
 
