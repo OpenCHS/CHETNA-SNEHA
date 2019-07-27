@@ -292,8 +292,7 @@ class PregnantWomenEnrolmentViewHandler {
     @WithName('In which illness you cannot give mother’s milk to the child')
     @statusBuilder
     a74([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Can we give mother’s milk to child if mother is sick")
-        .is.no;
+        statusBuilder.show().when.valueInEnrolment("Can we give mother’s milk to child if mother is sick").is.no;
     }
 
     @WithName('What did you use')
@@ -387,9 +386,52 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
 
+    @WithName('Number of times weight measurement')
+    @statusBuilder
+    a88([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
 
+    @WithName('Number of times BP measurement')
+    @statusBuilder
+    a89([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
 
+    @WithName('Got TT vaccines')
+    @statusBuilder
+    a90([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
 
+    @WithName('Number of times blood test')
+    @statusBuilder
+    a91([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
+
+    @WithName('Number of times urine test')
+    @statusBuilder
+    a92([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
+
+    @WithName('Have got Calcium supplement')
+    @statusBuilder
+    a93([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
+
+    @WithName('Number of times ultrasound scan')
+    @statusBuilder
+    a94([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
+    @WithName('Number of time abdominal check-ups')
+    @statusBuilder
+    a95([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
 }
 
 module.exports = {PregnantWomenEnrolmentViewHandler};

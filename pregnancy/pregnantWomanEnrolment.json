@@ -145,6 +145,7 @@
         {
           "name": "Why you don’t have mamta card?",
           "uuid": "4840526c-6cfc-44a2-82c3-c9ed84efe8f0",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Reason for not having mamta card",
@@ -531,6 +532,7 @@
         {
           "name": "Reasons to choose this place for delivery",
           "uuid": "2e6b50af-1955-4439-9758-643b5d78cabd",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Reasons to choose this place for delivery",
@@ -553,6 +555,7 @@
         {
           "name": "Do you get services of mamta divas",
           "uuid": "66f6cc18-b182-45ae-a20a-e50dfeba853a",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Do you get services of mamta divas",
@@ -564,6 +567,7 @@
         {
           "name": "What are the services you get on mamta divas",
           "uuid": "6f56c1df-adbf-4ba5-a499-2deaec43aab8",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "What are the services you get on mamta divas",
@@ -586,6 +590,7 @@
         {
           "name": "Who are available on mamta divas",
           "uuid": "54fc3356-f54a-492c-b46e-5f9e88159f67",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Who are available on mamta divas",
@@ -608,6 +613,7 @@
         {
           "name": "Why you do not attend mamta divas",
           "uuid": "6843b966-a644-4eb7-aff0-19f949fc4730",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Why you do not attend mamta divas",
@@ -630,6 +636,7 @@
         {
           "name": "Do you get nutrition/snacks from anganwadi center",
           "uuid": "93b4639d-a81d-4fb5-8172-acfbfd81644a",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Do you get nutrition/snacks from anganwadi center",
@@ -675,6 +682,7 @@
         {
           "name": "How much quantity of Oil you get? (Check snacks)",
           "uuid": "6f5a21af-2746-4d1c-bcb0-3934488e6e83",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "How much quantity of Oil you get? (Check snacks)",
@@ -697,6 +705,7 @@
         {
           "name": "How much quantity of Wheat you get? (Check snacks)",
           "uuid": "2cf12192-d2d2-42b5-a207-17ec07eaa395",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "How much quantity of Wheat you get? (Check snacks)",
@@ -719,6 +728,7 @@
         {
           "name": "How much quantity of Pulse you get? (Check snacks)",
           "uuid": "13820886-d4ec-491f-9fdd-552cfb50cd42",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "How much quantity of Pulse you get? (Check snacks)",
@@ -741,6 +751,7 @@
         {
           "name": "How much quantity of Salt you get? (Check snacks)",
           "uuid": "c75123af-eca1-4734-a906-c6cb139c4079",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "How much quantity of Salt you get? (Check snacks)",
@@ -785,6 +796,7 @@
         {
           "name": "Have you got any benefits of government programme/scheme?",
           "uuid": "2dbf5afe-febe-4be9-9b8c-4e813224626b",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Benefits of government programme/scheme received",
@@ -796,6 +808,7 @@
         {
           "name": "Who gave you information about government programme/scheme?",
           "uuid": "78c60876-b50e-4a86-9cc1-88a4641b6b79",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Information about government programme/scheme received from",
@@ -819,6 +832,7 @@
         {
           "name": "Under which government programme/scheme you got entitlements?",
           "uuid": "6535fe85-952c-4f47-9c57-ae8b1ca5b730",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Programme/scheme Under which got entitlements",
@@ -830,6 +844,7 @@
         {
           "name": "Why you did not get benefits?",
           "uuid": "fc79f5ad-b9ed-4705-b200-f4e324744343",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Reason for not getting benefits",
@@ -1116,6 +1131,7 @@
         {
           "name": "Do you have any addiction",
           "uuid": "2353a9fc-0ec6-4af9-8d30-b553525f6941",
+          "type": "SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Do you have any addiction",
@@ -1127,6 +1143,7 @@
         {
           "name": "What do you consume",
           "uuid": "1acd6069-73f2-496f-a1cb-5b05a42f5a5a",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "What do you consume",

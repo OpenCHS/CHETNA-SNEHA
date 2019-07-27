@@ -52,7 +52,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
@@ -513,7 +514,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
@@ -561,7 +563,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
@@ -630,7 +633,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
@@ -658,7 +662,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
@@ -714,7 +719,9 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
+      
       }
     ]
   },
@@ -791,7 +798,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },

@@ -89,7 +89,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
@@ -751,7 +752,7 @@
     ]
   },
   {
-    "name": "Can we give mother’s milk to child if mother is sick?",
+    "name": "Can we give mother’s milk to child if mother is sick",
     "uuid": "480b92c1-bee3-4612-a9cd-be081391423e",
     "dataType": "Coded",
     "answers": [
@@ -1168,7 +1169,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
       }
     ]
   },
