@@ -39,6 +39,10 @@
             "name": "Contact Number",
             "uuid": "82fa0dbb-92f9-4ec2-9263-49054e64d909"
           },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
           "displayOrder":3,
           "mandatory": true
         },
@@ -130,6 +134,30 @@
             "uuid": "476a0b71-485b-4a0a-ba6f-4f3cf13568ca"
           },
           "displayOrder":5,
+          "mandatory": true
+        },
+        {
+          "name": "Do you work at home or earning money outside the home",
+          "uuid": "59c43500-8b0a-4f5f-98f8-14dffd4dbf2b",
+          "type":"SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Do you work at home or earning money outside the home",
+            "uuid": "784c7e5a-bf14-4ba5-8228-6451d06fecb4"
+          },
+          "displayOrder":6 ,
+          "mandatory": true
+        },
+        {
+          "name": "If yes, What do you do",
+          "uuid": "f2c2fcf3-d047-476c-bb4f-a75bc0a9304a",
+          "type":"MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Mother's Occupation",
+            "uuid": "dc9882a4-ceff-4dc9-b6fc-3e2ba7e9b197"
+          },
+          "displayOrder": 7,
           "mandatory": true
         }
       ]

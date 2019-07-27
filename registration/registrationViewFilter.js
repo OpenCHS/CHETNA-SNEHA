@@ -21,7 +21,7 @@ class ChetnaRegistrationViewHandler {
         statusBuilder.skipAnswers('Uneducated');
     }  
 
-    @WithName('Marital status')
+     @WithName('Marital status')
     @WithRegistrationStatusBuilder
     abc12([], statusBuilder) {
         statusBuilder.skipAnswers('Remarried','Other');
@@ -44,6 +44,13 @@ class ChetnaRegistrationViewHandler {
     abc15([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Marital status").containsAnswerConceptNameOtherThan("Unmarried");
     }  
+
+    @WithName('If yes, What do you do')
+    @WithRegistrationStatusBuilder
+    abc16([], statusBuilder) {
+        statusBuilder.skipAnswers("Farming","Other","Don't know");
+        statusBuilder.show().when.valueInRegistration("Do you work at home or earning money outside the home").is.yes;
+    } 
 }
 
 module.exports = {ChetnaRegistrationViewHandler};

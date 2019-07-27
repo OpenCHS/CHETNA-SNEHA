@@ -135,6 +135,42 @@
       "name": "Other"
       }
     ]
+  } ,
+  {
+    "name": "Do you work at home or earning money outside the home",
+    "uuid": "784c7e5a-bf14-4ba5-8228-6451d06fecb4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "03360b0b-43e8-4763-8c3d-45181bf479d7",
+    "name": "Servant"
+  },
+  {
+    "uuid": "0ca07575-9fde-423e-860f-47ef5a4400e1",
+    "name": "Selling vegetables or diferrent things"
+  },
+  {
+    "name": "Mother's Occupation",
+    "uuid": "dc9882a4-ceff-4dc9-b6fc-3e2ba7e9b197",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "03360b0b-43e8-4763-8c3d-45181bf479d7",
+        "name": "Servant"
+      },
+      {
+        "uuid": "0ca07575-9fde-423e-860f-47ef5a4400e1",
+        "name": "Selling vegetables or diferrent things"
+      }
+    ]
   } 
 ]
 
