@@ -282,5 +282,229 @@
     "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
     "name": "Specify Other types of complementary food given to the child",
     "dataType": "Text"
-  }
+  },
+  {
+    "name": "How much do you give complementary food to the child",
+    "uuid": "cd7c946f-3b75-4e74-8e9d-8f0218ea5d80",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "41e4e60b-eca1-42f4-9648-40685660388c",
+        "name": "Half bowl"
+      },
+      {
+        "uuid": "4522bf8b-fda4-4e4b-b6fc-aafca22da8bf",
+        "name": "1 bowl"
+      },
+      {
+        "uuid": "bc57f5b6-df2d-4b5a-b82c-9cff5438d367",
+        "name": " 2 bowls"
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+      }
+    ]
+  },
+  {
+    "name": "How often do you give complementary food to the children",
+    "uuid": "0e7e9ed1-9bc2-4258-855d-1d4cf477fe8d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",
+        "name": "Every an hour"
+      },
+      {
+        "uuid": "6b717a67-38a4-40b3-b979-ee3f730f2a1b",
+        "name": "Every 2 hours"
+      },
+      {
+        "uuid": "51623840-f5a0-4d12-81e1-3afa1dab7e69",
+        "name": "Every 3 to 4 hours"
+      },
+      {
+        "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
+        "name": "Whenever child is crying"
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+      }
+    ]
+  },
+  {
+    "name": "What are the points you kept in a mind while preparing a food for the child",
+    "uuid": "6d44f4c4-2b16-453b-a1ab-90eeee60a340",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "289c20d9-e652-4774-96d7-79c1b3e8df7f",
+        "name": "Washing hands with soap"
+      },
+      {
+        "uuid": "f9a420a2-bf77-41c4-9130-0632e3503cda",
+        "name": "Washing vegetables"
+      },
+      {
+        "uuid": "1e07f0d0-5360-42e3-af5f-0845d0131d70",
+        "name": "Clean utensils"
+      },
+      {
+        "uuid": "41e81cd1-f451-4738-b2b2-db6f8cf9f792",
+        "name": "Keep place clean"
+      },
+      {
+        "uuid": "9f68fab2-4e86-41df-94ca-7878673ce74a",
+        "name": "Add different food groups in the food"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique": true
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+      }
+    ]
+  },
+   {
+    "uuid": "68437adf-35b1-4bad-b793-a9d4c6abf839",
+    "name": "Specify other points you kept in a mind while preparing a food for the child",
+    "dataType":"Text"
+  },
+  {
+    "name": "What are the points you kept in a mind while feed the child",
+    "uuid": "cf4376af-884d-4197-9b2a-9c43c4893aaa",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "1e2313d4-1028-4715-8c08-2625ff680d1d",
+        "name": "Playing with the child"
+      },
+      {
+        "uuid": "1c2f81db-113b-4ff0-8919-0faf3ecd331d",
+        "name": "Wash the hands before feeding"
+      },
+      {
+        "uuid": "f28309d9-070c-463a-8f81-99733f2f454b",
+        "name": "Sit at clean place"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "unique" : true
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+      }
+    ]
+  },
+  {
+    "uuid": "00754cdd-7e55-49ae-a823-4cbe87399c13",
+    "name": "Specify other points you kept in a mind while feed the child",
+    "dataType":"Text"
+  },
+  {
+    "name": "Do you give complementary food along with breast feeding",
+    "uuid": "df49722d-6ea2-405c-a109-7bcd2f6cf9db",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "d064ae09-c016-4761-b65e-56473cb4c1c5",
+    "name": "Twice in a day"
+  },
+  {
+    "uuid": "f662c7ef-52ca-4139-bfd9-2b446615a5cd",
+    "name": "Once in a day"
+  },
+
+  
+  {
+    "name": "If yes, then when do you breastfeed to your child",
+    "uuid": "aec3ddd6-b773-4e36-9ab1-9ed33d0eaaec",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "6b717a67-38a4-40b3-b979-ee3f730f2a1b",
+        "name": "Every 2 hours"
+      },
+      {
+        "uuid": "51623840-f5a0-4d12-81e1-3afa1dab7e69",
+        "name": "Every 3 to 4 hours"
+      },
+      {
+        "uuid": "d064ae09-c016-4761-b65e-56473cb4c1c5",
+        "name": "Twice in a day"
+      },
+      {
+        "uuid": "f662c7ef-52ca-4139-bfd9-2b446615a5cd",
+        "name": "Once in a day"
+      },
+      {
+        "uuid": "451de6f0-b3aa-4eda-91b0-ae811befcebf",
+        "name": "Till child's demand"
+      }
+    ]
+  },
+  {
+    "uuid": "441be07c-3453-4038-a7e0-8507ebfab549",
+    "name": "If not, why not",
+    "dataType":"Text"
+    
+  },  
+  {
+    "uuid": "ac5c25ba-30ef-4b3f-9714-f0410093dbdb",
+    "name": "Washing hands before eating"
+  },
+  {
+    "uuid": "d968ed48-5668-4034-a912-36fb07b1504d",
+    "name": "Washing hands after using toilet"
+  },
+  {
+    "uuid": "e17c5afe-74e9-4388-b8ad-a08d2149a22f",
+    "name": "Washing hands after come back from outside"
+  },
+  {
+    "uuid": "696f127f-b91b-413c-9f30-0b10721ae34d",
+    "name": "Don't wash hand"
+  },
+  {
+    "name": "When do you wash child’s hand",
+    "uuid": "ff93d79e-299a-499b-a5af-2bc74a2267a7",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ac5c25ba-30ef-4b3f-9714-f0410093dbdb",
+        "name": "Washing hands before eating"
+      },
+      {
+        "uuid": "d968ed48-5668-4034-a912-36fb07b1504d",
+        "name": "Washing hands after using toilet"
+      },
+      {
+        "uuid": "e17c5afe-74e9-4388-b8ad-a08d2149a22f",
+        "name": "Washing hands after come back from outside"
+      },
+      {
+        "uuid": "696f127f-b91b-413c-9f30-0b10721ae34d",
+        "name": "Don't wash hand"
+      }
+    ]
+  },
+  {
+    "uuid": "f75e6020-ce0a-46b9-ba53-13c2b31c4a23",
+    "name": "If yes, what do you cook from it",
+    "dataType":"Text"
+  }  
 ]
