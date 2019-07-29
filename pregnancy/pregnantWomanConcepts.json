@@ -6,7 +6,11 @@
     "unit": "month"
   },
   {
-    "name": "Is pregnancy registered",
+    "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+    "name": "Don't remember"
+  },
+  {
+    "name": "Have you registered pregnancy",
     "uuid": "c47e8f81-0b9d-4772-a49a-ad2b7aecc04a",
     "dataType": "Coded",
     "answers": [
@@ -26,7 +30,7 @@
   },
  
   {
-    "name": "Pregnancy registered to",
+    "name": "Where/Whom to registered your pregnancy",
     "uuid": "17b01907-dab2-4c56-8c69-1f9e801aac33",
     "dataType": "Coded",
     "answers": [
@@ -59,7 +63,7 @@
   },
   {
     "uuid": "35d093ed-dba4-4d80-9367-ced6f315d240",
-    "name": "Other pregnancy registered to",
+    "name": "Specify Other, pregnancy registered to where/whom",
     "dataType": "Text"
   },
   {
@@ -95,7 +99,7 @@
   },
   
   {
-    "name": "Investigation done by",
+    "name": "Who did you get the investigation",
     "uuid": "e8eb0140-1cb6-4900-a60e-61a055c440d0",
     "dataType": "Coded",
     "answers": [
@@ -109,7 +113,12 @@
       },
       {
         "uuid": "a824c362-dc01-430e-8287-add2c813a1a4",
-        "name": "ANC"
+        "name": "ANC",
+        "voided": true
+      },
+      {
+        "uuid": "89741af9-598c-434c-94e3-2f1a086e540c",
+        "name": "ASHA"
       },
       {
         "name": "Other",
@@ -125,73 +134,155 @@
   },
   {
     "uuid": "5639c89b-fd08-4b36-b4df-3fde674c1369",
-    "name": "Weight measurement"
-  },
-  {
-    "uuid": "e0601492-f887-4858-a441-23f82f6f960c",
-    "name": "BP measurement"
-  },
-  {
-    "uuid": "5e67ae33-3202-43c7-ab8b-bb59f0c30475",
-    "name": "TT vaccines"
-  },
-  {
-    "uuid": "e71ed526-d852-45e0-884f-72711dfb7591",
-    "name": "Blood test"
-  },
-  {
-    "uuid": "efe33b08-58f3-4c4f-aef9-feedca53b8f4",
-    "name": "Urine test"
-  },
-  {
-    "uuid": "272f563a-0d05-4193-bdcc-36398c842001",
-    "name": "Calcium supplement"
-  },
-  {
-    "uuid": "726097dc-10d6-47a1-85a1-9c5c2e625ecb",
-    "name": "Ultrasound scan"
-  },
-  {
-    "uuid": "7e67e0c1-67ad-4ef6-a213-a29ca4885b3b",
-    "name": "Abdominal check-ups"
-  },
-  {
-    "name": "Services received during antenatal check-ups",
-    "uuid": "52e6d4ea-390c-4335-9f0c-f8fdf360193e",
+    "name": "Weight measurement",
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "5639c89b-fd08-4b36-b4df-3fde674c1369",
-        "name": "Weight measurement"
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
       },
       {
-        "uuid": "e0601492-f887-4858-a441-23f82f6f960c",
-        "name": "BP measurement"
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       },
       {
-        "uuid": "5e67ae33-3202-43c7-ab8b-bb59f0c30475",
-        "name": "TT vaccines"
-      },
-      {
-        "uuid": "e71ed526-d852-45e0-884f-72711dfb7591",
-        "name": "Blood test"
-      },
-      {
-        "uuid": "efe33b08-58f3-4c4f-aef9-feedca53b8f4",
-        "name": "Urine test"
-      },
-      {
-        "uuid": "272f563a-0d05-4193-bdcc-36398c842001",
-        "name": "Calcium supplement"
-      },
-      {
-        "uuid": "726097dc-10d6-47a1-85a1-9c5c2e625ecb",
-        "name": "Ultrasound scan"
-      },
-      {
-        "uuid": "7e67e0c1-67ad-4ef6-a213-a29ca4885b3b",
-        "name": "Abdominal check-ups"
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
       }
+    ]
+  },
+  {
+    "uuid": "e0601492-f887-4858-a441-23f82f6f960c",
+    "name": "BP measurement",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
+      }
+    ]
+  },
+  {
+    "uuid": "5e67ae33-3202-43c7-ab8b-bb59f0c30475",
+    "name": "TT vaccines",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
+      }
+    ]
+  },
+  {
+    "uuid": "e71ed526-d852-45e0-884f-72711dfb7591",
+    "name": "Blood test",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
+      }
+    ]
+  },
+  {
+    "uuid": "efe33b08-58f3-4c4f-aef9-feedca53b8f4",
+    "name": "Urine test",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
+      }
+    ]
+  },
+  {
+    "uuid": "272f563a-0d05-4193-bdcc-36398c842001",
+    "name": "Calcium supplement",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
+      }
+    ]
+  },
+  {
+    "uuid": "726097dc-10d6-47a1-85a1-9c5c2e625ecb",
+    "name": "Ultrasound scan",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
+      }
+    ]
+  },
+  {
+    "uuid": "7e67e0c1-67ad-4ef6-a213-a29ca4885b3b",
+    "name": "Abdominal check-ups",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
+      }
+    ]
+  },
+  {
+    "uuid": "6e1162e6-017a-4f85-81c1-19002e07e9b4",
+    "name": "IFA tablets",
+    "dataType": "Coded",
+    "answers": [
+    {
+      "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+    },
+    {
+      "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+    },
+    {
+      "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+      "name": "Don't remember"
+    }
     ]
   },
   {
@@ -205,7 +296,7 @@
     "dataType": "Numeric"
   },
   {
-    "name": "Number of TT vaccines given",
+    "name": "Got TT vaccines",
     "uuid": "c7112e18-2e4c-459f-a41d-d34a9db84b61",
     "dataType": "Numeric"
   },
@@ -220,7 +311,7 @@
     "dataType": "Numeric"
   },
   {
-    "name": "Number of Calcium supplement given",
+    "name": "Have got Calcium supplement",
     "uuid": "23cce3c9-ec58-451f-9f64-cfb219b0f6e2",
     "dataType": "Numeric"
   },
@@ -230,16 +321,12 @@
     "dataType": "Numeric"
   },
   {
-    "name": "Number of time abdominal check-ups,",
+    "name": "Number of time abdominal check-ups",
     "uuid": "99b9869f-f869-42f1-abfc-3f58ffe8f353",
     "dataType": "Numeric"
   },
   {
-    "uuid": "6e1162e6-017a-4f85-81c1-19002e07e9b4",
-    "name": "IFA tablets"
-  },
-  {
-    "name": "Services availed in previous pregnancy",
+    "name": "Which are the services you availed in previous pregnancy",
     "uuid": "52e6d4ea-390c-4335-9f0c-f8fdf360193e",
     "dataType": "Coded",
     "answers": [
@@ -281,10 +368,7 @@
       }
     ]
   },
-  {
-    "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
-    "name": "Don't remember"
-  },
+  
   {
     "name": "Received IFA tablets at every month",
     "uuid": "b0e07ff5-d33e-42c7-b1d4-40dbb2729392",
@@ -299,7 +383,7 @@
     ]
   },
   {
-    "name": "Number of IFA pills",
+    "name": "Number of IFA pills (every month)",
     "uuid": "a143b7c7-809c-4f6c-bc9b-560ee87a6874",
     "dataType": "Numeric"
   },
@@ -374,7 +458,7 @@
     "name": "At morning with empty stomach"
   },
   {
-    "name": "Time when IFA tablet consumed",
+    "name": "When do you consume IFA tablet",
     "uuid": "dd412207-d919-42e4-899d-1684c6675d41",
     "dataType": "Coded",
     "answers": [
@@ -410,7 +494,7 @@
   },
   {
     "uuid": "e8341f8c-1c16-4315-8027-f2107386d96b",
-    "name": "side effects"
+    "name": "Side effects"
   },
   {
     "uuid": "0d9130ef-633f-4181-ae20-2faa31bb4f76",
@@ -435,7 +519,7 @@
       },
       {
         "uuid": "e8341f8c-1c16-4315-8027-f2107386d96b",
-        "name": "side effects"
+        "name": "Side effects"
       },
       {
         "uuid": "0d9130ef-633f-4181-ae20-2faa31bb4f76",

@@ -22,11 +22,6 @@ class LactatingMotherEnrolmentViewHandler {
             .getFormElementsStatusesWithoutDefaults(new LactatingMotherEnrolmentViewHandler(), programEnrolment, formElementGroup, today);
     } 
 
-    getYoungestChildAgeInMonths(dateOfBirth,today)  {
-        // let dateOfBirth = new programEnrolment.findObservationInEntireEnrolment('Age of youngest child');
-        return lib.C.getAgeInMonths(dateOfBirth,today);
-    }
-
     @WithName('Reason for not having mamta card')
     @statusBuilder
     ac11([], statusBuilder) {

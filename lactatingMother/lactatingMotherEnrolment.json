@@ -540,8 +540,9 @@
             "uuid": "5cdbfc85-cf5a-48e3-81ed-352940475141"
           },
           "displayOrder": 6,
-          "mandatory": true
+          "mandatory": false
         },
+
         {
           "name": "How much quantity of Wheat you get? (Check snacks)",
           "uuid": "92b935b9-41ab-4cd7-809c-11172d11ab70",
@@ -562,7 +563,7 @@
             "uuid": "6488ba4d-9e30-4a16-92ea-f6a6d0351cb7"
           },
           "displayOrder":8 ,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How much quantity of Pulse you get? (Check snacks)",
@@ -584,7 +585,7 @@
             "uuid": "9707a83e-5999-42d1-ad22-5bd266149915"
           },
           "displayOrder":10,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How much quantity of Salt you get? (Check snacks)",
@@ -606,7 +607,7 @@
             "uuid": "531d2956-3656-4bfb-a5cf-fb64417c866b"
           },
           "displayOrder":12 ,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "If yes, what do you cook from it",
