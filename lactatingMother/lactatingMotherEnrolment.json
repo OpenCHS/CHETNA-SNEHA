@@ -210,6 +210,28 @@
           "mandatory": true
         },
         {
+          "name": "What types of complementary food should be given to the child",
+          "uuid": "c0298631-a3ae-4345-9be5-6670bf63d824",
+          "keyValues": [],
+          "concept": {
+            "name": "What types of complementary food should be given to the child",
+            "uuid": "6d5a9fdc-4e64-452a-92f1-20c9fdca5f1f"
+          },
+          "displayOrder":7.1,
+          "mandatory": true
+        },
+        {
+          "name": "Specify Other types of complementary food that should be given to the child",
+          "uuid": "366255f2-2325-46dd-9b9f-e901e9473977",
+          "keyValues": [],
+          "concept": {
+            "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
+            "name": "Specify Other types of complementary food that should be given to the child"
+          },
+          "displayOrder":7.2,
+          "mandatory": false
+        },
+        {
           "name": "What should be kept in mind when preparing a food for child",
           "uuid": "1ba1e5b3-fd18-4720-b944-652fabd190a2",
           "type": "MultiSelect",
@@ -220,6 +242,17 @@
           },
           "displayOrder":8,
           "mandatory": true
+        },
+        {
+          "name": "Specify other things that should be kept in mind while preparing food",
+          "uuid": "ed21c064-2f81-4059-88b1-1caa076cbfc5",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c0b0e549-d209-4754-87bf-9b5f547a57d8",
+            "name": "Specify other things that should be kept in mind while preparing food"
+          },
+          "displayOrder": 8.2,
+          "mandatory": false
         },
         {
           "name": "What should be kept in mind while feed the child",
@@ -234,27 +267,14 @@
           "mandatory": true
         },
         {
-          "name": "What types of complementary food should be given to the child",
-          "uuid": "448718d7-9513-43f8-8bc1-7da5d2bbb057",
-          "type": "MultiSelect",
+          "name": "Specify other things that should be kept in mind while feed the child",
+          "uuid": "59771259-cf11-4eda-9f05-03f6e9fdf3e3",
           "keyValues": [],
           "concept": {
-            "name": "What types of complementary food should be given to the child",
-            "uuid": "6d5a9fdc-4e64-452a-92f1-20c9fdca5f1f"
+            "uuid": "da907a63-1b50-4893-aa22-965a68ccabfe",
+            "name": "Specify other things that should be kept in mind while feed the child"
           },
-          "displayOrder":10,
-          "mandatory": true
-        },
-        {
-          "name": "Specify Other types of complementary food that should be given to the child",
-          "uuid": "c51fb5c6-4895-4749-87c8-17409d505c9c",
-          "keyValues": [],
-          "concept": {
-            "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-            "name": "Specify Other types of complementary food that should be given to the child"
-
-          },
-          "displayOrder":11,
+          "displayOrder":9.1 ,
           "mandatory": false
         }
       ]

@@ -283,6 +283,21 @@ class LactatingMotherEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
 
+
+    @WithName('Specify other things that should be kept in mind while feed the child')
+    @statusBuilder
+    ac49([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What should be kept in mind while feed the child")
+        .containsAnswerConceptName("Other");
+    }
+
+    @WithName('Specify other things that should be kept in mind while preparing food')
+    @statusBuilder
+    ac50([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What should be kept in mind when preparing a food for child")
+        .containsAnswerConceptName("Other");
+    }
+
 }
 
 module.exports = {LactatingMotherEnrolmentViewHandler};

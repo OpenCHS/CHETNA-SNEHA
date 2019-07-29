@@ -506,5 +506,15 @@
     "uuid": "f75e6020-ce0a-46b9-ba53-13c2b31c4a23",
     "name": "If yes, what do you cook from it",
     "dataType":"Text"
-  }  
+  } , 
+  {
+    "uuid": "c0b0e549-d209-4754-87bf-9b5f547a57d8",
+    "name": "Specify other things that should be kept in mind while preparing food",
+    "dataType":"Text"
+  },
+  {
+    "uuid": "da907a63-1b50-4893-aa22-965a68ccabfe",
+    "name": "Specify other things that should be kept in mind while feed the child",
+    "dataType":"Text"
+  }
 ]
