@@ -11,16 +11,21 @@ const statusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formEl
 const LactatingMotherViewFilter = RuleFactory("96dae617-1b01-4de7-a783-627e2a78277c", "ViewFilter");
 
 const getYoungestChildAgeInMonths = (programEnrolment) => {
-    dateOfBirth = programEnrolment.getObservationValue('Age of youngest child');
-    return lib.C.getAgeInMonths(dateOfBirth);
+    const dateOfBirth = programEnrolment.getObservationValue('Age of youngest child');
+    return lib.C.getAgeInMonths(dateOfBirth, new Date());
 };
 
 @LactatingMotherViewFilter("fd094c45-c402-46b0-a249-95a68de2b052", "Lactating Mother Enrolment", 100.0, {})
 class LactatingMotherEnrolmentViewHandler {
-    static exec(programEnrolment, formElementGroup) {
+    static exec(programEnrolment, formElementGroup, today) {
         return FormElementsStatusHelper
-            .getFormElementsStatusesWithoutDefaults(new LactatingMotherEnrolmentViewHandler(), programEnrolment, formElementGroup);
+            .getFormElementsStatusesWithoutDefaults(new LactatingMotherEnrolmentViewHandler(), programEnrolment, formElementGroup, today);
     } 
+
+    getYoungestChildAgeInMonths(dateOfBirth,today)  {
+        // let dateOfBirth = new programEnrolment.findObservationInEntireEnrolment('Age of youngest child');
+        return lib.C.getAgeInMonths(dateOfBirth,today);
+    }
 
     @WithName('Reason for not having mamta card')
     @statusBuilder
@@ -41,72 +46,67 @@ class LactatingMotherEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("What types of complementary food should be given to the child")
         .containsAnswerConceptName("Other");
     }
-    
-    // @WithName('Till which age your child has breastfed exclusively')
-    // @statusBuilder
-    // ac14([], statusBuilder) {
-    //    // statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);      
-    // }
+
 
     @WithName('When did you give water to the child')
     @statusBuilder
-    ac15([], statusBuilder) {
-       statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac15([programEnrolment], statusBuilder) {
+    statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('When did you start giving complementary food to the child')
     @statusBuilder
-    ac16([], statusBuilder) {
-         statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac16([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
     
 
     @WithName('Who has taken decision to start complementary food to the child')
     @statusBuilder
-    ac17([], statusBuilder) {
-        statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac17([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('What type of food do you give to the child as complementary food')
     @statusBuilder
-    ac18([], statusBuilder) {
-        statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac18([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('How much do you give complementary food to the child')
     @statusBuilder
-    ac19([], statusBuilder) {
-        statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac19([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('How often do you give complementary food to the children')
     @statusBuilder
-    ac20([], statusBuilder) {
-        statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac20([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('What are the points you kept in a mind while preparing a food for the child')
     @statusBuilder
-    ac21([], statusBuilder) {
-        statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac21([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('Do you give complementary food along with breast feeding')
     @statusBuilder
-    ac22([], statusBuilder) {
-        statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac22([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('When do you wash child’s hand')
     @statusBuilder
-    ac23([], statusBuilder) {
-        statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac23([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('What are the points you kept in a mind while feed the child')
     @statusBuilder
-    ac44([], statusBuilder) {
-        statusBuilder.show().whenItem(getYoungestChildAgeInMonths).is.greaterThanOrEqualTo(6);
+    ac44([programEnrolment, today], statusBuilder) {
+        statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
     @WithName('If yes, what do you get')

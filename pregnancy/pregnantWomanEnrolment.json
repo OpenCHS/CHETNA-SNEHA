@@ -185,7 +185,7 @@
           "mandatory": true
         },
         {
-          "name": "Number of live children you have",
+          "name": "How many live children do you have?",
           "uuid": "2b55d041-b6ff-4f54-a631-4e591c96daaa",
           "keyValues": [],
           "concept": {
@@ -196,7 +196,7 @@
           "mandatory": true
         },
         {
-          "name": "Age of youngest child",
+          "name": "How old is your youngest child?",
           "uuid": "f622d7a0-f16e-4171-8613-21436ecce87f",
           "keyValues": [
             {
@@ -783,7 +783,7 @@
           "mandatory": true
         },
         {
-          "name": "How many times did you get this food in the last month?",
+          "name": "How many times did you get this food in the last month",
           "uuid": "4f9bb856-62bf-4432-8a17-137506a57bf7",
           "keyValues": [],
           "concept": {           
@@ -794,7 +794,7 @@
           "mandatory": true
         },
         {
-          "name": "Have you got any benefits of government programme/scheme?",
+          "name": "Have you got any benefits of government programme/scheme",
           "uuid": "2dbf5afe-febe-4be9-9b8c-4e813224626b",
           "type":"SingleSelect",
           "keyValues": [],
@@ -806,7 +806,7 @@
           "mandatory": true
         },
         {
-          "name": "Who gave you information about government programme/scheme?",
+          "name": "Who gave you information about government programme/scheme",
           "uuid": "78c60876-b50e-4a86-9cc1-88a4641b6b79",
           "type":"MultiSelect",
           "keyValues": [],
@@ -830,7 +830,7 @@
           "mandatory": false
         },
         {
-          "name": "Under which government programme/scheme you got entitlements?",
+          "name": "Under which government programme/scheme you got entitlements",
           "uuid": "6535fe85-952c-4f47-9c57-ae8b1ca5b730",
           "type":"MultiSelect",
           "keyValues": [],
@@ -842,7 +842,7 @@
           "mandatory": true
         },
         {
-          "name": "Why you did not get benefits?",
+          "name": "Why you did not get benefits",
           "uuid": "fc79f5ad-b9ed-4705-b200-f4e324744343",
           "type":"SingleSelect",
           "keyValues": [],
@@ -970,7 +970,7 @@
           "mandatory": false
         },
         {
-          "name": "How often food should be given to the child? (Use bowl and ask the quantity and frequency of food)",
+          "name": "How often food should be given to the child",
           "uuid": "7f5e69aa-a258-4043-859b-f8a16bc89205",
           "type": "SingleSelect",
           "keyValues": [],
