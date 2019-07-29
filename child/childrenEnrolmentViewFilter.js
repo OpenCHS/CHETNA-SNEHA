@@ -5,7 +5,7 @@ import {
     WithName
 } from 'rules-config/rules';
 
-const WithRegistrationStatusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
+const statusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
 const ChildrenViewFilter = RuleFactory("d440e0b4-a404-4bdf-ba5e-f1e5d5cf5cc0", "ViewFilter");
 
 @ChildrenViewFilter("1ad42aa1-1f1c-4b6b-accd-efbacee8e754", "Children Enrolment", 100.0, {})
@@ -17,46 +17,78 @@ class ChildrenEnrolmentViewHandler {
 
    
     @WithName('What was the sickness')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     ab11([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Did child fall a sick in the last 3 months")
         .is.yes;
-    }  
- 
+    }   
 
     @WithName('Do you breastfeed when a child is sick')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     ab12([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.lessThan(6);
+        statusBuilder.show().when.ageInMonths.is.lessThanOrEqualTo(6);
+    }
+
+    @WithName('Do you give food when a child is sick')
+    @statusBuilder
+    ab121([], statusBuilder) {
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+    }
+
+    @WithName('What do you feed to the child')
+    @statusBuilder
+    ab123([], statusBuilder) {
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+    }
+
+    @WithName('Does child demand more food after sickness')
+    @statusBuilder
+    ab124([], statusBuilder) {
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+    }
+
+    @WithName('Do you feed more food to your child after illness')
+    @statusBuilder
+    ab125([], statusBuilder) {
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+    }
+
+    @WithName('Does your child go to the Anganwadi center regularly')
+    @statusBuilder
+    ab17([], statusBuilder) {
+        statusBuilder.show().when.ageInYears.greaterThanOrEqualTo(3);
     }
 
     @WithName('If yes, then what do you get in the snacks')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     ab13([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Does the child get snacks as Take Home Ration from Anganwadi regularly")
         .is.yes;
     } 
     
     @WithName('If no than why')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     ab14([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Does your child go to the Anganwadi center regularly")
         .is.no;
     } 
 
     @WithName('Specify other reason for not going to Anganwadi center regularly')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     ab15([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("If no than why")
         .containsAnswerConceptName("Other");
     } 
 
     @WithName('Specify other treatment given')
-    @WithRegistrationStatusBuilder
+    @statusBuilder
     ab16([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What was the treatment")
         .containsAnswerConceptName("Other");
     } 
+  
+
+   
 }
 
 module.exports = {ChildrenEnrolmentViewHandler};

@@ -117,7 +117,7 @@
           "mandatory": true
         },
         {
-          "name": "Does child demand more food after sickness?",
+          "name": "Does child demand more food after sickness",
           "uuid": "5f3cf62a-817b-48a6-aab8-6963b796992e",
           "keyValues": [],
           "concept": {
@@ -128,7 +128,7 @@
           "mandatory": true
         },
         {
-          "name": "Do you feed more food to your child after illness?",
+          "name": "Do you feed more food to your child after illness",
           "uuid": "051718e5-5edc-4ddc-9ab7-667c2397d03b",
           "keyValues": [],
           "concept": {
@@ -147,7 +147,7 @@
       "displayOrder":3 ,
       "formElements": [
         {
-          "name": "Is the child suffered warm infestation?",
+          "name": "Is the child suffered warm infestation",
           "uuid": "124cf26e-95d8-4847-bdcb-c1b7714009e4",
           "keyValues": [],
           "concept": {
@@ -158,7 +158,7 @@
           "mandatory": true
         },
         {
-          "name": "What was the treatment?",
+          "name": "What was the treatment",
           "uuid": "1dd530cf-a191-4459-9e0c-fc7b06a9bef1",
           "keyValues": [],
           "concept": {
@@ -189,7 +189,7 @@
       "displayOrder": 4,
       "formElements": [
         {
-          "name": "Does child register in anganwadi center?",
+          "name": "Does child register in anganwadi center",
           "uuid": "12e0f90b-dd2d-440a-804f-918c7d6ed754",
           "keyValues": [],
           "concept": {
@@ -222,7 +222,7 @@
           "mandatory": true
         },
         {
-          "name": "What do you cook from that snacks for a child?",
+          "name": "What do you cook from that snacks for a child",
           "uuid": "7b98345f-a004-4f23-81d6-e5b061ea15b0",
           "keyValues": [],
           "concept": {
