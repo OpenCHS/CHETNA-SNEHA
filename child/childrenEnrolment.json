@@ -62,11 +62,11 @@
           "mandatory": true
         },
         {
-          "name": "Did child fall a sick in the last 3 months",
+          "name": "Did child fall sick in the last 3 months",
           "uuid": "2eccc7d5-810b-4710-9fbf-af36a7e1867e",
           "keyValues": [],
           "concept": {
-            "name": "Did child fall a sick in the last 3 months",
+            "name": "Did child fall sick in the last 3 months",
             "uuid": "ba0cb62f-5487-4f5b-b769-79fca2b9f14a"
           },
           "displayOrder": 2,
@@ -233,34 +233,34 @@
           "mandatory": true
         },
         {
-          "name": "Does your child go to the Anganwadi center regularly",
+          "name": "Whether child goes to the Anganwadi centre regularly",
           "uuid": "ac2859c7-4e9b-4fe4-b85b-a9c073ef5097",
           "keyValues": [],
           "concept": {
-            "name": "Does your child go to the Anganwadi center regularly",
+            "name": "Whether child goes to the Anganwadi centre regularly",
             "uuid": "c9483833-fc57-4475-8128-dcb7aef559a9"
           },
           "displayOrder":5 ,
           "mandatory": true
         },
         {
-          "name": "If no than why",
+          "name": "Reason for not going to Anganwadi centre regularly",
           "uuid": "22b7b339-c99f-4378-be8d-5043e7c593ca",
           "keyValues": [],
           "concept": {
-            "name": "If no than why",
+            "name": "Reason for not going to Anganwadi centre regularly",
             "uuid": "6f5125a7-1e92-41d7-b1f7-c76e4d4d41f5"
           },
           "displayOrder": 6,
           "mandatory": true
         },
         {
-          "name": "Specify other reason for not going to Anganwadi center regularly",
+          "name": "Other reason for not going to Anganwadi centre regularly",
           "uuid": "44876f32-c6cc-41b8-8f94-5c699cf4c36d",
           "keyValues": [],
           "concept": {
             "uuid": "b8655b58-fc9b-4938-b4a5-395634c7c8f1",
-            "name": "Specify other reason for not going to Anganwadi center regularly"
+            "name": "Other reason for not going to Anganwadi centre regularly"
           },
           "displayOrder":7 ,
           "mandatory": true

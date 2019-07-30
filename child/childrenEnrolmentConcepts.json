@@ -30,7 +30,7 @@
     ]
   },
   {
-    "name": "Did child fall a sick in the last 3 months",
+    "name": "Did child fall sick in the last 3 months",
     "uuid": "ba0cb62f-5487-4f5b-b769-79fca2b9f14a",
     "dataType": "Coded",
     "answers": [
@@ -218,7 +218,7 @@
     "dataType":"Text"
   },
   {
-    "name": "Does your child go to the Anganwadi center regularly",
+    "name": "Whether child goes to the Anganwadi centre regularly",
     "uuid": "c9483833-fc57-4475-8128-dcb7aef559a9",
     "dataType": "Coded",
     "answers": [
@@ -255,7 +255,7 @@
     "name": "Safety issue"
   },
   {
-    "name": "If no than why",
+    "name": "Reason for not going to Anganwadi centre regularly",
     "uuid": "6f5125a7-1e92-41d7-b1f7-c76e4d4d41f5",
     "dataType": "Coded",
     "answers": [
@@ -291,7 +291,7 @@
   },
   {
     "uuid": "b8655b58-fc9b-4938-b4a5-395634c7c8f1",
-    "name": "Specify other reason for not going to Anganwadi center regularly",
+    "name": "Other reason for not going to Anganwadi centre regularly",
     "dataType":"Text"
   } 
 ]
