@@ -400,7 +400,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique":true
       }
     ]
   },

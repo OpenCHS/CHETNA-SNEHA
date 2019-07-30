@@ -56,8 +56,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },
@@ -122,8 +121,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },
@@ -414,8 +412,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },
@@ -599,14 +596,9 @@
       {
         "name": "Other",
         "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "voided": true
       }
     ]
-  },
-  {
-    "uuid": "2f3f4973-4e6e-48e2-acbe-41d060cb9f83",
-    "name": "Specify ,Other place you will do your delivery",
-    "dataType": "Text"
   },
   {
     "uuid": "33e308da-1edf-4609-9bd6-d5c7d265d109",
@@ -647,8 +639,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },
@@ -717,8 +708,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },
@@ -746,8 +736,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },
@@ -803,9 +792,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
-      
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"      
       }
     ]
   },
@@ -882,8 +869,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },
@@ -982,8 +968,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },

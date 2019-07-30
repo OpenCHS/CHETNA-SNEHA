@@ -45,7 +45,12 @@
         {
           "name": "EDD",
           "uuid": "7cd14e43-33c9-488d-a717-23d0a602eebb",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
           "concept": {
             "name": "Estimated Date of Delivery",
             "uuid": "dde911fa-15eb-4564-8deb-bba46e9d3744"
@@ -211,7 +216,7 @@
             "uuid": "305f693c-c8b6-4e3e-9a82-a6e91a3e462f"
           },
           "displayOrder":3,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -371,18 +376,6 @@
       "display": "Services Received in Previous Pregnancy",
       "displayOrder": 6,
       "formElements": [
-        {
-          "name": "Which are the services you availed in previous pregnancy",
-          "uuid": "55ee278c-0588-4e84-8e99-4be0440ad0ee",
-          "type":"MultiSelect",
-          "keyValues": [],
-          "concept": {
-            "name": "Which are the services you availed in previous pregnancy",
-            "uuid": "52e6d4ea-390c-4335-9f0c-f8fdf360193e"
-          },
-          "displayOrder":1,
-          "mandatory": true
-        },
         {
           "name": "Weight measurement",
           "uuid": "b7482f7b-2178-4576-aeed-2f6b39c4e61f",
@@ -617,18 +610,6 @@
           "mandatory": true
         },
         {
-          "name": "Specify ,Other place you will do your delivery",
-          "uuid": "041d1bbd-c11b-4654-854f-ce68ad6e1cad",
-          "keyValues": [],
-          "concept": {
-            "uuid": "2f3f4973-4e6e-48e2-acbe-41d060cb9f83",
-            "name": "Specify ,Other place you will do your delivery"
-
-          },
-          "displayOrder":4,
-          "mandatory": false
-        },
-        {
           "name": "Reasons to choose this place for delivery",
           "uuid": "2e6b50af-1955-4439-9758-643b5d78cabd",
           "type":"MultiSelect",
@@ -799,7 +780,7 @@
             "uuid": "5cdbfc85-cf5a-48e3-81ed-352940475141"
           },
           "displayOrder": 19,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How much quantity of Wheat you get? (Check snacks)",
@@ -822,7 +803,7 @@
             "uuid": "6488ba4d-9e30-4a16-92ea-f6a6d0351cb7"
           },
           "displayOrder":21 ,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How much quantity of Pulse you get? (Check snacks)",
@@ -845,7 +826,7 @@
             "uuid": "9707a83e-5999-42d1-ad22-5bd266149915"
           },
           "displayOrder":23 ,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How much quantity of Salt you get? (Check snacks)",
@@ -868,7 +849,7 @@
             "uuid": "531d2956-3656-4bfb-a5cf-fb64417c866b"
           },
           "displayOrder":24.1 ,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How many times do you get this snack/nutrition in the month",

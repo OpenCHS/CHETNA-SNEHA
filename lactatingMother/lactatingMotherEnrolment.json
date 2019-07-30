@@ -419,7 +419,7 @@
         {
           "name": "What are the points you kept in a mind while feed the child",
           "uuid": "22028277-a9bd-4b28-8a33-438b882532a6",
-          "type":"SingleSelect",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "What are the points you kept in a mind while feed the child",

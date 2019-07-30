@@ -52,12 +52,12 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     } 
 
-    @WithName('Specify ,Other place you will do your delivery')
-    @statusBuilder
-    a15([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("At which place you will do your delivery")
-        .containsAnswerConceptName("Other");
-    } 
+    // @WithName('Specify ,Other place you will do your delivery')
+    // @statusBuilder
+    // a15([], statusBuilder) {
+    //     statusBuilder.show().when.valueInEnrolment("At which place you will do your delivery")
+    //     .containsAnswerConceptName("Other");
+    // } 
 
     @WithName('Specify, Other reasons to choose place of delivery')
     @statusBuilder
@@ -185,69 +185,6 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1)
         .and.when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no;
     }  
-
-    @WithName('Weight measurement')
-    @statusBuilder
-    a45([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("Weight measurement");
-    }
-    
-    @WithName('BP measurement')
-    @statusBuilder
-    a46([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("BP measurement");
-    }
-
-    @WithName('TT vaccines')
-    @statusBuilder
-    a47([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("TT vaccines");
-    }
-
-    @WithName('Blood test')
-    @statusBuilder
-    a48([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("Blood test");
-    }
-
-    @WithName('Urine test')
-    @statusBuilder
-    a49([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("Urine test");
-    }
-
-    @WithName('IFA tablets')
-    @statusBuilder
-    a50([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("IFA tablets");
-    }
-
-    @WithName('Ultrasound scan')
-    @statusBuilder
-    a51([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("Ultrasound scan");
-    }
-
-    @WithName('Calcium supplement')
-    @statusBuilder
-    a52([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("Calcium supplement");
-    }
-
-    @WithName('Abdominal check-ups')
-    @statusBuilder
-    a53([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Which are the services you availed in previous pregnancy")
-        .containsAnswerConceptName("Abdominal check-ups");
-    }
 
     @WithName('Number of IFA pills (every month)')
     @statusBuilder
