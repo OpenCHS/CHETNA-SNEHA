@@ -465,12 +465,12 @@
           "mandatory": true
         },
         {
-          "name": "If not, why not",
+          "name": "If not, then why don't you give complementary food",
           "uuid": "d319cdaa-17f6-4020-b1bb-ddd761c055be",
           "keyValues": [],
           "concept": {
             "uuid": "441be07c-3453-4038-a7e0-8507ebfab549",
-            "name": "If not, why not"
+            "name": "If not, then why don't you give complementary food"
           },
           "displayOrder": 18,
           "mandatory": true
@@ -496,18 +496,18 @@
       "displayOrder": 4,
       "formElements": [
         {
-          "name": "Do you get snacks as Take home ration from Anganwadi centre",
+          "name": "Do you get snacks as take home ration from Anganwadi centre",
           "uuid": "851c8d52-cef9-4a3d-91cd-3469cc0ba67b",
           "type": "SingleSelect",
           "concept": {
-            "name": "Do you get snacks as Take home ration from Anganwadi centre",
+            "name": "Do you get snacks as take home ration from Anganwadi centre",
             "uuid": "095d492c-92da-4194-a130-bb48a64a2c02"
           },
           "displayOrder": 1,
           "mandatory": true
         },
          {
-          "name": "If yes, what do you get",
+          "name": "What do you get as a snacks",
           "uuid": "d02dcec2-3c49-437f-8ded-f1a1790f3f89",
           "type":"MultiSelect",
           "keyValues": [],

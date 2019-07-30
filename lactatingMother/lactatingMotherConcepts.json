@@ -71,7 +71,7 @@
     ]
   },
   {
-    "name": "Do you get snacks as Take home ration from Anganwadi centre",
+    "name": "Do you get snacks as take home ration from Anganwadi centre",
     "uuid": "095d492c-92da-4194-a130-bb48a64a2c02",
     "dataType": "Coded",
     "answers": [
@@ -274,7 +274,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique":true
       }
     ]
   },
@@ -302,7 +303,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique":true
       }
     ]
   },
@@ -329,7 +331,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique":true
       }
     ]
   },
@@ -360,12 +363,12 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique": true
       }
     ]
   },
@@ -393,8 +396,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique" : true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       },
       {
         "name": "Don't know",
@@ -459,7 +461,7 @@
   },
   {
     "uuid": "441be07c-3453-4038-a7e0-8507ebfab549",
-    "name": "If not, why not",
+    "name": "If not, then why don't you give complementary food",
     "dataType":"Text"
     
   },  

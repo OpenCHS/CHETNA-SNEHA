@@ -12,7 +12,8 @@ const LactatingMotherViewFilter = RuleFactory("96dae617-1b01-4de7-a783-627e2a782
 
 const getYoungestChildAgeInMonths = (programEnrolment) => {
     const dateOfBirth = programEnrolment.getObservationValue('Age of youngest child');
-    return lib.C.getAgeInMonths(dateOfBirth, new Date());
+    if (!_.isNil(dateOfBirth))
+        return lib.C.getAgeInMonths(dateOfBirth, new Date());
 };
 
 @LactatingMotherViewFilter("fd094c45-c402-46b0-a249-95a68de2b052", "Lactating Mother Enrolment", 100.0, {})
@@ -104,17 +105,17 @@ class LactatingMotherEnrolmentViewHandler {
         statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
-    @WithName('If yes, what do you get')
+    @WithName('What do you get as a snacks')
     @statusBuilder
     ac24([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Do you get snacks as Take home ration from Anganwadi centre")
+        statusBuilder.show().when.valueInEnrolment("Do you get snacks as take home ration from Anganwadi centre")
         .is.yes;
     }
 
     @WithName('If yes, what do you cook from it')
     @statusBuilder
     acd24([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Do you get snacks as Take home ration from Anganwadi centre")
+        statusBuilder.show().when.valueInEnrolment("Do you get snacks as take home ration from Anganwadi centre")
         .is.yes;
     }
 
@@ -268,7 +269,7 @@ class LactatingMotherEnrolmentViewHandler {
         .is.yes;
     }
 
-    @WithName('If not, why not')
+    @WithName('If not, then why don\'t you give complementary food')
     @statusBuilder
     ac47([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you give complementary food along with breast feeding")
