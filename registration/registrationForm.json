@@ -91,6 +91,17 @@
           "mandatory": true
         },
         {
+          "name": "Total members in the family",
+          "uuid": "9286eed9-9e9d-4df1-add8-013353afe4e1",
+          "keyValues": [],
+          "concept": {
+            "name": "Total members in the family",
+            "uuid": "e0254e9a-3ec8-4efc-9857-921c5f3c9523"
+          },
+          "displayOrder":1.1,
+          "mandatory": true
+        },
+        {
           "name": "Total male members in the family",
           "uuid": "e37665a3-b5ff-445d-a215-69ef550b11b2",
           "keyValues": [],
@@ -137,19 +148,31 @@
           "mandatory": true
         },
         {
-          "name": "Do you work at home or earning money outside the home",
+          "name": "Involved in any occupational activity",
           "uuid": "59c43500-8b0a-4f5f-98f8-14dffd4dbf2b",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Do you work at home or earning money outside the home",
+            "name": "Involved in any occupational activity",
             "uuid": "784c7e5a-bf14-4ba5-8228-6451d06fecb4"
           },
           "displayOrder":6 ,
           "mandatory": true
         },
         {
-          "name": "If yes, What do you do",
+          "name": "Place for the occupational activity",
+          "uuid": "f2c2fcf3-d047-476c-bb4f-a75bc0a9304a",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Place for the occupational activity",
+            "uuid": "1d95de51-eb58-46ab-9ff6-c7592e9cd81c"
+          },
+          "displayOrder": 6.2,
+          "mandatory": true
+        },
+        {
+          "name": "In which occupational activity are you involved",
           "uuid": "f2c2fcf3-d047-476c-bb4f-a75bc0a9304a",
           "type":"MultiSelect",
           "keyValues": [],
@@ -203,7 +226,7 @@
           "mandatory": true
         },
         {
-          "name": "Where are you currently staying?",
+          "name": "Currently staying with",
           "uuid": "d13e1754-1662-4329-8c97-ee0e700fd484",
           "type": "SingleSelect",
           "keyValues": [],

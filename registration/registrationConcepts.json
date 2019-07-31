@@ -1,5 +1,21 @@
 [
   {
+    "name": "Separated with spouse",
+    "uuid": "757ec03f-27c7-4710-b242-a85180f60c32"
+  },
+  {
+    "name": "Marital status",
+    "uuid": "aa6687c9-ba4d-49a3-9b3e-bba266eb6f32",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Separated with spouse",
+        "uuid": "757ec03f-27c7-4710-b242-a85180f60c32"
+    
+      }
+    ]
+  },
+  {
     "uuid": "f44f1417-6a4a-41a0-ac0b-a5e4962260f9",
     "name": "Android phone"
   },
@@ -44,6 +60,11 @@
         "name": "Nuclear Family"
       }
     ]
+  },
+  {
+    "name": "Total members in the family",
+    "uuid": "e0254e9a-3ec8-4efc-9857-921c5f3c9523",
+    "dataType": "Numeric"
   },
   {
     "name": "Total male members in the family",
@@ -122,6 +143,10 @@
     ]
   },
   {
+    "name": "Incomplete primary education",
+    "uuid": "392337ff-9a70-496f-91dd-7aa2fd1e7ebb"
+  },
+  {
     "name": "Mother's education Level",
     "uuid": "ffd6b888-b2b5-4fcb-82fc-1f81c4c5e620",
     "dataType": "Coded",
@@ -131,13 +156,17 @@
       "uuid": "e7116c89-7fc5-406c-b2ab-c022fd84fb1a"
       },
       {
+        "name": "Incomplete primary education",
+        "uuid": "392337ff-9a70-496f-91dd-7aa2fd1e7ebb"
+      },
+      {
       "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
       "name": "Other"
       }
     ]
   } ,
   {
-    "name": "Do you work at home or earning money outside the home",
+    "name": "Involved in any occupational activity",
     "uuid": "784c7e5a-bf14-4ba5-8228-6451d06fecb4",
     "dataType": "Coded",
     "answers": [
@@ -171,8 +200,30 @@
         "name": "Selling vegetables or diferrent things"
       }
     ]
-  } 
-]
+  },
+  {
+    "uuid": "3897a413-f824-4517-b33e-9c0ffc6143b0",
+    "name": "From house"
+  },
+  {
+    "uuid": "a67ab2e7-1bb1-45a9-b40d-ac65f29581ed",
+    "name": "Outside the home"
+  },
+  {
+    "name": "Place for the occupational activity",
+    "uuid": "1d95de51-eb58-46ab-9ff6-c7592e9cd81c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3897a413-f824-4517-b33e-9c0ffc6143b0",
+        "name": "From house"
+      },
+      {
+        "uuid": "a67ab2e7-1bb1-45a9-b40d-ac65f29581ed",
+        "name": "Outside the home"
+      }
+    ]
+  }]
 
 
 

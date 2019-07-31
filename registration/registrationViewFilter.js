@@ -18,13 +18,13 @@ class ChetnaRegistrationViewHandler {
     @WithName('Education')
     @WithRegistrationStatusBuilder
     abc11([], statusBuilder) {
-        statusBuilder.skipAnswers('Uneducated');
+        statusBuilder.skipAnswers('Literate','Uneducated');
     }  
 
      @WithName('Marital status')
     @WithRegistrationStatusBuilder
     abc12([], statusBuilder) {
-        statusBuilder.skipAnswers('Remarried','Other');
+        statusBuilder.skipAnswers('Remarried','Other','Separated');
     }  
     
     @WithName('Age at marriage')
@@ -39,17 +39,23 @@ class ChetnaRegistrationViewHandler {
         statusBuilder.show().when.valueInRegistration("Marital status").containsAnswerConceptNameOtherThan("Unmarried");
     }  
 
-    @WithName('Where are you currently staying?')
+    @WithName('Currently staying with')
     @WithRegistrationStatusBuilder
     abc15([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Marital status").containsAnswerConceptNameOtherThan("Unmarried");
     }  
 
-    @WithName('If yes, What do you do')
+    @WithName('In which occupational activity are you involved')
     @WithRegistrationStatusBuilder
     abc16([], statusBuilder) {
-        statusBuilder.skipAnswers("Farming","Other","Don't know");
-        statusBuilder.show().when.valueInRegistration("Do you work at home or earning money outside the home").is.yes;
+        statusBuilder.skipAnswers("Farming","Other","Don't know",'Housework');
+        statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes;
+    } 
+
+    @WithName('Place for the occupational activity')
+    @WithRegistrationStatusBuilder
+    abc17([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes;
     } 
 }
 
