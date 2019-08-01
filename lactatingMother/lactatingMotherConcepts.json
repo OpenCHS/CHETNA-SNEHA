@@ -97,7 +97,7 @@
     ]
   },
   {
-    "name": "If yes, what do you use",
+    "name": "Method of contraception used",
     "uuid": "7491c731-9292-4d66-9c00-1b7fe6c2e02f",
     "dataType": "Coded",
     "answers": [
@@ -281,7 +281,7 @@
   },
   {
     "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-    "name": "Specify Other types of complementary food given to the child",
+    "name": "Other types of complementary food given to the child",
     "dataType": "Text"
   },
   {
@@ -374,7 +374,7 @@
   },
    {
     "uuid": "68437adf-35b1-4bad-b793-a9d4c6abf839",
-    "name": "Specify other points you kept in a mind while preparing a food for the child",
+    "name": "Other points you kept in a mind while preparing a food for the child",
     "dataType":"Text"
   },
   {
@@ -407,7 +407,7 @@
   },
   {
     "uuid": "00754cdd-7e55-49ae-a823-4cbe87399c13",
-    "name": "Specify other points you kept in a mind while feed the child",
+    "name": "Other points you kept in a mind while feed the child",
     "dataType":"Text"
   },
   {
@@ -434,7 +434,7 @@
 
   
   {
-    "name": "If yes, then when do you breastfeed to your child",
+    "name": "When do you breastfeed to your child",
     "uuid": "aec3ddd6-b773-4e36-9ab1-9ed33d0eaaec",
     "dataType": "Coded",
     "answers": [
@@ -462,7 +462,7 @@
   },
   {
     "uuid": "441be07c-3453-4038-a7e0-8507ebfab549",
-    "name": "If not, then why don't you give complementary food",
+    "name": "Why don't you give complementary food",
     "dataType":"Text"
     
   },  
@@ -507,17 +507,17 @@
   },
   {
     "uuid": "f75e6020-ce0a-46b9-ba53-13c2b31c4a23",
-    "name": "If yes, what do you cook from it",
+    "name": "What did you cook from the snacks received",
     "dataType":"Text"
   } , 
   {
     "uuid": "c0b0e549-d209-4754-87bf-9b5f547a57d8",
-    "name": "Specify other things that should be kept in mind while preparing food",
+    "name": "Other things that should be kept in mind while preparing food",
     "dataType":"Text"
   },
   {
     "uuid": "da907a63-1b50-4893-aa22-965a68ccabfe",
-    "name": "Specify other things that should be kept in mind while feed the child",
+    "name": "Other things that should be kept in mind while feed the child",
     "dataType":"Text"
   }
 ]

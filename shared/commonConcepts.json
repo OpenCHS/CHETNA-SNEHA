@@ -96,7 +96,7 @@
   },
   {
     "uuid": "b2789df2-9751-435a-974b-02f50d30f450",
-    "name": "Specify, Other reason of not having mamta card",
+    "name": "Other reason of not having mamta card",
     "dataType": "Text"
   },
   {
@@ -603,18 +603,18 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique" :true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique" :true
       }
     ]
   },
   {
     "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-    "name": "Specify Other types of complementary food that should be given to the child",
+    "name": "Other types of complementary food that should be given to the child",
     "dataType": "Text"
   },
   {
@@ -908,7 +908,7 @@
   },
 
   {
-    "name": "From where and by whom you got the information",
+    "name": "From where/whom information about contraception received",
     "uuid": "18ad6262-1688-48d4-a584-84958ebdeb0c",
     "dataType": "Coded",
     "answers": [
@@ -955,16 +955,15 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
 
     ]
   },
   {
     "uuid": "5cbcfde1-db48-4f24-a66d-c7416ec3237a",
-    "name": "Specify Other source from where and by whom you got the information",
-    "dataType": "Text"
+    "name": "Other source from where/whom information about contraception received",
+    "dataType":"Text"
   },
   {
     "uuid": "b89dee88-41e9-418b-8a0c-88e765110f1d",
@@ -1060,27 +1059,27 @@
     ]
   },
   {
-    "name": "Specify other quantity of Oil received",
+    "name": "Other quantity of Oil received",
     "uuid": "5cdbfc85-cf5a-48e3-81ed-352940475141",
     "dataType":"Text"
   },
   {
-    "name": "Specify other quantity of Wheat received",
+    "name": "Other quantity of Wheat received",
     "uuid": "6488ba4d-9e30-4a16-92ea-f6a6d0351cb7",
     "dataType":"Text"
   },
   {
-    "name": "Specify other quantity of Pulses received",
+    "name": "Other quantity of Pulses received",
     "uuid": "9707a83e-5999-42d1-ad22-5bd266149915",
     "dataType":"Text"
   },
   {
-    "name": "Specify other quantity of Salt received",
+    "name": "Other quantity of Salt received",
     "uuid": "531d2956-3656-4bfb-a5cf-fb64417c866b",
     "dataType":"Text"
   },
   {
-    "name": "Benefits of government programme/scheme received",
+    "name": "Got any benefits of government programme/scheme",
     "uuid": "defa9abf-0e40-4df8-b49a-c48ef52f6e0a",
     "dataType": "Coded",
     "answers": [
@@ -1108,7 +1107,7 @@
     "name": "Kasturba Poshan Sahay Yojana"
   },
   {
-    "name": "Programme/scheme Under which got entitlements",
+    "name": "Programme/scheme under which received entitlements",
     "uuid": "7cc5007f-ebc5-4b66-abd7-19231554422d",
     "dataType": "Coded",
     "answers": [
@@ -1147,7 +1146,7 @@
     "name": "Lack of information"
   },
   {
-    "name": "Reason for not getting benefits",
+    "name": "Reason for not getting benefits under government programme/scheme",
     "uuid": "e4ebdc27-6d52-47ce-86ad-4f9c63609c51",
     "dataType": "Coded",
     "answers": [

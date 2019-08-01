@@ -147,34 +147,34 @@
       "displayOrder":3 ,
       "formElements": [
         {
-          "name": "Is the child suffered warm infestation",
+          "name": "Did child suffer from warm infestation",
           "uuid": "124cf26e-95d8-4847-bdcb-c1b7714009e4",
           "keyValues": [],
           "concept": {
-            "name": "Is the child suffered warm infestation",
+            "name": "Did child suffer from warm infestation",
              "uuid": "57154ca9-f412-45ef-9923-611e266331ce"
           },
           "displayOrder": 1,
           "mandatory": true
         },
         {
-          "name": "What was the treatment",
+          "name": "Treatment given for warm infestation",
           "uuid": "1dd530cf-a191-4459-9e0c-fc7b06a9bef1",
           "keyValues": [],
           "concept": {
-            "name": "What was the treatment",
+            "name": "Treatment given for warm infestation",
             "uuid": "6c055b6b-eaa0-4f03-b660-5a9974c7b5ee"
           },
           "displayOrder":2 ,
           "mandatory": true
         },
         {
-          "name": "Specify other treatment given",
+          "name": "Other treatment given for warm infestation",
           "uuid": "ac68bf8c-7c1e-41a5-8a68-70225583d77f",
           "keyValues": [],
           "concept": {
             "uuid": "68948d10-4b52-47fc-a1bc-2ba86fbae451",
-            "name": "Specify other treatment given"
+            "name": "Other treatment given for warm infestation"
           },
           "displayOrder":3 ,
           "mandatory":true
@@ -189,29 +189,29 @@
       "displayOrder": 4,
       "formElements": [
         {
-          "name": "Does child register in anganwadi center",
+          "name": "Is child registerred in anganwadi centre",
           "uuid": "12e0f90b-dd2d-440a-804f-918c7d6ed754",
           "keyValues": [],
           "concept": {
-            "name": "Does child register in anganwadi center",
+            "name": "Is child registerred in anganwadi centre",
             "uuid": "dd8c46a3-5b76-4e4c-9547-79e2821ec702"
           },
           "displayOrder":1 ,
           "mandatory": true
         },
         {
-          "name": "Does the child get snacks as Take Home Ration from Anganwadi regularly",
+          "name": "Does the child get snacks as take home ration from Anganwadi regularly",
           "uuid": "4e1116a7-e7a4-4ee3-b47d-20b42eccc5c6",
           "keyValues": [],
           "concept": {
-            "name": "Does the child get snacks as Take Home Ration from Anganwadi regularly",
+            "name": "Does the child get snacks as take home ration from Anganwadi regularly",
             "uuid": "0686d1f3-8f38-4429-a5a1-1e70f4d120bd"
           },
           "displayOrder":2 ,
           "mandatory": true
         },
         {
-          "name": "If yes, then what do you get in the snacks",
+          "name": "What do you get as a snacks",
           "uuid": "d2a84838-9619-4b66-9859-8a4b36e5d303",
           "keyValues": [],
           "concept": {

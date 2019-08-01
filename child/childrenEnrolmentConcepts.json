@@ -134,7 +134,7 @@
     ]
   },
   {
-    "name": "Is the child suffered warm infestation",
+    "name": "Did child suffer from warm infestation",
     "uuid": "57154ca9-f412-45ef-9923-611e266331ce",
     "dataType": "Coded",
     "answers": [
@@ -159,7 +159,7 @@
     "name": "Maintain cleanliness"
   },
   {
-    "name": "What was the treatment",
+    "name": "Treatment given for warm infestation",
     "uuid": "6c055b6b-eaa0-4f03-b660-5a9974c7b5ee",
     "dataType": "Coded",
     "answers": [
@@ -183,11 +183,11 @@
   },
   {
     "uuid": "68948d10-4b52-47fc-a1bc-2ba86fbae451",
-    "name": "Specify other treatment given",
+    "name": "Other treatment given for warm infestation",
     "dataType":"Text"
   },
   {
-    "name": "Does child register in anganwadi center",
+    "name": "Is child registerred in anganwadi centre",
     "uuid": "dd8c46a3-5b76-4e4c-9547-79e2821ec702",
     "dataType": "Coded",
     "answers": [
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "name": "Does the child get snacks as Take Home Ration from Anganwadi regularly",
+    "name": "Does the child get snacks as take home ration from Anganwadi regularly",
     "uuid": "0686d1f3-8f38-4429-a5a1-1e70f4d120bd",
     "dataType": "Coded",
     "answers": [

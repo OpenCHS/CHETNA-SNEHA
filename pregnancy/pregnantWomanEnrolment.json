@@ -113,12 +113,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify Other, pregnancy registered to where/whom",
+          "name": "Other place/person pregnancy registered to",
           "uuid": "878dc2ad-3e36-4c8f-a322-2d7a43ef0653",
           "keyValues": [],
           "concept": {           
             "uuid": "35d093ed-dba4-4d80-9367-ced6f315d240",
-            "name": "Specify Other, pregnancy registered to where/whom"
+            "name": "Other place/person pregnancy registered to"
           },
           "displayOrder":4,
           "mandatory": false
@@ -160,12 +160,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify, Other reason of not having mamta card",
+          "name": "Other reason of not having mamta card",
           "uuid": "b697e17f-0ebb-4bb6-98d9-08680e6f2c2f",
           "keyValues": [],
           "concept": {
             "uuid": "b2789df2-9751-435a-974b-02f50d30f450",
-            "name": "Specify, Other reason of not having mamta card"
+            "name": "Other reason of not having mamta card"
           },
           "displayOrder":8,
           "mandatory": false
@@ -201,7 +201,7 @@
           "mandatory": true
         },
         {
-          "name": "How old is your youngest child",
+          "name": "Age of youngest child",
           "uuid": "f622d7a0-f16e-4171-8613-21436ecce87f",
           "keyValues": [
             {
@@ -262,12 +262,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify Other, who did investigation",
+          "name": "Other person who did investigation",
           "uuid": "8cdb8a72-3711-4297-a9cc-7f3255540c67",
           "keyValues": [],
           "concept": {
             "uuid": "e5f35701-f5ad-46f6-b23a-21fa16bdcf99",
-            "name": "Other who did investigation"
+            "name": "Other person who did investigation"
           },
           "displayOrder":4,
           "mandatory": false
@@ -519,7 +519,7 @@
           "mandatory": true
         },
         {
-          "name": "Specify, Other place form where IFA tablets received",
+          "name": "Other place form where IFA tablets received",
           "uuid": "c43f73ba-257c-4c2e-a747-2671410985b1",
           "keyValues": [],
           "concept": {
@@ -657,7 +657,7 @@
           "mandatory": true
         },
         {
-          "name": "Specify,Other services you get on mamta divas",
+          "name": "Other services you get on mamta divas",
           "uuid": "90e2ebe0-72e6-4f7b-92b4-9e45234086ae",
           "keyValues": [],
           "concept": {
@@ -680,12 +680,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify, who other are available on mamta divas",
+          "name": "Other people who are available on mamta divas",
           "uuid": "83bc63eb-d031-4472-913a-5d6e7c5441f0",
           "keyValues": [],
           "concept": {
             "uuid": "a378f891-6f9a-4bd4-a020-5a4efe2e090c",
-            "name": "Other who are available on mamta divas "
+            "name": "Other people who are available on mamta divas"
           },
           "displayOrder":11,
           "mandatory": false
@@ -714,12 +714,12 @@
           "mandatory": false
         },
         {
-          "name": "Do you get nutrition/snacks from anganwadi center",
+          "name": "Do you get nutrition/snacks from anganwadi centre",
           "uuid": "93b4639d-a81d-4fb5-8172-acfbfd81644a",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Do you get nutrition/snacks from anganwadi center",
+            "name": "Do you get nutrition/snacks from anganwadi centre",
             "uuid": "7f61c9a4-5958-4abd-9906-44b9f7e4361c"
           },
           "displayOrder":14,
@@ -738,7 +738,7 @@
           "mandatory": true
         },
         {
-          "name": "Specify, Other snacks received",
+          "name": "Other snacks received",
           "uuid": "26b429d1-b8a4-4e86-a284-885ff5a778bf",
           "keyValues": [],
           "concept": {
@@ -772,11 +772,11 @@
           "mandatory": true
         },
         {
-          "name": "Specify other quantity of Oil received",
+          "name": "Other quantity of Oil received",
           "uuid": "dd05efd8-d73a-4cca-9a3f-91422ae6be12",
           "keyValues": [],
           "concept": {
-            "name": "Specify other quantity of Oil received",
+            "name": "Other quantity of Oil received",
             "uuid": "5cdbfc85-cf5a-48e3-81ed-352940475141"
           },
           "displayOrder": 19,
@@ -795,11 +795,11 @@
           "mandatory": true
         },
         {
-          "name": "Specify other quantity of Wheat received",
+          "name": "Other quantity of Wheat received",
           "uuid": "92104ddc-db68-49a5-8305-3ea75d103ab9",
           "keyValues": [],
           "concept": {
-            "name": "Specify other quantity of Wheat received",
+            "name": "Other quantity of Wheat received",
             "uuid": "6488ba4d-9e30-4a16-92ea-f6a6d0351cb7"
           },
           "displayOrder":21 ,
@@ -818,11 +818,11 @@
           "mandatory": true
         },
         {
-          "name": "Specify other quantity of Pulses received",
+          "name": "Other quantity of Pulses received",
           "uuid": "068be5cb-8a38-4ce5-9f3d-b46920fd8d3b",
           "keyValues": [],
           "concept": {
-            "name": "Specify other quantity of Pulses received",
+            "name": "Other quantity of Pulses received",
             "uuid": "9707a83e-5999-42d1-ad22-5bd266149915"
           },
           "displayOrder":23 ,
@@ -841,11 +841,11 @@
           "mandatory": true
         },
         {
-          "name": "Specify other quantity of Salt received",
+          "name": "Other quantity of Salt received",
           "uuid": "2965d3da-1185-4c00-b791-be6b45e876c1",
           "keyValues": [],
           "concept": {
-            "name": "Specify other quantity of Salt received",
+            "name": "Other quantity of Salt received",
             "uuid": "531d2956-3656-4bfb-a5cf-fb64417c866b"
           },
           "displayOrder":24.1 ,
@@ -874,12 +874,12 @@
           "mandatory": true
         },
         {
-          "name": "Have you got any benefits of government programme/scheme",
+          "name": "Got any benefits of government programme/scheme",
           "uuid": "2dbf5afe-febe-4be9-9b8c-4e813224626b",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Benefits of government programme/scheme received",
+            "name": "Got any benefits of government programme/scheme",
             "uuid": "defa9abf-0e40-4df8-b49a-c48ef52f6e0a"  
           },
           "displayOrder":27,
@@ -898,7 +898,7 @@
           "mandatory": true
         },
         {
-          "name": "Specify Other, who gave you information about government programme/scheme",
+          "name": "Other who gave you information about government programme/scheme",
           "uuid": "b31a5488-ee75-47b3-ab64-b94b64ab5f34",
           "keyValues": [],
           "concept": {
@@ -910,31 +910,31 @@
           "mandatory": false
         },
         {
-          "name": "Under which government programme/scheme you got entitlements",
+          "name": "Programme/scheme under which received entitlements",
           "uuid": "6535fe85-952c-4f47-9c57-ae8b1ca5b730",
           "type":"MultiSelect",
           "keyValues": [],
           "concept": {
-            "name": "Programme/scheme Under which got entitlements",
+            "name": "Programme/scheme under which received entitlements",
             "uuid": "7cc5007f-ebc5-4b66-abd7-19231554422d"
           },
           "displayOrder":30,
           "mandatory": true
         },
         {
-          "name": "Why you did not get benefits",
+          "name": "Reason for not getting benefits under government programme/scheme",
           "uuid": "fc79f5ad-b9ed-4705-b200-f4e324744343",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Reason for not getting benefits",
+            "name": "Reason for not getting benefits under government programme/scheme",
             "uuid": "e4ebdc27-6d52-47ce-86ad-4f9c63609c51"
           },
           "displayOrder":31,
           "mandatory": true
         },
         {
-          "name": "Specify Other reason for not getting benefits",
+          "name": "Other reason for not getting benefits",
           "uuid": "919eded3-62f5-4fde-b70c-50431e8bfef9",
           "keyValues": [],
           "concept": {
@@ -1038,12 +1038,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify Other types of complementary food that should be given to the child",
+          "name": "Other types of complementary food that should be given to the child",
           "uuid": "da2767e4-ff72-4b39-bd37-c74c558dc41a",
           "keyValues": [],
           "concept": {
             "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-            "name": "Specify Other types of complementary food that should be given to the child"
+            "name": "Other types of complementary food that should be given to the child"
 
           },
           "displayOrder":8,
@@ -1154,48 +1154,48 @@
           "mandatory": true
         },
         {
-          "name": "From where and by whom you got the information",
+          "name": "From where/whom information about contraception received",
           "uuid": "03856a83-42c5-4f58-99c7-53c009ad823f",
           "type":"MultiSelect",
           "keyValues": [],
           "concept": {
-            "name": "From where and by whom you got the information",
+            "name": "From where/whom information about contraception received",
             "uuid": "18ad6262-1688-48d4-a584-84958ebdeb0c"
           },
           "displayOrder": 3,
           "mandatory": true
         },
         {
-          "name": "Specify Other source from where and by whom you got the information",
+          "name": "Other source from where/whom information about contraception received",
           "uuid": "8e6f5fb9-e793-4310-a6d4-bb9ac3b98265",
           "keyValues": [],
           "concept": {
             "uuid": "5cbcfde1-db48-4f24-a66d-c7416ec3237a",
-            "name": "Specify Other source from where and by whom you got the information"
+            "name": "Other source from where/whom information about contraception received"
 
           },
           "displayOrder":4 ,
           "mandatory": false
         },
         {
-          "name": "Why you did not use any contraception method",
+          "name": "Reason for not using any contraception method",
           "uuid": "a5f5abc1-217b-4ad0-96d3-87269e60bc62",
           "type":"MultiSelect",
           "keyValues": [],
           "concept": {
-            "name": "Why you did not use any contraception method",
+            "name": "Reason for not using any contraception method",
             "uuid": "ec0a99c9-b959-4d28-a277-4ffa78b816a4"
             },
           "displayOrder":5 ,
           "mandatory": true
         },
         {
-          "name": "Specify Other reason for not using any contraception method",
+          "name": "Other reason for not using any contraception method",
           "uuid": "c840c0d7-1b13-4235-9b85-cb15db6b53ed",
           "keyValues": [],
           "concept": {
             "uuid": "8e49ba64-90a4-417e-9b5a-8aa19406936f",
-            "name": "Specify Other reason for not using any contraception method"
+            "name": "Other reason for not using any contraception method"
           },
           "displayOrder": 6,
           "mandatory": false

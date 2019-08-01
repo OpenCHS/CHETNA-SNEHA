@@ -62,7 +62,7 @@
   },
   {
     "uuid": "35d093ed-dba4-4d80-9367-ced6f315d240",
-    "name": "Specify Other, pregnancy registered to where/whom",
+    "name": "Other place/person pregnancy registered to",
     "dataType": "Text"
   },
   {
@@ -127,7 +127,7 @@
   },
   {
     "uuid": "e5f35701-f5ad-46f6-b23a-21fa16bdcf99",
-    "name": "Other who did investigation",
+    "name": "Other person who did investigation",
     "dataType": "Text"
   },
   {
@@ -742,7 +742,7 @@
   },
   {
     "uuid": "a378f891-6f9a-4bd4-a020-5a4efe2e090c",
-    "name": "Other who are available on mamta divas ",
+    "name": "Other people who are available on mamta divas",
     "dataType": "Text"
   },
   {
@@ -802,7 +802,7 @@
     "dataType": "Text"
   },
   {
-    "name": "Do you get nutrition/snacks from anganwadi center",
+    "name": "Do you get nutrition/snacks from anganwadi centre",
     "uuid": "7f61c9a4-5958-4abd-9906-44b9f7e4361c",
     "dataType": "Coded",
     "answers": [
@@ -918,10 +918,6 @@
     "name": "Elder family members"
   },
   {
-    "uuid": "5cbcfde1-db48-4f24-a66d-c7416ec3237a",
-    "name": "Specify Other source from where and by whom you got the information"
-  },
-  {
     "uuid": "b5fbd822-0b06-423d-9c4e-f26e2dc97e64",
     "name": "Religious belief"
   },
@@ -942,7 +938,7 @@
     "name": "Not suitable"
   },
   {
-    "name": "Why you did not use any contraception method",
+    "name": "Reason for not using any contraception method",
     "uuid": "ec0a99c9-b959-4d28-a277-4ffa78b816a4",
     "dataType": "Coded",
     "answers": [
@@ -974,7 +970,7 @@
   },
   {
     "uuid": "8e49ba64-90a4-417e-9b5a-8aa19406936f",
-    "name": "Specify Other reason for not using any contraception method",
+    "name": "Other reason for not using any contraception method",
     "dataType":"Text"
   }  
 ]

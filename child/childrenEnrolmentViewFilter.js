@@ -53,37 +53,37 @@ class ChildrenEnrolmentViewHandler {
         statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
     }
 
-    @WithName('Does your child go to the Anganwadi center regularly')
+    @WithName('Does your child go to the Anganwadi centre regularly')
     @statusBuilder
     ab17([], statusBuilder) {
         statusBuilder.show().when.ageInYears.greaterThanOrEqualTo(3);
     }
 
-    @WithName('If yes, then what do you get in the snacks')
+    @WithName('What do you get as a snacks')
     @statusBuilder
     ab13([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Does the child get snacks as Take Home Ration from Anganwadi regularly")
+        statusBuilder.show().when.valueInEnrolment("Does the child get snacks as take home ration from Anganwadi regularly")
         .is.yes;
     } 
     
     @WithName('If no than why')
     @statusBuilder
     ab14([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Does your child go to the Anganwadi center regularly")
+        statusBuilder.show().when.valueInEnrolment("Does your child go to the Anganwadi centre regularly")
         .is.no;
     } 
 
-    @WithName('Specify other reason for not going to Anganwadi center regularly')
+    @WithName('Specify other reason for not going to Anganwadi centre regularly')
     @statusBuilder
     ab15([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("If no than why")
         .containsAnswerConceptName("Other");
     } 
 
-    @WithName('Specify other treatment given')
+    @WithName('Other treatment given for warm infestation')
     @statusBuilder
     ab16([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What was the treatment")
+        statusBuilder.show().when.valueInEnrolment("Treatment given for warm infestation")
         .containsAnswerConceptName("Other");
     } 
   

@@ -36,7 +36,7 @@ class LactatingMotherEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
     
-    @WithName('Specify Other types of complementary food that should be given to the child')
+    @WithName('Other types of complementary food that should be given to the child')
     @statusBuilder
     ac13([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What types of complementary food should be given to the child")
@@ -112,14 +112,14 @@ class LactatingMotherEnrolmentViewHandler {
         .is.yes;
     }
 
-    @WithName('If yes, what do you cook from it')
+    @WithName('What did you cook from the snacks received')
     @statusBuilder
     acd24([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get snacks as take home ration from Anganwadi centre")
         .is.yes;
     }
 
-    @WithName('Specify, Other snacks received')
+    @WithName('Other snacks received')
     @statusBuilder
     ac25([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
@@ -140,7 +140,7 @@ class LactatingMotherEnrolmentViewHandler {
         .containsAnswerConceptName("Oil");
     }
 
-    @WithName('Specify other quantity of Oil received')
+    @WithName('Other quantity of Oil received')
     @statusBuilder
     ac28([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("How much quantity of Oil you get? (Check snacks)")
@@ -154,7 +154,7 @@ class LactatingMotherEnrolmentViewHandler {
         .containsAnswerConceptName("Wheat (cereal)");
     }
 
-    @WithName('Specify other quantity of Wheat received')
+    @WithName('Other quantity of Wheat received')
     @statusBuilder
     ac30([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("How much quantity of Wheat you get? (Check snacks)")
@@ -169,7 +169,7 @@ class LactatingMotherEnrolmentViewHandler {
     }
 
 
-    @WithName('Specify other quantity of Pulses received')
+    @WithName('Other quantity of Pulses received')
     @statusBuilder
     ac32([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("How much quantity of Pulse you get? (Check snacks)")
@@ -183,52 +183,52 @@ class LactatingMotherEnrolmentViewHandler {
         .containsAnswerConceptName("Salt");
     }
 
-    @WithName('Specify other quantity of Salt received')
+    @WithName('Other quantity of Salt received')
     @statusBuilder
     ac34([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("How much quantity of Salt you get? (Check snacks)")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('If yes, under which government programme/scheme you got entitlements')
+    @WithName('Programme/scheme under which received entitlements')
     @statusBuilder
     ac35([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Benefits of government programme/scheme received")
+        statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
         .is.yes;
     }
 
-    @WithName('If no, why you did not get benefits')
+    @WithName('Reason for not getting benefits under government programme/scheme')
     @statusBuilder
     ac36([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Benefits of government programme/scheme received")
+        statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
         .is.no;
     }
 
-    @WithName('Specify Other reason for not getting benefits')
+    @WithName('Other reason for not getting benefits')
     @statusBuilder
     ac37([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Reason for not getting benefits")
+        statusBuilder.show().when.valueInEnrolment("Reason for not getting benefits under government programme/scheme")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('If yes, what do you use')
+    @WithName('Method of contraception used')
     @statusBuilder
     ac38([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
         .is.yes;
     }
 
-    @WithName('From where and by whom you got the information')
+    @WithName('From where/whom information about contraception received')
     @statusBuilder
     ac39([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
         .is.yes;
     }
 
-    @WithName('Specify Other source from where and by whom you got the information')
+    @WithName('Other source from where/whom information about contraception received')
     @statusBuilder
     ac40([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("From where and by whom you got the information")
+        statusBuilder.show().when.valueInEnrolment("From where/whom information about contraception received")
         .containsAnswerConceptName("Other");
     }
 
@@ -238,16 +238,14 @@ class LactatingMotherEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Do you have any addiction").is.yes;
     }
 
-    
-
-    @WithName('Specify other food that you give to the child as complementary food')
+    @WithName('Other types of complementary food given to the child')
     @statusBuilder
     ac42([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What type of food do you give to the child as complementary food")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify other points you kept in a mind while preparing a food for the child')
+    @WithName('Other points you kept in a mind while preparing a food for the child')
     @statusBuilder
     ac43([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What are the points you kept in a mind while preparing a food for the child")
@@ -255,21 +253,21 @@ class LactatingMotherEnrolmentViewHandler {
     }
 
     
-     @WithName('Specify other points you kept in a mind while preparing a food for the child')
+     @WithName('Other points you kept in a mind while preparing a food for the child')
     @statusBuilder
     ac45([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What are the points you kept in a mind while preparing a food for the child")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('If yes, then when do you breastfeed to your child')
+    @WithName('When do you breastfeed to your child')
     @statusBuilder
     ac46([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you give complementary food along with breast feeding")
         .is.yes;
     }
 
-    @WithName('If not, then why don\'t you give complementary food')
+    @WithName('Why don\'t you give complementary food')
     @statusBuilder
     ac47([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you give complementary food along with breast feeding")
@@ -277,7 +275,7 @@ class LactatingMotherEnrolmentViewHandler {
     }
 
     
-    @WithName('Specify other points you kept in a mind while feed the child')
+    @WithName('Other points you kept in a mind while feed the child')
     @statusBuilder
     ac48([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What are the points you kept in a mind while feed the child")
@@ -285,18 +283,25 @@ class LactatingMotherEnrolmentViewHandler {
     }
 
 
-    @WithName('Specify other things that should be kept in mind while feed the child')
+    @WithName('Other things that should be kept in mind while feed the child')
     @statusBuilder
     ac49([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What should be kept in mind while feed the child")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify other things that should be kept in mind while preparing food')
+    @WithName('Other things that should be kept in mind while preparing food')
     @statusBuilder
     ac50([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What should be kept in mind when preparing a food for child")
         .containsAnswerConceptName("Other");
+    }
+
+    @WithName('Place of delivery')
+    @statusBuilder
+    ac51([], statusBuilder) {
+        statusBuilder.skipAnswers('Sub Center','Primary Health Center','Regional Hospital',
+        'NGO Hospital','During Transportation like in Ambulance etc');
     }
 
 }

@@ -24,56 +24,49 @@ class PregnantWomenEnrolmentViewHandler {
             new FormElementStatus(formElement.uuid, true, lib.calculations.estimatedDateOfDelivery(programEnrolment));
     }
    
-    @WithName('Specify Other, pregnancy registered to where/whom')
+    @WithName('Other place/person pregnancy registered to')
     @statusBuilder
     a11([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Where/Whom to registered your pregnancy")
         .containsAnswerConceptName("Other");
     }  
  
-    @WithName('Specify, Other reason of not having mamta card')
+    @WithName('Other reason of not having mamta card')
     @statusBuilder
     a12([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Reason for not having mamta card")
         .containsAnswerConceptName("Other");
     }  
 
-    @WithName('Specify Other, who did investigation')
+    @WithName('Other person who did investigation')
     @statusBuilder
     a13([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Who did you get the investigation")
         .containsAnswerConceptName("Other");
     } 
 
-    @WithName('Specify, Other place form where IFA tablets received')
+    @WithName('Other place form where IFA tablets received')
     @statusBuilder
     a14([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("IFA tablets received from")
         .containsAnswerConceptName("Other");
     } 
 
-    // @WithName('Specify ,Other place you will do your delivery')
-    // @statusBuilder
-    // a15([], statusBuilder) {
-    //     statusBuilder.show().when.valueInEnrolment("At which place you will do your delivery")
-    //     .containsAnswerConceptName("Other");
-    // } 
-
-    @WithName('Specify, Other reasons to choose place of delivery')
+     @WithName('Specify, Other reasons to choose place of delivery')
     @statusBuilder
     a16([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Reasons to choose this place for delivery")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify,Other services you get on mamta divas')
+    @WithName('Other services you get on mamta divas')
     @statusBuilder
     a17([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Other services you get on mamta divas")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify, who other are available on mamta divas')
+    @WithName('Other people who are available on mamta divas')
     @statusBuilder
     a18([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Who are available on mamta divas")
@@ -87,46 +80,46 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify, Other snacks received')
+    @WithName('Other snacks received')
     @statusBuilder
     a20([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify Other, who gave you information about government programme/scheme')
+    @WithName('Other who gave you information about government programme/scheme')
     @statusBuilder
     a21([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Information about government programme/scheme received from")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify Other reason for not getting benefits')
+    @WithName('Other reason for not getting benefits')
     @statusBuilder
     a22([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Reason for not getting benefits")
+        statusBuilder.show().when.valueInEnrolment("Reason for not getting benefits under government programme/scheme")
         .containsAnswerConceptName("Other");
     }
     
 
-    @WithName('Specify Other types of complementary food that should be given to the child')
+    @WithName('Other types of complementary food that should be given to the child')
     @statusBuilder
     a23([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What types of complementary food should be given to the child")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify Other source from where and by whom you got the information')
+    @WithName('Other source from where/whom information about contraception received')
     @statusBuilder
     a24([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("From where and by whom you got the information")
+        statusBuilder.show().when.valueInEnrolment("From where/whom information about contraception received")
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Specify Other reason for not using any contraception method')
+    @WithName('Other reason for not using any contraception method')
     @statusBuilder
     a25([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Why you did not use any contraception method")
+        statusBuilder.show().when.valueInEnrolment("Reason for not using any contraception method")
         .containsAnswerConceptName("Other");
     }
 
@@ -155,7 +148,7 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Whether have mamta card").is.no;
     }
 
-    @WithName('Number of live children you have')
+    @WithName('Number of live children')
     @statusBuilder
     a30([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
@@ -256,35 +249,35 @@ class PregnantWomenEnrolmentViewHandler {
     @WithName('What do you get as a snacks?')
     @statusBuilder
     a67([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi center")
+        statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
         .is.yes;
     }
 
     @WithName('How many times do you get this snack/nutrition in the month')
     @statusBuilder
     a69([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi center")
+        statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
         .is.yes;
     }
 
     @WithName('Who gave you information about government programme/scheme?')
     @statusBuilder
     a70([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Benefits of government programme/scheme received")
+        statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
         .is.yes;
     }
 
-    @WithName('Under which government programme/scheme you got entitlements?')
+    @WithName('Programme/scheme under which received entitlements')
     @statusBuilder
     a72([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Benefits of government programme/scheme received")
+        statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
         .is.yes;
     }
 
     @WithName('Why you did not get benefits?')
     @statusBuilder
     a73([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Benefits of government programme/scheme received")
+        statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
         .is.no;
     }
 
@@ -302,14 +295,14 @@ class PregnantWomenEnrolmentViewHandler {
         .is.yes;
     }
 
-    @WithName('From where and by whom you got the information')
+    @WithName('From where/whom information about contraception received')
     @statusBuilder
     a76([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
         .is.yes;
     }
 
-    @WithName('Why you did not use any contraception method')
+    @WithName('Reason for not using any contraception method')
     @statusBuilder
     a77([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
@@ -336,7 +329,7 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Oil");
     }
 
-    @WithName('Specify other quantity of Oil received')
+    @WithName('Other quantity of Oil received')
     @statusBuilder
     a81([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("How much quantity of Oil you get? (Check snacks)")
@@ -350,7 +343,7 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Wheat (cereal)");
     }
 
-    @WithName('Specify other quantity of Wheat received')
+    @WithName('Other quantity of Wheat received')
     @statusBuilder
     a83([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("How much quantity of Wheat you get? (Check snacks)")
@@ -365,7 +358,7 @@ class PregnantWomenEnrolmentViewHandler {
     }
 
 
-    @WithName('Specify other quantity of Pulses received')
+    @WithName('Other quantity of Pulses received')
     @statusBuilder
     a85([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("How much quantity of Pulse you get? (Check snacks)")
@@ -379,7 +372,7 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Salt");
     }
 
-    @WithName('Specify other quantity of Salt received')
+    @WithName('Other quantity of Salt received')
     @statusBuilder
     a87([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("How much quantity of Salt you get? (Check snacks)")

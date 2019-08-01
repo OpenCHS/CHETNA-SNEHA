@@ -221,12 +221,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify Other types of complementary food that should be given to the child",
+          "name": "Other types of complementary food that should be given to the child",
           "uuid": "366255f2-2325-46dd-9b9f-e901e9473977",
           "keyValues": [],
           "concept": {
             "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-            "name": "Specify Other types of complementary food that should be given to the child"
+            "name": "Other types of complementary food that should be given to the child"
           },
           "displayOrder":7.2,
           "mandatory": false
@@ -244,12 +244,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify other things that should be kept in mind while preparing food",
+          "name": "Other things that should be kept in mind while preparing food",
           "uuid": "ed21c064-2f81-4059-88b1-1caa076cbfc5",
           "keyValues": [],
           "concept": {
             "uuid": "c0b0e549-d209-4754-87bf-9b5f547a57d8",
-            "name": "Specify other things that should be kept in mind while preparing food"
+            "name": "Other things that should be kept in mind while preparing food"
           },
           "displayOrder": 8.2,
           "mandatory": false
@@ -267,12 +267,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify other things that should be kept in mind while feed the child",
+          "name": "Other things that should be kept in mind while feed the child",
           "uuid": "59771259-cf11-4eda-9f05-03f6e9fdf3e3",
           "keyValues": [],
           "concept": {
             "uuid": "da907a63-1b50-4893-aa22-965a68ccabfe",
-            "name": "Specify other things that should be kept in mind while feed the child"
+            "name": "Other things that should be kept in mind while feed the child"
           },
           "displayOrder":9.1 ,
           "mandatory": false
@@ -359,12 +359,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify other food that you give to the child as complementary food",
+          "name": "Other types of complementary food given to the child",
           "uuid": "e14e1c65-77ba-434e-bacf-d6c571db175f",
           "keyValues": [],
           "concept": {
             "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-            "name": "Specify Other types of complementary food given to the child"
+            "name": "Other types of complementary food given to the child"
           },
           "displayOrder": 9,
           "mandatory": false
@@ -406,12 +406,12 @@
           "mandatory": true
         },
         {
-          "name": "Specify other points you kept in a mind while preparing a food for the child",
+          "name": "Other points you kept in a mind while preparing a food for the child",
           "uuid": "2d76f718-230f-413b-8144-38039561ef63",
           "keyValues": [],
           "concept": {
             "uuid": "68437adf-35b1-4bad-b793-a9d4c6abf839",
-            "name": "Specify other points you kept in a mind while preparing a food for the child"
+            "name": "Other points you kept in a mind while preparing a food for the child"
             },
           "displayOrder": 13,
           "mandatory": false
@@ -429,13 +429,13 @@
           "mandatory": true
         },
         {
-          "name": "Specify other points you kept in a mind while feed the child",
+          "name": "Other points you kept in a mind while feed the child",
           "uuid": "2fa472bf-017a-40c9-98ee-2e5a41c6647c",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "uuid": "00754cdd-7e55-49ae-a823-4cbe87399c13",
-            "name": "Specify other points you kept in a mind while feed the child"
+            "name": "Other points you kept in a mind while feed the child"
           },
           "displayOrder": 15,
           "mandatory": false
@@ -453,24 +453,24 @@
           "mandatory": true
         },
         {
-          "name": "If yes, then when do you breastfeed to your child",
+          "name": "When do you breastfeed to your child",
           "uuid": "9dc3de7f-16e8-4dca-9c33-f4ac6cfe69bc",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "If yes, then when do you breastfeed to your child",
+            "name": "When do you breastfeed to your child",
             "uuid": "aec3ddd6-b773-4e36-9ab1-9ed33d0eaaec"
           },
           "displayOrder": 17,
           "mandatory": true
         },
         {
-          "name": "If not, then why don't you give complementary food",
+          "name": "Why don't you give complementary food",
           "uuid": "d319cdaa-17f6-4020-b1bb-ddd761c055be",
           "keyValues": [],
           "concept": {
             "uuid": "441be07c-3453-4038-a7e0-8507ebfab549",
-            "name": "If not, then why don't you give complementary food"
+            "name": "Why don't you give complementary food"
           },
           "displayOrder": 18,
           "mandatory": true
@@ -519,7 +519,7 @@
           "mandatory": true
         },
         {
-          "name": "Specify, Other snacks received",
+          "name": "Other snacks received",
           "uuid": "cacc60b1-3de6-4672-a258-cc56138dd273",
           "keyValues": [],
           "concept": {
@@ -552,11 +552,11 @@
           "mandatory": true
         },
         {
-          "name": "Specify other quantity of Oil received",
+          "name": "Other quantity of Oil received",
           "uuid": "d62262c9-6b32-42df-9b74-2dc1f871a3f3",
           "keyValues": [],
           "concept": {
-            "name": "Specify other quantity of Oil received",
+            "name": "Other quantity of Oil received",
             "uuid": "5cdbfc85-cf5a-48e3-81ed-352940475141"
           },
           "displayOrder": 6,
@@ -575,11 +575,11 @@
           "mandatory": true
         },
         {
-          "name": "Specify other quantity of Wheat received",
+          "name": "Other quantity of Wheat received",
           "uuid": "7c2bb32b-1a3a-42ed-bc13-3ec9fb0059f9",
           "keyValues": [],
           "concept": {
-            "name": "Specify other quantity of Wheat received",
+            "name": "Other quantity of Wheat received",
             "uuid": "6488ba4d-9e30-4a16-92ea-f6a6d0351cb7"
           },
           "displayOrder":8 ,
@@ -597,11 +597,11 @@
           "mandatory": true
         },
         {
-          "name": "Specify other quantity of Pulses received",
+          "name": "Other quantity of Pulses received",
           "uuid": "d55573df-abf3-4421-aab1-ad5854e36d92",
           "keyValues": [],
           "concept": {
-            "name": "Specify other quantity of Pulses received",
+            "name": "Other quantity of Pulses received",
             "uuid": "9707a83e-5999-42d1-ad22-5bd266149915"
           },
           "displayOrder":10,
@@ -619,62 +619,62 @@
           "mandatory": true
         },
         {
-          "name": "Specify other quantity of Salt received",
+          "name": "Other quantity of Salt received",
           "uuid": "5d25c760-742c-4232-accf-37996cd3a08b",
           "keyValues": [],
           "concept": {
-            "name": "Specify other quantity of Salt received",
+            "name": "Other quantity of Salt received",
             "uuid": "531d2956-3656-4bfb-a5cf-fb64417c866b"
           },
           "displayOrder":12 ,
           "mandatory": false
         },
         {
-          "name": "If yes, what do you cook from it",
+          "name": "What did you cook from the snacks received",
           "uuid": "860b4680-fc35-418a-830c-e3637ca5c2d3",
           "keyValues": [],
           "concept": {
             "uuid": "f75e6020-ce0a-46b9-ba53-13c2b31c4a23",
-            "name": "If yes, what do you cook from it"
+            "name": "What did you cook from the snacks received"
           },
           "displayOrder": 13,
           "mandatory": true
         },
         {
-          "name": "Have you got any benefits of government programme/scheme",
+          "name": "Got any benefits of government programme/scheme",
           "uuid": "3614c31f-ba96-4637-b82f-1b51ba6c409e",
           "keyValues": [],
           "concept": {
-            "name": "Benefits of government programme/scheme received",
+            "name": "Got any benefits of government programme/scheme",
             "uuid": "defa9abf-0e40-4df8-b49a-c48ef52f6e0a"  
           },
           "displayOrder":14,
           "mandatory": true
         },
         {
-          "name": "If yes, under which government programme/scheme you got entitlements",
+          "name": "Programme/scheme under which received entitlements",
           "uuid": "8f6cc477-c85e-41dd-9169-0623d55d6350",
           "keyValues": [],
           "concept": {
-            "name": "Programme/scheme Under which got entitlements",
+            "name": "Programme/scheme under which received entitlements",
             "uuid": "7cc5007f-ebc5-4b66-abd7-19231554422d"
           },
           "displayOrder":15,
           "mandatory": true
         },
         {
-          "name": "If no, why you did not get benefits",
+          "name": "Reason for not getting benefits under government programme/scheme",
           "uuid": "e75c8e0f-9126-44f9-b47f-de034223b3ae",
           "keyValues": [],
           "concept": {
-            "name": "Reason for not getting benefits",
+            "name": "Reason for not getting benefits under government programme/scheme",
             "uuid": "e4ebdc27-6d52-47ce-86ad-4f9c63609c51"
           },
           "displayOrder":16,
           "mandatory": true
         },
         {
-          "name": "Specify Other reason for not getting benefits",
+          "name": "Other reason for not getting benefits",
           "uuid": "52320d19-54f3-47e9-b9bc-f1d0253756e4",
           "keyValues": [],
           "concept": {
@@ -684,9 +684,7 @@
           },
           "displayOrder":17,
           "mandatory":false
-        }
-
-        
+        }     
       ]
     },
     {
@@ -707,36 +705,36 @@
           "mandatory": true
         },
         {
-          "name": "If yes, what do you use",
+          "name": "Method of contraception used",
           "uuid": "2460d2c9-a939-4cbc-946b-fceb2745edce",
           "keyValues": [],
           "type": "MultiSelect",
           "concept": {
-            "name": "If yes, what do you use",
+            "name": "Method of contraception used",
             "uuid": "7491c731-9292-4d66-9c00-1b7fe6c2e02f"
           },
           "displayOrder": 2,
           "mandatory": true
         },
         {
-          "name": "From where and by whom you got the information",
+          "name": "From where/whom information about contraception received",
           "uuid": "416bd0e6-be3a-4b4f-a36a-517db40d67d0",
           "keyValues": [],
           "type": "MultiSelect",
           "concept": {
-            "name": "From where and by whom you got the information",
+            "name": "From where/whom information about contraception received",
             "uuid": "18ad6262-1688-48d4-a584-84958ebdeb0c"
           },
           "displayOrder": 3,
           "mandatory": true
         },
         {
-          "name": "Specify Other source from where and by whom you got the information",
+          "name": "Other source from where/whom information about contraception received",
           "uuid": "60e1c68d-6559-47a9-81e5-b87f637b68ea",
           "keyValues": [],
           "concept": {
             "uuid": "5cbcfde1-db48-4f24-a66d-c7416ec3237a",
-            "name": "Specify Other source from where and by whom you got the information"
+            "name": "Other source from where/whom information about contraception received"
           },
           "displayOrder": 4,
           "mandatory": true
