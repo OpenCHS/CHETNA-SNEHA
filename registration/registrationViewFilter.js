@@ -46,18 +46,20 @@ class ChetnaRegistrationViewHandler {
         statusBuilder.show().when.valueInRegistration("Marital status").containsAnswerConceptNameOtherThan("Unmarried");
     }  
 
-    @WithName('In which occupational activity are you involved')
+    @WithName('Place for the occupational activity')
     @WithRegistrationStatusBuilder
     abc16([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes;
+    } 
+
+    @WithName('In which occupational activity are you involved')
+    @WithRegistrationStatusBuilder
+    abc17([], statusBuilder) {
         statusBuilder.skipAnswers("Farming","Other","Don't know",'Housework');
         statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes;
     } 
 
-    @WithName('Place for the occupational activity')
-    @WithRegistrationStatusBuilder
-    abc17([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes;
-    } 
+    
 }
 
 @RegistrationValidation("afe6e6d4-69e2-40ac-88ea-494b6408493c", "Registration Form Validation", 100.0)

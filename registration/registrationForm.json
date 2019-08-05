@@ -102,7 +102,7 @@
           "mandatory": true
         },
         {
-          "name": "Total male members in the family",
+          "name": "Male",
           "uuid": "e37665a3-b5ff-445d-a215-69ef550b11b2",
           "keyValues": [],
           "concept": {
@@ -113,7 +113,7 @@
           "mandatory": true
         },
         {
-          "name": "Total female members in the family",
+          "name": "Female",
           "uuid": "59aaa3d1-3705-4eb5-b4de-a8eac717799f",
           "keyValues": [],
           "concept": {
@@ -161,14 +161,14 @@
         },
         {
           "name": "Place for the occupational activity",
-          "uuid": "f2c2fcf3-d047-476c-bb4f-a75bc0a9304a",
+          "uuid": "ed939128-797c-4e81-b58d-65607e27ae44",
           "type": "SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Place for the occupational activity",
             "uuid": "1d95de51-eb58-46ab-9ff6-c7592e9cd81c"
           },
-          "displayOrder": 6.8,
+          "displayOrder": 7,
           "mandatory": true
         },
         {
@@ -180,7 +180,7 @@
             "name": "Mother's Occupation",
             "uuid": "dc9882a4-ceff-4dc9-b6fc-3e2ba7e9b197"
           },
-          "displayOrder": 7,
+          "displayOrder": 8,
           "mandatory": true
         }
       ]
