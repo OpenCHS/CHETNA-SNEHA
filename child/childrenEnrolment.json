@@ -103,6 +103,171 @@
       ]
     },
     {
+      "uuid": "0befb11b-7749-4e26-80af-6b147231bd42",
+      "name": "Pregnancy History",
+      "display": "Pregnancy History",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "Number of times got pregnant",
+          "uuid": "84cae6bd-dc70-4c35-86c9-66722335f715",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of times got pregnant",
+            "uuid": "5daeb50c-a6ab-4b27-bd49-31bed2e96394"
+          },
+          "displayOrder":1,
+          "mandatory": true
+        },
+        {
+          "name": "Number of live children",
+          "uuid": "ad93034b-fa49-4bb8-a278-4100a7a14334",
+          "keyValues": [],
+          "concept": {
+            "name": "Number of live children",
+            "uuid": "070b3129-292f-4b88-baff-325d5d453d92"
+          },
+          "displayOrder":2,
+          "mandatory": true
+        },
+        {
+          "name": "Has any child died",
+          "uuid": "f85b3a0e-69fe-4836-8388-80fa6d9b914d",
+          "type":"SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Has any child died",
+            "uuid": "7cbc56e0-b34d-48ba-8c6d-28c9d562a1b8"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Reason for child's death",
+          "uuid": "cb6094cd-c159-4267-96c2-51af6804d360",
+          "type":"MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Reason for child's death",
+            "uuid": "2858f98e-b558-4ed2-bb18-839bcc05bfae"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Other reason for child's death",
+          "uuid": "016f5b06-d70c-4d7b-a0c1-3d4cd6761488",
+          "keyValues": [],
+          "concept": {
+            "uuid": "bef19429-d238-472d-8599-c1c4d3193259",
+            "name": "Other reason for child's death"
+          },
+          "displayOrder":5 ,
+          "mandatory": false
+        },
+        {
+          "name": "Reason for miscarriage",
+          "uuid": "7b60b85c-30d8-4f9b-95b4-f0375bc0ea26",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Reason for miscarriage",
+            "uuid": "f304f1e6-b9d3-4f0e-b241-20e6d8b1decf"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Other reason for miscarriage",
+          "uuid": "7e25d2db-3ffb-487f-b339-586084d5afd7",
+          "keyValues": [],
+          "concept": {
+            "uuid": "6badabd6-cb32-42ff-acc8-545b1536a368",
+            "name": "Other reason for miscarriage"
+          },
+          "displayOrder":7 ,
+          "mandatory": false
+        },
+        
+        {
+          "name": "Age of youngest child",
+          "uuid": "8eef73b2-4683-4f68-a066-8c967d657c8c",
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": [
+                "months"
+              ]
+            }
+          ],
+          "concept": {
+            "name": "Age of youngest child",
+            "uuid": "305f693c-c8b6-4e3e-9a82-a6e91a3e462f"
+          },
+          "displayOrder":8,
+          "mandatory": false
+        },
+        {
+          "name": "Whether have mamta card",
+          "uuid": "c44b7269-834b-4910-a033-14538cdeab49",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Whether have mamta card",
+            "uuid": "3299cda4-3c1a-4dd7-8a69-5d756136a5cd"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        },
+        {
+          "name": "Reason for not having mamta card",
+          "uuid": "fb884eaa-abe2-4e7b-8586-5424a571b225",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "name": "Reason for not having mamta card",
+            "uuid": "b94c9eba-9c44-4262-a870-56b0257cc115"
+          },
+          "displayOrder":10,
+          "mandatory": true
+        },
+        {
+          "name": "Other reason for not having mamta card",
+          "uuid": "b741bc89-7c1e-4968-99bb-dec8794b0c77",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b2789df2-9751-435a-974b-02f50d30f450",
+            "name": "Other reason for not having mamta card"
+          },
+          "displayOrder":11,
+          "mandatory": true
+        },
+        {
+          "name": "Place of delivery",
+          "uuid": "9ebefa8e-74c2-4aab-8008-d425a83a544a",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "a0405799-1e3c-40ef-90ba-84c9c0931660"
+          },
+          "displayOrder":12,
+          "mandatory": true
+        },        
+        {
+          "name": "Type of delivery",
+          "uuid": "1dc706ec-8aa6-4360-b249-72daf41d4954",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "name": "Type of delivery",
+            "uuid": "69d0acf1-c32b-4694-9bc2-874b5e7a44c8"
+          },
+          "displayOrder": 13,
+          "mandatory": true
+        }
+      ]
+    },
+    {
       "uuid": "c78d1e4a-57fa-4210-88e8-8062295c8435",
       "name": "Vitals of child",
       "display": "Vitals of child",

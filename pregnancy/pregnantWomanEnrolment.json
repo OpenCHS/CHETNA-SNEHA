@@ -252,6 +252,7 @@
         {
           "name": "Has any child died",
           "uuid": "5a07191b-89c3-4801-a65d-08ee8a2a58e3",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Has any child died",
@@ -263,6 +264,7 @@
         {
           "name": "Reason for child's death",
           "uuid": "bf783c4f-34e6-48ef-a36c-b6e6e490a281",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Reason for child's death",
@@ -285,6 +287,7 @@
         {
           "name": "Reason for miscarriage",
           "uuid": "99a1fddf-f016-40a6-911d-d53671491145",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Reason for miscarriage",
