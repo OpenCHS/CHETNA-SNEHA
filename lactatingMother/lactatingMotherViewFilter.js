@@ -119,78 +119,35 @@ class LactatingMotherEnrolmentViewHandler {
         .is.yes;
     }
 
-    @WithName('Other snacks received')
-    @statusBuilder
-    ac25([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Other snacks you get? (Check snacks)')
-    @statusBuilder
-    ac26([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Oil you get? (Check snacks)')
+    @WithName('How much quantity of Oil you get')
     @statusBuilder
     ac27([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Oil");
     }
 
-    @WithName('Other quantity of Oil received')
-    @statusBuilder
-    ac28([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("How much quantity of Oil you get? (Check snacks)")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Wheat you get? (Check snacks)')
+    @WithName('How much quantity of Wheat you get')
     @statusBuilder
     ac29([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Wheat (cereal)");
     }
-
-    @WithName('Other quantity of Wheat received')
-    @statusBuilder
-    ac30([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("How much quantity of Wheat you get? (Check snacks)")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Pulse you get? (Check snacks)')
+   
+    @WithName('How much quantity of Pulse you get')
     @statusBuilder
     ac31([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Pulses");
     }
 
-
-    @WithName('Other quantity of Pulses received')
-    @statusBuilder
-    ac32([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("How much quantity of Pulse you get? (Check snacks)")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Salt you get? (Check snacks)')
+    @WithName('How much quantity of Salt you get')
     @statusBuilder
     ac33([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Salt");
     }
 
-    @WithName('Other quantity of Salt received')
-    @statusBuilder
-    ac34([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("How much quantity of Salt you get? (Check snacks)")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('Programme/scheme under which received entitlements')
+     @WithName('Programme/scheme under which received entitlements')
     @statusBuilder
     ac35([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")

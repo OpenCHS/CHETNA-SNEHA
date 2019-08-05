@@ -957,7 +957,6 @@
         "name": "Other",
         "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
-
     ]
   },
   {
@@ -966,9 +965,8 @@
     "dataType":"Text"
   },
   {
-    "uuid": "b89dee88-41e9-418b-8a0c-88e765110f1d",
-    "name": "How much quantity of Other snacks you get? (Check snacks)",
-    "dataType":"Text"
+    "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+    "name": "Half Packet"
   },
   {
     "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
@@ -979,104 +977,80 @@
     "name": "2 Packets"
   },
   {
-    "name": "How much quantity of Oil you get? (Check snacks)",
+    "name": "How much quantity of Oil you get",
     "uuid": "8dcd7314-2ff9-4185-965f-311e989f6500",
     "dataType": "Coded",
     "answers": [
       {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
         "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
         "name": "1 Packet"
       },
       {
         "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
         "name": "2 Packets"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
       }
     ]
   },
   {
-    "name": "How much quantity of Wheat you get? (Check snacks)",
+    "name": "How much quantity of Wheat you get",
     "uuid": "12ef4b24-859b-4de6-89fa-785c1c818c17",
     "dataType": "Coded",
     "answers": [
       {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
         "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
         "name": "1 Packet"
       },
       {
         "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
         "name": "2 Packets"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
       }
     ]
   },
   {
-    "name": "How much quantity of Pulse you get? (Check snacks)",
+    "name": "How much quantity of Pulse you get",
     "uuid": "aec2dbaa-2947-4fff-9b99-130dc90a6fd7",
     "dataType": "Coded",
     "answers": [
       {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
         "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
         "name": "1 Packet"
       },
       {
         "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
         "name": "2 Packets"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
       }
     ]
   },
   {
-    "name": "How much quantity of Salt you get? (Check snacks)",
+    "name": "How much quantity of Salt you get",
     "uuid": "57b590fc-e84d-4345-954a-b7c162fe3c23",
     "dataType": "Coded",
     "answers": [
       {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
         "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
         "name": "1 Packet"
       },
       {
         "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
         "name": "2 Packets"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
       }
     ]
-  },
-  {
-    "name": "Other quantity of Oil received",
-    "uuid": "5cdbfc85-cf5a-48e3-81ed-352940475141",
-    "dataType":"Text"
-  },
-  {
-    "name": "Other quantity of Wheat received",
-    "uuid": "6488ba4d-9e30-4a16-92ea-f6a6d0351cb7",
-    "dataType":"Text"
-  },
-  {
-    "name": "Other quantity of Pulses received",
-    "uuid": "9707a83e-5999-42d1-ad22-5bd266149915",
-    "dataType":"Text"
-  },
-  {
-    "name": "Other quantity of Salt received",
-    "uuid": "531d2956-3656-4bfb-a5cf-fb64417c866b",
-    "dataType":"Text"
   },
   {
     "name": "Got any benefits of government programme/scheme",
@@ -1177,6 +1151,65 @@
     "uuid": "48717220-15b0-4c61-9186-3f5ccec69246",
     "name": "Other reason for not getting benefits",
     "dataType": "Text"
+  },
+  {
+    "name": "Involved in any occupational activity",
+    "uuid": "784c7e5a-bf14-4ba5-8228-6451d06fecb4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "03360b0b-43e8-4763-8c3d-45181bf479d7",
+    "name": "Servant"
+  },
+  {
+    "uuid": "0ca07575-9fde-423e-860f-47ef5a4400e1",
+    "name": "Selling vegetables or diferrent things"
+  },
+  {
+    "name": "Mother's Occupation",
+    "uuid": "dc9882a4-ceff-4dc9-b6fc-3e2ba7e9b197",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "03360b0b-43e8-4763-8c3d-45181bf479d7",
+        "name": "Servant"
+      },
+      {
+        "uuid": "0ca07575-9fde-423e-860f-47ef5a4400e1",
+        "name": "Selling vegetables or diferrent things"
+      }
+    ]
+  },
+  {
+    "uuid": "3897a413-f824-4517-b33e-9c0ffc6143b0",
+    "name": "From house"
+  },
+  {
+    "uuid": "a67ab2e7-1bb1-45a9-b40d-ac65f29581ed",
+    "name": "Outside the home"
+  },
+  {
+    "name": "Place for the occupational activity",
+    "uuid": "1d95de51-eb58-46ab-9ff6-c7592e9cd81c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3897a413-f824-4517-b33e-9c0ffc6143b0",
+        "name": "From house"
+      },
+      {
+        "uuid": "a67ab2e7-1bb1-45a9-b40d-ac65f29581ed",
+        "name": "Outside the home"
+      }
+    ]
   }
  
 

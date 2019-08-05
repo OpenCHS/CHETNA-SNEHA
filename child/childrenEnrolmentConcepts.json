@@ -293,5 +293,87 @@
     "uuid": "b8655b58-fc9b-4938-b4a5-395634c7c8f1",
     "name": "Other reason for not going to Anganwadi centre regularly",
     "dataType":"Text"
-  } 
+  } ,
+  {
+    "uuid": "64d34e98-c246-4d24-a137-a19ff9fa8e84",
+    "name": "Not living together"
+  },  
+  {
+    "name": "Is mother alive",
+    "uuid": "9600c50b-63ad-4b19-93bf-769bbdad3eb0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "64d34e98-c246-4d24-a137-a19ff9fa8e84",
+        "name": "Not living together"
+      }
+    ]
+  },
+  {
+    "uuid": "94284848-c3d9-4d9d-b7f5-3691988fd8b1",
+    "name": "Elder sister"
+  },  
+  {
+    "uuid": "b442802f-13c3-4f56-8483-f87dff96df0a",
+    "name": "Aunty"
+  },
+  {
+    "uuid": "739f9521-0d9d-4436-a928-982cbfbeebef",
+    "name": "All family members"
+  },
+  {
+    "name": "Who is taking care of child",
+    "uuid": "79a3a9bb-048a-4738-a385-2e7de693cdb9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "136a7882-31af-4174-9d7d-2f02f2cc6e7d",
+        "name": "Grandmother"
+      },
+      {
+        "uuid": "94284848-c3d9-4d9d-b7f5-3691988fd8b1",
+        "name": "Elder sister"
+      },
+      {
+        "uuid": "cf301a64-d0f7-4da9-82bf-3bebfda66687",
+        "name": "Father"
+      }, 
+      {
+        "uuid": "b442802f-13c3-4f56-8483-f87dff96df0a",
+        "name": "Aunty"
+      },
+      {
+        "uuid": "739f9521-0d9d-4436-a928-982cbfbeebef",
+        "name": "All family members"
+      }
+    ]
+  },
+  {
+    "uuid": "7178f8c1-aa7e-4573-bcda-416bd24e8bad",
+    "name": "Name of Mother/ Caretaker",
+    "dataType":"Text"
+  },
+  {
+    "name": "Age of Mother",
+    "uuid": "1d2eb8c9-2608-4283-b637-37dc8c7ddc0a",
+    "dataType": "Numeric",
+    "unit": "years"
+  },
+  {
+    "name": "Age of Mother at Marriage",
+    "uuid": "6de1476d-e54a-425d-a89a-4e289a2908a8",
+    "dataType": "Numeric",
+    "unit": "years"
+  }
+  
+
+
+  
+  
 ]

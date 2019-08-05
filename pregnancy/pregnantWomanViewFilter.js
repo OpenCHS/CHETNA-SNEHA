@@ -6,22 +6,71 @@ import {
     FormElementStatus
 } from 'rules-config/rules';
 import lib from '../lib';
+import moment from 'moment';
+
+
+// Below 18.5	Underweight
+// 18.5 – 24.9	Normal or Healthy Weight
+// 25.0 – 29.9	Overweight
+// 30.0 and Above	Obese
+const getBMIStatus = (bmiValue) => {
+    let status = "";
+    if (bmiValue < 18.5) {
+        status = "Underweight";
+    }
+    else if (bmiValue > 18.5 && bmiValue < 24.9) {
+        status = "Normal/Healthy Weight";
+    }
+    else if (bmiValue > 25.0 && bmiValue < 29.9) {
+        status = "Overweight";
+    }
+    else if (bmiValue > 30.0) {
+        status = "Obese";
+    }
+    return status;
+};
+
 
 const statusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
 const PregnantWomenViewFilter = RuleFactory("1d08e3e9-30a0-4fee-b1ce-55aeec627ea1", "ViewFilter");
 
 @PregnantWomenViewFilter("12f9a59e-b0f9-4a1c-abe1-591c320cf199", "Pregnant Woman Enrolment", 100.0, {})
 class PregnantWomenEnrolmentViewHandler {
-    static exec(programEnrolment, formElementGroup) {
+    static exec(programEnrolment, formElementGroup, today) {
         return FormElementsStatusHelper
-            .getFormElementsStatusesWithoutDefaults(new PregnantWomenEnrolmentViewHandler(), programEnrolment, formElementGroup);
+            .getFormElementsStatusesWithoutDefaults(new PregnantWomenEnrolmentViewHandler(), programEnrolment, formElementGroup, today);
     }    
+
+    bmi(programEnrolment, formElement) {
+        let weight = programEnrolment.getObservationValue('Weight');
+        let height = programEnrolment.getObservationValue('Height');
+        let bmi = '';
+        if (_.isNumber(height) && _.isNumber(weight)) {
+            bmi = lib.C.calculateBMI(weight, height);
+        }
+        return new FormElementStatus(formElement.uuid, true, bmi);
+    }
+
+    bmiStatus(programEnrolment, formElement){
+        const bmiValue = programEnrolment.getObservationValue('BMI');
+        return _.isNil(bmiValue) ?
+            new FormElementStatus(formElement.uuid, true) :
+            new FormElementStatus(formElement.uuid, true, getBMIStatus(bmiValue));  
+    }
     
     edd(programEnrolment, formElement) {
         const lmpDate = programEnrolment.getObservationValue('Last menstrual period');
         return _.isNil(lmpDate) ?
             new FormElementStatus(formElement.uuid, true) :
             new FormElementStatus(formElement.uuid, true, lib.calculations.estimatedDateOfDelivery(programEnrolment));
+    }
+
+    currentPregnancyMonth(programEnrolment, formElement, today) {
+        const lmpDate = programEnrolment.getObservationValue('Last menstrual period');
+        return _.isNil(lmpDate) ?
+            new FormElementStatus(formElement.uuid, true) :
+            new FormElementStatus(formElement.uuid, true, Math.round(moment(today).diff(lmpDate, 'months', true)));
+            // lib.calculations.gestationalAge(programEnrolment, today)
     }
    
     @WithName('Other place/person pregnancy registered to')
@@ -315,68 +364,32 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Do you have any addiction").is.yes;
     }
 
-    @WithName('How much quantity of Other snacks you get? (Check snacks)')
-    @statusBuilder
-    a79([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Oil you get? (Check snacks)')
+    @WithName('How much quantity of Oil you get')
     @statusBuilder
     a80([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Oil");
     }
 
-    @WithName('Other quantity of Oil received')
-    @statusBuilder
-    a81([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("How much quantity of Oil you get? (Check snacks)")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Wheat you get? (Check snacks)')
+    @WithName('How much quantity of Wheat you get')
     @statusBuilder
     a82([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Wheat (cereal)");
     }
 
-    @WithName('Other quantity of Wheat received')
-    @statusBuilder
-    a83([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("How much quantity of Wheat you get? (Check snacks)")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Pulse you get? (Check snacks)')
+    @WithName('How much quantity of Pulse you get')
     @statusBuilder
     a84([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Pulses");
     }
 
-
-    @WithName('Other quantity of Pulses received')
-    @statusBuilder
-    a85([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("How much quantity of Pulse you get? (Check snacks)")
-        .containsAnswerConceptName("Other");
-    }
-
-    @WithName('How much quantity of Salt you get? (Check snacks)')
+    @WithName('How much quantity of Salt you get')
     @statusBuilder
     a86([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
         .containsAnswerConceptName("Salt");
-    }
-
-    @WithName('Other quantity of Salt received')
-    @statusBuilder
-    a87([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("How much quantity of Salt you get? (Check snacks)")
-        .containsAnswerConceptName("Other");
     }
 
     @WithName('Number of times weight measurement')
@@ -420,10 +433,42 @@ class PregnantWomenEnrolmentViewHandler {
     a94([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
     }
+
     @WithName('Number of time abdominal check-ups')
     @statusBuilder
     a95([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
+
+    @WithName('Has any child died')
+    @statusBuilder
+    ad11([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1)
+    }
+
+    @WithName('Reason for child\'s death')
+    @statusBuilder
+    ad12([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Has any child died").is.yes;
+    }
+
+
+    @WithName('Other reason for child\'s death')
+    @statusBuilder
+    ad13([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Reason for child\'s death").containsAnswerConceptName("Other");
+    }
+
+    @WithName('Reason for miscarriage')
+    @statusBuilder
+    ad15([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Reason for child\'s death").containsAnswerConceptName("Miscarriage");
+    }
+
+    @WithName('Other reason for miscarriage')
+    @statusBuilder
+    ad16([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Reason for miscarriage").containsAnswerConceptName("Other");
     }
 }
 

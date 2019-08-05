@@ -515,174 +515,107 @@
             "name": "What do you get as a snacks",
             "uuid": "5fe0c780-042a-448f-b7d5-50c3a01a9fea"
           },
-          "displayOrder":2,
+          "displayOrder":2.1,
           "mandatory": true
         },
         {
-          "name": "Other snacks received",
-          "uuid": "cacc60b1-3de6-4672-a258-cc56138dd273",
+          "name": "How much quantity of Oil you get",
+          "uuid": "b86da2fe-8493-49c8-b44a-f88fb2eb1afb",
           "keyValues": [],
           "concept": {
-              "uuid": "8c895b21-e6fa-416a-ac16-f2671b2de416",
-              "name": "Other snacks received"
-          },
-          "displayOrder":3,
-          "mandatory": false
-        },
-        {
-          "name": "How much quantity of Other snacks you get? (Check snacks)",
-          "uuid": "e93e07ea-ea9c-421c-a294-03fa429507d5",
-          "keyValues": [],
-          "concept": {
-            "uuid": "b89dee88-41e9-418b-8a0c-88e765110f1d",
-            "name": "How much quantity of Other snacks you get? (Check snacks)"
-          },
-          "displayOrder": 4,
-          "mandatory": false
-        },
-        {
-          "name": "How much quantity of Oil you get? (Check snacks)",
-          "uuid": "ae23b762-2527-40fc-a939-8f2073f34309",
-          "keyValues": [],
-          "concept": {
-            "name": "How much quantity of Oil you get? (Check snacks)",
+            "name": "How much quantity of Oil you get",
             "uuid": "8dcd7314-2ff9-4185-965f-311e989f6500"
           },
-          "displayOrder":5 ,
+          "displayOrder":3.1,
           "mandatory": true
         },
         {
-          "name": "Other quantity of Oil received",
-          "uuid": "d62262c9-6b32-42df-9b74-2dc1f871a3f3",
+          "name": "How much quantity of Wheat you get",
+          "uuid": "d6cdf2b2-c6d8-4c26-8035-0b4ea9d52a99",
           "keyValues": [],
           "concept": {
-            "name": "Other quantity of Oil received",
-            "uuid": "5cdbfc85-cf5a-48e3-81ed-352940475141"
-          },
-          "displayOrder": 6,
-          "mandatory": false
-        },
-
-        {
-          "name": "How much quantity of Wheat you get? (Check snacks)",
-          "uuid": "92b935b9-41ab-4cd7-809c-11172d11ab70",
-          "keyValues": [],
-          "concept": {
-            "name": "How much quantity of Wheat you get? (Check snacks)",
+            "name": "How much quantity of Wheat you get",
             "uuid": "12ef4b24-859b-4de6-89fa-785c1c818c17"
           },
-          "displayOrder": 7,
+          "displayOrder":4.1,
           "mandatory": true
         },
         {
-          "name": "Other quantity of Wheat received",
-          "uuid": "7c2bb32b-1a3a-42ed-bc13-3ec9fb0059f9",
+          "name": "How much quantity of Pulse you get",
+          "uuid": "fb8fa119-f171-4e7a-934b-bd7fb9eb9b07",
           "keyValues": [],
           "concept": {
-            "name": "Other quantity of Wheat received",
-            "uuid": "6488ba4d-9e30-4a16-92ea-f6a6d0351cb7"
-          },
-          "displayOrder":8 ,
-          "mandatory": false
-        },
-        {
-          "name": "How much quantity of Pulse you get? (Check snacks)",
-          "uuid": "dc6e2eac-fb4e-4b88-88e2-a3ae647e2a53",
-          "keyValues": [],
-          "concept": {
-            "name": "How much quantity of Pulse you get? (Check snacks)",
+            "name": "How much quantity of Pulse you get",
             "uuid": "aec2dbaa-2947-4fff-9b99-130dc90a6fd7"
           },
-          "displayOrder":9,
+          "displayOrder":5.1,
           "mandatory": true
         },
         {
-          "name": "Other quantity of Pulses received",
-          "uuid": "d55573df-abf3-4421-aab1-ad5854e36d92",
+          "name": "How much quantity of Salt you get",
+          "uuid": "35e995ef-9586-4b9f-8083-c914a5aff2f9",
           "keyValues": [],
           "concept": {
-            "name": "Other quantity of Pulses received",
-            "uuid": "9707a83e-5999-42d1-ad22-5bd266149915"
-          },
-          "displayOrder":10,
-          "mandatory": false
-        },
-        {
-          "name": "How much quantity of Salt you get? (Check snacks)",
-          "uuid": "4ed48d86-af03-47c5-bacb-29db5972245b",
-          "keyValues": [],
-          "concept": {
-            "name": "How much quantity of Salt you get? (Check snacks)",
+            "name": "How much quantity of Salt you get",
             "uuid": "57b590fc-e84d-4345-954a-b7c162fe3c23"
           },
-          "displayOrder": 11,
+          "displayOrder":6.1,
           "mandatory": true
-        },
-        {
-          "name": "Other quantity of Salt received",
-          "uuid": "5d25c760-742c-4232-accf-37996cd3a08b",
-          "keyValues": [],
-          "concept": {
-            "name": "Other quantity of Salt received",
-            "uuid": "531d2956-3656-4bfb-a5cf-fb64417c866b"
-          },
-          "displayOrder":12 ,
-          "mandatory": false
         },
         {
           "name": "What did you cook from the snacks received",
-          "uuid": "860b4680-fc35-418a-830c-e3637ca5c2d3",
+          "uuid": "2f9a26ae-0e8b-4994-8995-d40bdb35171e",
           "keyValues": [],
           "concept": {
             "uuid": "f75e6020-ce0a-46b9-ba53-13c2b31c4a23",
             "name": "What did you cook from the snacks received"
           },
-          "displayOrder": 13,
+          "displayOrder":7.1,
           "mandatory": true
         },
         {
           "name": "Got any benefits of government programme/scheme",
-          "uuid": "3614c31f-ba96-4637-b82f-1b51ba6c409e",
+          "uuid": "00b89c03-61e6-4c50-817c-d30a57407aeb",
           "keyValues": [],
           "concept": {
             "name": "Got any benefits of government programme/scheme",
             "uuid": "defa9abf-0e40-4df8-b49a-c48ef52f6e0a"  
           },
-          "displayOrder":14,
+          "displayOrder":8.1,
           "mandatory": true
         },
         {
           "name": "Programme/scheme under which received entitlements",
-          "uuid": "8f6cc477-c85e-41dd-9169-0623d55d6350",
+          "uuid": "ea5e91e8-c7e3-4a8f-8759-1581d05b914e",
           "keyValues": [],
           "concept": {
             "name": "Programme/scheme under which received entitlements",
             "uuid": "7cc5007f-ebc5-4b66-abd7-19231554422d"
           },
-          "displayOrder":15,
+          "displayOrder":9.1,
           "mandatory": true
         },
         {
           "name": "Reason for not getting benefits under government programme/scheme",
-          "uuid": "e75c8e0f-9126-44f9-b47f-de034223b3ae",
+          "uuid": "c2c40bc4-28a8-4aab-87a6-5df069f805e9",
           "keyValues": [],
           "concept": {
             "name": "Reason for not getting benefits under government programme/scheme",
             "uuid": "e4ebdc27-6d52-47ce-86ad-4f9c63609c51"
           },
-          "displayOrder":16,
+          "displayOrder":10.1,
           "mandatory": true
         },
         {
           "name": "Other reason for not getting benefits",
-          "uuid": "52320d19-54f3-47e9-b9bc-f1d0253756e4",
+          "uuid": "a69aa67e-eb0d-49e0-ae1a-0f6eb09f77aa",
           "keyValues": [],
           "concept": {
             "uuid": "48717220-15b0-4c61-9186-3f5ccec69246",
             "name": "Other reason for not getting benefits"
             
           },
-          "displayOrder":17,
+          "displayOrder":11.1,
           "mandatory":false
         }     
       ]

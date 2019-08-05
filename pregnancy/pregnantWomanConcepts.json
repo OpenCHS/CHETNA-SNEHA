@@ -972,5 +972,148 @@
     "uuid": "8e49ba64-90a4-417e-9b5a-8aa19406936f",
     "name": "Other reason for not using any contraception method",
     "dataType":"Text"
-  }  
+  },
+  {
+    "uuid": "048bd515-0e6a-4ef8-8fe0-75a98e9f09df",
+    "name": "BMI status",
+    "dataType":"Text"
+  },
+  {
+    "uuid": "6d933459-731a-48c2-9efe-5bb139efb083",
+    "name": "During baseline survey"
+  },
+  {
+    "uuid": "28108b59-e939-4775-9be8-cee321790dde",
+    "name": "After baseline survey"
+  },
+  {
+    "name": "Enrolment in SNEHA project",
+    "uuid": "4b6a96f3-c7ff-49fc-877d-5f0a4ab3a352",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "6d933459-731a-48c2-9efe-5bb139efb083",
+        "name": "During baseline survey"
+      },
+      {
+        "uuid": "28108b59-e939-4775-9be8-cee321790dde",
+        "name": "After baseline survey"
+      }
+    ]
+  },
+  {
+    "name": "Has any child died",
+    "uuid": "7cbc56e0-b34d-48ba-8c6d-28c9d562a1b8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  }, 
+  {
+    "uuid": "3f755631-2d78-414d-8b97-6abd632921a9",
+    "name": "Pre term child"
+  },
+  {
+    "uuid": "f894a948-df72-4d00-92b3-1dfdad0b9cb7",
+    "name": "Died after birth"
+  },
+  {
+    "uuid": "afa5dd39-4d4c-4a7a-87e4-5ca0c60bef29",
+    "name": "Still birth"
+  },
+  {
+    "uuid": "1d9a590c-3dfc-45bf-bd81-3df052177980",
+    "name": "Low birth weight child"
+  },
+  {
+    "name": "Reason for child's death",
+    "uuid": "2858f98e-b558-4ed2-bb18-839bcc05bfae",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "fb079822-6338-46fe-9919-112686850e2d",
+        "name": "Miscarriage"
+      },
+      {
+        "uuid": "3f755631-2d78-414d-8b97-6abd632921a9",
+        "name": "Pre term child"
+      },
+      {
+        "uuid": "f894a948-df72-4d00-92b3-1dfdad0b9cb7",
+        "name": "Died after birth"
+      },
+      {
+        "uuid": "afa5dd39-4d4c-4a7a-87e4-5ca0c60bef29",
+        "name": "Still birth"
+      },
+      {
+        "uuid": "1d9a590c-3dfc-45bf-bd81-3df052177980",
+        "name": "Low birth weight child"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      }
+    ]
+  },
+  {
+    "uuid": "bef19429-d238-472d-8599-c1c4d3193259",
+    "name": "Other reason for child's death",
+    "dataType":"Text"
+  },
+  {
+    "uuid": "c7bfff2a-43f6-4547-a0ad-a6837f22688f",
+    "name": "Infection"
+  },
+  {
+    "uuid": "a617334c-de9b-4bf3-87ee-b4784d08a124",
+    "name": "Medical complication"
+  },
+  {
+    "uuid": "d28f9807-fcc6-4f59-a1fa-35e31e3bc56e",
+    "name": "Anaemia"
+  },
+  {
+    "uuid": "1c9b0d59-7705-495d-b11a-05792ea9a274",
+    "name": "Undernourished mother"
+  },
+  {
+    "name": "Reason for miscarriage",
+    "uuid": "f304f1e6-b9d3-4f0e-b241-20e6d8b1decf",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c7bfff2a-43f6-4547-a0ad-a6837f22688f",
+        "name": "Infection"
+      },
+      {
+        "uuid": "a617334c-de9b-4bf3-87ee-b4784d08a124",
+        "name": "Medical complication"
+      },
+      {
+        "uuid": "d28f9807-fcc6-4f59-a1fa-35e31e3bc56e",
+        "name": "Anaemia"
+      },
+      {
+        "uuid": "1c9b0d59-7705-495d-b11a-05792ea9a274",
+        "name": "Undernourished mother"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      }
+    ]
+  },
+  {
+    "uuid": "6badabd6-cb32-42ff-acc8-545b1536a368",
+    "name": "Other reason for miscarriage",
+    "dataType":"Text"
+  }
+
+  
 ]
