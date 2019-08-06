@@ -19,7 +19,7 @@ const getBMIStatus = (bmiValue) => {
         status = "Underweight";
     }
     else if (bmiValue > 18.5 && bmiValue < 24.9) {
-        status = "Normal/Healthy Weight";
+        status = "Normal weight";
     }
     else if (bmiValue > 25.0 && bmiValue < 29.9) {
         status = "Overweight";
@@ -52,10 +52,15 @@ class PregnantWomenEnrolmentViewHandler {
     }
 
     bmiStatus(programEnrolment, formElement){
-        const bmiValue = programEnrolment.getObservationValue('BMI');
-        return _.isNil(bmiValue) ?
+        let weight = programEnrolment.getObservationValue('Weight');
+        let height = programEnrolment.getObservationValue('Height');
+        let bmi = '';
+        if (_.isNumber(height) && _.isNumber(weight)) {
+            bmi = lib.C.calculateBMI(weight, height);
+        }
+        return _.isNil(bmi) ?
             new FormElementStatus(formElement.uuid, true) :
-            new FormElementStatus(formElement.uuid, true, getBMIStatus(bmiValue));  
+            new FormElementStatus(formElement.uuid, true, getBMIStatus(bmi));
     }
     
     edd(programEnrolment, formElement) {
