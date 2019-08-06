@@ -505,11 +505,7 @@
       }
     ]
   },
-  {
-    "uuid": "f75e6020-ce0a-46b9-ba53-13c2b31c4a23",
-    "name": "What did you cook from the snacks received",
-    "dataType":"Text"
-  } , 
+   
   {
     "uuid": "c0b0e549-d209-4754-87bf-9b5f547a57d8",
     "name": "Other things that should be kept in mind while preparing food",

@@ -89,8 +89,7 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       }
     ]
   },
@@ -173,33 +172,6 @@
   {
     "uuid": "dd941f24-f63f-44c0-a784-fbd75b6df171",
     "name": "1 year"
-  },
-  {
-    "name": "For how long child should be breast fed exclusively",
-    "uuid": "48cc9d87-5009-4539-b9f7-f910240d23ce",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "8bf71992-501f-441e-a1a9-c7056a07a873",
-        "name": "Till completion of 6 months"
-      },
-      {
-        "uuid": "0640d99b-9325-41b5-9fd6-a1472ec64c0b",
-        "name": "3 months"
-      },
-      {
-        "uuid": "d324810f-0cc9-423d-bf24-4db041990d1d",
-        "name": "9 months"
-      },
-      {
-        "uuid": "dd941f24-f63f-44c0-a784-fbd75b6df171",
-        "name": "1 year"
-      },
-      {
-        "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
-      }
-    ]
   },
   {
     "uuid": "df5252dc-9cc6-4478-9db6-b9ed27e8b6e4",
@@ -310,12 +282,12 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique": true
       }
     ]
   },
@@ -336,7 +308,7 @@
     "name": "Salt"
   },
   {
-    "name": "What do you get as a snacks",
+    "name": "What does mother get as a snacks",
     "uuid": "5fe0c780-042a-448f-b7d5-50c3a01a9fea",
     "dataType": "Coded",
     "answers": [
@@ -355,52 +327,12 @@
       {
         "uuid": "7996b361-856d-4923-a94c-428adb71a79d",
         "name": "Salt"
-      },
-      {
-        "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique": true
       }
     ]
   },
   {
     "uuid": "937ca13a-d0a1-435b-9c41-3658ae5cbfab",
     "name": "Less spicy food"
-  },
-  {
-    "name": "What should be given to the child soon after birth",
-    "uuid": "cdb77995-68f1-4d61-877e-dcb4bf46cdad",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "cacfbbe8-cd8e-4f1e-aed5-2daf3be2f422",
-        "name": "Colostrum"
-      },
-      {
-        "uuid": "396b92a8-9778-4b90-8cfc-b3674b5f7989",
-        "name": "Honey water"
-      },
-      {
-        "uuid": "81dec7a1-ef03-4a18-8c4b-3f930c4f2c1e",
-        "name": "Jaggery water"
-      },
-      {
-        "uuid": "cbfffbc6-9774-46e8-ad5a-7a9e4efabc5e",
-        "name": "Pre lacteal"
-      },
-      {
-        "uuid": "19057653-56d7-483d-ae27-a746b9693fe1",
-        "name": "Cow's milk"
-      },
-      {
-        "uuid": "77476e1e-3e8e-48e4-b0b1-0756c305a550",
-        "name": "Bottle water"
-      },
-      {
-        "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
-      }
-    ]
   },
   {
     "uuid": "8bf71992-501f-441e-a1a9-c7056a07a873",
@@ -977,7 +909,7 @@
     "name": "2 Packets"
   },
   {
-    "name": "How much quantity of Oil you get",
+    "name": "How much quantity of Oil mother gets",
     "uuid": "8dcd7314-2ff9-4185-965f-311e989f6500",
     "dataType": "Coded",
     "answers": [
@@ -996,7 +928,7 @@
     ]
   },
   {
-    "name": "How much quantity of Wheat you get",
+    "name": "How much quantity of Wheat mother gets",
     "uuid": "12ef4b24-859b-4de6-89fa-785c1c818c17",
     "dataType": "Coded",
     "answers": [
@@ -1015,7 +947,7 @@
     ]
   },
   {
-    "name": "How much quantity of Pulse you get",
+    "name": "How much quantity of Pulses mother gets",
     "uuid": "aec2dbaa-2947-4fff-9b99-130dc90a6fd7",
     "dataType": "Coded",
     "answers": [
@@ -1034,7 +966,7 @@
     ]
   },
   {
-    "name": "How much quantity of Salt you get",
+    "name": "How much quantity of Salt mother gets",
     "uuid": "57b590fc-e84d-4345-954a-b7c162fe3c23",
     "dataType": "Coded",
     "answers": [
@@ -1210,10 +1142,124 @@
         "name": "Outside the home"
       }
     ]
-  }
- 
-
-
-
-
+  },
+  {
+    "name": "Type of delivery",
+    "uuid": "69d0acf1-c32b-4694-9bc2-874b5e7a44c8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      }
+    ]
+  },
+  {
+    "name": "What does child get as a snacks",
+    "uuid": "7255ceda-8f25-44ae-b42d-eee317549556",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "fdbcf8d1-1438-498e-9e89-8ef4ae83608c",
+        "name": "Oil"
+      },
+      {
+        "uuid": "f57a2ec2-024f-4c69-bb3d-9598a98104f6",
+        "name": "Wheat (cereal)"
+      },
+      {
+        "uuid": "e2b76701-fd5b-4821-92b1-9c1509ae77dd",
+        "name": "Pulses"
+      },
+      {
+        "uuid": "7996b361-856d-4923-a94c-428adb71a79d",
+        "name": "Salt"
+      }
+    ]
+  },{
+    "name": "How much quantity of Oil child gets",
+    "uuid": "e1d110fe-2fa1-47ef-839c-227bcbb285e5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      }
+    ]
+  },
+  {
+    "name": "How much quantity of Wheat child gets",
+    "uuid": "2b79bdf2-90dd-4b34-8650-31d5189e0e96",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      }
+    ]
+  },
+  {
+    "name": "How much quantity of Pulses child gets",
+    "uuid": "05b1d30a-0f94-4cc9-be6d-08a9a8f342c1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      }
+    ]
+  },
+  {
+    "name": "How much quantity of Salt child gets",
+    "uuid": "5f10533b-cdd4-40cd-8928-55fccceb69f0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      }
+    ]
+  },
+  {
+    "uuid": "f75e6020-ce0a-46b9-ba53-13c2b31c4a23",
+    "name": "What did you cook from the snacks received",
+    "dataType":"Text"
+  } ,
+  {
+    "uuid": "3f921ce0-d16f-420c-8d0f-df9b9bcb3da2",
+    "name": "What did you cook for the child from the snacks received",
+    "dataType":"Text"
+  } 
 ]

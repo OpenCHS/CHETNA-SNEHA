@@ -815,11 +815,6 @@
     ]
   },
   {
-    "uuid": "8c895b21-e6fa-416a-ac16-f2671b2de416",
-    "name": "Other snacks received",
-    "dataType": "Text"
-  },
-  {
     "name": "Number of times snack/nutrition receievd in the month",
     "uuid": "7a2b9323-497b-49fe-8ae8-a17e5166b872",
     "dataType": "Numeric"

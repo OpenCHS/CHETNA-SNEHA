@@ -4,6 +4,7 @@ import {
     FormElementsStatusHelper,
     WithName
 } from 'rules-config/rules';
+import lib from '../shared/rules/lib';
 
 const WithRegistrationStatusBuilder = StatusBuilderAnnotationFactory('individual', 'formElement');
 const RegistrationViewFilter = RuleFactory("b92e78da-efd2-4ac6-8a4b-21cad94e9a78", "ViewFilter");
@@ -57,22 +58,21 @@ class ChetnaRegistrationViewHandler {
     abc17([], statusBuilder) {
         statusBuilder.skipAnswers("Farming","Other","Don't know",'Housework');
         statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes;
-    } 
-
-    
+    }     
 }
 
 @RegistrationValidation("afe6e6d4-69e2-40ac-88ea-494b6408493c", "Registration Form Validation", 100.0)
 class RegistrationValidationHandler {
-    validate(individual) {
-        const validationResults = [];
-        if (individual.getAgeInYears() < individual.getObservationValue('Age at marriage')  ) {
-            validationResults.push(lib.C.createValidationError('Age at marriage cannot be greater than age'));
-        }
-        return validationResults;
-    }
     static exec(individual, validationErrors) {
         return new RegistrationValidationHandler().validate(individual);
+    }
+
+    validate(individual) {
+        const validationResults = [];
+        if (individual.getAgeInYears() < individual.getObservationValue('Age at marriage')) {
+            validationResults.push(lib.C.createValidationError('Age at marriage cannot be greater than current age'));
+        }
+        return validationResults;
     }
 }
 

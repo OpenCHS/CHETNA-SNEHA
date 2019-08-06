@@ -187,7 +187,7 @@
     "dataType":"Text"
   },
   {
-    "name": "Is child registerred in anganwadi centre",
+    "name": "Is child registered in anganwadi centre",
     "uuid": "dd8c46a3-5b76-4e4c-9547-79e2821ec702",
     "dataType": "Coded",
     "answers": [
@@ -370,7 +370,13 @@
     "uuid": "6de1476d-e54a-425d-a89a-4e289a2908a8",
     "dataType": "Numeric",
     "unit": "years"
+  },
+  {
+    "uuid": "a5a36a62-f7e3-40b0-93d8-58ddb23d1b9e",
+    "name": "Other type of delivery",
+    "dataType":"Text"
   }
+  
   
 
 

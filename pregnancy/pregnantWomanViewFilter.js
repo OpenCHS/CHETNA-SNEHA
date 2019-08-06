@@ -134,13 +134,6 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
 
-    @WithName('Other snacks received')
-    @statusBuilder
-    a20([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
-        .containsAnswerConceptName("Other");
-    }
-
     @WithName('Other who gave you information about government programme/scheme')
     @statusBuilder
     a21([], statusBuilder) {
@@ -300,7 +293,7 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas").is.no;
     }
 
-    @WithName('What do you get as a snacks?')
+    @WithName('What does mother get as a snacks')
     @statusBuilder
     a67([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
@@ -369,31 +362,31 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Do you have any addiction").is.yes;
     }
 
-    @WithName('How much quantity of Oil you get')
+    @WithName('How much quantity of Oil mother gets')
     @statusBuilder
     a80([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
         .containsAnswerConceptName("Oil");
     }
 
-    @WithName('How much quantity of Wheat you get')
+    @WithName('How much quantity of Wheat mother gets')
     @statusBuilder
     a82([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
         .containsAnswerConceptName("Wheat (cereal)");
     }
 
-    @WithName('How much quantity of Pulse you get')
+    @WithName('How much quantity of Pulses mother gets')
     @statusBuilder
     a84([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
         .containsAnswerConceptName("Pulses");
     }
 
-    @WithName('How much quantity of Salt you get')
+    @WithName('How much quantity of Salt mother gets')
     @statusBuilder
     a86([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
         .containsAnswerConceptName("Salt");
     }
 

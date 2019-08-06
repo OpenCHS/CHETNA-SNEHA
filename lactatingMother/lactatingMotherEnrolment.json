@@ -507,56 +507,56 @@
           "mandatory": true
         },
          {
-          "name": "What do you get as a snacks",
+          "name": "What does mother get as a snacks",
           "uuid": "d02dcec2-3c49-437f-8ded-f1a1790f3f89",
           "type":"MultiSelect",
           "keyValues": [],
           "concept": {
-            "name": "What do you get as a snacks",
+            "name": "What does mother get as a snacks",
             "uuid": "5fe0c780-042a-448f-b7d5-50c3a01a9fea"
           },
           "displayOrder":2.1,
           "mandatory": true
         },
         {
-          "name": "How much quantity of Oil you get",
+          "name": "How much quantity of Oil mother gets",
           "uuid": "b86da2fe-8493-49c8-b44a-f88fb2eb1afb",
           "keyValues": [],
           "concept": {
-            "name": "How much quantity of Oil you get",
+            "name": "How much quantity of Oil mother gets",
             "uuid": "8dcd7314-2ff9-4185-965f-311e989f6500"
           },
           "displayOrder":3.1,
           "mandatory": true
         },
         {
-          "name": "How much quantity of Wheat you get",
+          "name": "How much quantity of Wheat mother gets",
           "uuid": "d6cdf2b2-c6d8-4c26-8035-0b4ea9d52a99",
           "keyValues": [],
           "concept": {
-            "name": "How much quantity of Wheat you get",
+            "name": "How much quantity of Wheat mother gets",
             "uuid": "12ef4b24-859b-4de6-89fa-785c1c818c17"
           },
           "displayOrder":4.1,
           "mandatory": true
         },
         {
-          "name": "How much quantity of Pulse you get",
+          "name": "How much quantity of Pulses mother gets",
           "uuid": "fb8fa119-f171-4e7a-934b-bd7fb9eb9b07",
           "keyValues": [],
           "concept": {
-            "name": "How much quantity of Pulse you get",
+            "name": "How much quantity of Pulses mother gets",
             "uuid": "aec2dbaa-2947-4fff-9b99-130dc90a6fd7"
           },
           "displayOrder":5.1,
           "mandatory": true
         },
         {
-          "name": "How much quantity of Salt you get",
+          "name": "How much quantity of Salt mother gets",
           "uuid": "35e995ef-9586-4b9f-8083-c914a5aff2f9",
           "keyValues": [],
           "concept": {
-            "name": "How much quantity of Salt you get",
+            "name": "How much quantity of Salt mother gets",
             "uuid": "57b590fc-e84d-4345-954a-b7c162fe3c23"
           },
           "displayOrder":6.1,

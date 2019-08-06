@@ -105,7 +105,7 @@ class LactatingMotherEnrolmentViewHandler {
         statusBuilder.show().whenItem(getYoungestChildAgeInMonths(programEnrolment)).is.greaterThanOrEqualTo(6);
     }
 
-    @WithName('What do you get as a snacks')
+    @WithName('What does mother get as a snacks')
     @statusBuilder
     ac24([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get snacks as take home ration from Anganwadi centre")
@@ -119,31 +119,31 @@ class LactatingMotherEnrolmentViewHandler {
         .is.yes;
     }
 
-    @WithName('How much quantity of Oil you get')
+    @WithName('How much quantity of Oil mother gets')
     @statusBuilder
     ac27([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
         .containsAnswerConceptName("Oil");
     }
 
-    @WithName('How much quantity of Wheat you get')
+    @WithName('How much quantity of Wheat mother gets')
     @statusBuilder
     ac29([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
         .containsAnswerConceptName("Wheat (cereal)");
     }
    
-    @WithName('How much quantity of Pulse you get')
+    @WithName('How much quantity of Pulses mother gets')
     @statusBuilder
     ac31([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
         .containsAnswerConceptName("Pulses");
     }
 
-    @WithName('How much quantity of Salt you get')
+    @WithName('How much quantity of Salt mother gets')
     @statusBuilder
     ac33([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What do you get as a snacks")
+        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
         .containsAnswerConceptName("Salt");
     }
 
@@ -205,14 +205,6 @@ class LactatingMotherEnrolmentViewHandler {
     @WithName('Other points you kept in a mind while preparing a food for the child')
     @statusBuilder
     ac43([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What are the points you kept in a mind while preparing a food for the child")
-        .containsAnswerConceptName("Other");
-    }
-
-    
-     @WithName('Other points you kept in a mind while preparing a food for the child')
-    @statusBuilder
-    ac45([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What are the points you kept in a mind while preparing a food for the child")
         .containsAnswerConceptName("Other");
     }
