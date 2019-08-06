@@ -550,6 +550,11 @@
     "dataType": "Text"
   },
   {
+    "uuid": "33eb533a-1bcc-4be4-8590-31bc68494a8d",
+    "name": "Other types of complementary food given to the child",
+    "dataType": "Text"
+  },
+  {
     "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",
     "name": "Every an hour"
   },

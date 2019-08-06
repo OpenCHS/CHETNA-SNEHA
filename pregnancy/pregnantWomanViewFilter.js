@@ -219,13 +219,6 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
     }
 
-    @WithName('Which are the services you availed in previous pregnancy')
-    @statusBuilder
-    a44([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1)
-        .and.when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no;
-    }  
-
     @WithName('Number of IFA pills (every month)')
     @statusBuilder
     a54([], statusBuilder) {
@@ -436,6 +429,69 @@ class PregnantWomenEnrolmentViewHandler {
     @statusBuilder
     a95([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.yes;
+    }
+
+    @WithName('Weight measurement')
+    @statusBuilder
+    a100([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
+    }
+
+    @WithName('BP measurement')
+    @statusBuilder
+    a101([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
+    }
+
+    @WithName('TT vaccines')
+    @statusBuilder
+    a102([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
+    }
+
+    @WithName('Blood test')
+    @statusBuilder
+    a103([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
+    }
+
+    @WithName('Urine test')
+    @statusBuilder
+    a104([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
+    }
+
+    @WithName('IFA tablets')
+    @statusBuilder
+    a105([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
+    }
+
+    @WithName('Calcium supplement')
+    @statusBuilder
+    a106([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
+    }
+
+    @WithName('Ultrasound scan')
+    @statusBuilder
+    a107([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
+    }
+
+    @WithName('Abdominal check-ups')
+    @statusBuilder
+    a108([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Done checkup by doctor in current pregnancy").is.no
+        .and.when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
     }
 
     @WithName('Has any child died')

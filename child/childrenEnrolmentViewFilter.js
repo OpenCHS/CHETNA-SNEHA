@@ -442,6 +442,13 @@ class ChildrenEnrolmentViewHandler {
         .containsAnswerConceptName("Salt");
     }
 
+    @WithName('What did you cook from the snacks received')
+    @statusBuilder
+    abc60([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Do you get snacks as take home ration from Anganwadi centre")
+        .is.yes;
+    }
+
     @WithName('Programme/scheme under which received entitlements')
     @statusBuilder
     ab61([], statusBuilder) {

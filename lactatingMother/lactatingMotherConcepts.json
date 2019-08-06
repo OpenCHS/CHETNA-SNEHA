@@ -280,11 +280,6 @@
     ]
   },
   {
-    "uuid": "ac7fc74a-1b1e-43fe-a93f-39b175a59c2c",
-    "name": "Other types of complementary food given to the child",
-    "dataType": "Text"
-  },
-  {
     "name": "How much do you give complementary food to the child",
     "uuid": "cd7c946f-3b75-4e74-8e9d-8f0218ea5d80",
     "dataType": "Coded",
