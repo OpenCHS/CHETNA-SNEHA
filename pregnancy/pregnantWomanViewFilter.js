@@ -106,7 +106,7 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     } 
 
-     @WithName('Specify, Other reasons to choose place of delivery')
+     @WithName('Other reasons to choose place of delivery')
     @statusBuilder
     a16([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Reasons to choose this place for delivery")
@@ -127,7 +127,7 @@ class PregnantWomenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
     
-    @WithName('Specify,Other reason for not attending mamta divas')
+    @WithName('Other reason for not attending mamta divas')
     @statusBuilder
     a19([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Reason for not attending mamta divas")
@@ -243,7 +243,7 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Consumed IFA tablets").is.yes;
     }
 
-    @WithName('Why you did not consume IFA tablets?')
+    @WithName('Why you did not consume IFA tablets')
     @statusBuilder
     a58([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Consumed IFA tablets").is.no;
@@ -293,14 +293,21 @@ class PregnantWomenEnrolmentViewHandler {
         .is.yes;
     }
 
-    @WithName('How many times do you get this snack/nutrition in the month')
+    @WithName('Number of times snack/nutrition receievd in the month')
     @statusBuilder
     a69([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
         .is.yes;
     }
 
-    @WithName('Who gave you information about government programme/scheme?')
+    @WithName('Number of times food reveived in the last month')
+    @statusBuilder
+    a69([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
+        .is.yes;
+    }
+
+    @WithName('Who gave you information about government programme/scheme')
     @statusBuilder
     a70([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
