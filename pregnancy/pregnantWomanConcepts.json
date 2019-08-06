@@ -1070,10 +1070,6 @@
     "name": "Medical complication"
   },
   {
-    "uuid": "d28f9807-fcc6-4f59-a1fa-35e31e3bc56e",
-    "name": "Anaemia"
-  },
-  {
     "uuid": "1c9b0d59-7705-495d-b11a-05792ea9a274",
     "name": "Undernourished mother"
   },
@@ -1091,7 +1087,7 @@
         "name": "Medical complication"
       },
       {
-        "uuid": "d28f9807-fcc6-4f59-a1fa-35e31e3bc56e",
+        "uuid": "43ea47d8-8c92-4564-a9df-eee28191f85c",
         "name": "Anaemia"
       },
       {
