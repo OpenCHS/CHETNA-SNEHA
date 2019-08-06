@@ -69,7 +69,7 @@ class RegistrationValidationHandler {
 
     validate(individual) {
         const validationResults = [];
-        if (individual.getAgeInYears() < individual.getObservationValue('Age at marriage')) {
+        if (individual.getAgeInYears() < individual.getObservationValue('Age at Marriage')) {
             validationResults.push(lib.C.createValidationError('Age at marriage cannot be greater than current age'));
         }
         return validationResults;
