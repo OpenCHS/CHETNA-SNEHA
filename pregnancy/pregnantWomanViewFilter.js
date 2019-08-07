@@ -302,7 +302,7 @@ class PregnantWomenEnrolmentViewHandler {
 
     @WithName('Number of times food reveived in the last month')
     @statusBuilder
-    a69([], statusBuilder) {
+    ac69([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
         .is.yes;
     }
