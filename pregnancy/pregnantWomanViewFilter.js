@@ -130,7 +130,7 @@ class PregnantWomenEnrolmentViewHandler {
     @WithName('Other reason for not attending mamta divas')
     @statusBuilder
     a19([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Reason for not attending mamta divas")
+        statusBuilder.show().when.valueInEnrolment("Why you do not attend mamta divas")
         .containsAnswerConceptName("Other");
     }
 
