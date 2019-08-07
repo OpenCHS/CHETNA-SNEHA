@@ -457,7 +457,43 @@
           },
           "displayOrder":13,
           "mandatory": false
-        }
+        },
+        {
+          "name": "Is vaccination good for child's health",
+          "uuid": "5872b861-ee19-4613-b500-db74c9e47f6a",
+          "type":"SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Is vaccination good for child's health",
+            "uuid": "c0a014a2-2f9a-4221-8e2e-2cee102d1d3d"
+          },
+          "displayOrder": 14,
+          "mandatory": true
+        },
+        {
+          "name": "What are the advantages of immunization",
+          "uuid": "d440606a-85d0-4aad-989a-02d00240762f",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "What are the advantages of immunization",
+            "uuid": "15f71cc5-73de-4cf0-a96f-c3b0477eb7d0"
+          },
+          "displayOrder": 15,
+          "mandatory": true
+        },
+        {
+          "name": "What are the reasons of vaccination not being good",
+          "uuid": "b9bf6729-8132-4eba-bbad-4da3cbbbe1f0",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "What are the reasons of vaccination not being good",
+            "uuid": "2c0e986b-0eb3-4720-9cdd-9c68b34d1ef6"
+          },
+          "displayOrder":16 ,
+          "mandatory": true
+        }   
       ]
     },
     {
@@ -467,7 +503,7 @@
       "displayOrder": 5,
       "formElements": [
         {
-          "name": "What did you give to the child at birth",
+          "name": "What did you give to child at birth",
           "uuid": "45e79e08-fd05-468c-90e7-a4feb68a26b7",
           "keyValues": [],
           "type": "SingleSelect",
@@ -1043,6 +1079,7 @@
         {
           "name": "Got any benefits of government programme/scheme",
           "uuid": "febda242-0dfb-40f9-9344-437b47ad437e",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Got any benefits of government programme/scheme",
@@ -1054,6 +1091,7 @@
         {
           "name": "Programme/scheme under which received entitlements",
           "uuid": "d900d3da-98df-442b-b253-339d23a3c183",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Programme/scheme under which received entitlements",

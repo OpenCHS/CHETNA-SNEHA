@@ -379,7 +379,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('How much quantity of Oil child gets')
     @statusBuilder
     ab52([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What does child get as a snack")
+        statusBuilder.show().when.valueInEnrolment("What does child get as a snacks")
         .containsAnswerConceptName("Oil");
     }
 
@@ -387,7 +387,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('How much quantity of Wheat child gets')
     @statusBuilder
     ab53([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What does child get as a snack")
+        statusBuilder.show().when.valueInEnrolment("What does child get as a snacks")
         .containsAnswerConceptName("Wheat (cereal)");
     }
     
@@ -395,7 +395,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('How much quantity of Pulses child gets')
     @statusBuilder
     ab54([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What does child get as a snack")
+        statusBuilder.show().when.valueInEnrolment("What does child get as a snacks")
         .containsAnswerConceptName("Pulses");
     }
 
@@ -403,7 +403,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('How much quantity of Salt child gets')
     @statusBuilder
     ab55([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What does child get as a snack")
+        statusBuilder.show().when.valueInEnrolment("What does child get as a snacks")
         .containsAnswerConceptName("Salt");
     }
 
@@ -495,6 +495,18 @@ class ChildrenEnrolmentViewHandler {
     @statusBuilder
     ab67([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you have any addiction").is.yes;
+    }
+
+    @WithName('What are the advantages of immunization')
+    @statusBuilder
+    ab68([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is vaccination good for child's health").is.yes;
+    }
+
+    @WithName('What are the reasons of vaccination not being good')
+    @statusBuilder
+    ab69([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is vaccination good for child's health").is.no;
     }
 
 }
