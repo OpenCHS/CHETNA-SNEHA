@@ -66,7 +66,8 @@
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "voided":true
       }
     ]
   },
@@ -132,6 +133,10 @@
     ]
   },
   {
+    "uuid": "a68a8e65-f429-4e0c-9d97-ea3a9f144a5e",
+    "name": "On going"
+  },
+  {
     "name": "Till which age your child has breastfed exclusively",
     "uuid": "1cbb5491-2f4d-4e00-817a-8df6279557f2",
     "dataType": "Coded",
@@ -151,6 +156,10 @@
       {
         "uuid": "dd941f24-f63f-44c0-a784-fbd75b6df171",
         "name": "1 year"
+      },
+      {
+        "uuid": "a68a8e65-f429-4e0c-9d97-ea3a9f144a5e",
+        "name": "On going"
       },
       {
         "name": "Don't know",
