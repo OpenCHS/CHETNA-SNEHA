@@ -1,21 +1,10 @@
 const _ = require("lodash");
-import {
-    FormElementsStatusHelper,
-    FormElementStatus,
-    FormElementStatusBuilder,
-    RuleFactory,
-    StatusBuilderAnnotationFactory,
-    WithName
-} from "rules-config/rules";
-
-import {complicationsBuilder as ComplicationsBuilder} from "rules-config";
-
+import {RuleFactory } from "rules-config/rules";
 const Decision = RuleFactory("d440e0b4-a404-4bdf-ba5e-f1e5d5cf5cc0", "Decision");
 
 @Decision("6426774f-a01d-45ea-bf5c-f49933e0ddb1", "Chetna Child Enrolment Decisions", 100.0, {})
 export class ChetnaChildEnrolmentDecisionHandler {
     static exec(programEnrolment, decisions, context, today) {
-
 
         const zScoreGradeStatusMappingWeightForAge = {
             '1': 'Normal',
@@ -30,7 +19,7 @@ export class ChetnaChildEnrolmentDecisionHandler {
         };
 
 //ordered map
-//KEY:status, value: max z-score for the particular satatus
+//KEY:status, value: max z-score for the particular status
 
         const zScoreGradeStatusMappingWeightForHeight = [
             ["Severely wasted", -3],
@@ -41,14 +30,12 @@ export class ChetnaChildEnrolmentDecisionHandler {
             ["Obese", Infinity],
         ];
 
-
         const weightForHeightStatus = function (zScore) {
             let found = _.find(zScoreGradeStatusMappingWeightForHeight, function (currentStatus) {
                 return zScore <= currentStatus[1];
             });
             return found && found[0];
         }
-
 
         const getGradeforZscore = (zScore) => {
             let grade;
@@ -112,11 +99,7 @@ export class ChetnaChildEnrolmentDecisionHandler {
         addIfRequired(decisions.enrolmentDecisions, "Weight for age Grade", nutritionalStatus.wfaGrade);
         addIfRequired(decisions.enrolmentDecisions, "Weight for age Status", nutritionalStatus.wfaStatus ? [nutritionalStatus.wfaStatus] : []);
         return decisions;
-
     }
-
-
-
 }
 
 

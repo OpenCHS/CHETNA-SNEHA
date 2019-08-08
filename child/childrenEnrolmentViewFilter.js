@@ -2,8 +2,39 @@ import {
     StatusBuilderAnnotationFactory, 
     RuleFactory,  
     FormElementsStatusHelper,
+    FormElementStatus,
     WithName
 } from 'rules-config/rules';
+
+const getGradeforZscore = (zScore) => {
+    let grade;
+    if (zScore <= -3) {
+        grade = 3;
+    }
+    else if (zScore > -3 && zScore < -2) {
+        grade = 2;
+    }
+    else if (zScore >= -2) {
+        grade = 1;
+    }
+    return grade;
+};
+
+const zScoreGradeStatusMappingWeightForAge = {
+    '1': 'Normal',
+    '2': 'Moderately Underweight',
+    '3': 'Severely Underweight'
+};
+
+const nutritionalStatusForChild = (individual, asOnDate, weight, height) => {
+    const zScoresForChild = ruleServiceLibraryInterfaceForSharingModules.common.getZScore(individual, asOnDate, weight, height);
+    console.log(zScoresForChild);
+    const wfaGrade = getGradeforZscore(zScoresForChild.wfa);
+    const wfaStatus = zScoreGradeStatusMappingWeightForAge[wfaGrade];
+    return {
+        wfaStatus: wfaStatus
+    };
+};
 
 const statusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
 const ChildrenViewFilter = RuleFactory("d440e0b4-a404-4bdf-ba5e-f1e5d5cf5cc0", "ViewFilter");
@@ -13,13 +44,29 @@ class ChildrenEnrolmentViewHandler {
     static exec(programEnrolment, formElementGroup) {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new ChildrenEnrolmentViewHandler(), programEnrolment, formElementGroup);
-    }    
+    }        
 
-   
+    currentNutritionalStatusOfChild(programEnrolment, formElement) {
+        const weight = programEnrolment.getObservationValue("Weight");
+        const height = programEnrolment.getObservationValue("Height");
+        const enrolmentDateTime = programEnrolment.enrolmentDateTime;
+        const individual = programEnrolment.individual;
+        
+        console.log(weight,height,enrolmentDateTime,individual);
+            
+        const nutritionalStatus = nutritionalStatusForChild(individual, enrolmentDateTime, weight, height);
+        
+        console.log("nutritionalStatus is",nutritionalStatus.wfaStatus);
+
+        return _.isNil(nutritionalStatus) ?
+            new FormElementStatus(formElement.uuid, true) :
+            new FormElementStatus(formElement.uuid, true,nutritionalStatus.wfaStatus);
+    }
+
     @WithName('Sickness in last 3 months')
     @statusBuilder
     ab11([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Did child fall a sick in the last 3 months")
+        statusBuilder.show().when.valueInEnrolment("Did child fall sick in the last 3 months")
         .is.yes;
     }
 
@@ -418,6 +465,13 @@ class ChildrenEnrolmentViewHandler {
     ab55([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("What does child get as a snacks")
         .containsAnswerConceptName("Salt");
+    }
+
+    @WithName('Do you get snacks as take home ration from Anganwadi centre')
+    @statusBuilder
+    abc56([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").not.is.no
+        .and.when.ageInMonths.not.is.greaterThanOrEqualTo(6);
     }
 
     @WithName('What does mother get as a snacks')

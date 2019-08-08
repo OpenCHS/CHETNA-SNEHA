@@ -21,12 +21,14 @@ class ChetnaRegistrationViewHandler {
     @WithRegistrationStatusBuilder
     abc11([], statusBuilder) {
         statusBuilder.skipAnswers('Literate','Uneducated');
+        statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(5);
     }  
 
      @WithName('Marital status')
     @WithRegistrationStatusBuilder
     abc12([], statusBuilder) {
         statusBuilder.skipAnswers('Remarried','Other','Separated');
+        statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(5);
     }  
     
     @WithName('Age at marriage')
@@ -46,6 +48,13 @@ class ChetnaRegistrationViewHandler {
     abc15([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Marital status").containsAnswerConceptNameOtherThan("Unmarried");
     }  
+   
+    @WithName('Involved in any occupational activity')
+    @WithRegistrationStatusBuilder
+    ab16([], statusBuilder) {
+        statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(5);
+    } 
+
 
     @WithName('Place for the occupational activity')
     @WithRegistrationStatusBuilder
@@ -57,7 +66,8 @@ class ChetnaRegistrationViewHandler {
     @WithRegistrationStatusBuilder
     abc17([], statusBuilder) {
         statusBuilder.skipAnswers("Farming","Other","Don't know",'Housework');
-        statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes;
+        statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes
+        .and.when.ageInYears.is.greaterThanOrEqualTo(5);
     }     
 }
 
