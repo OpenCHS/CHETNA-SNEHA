@@ -4,7 +4,6 @@
     "uuid": "7f9f9b4e-682c-4330-984f-fe6140699e06",
     "dataType": "Numeric"
   },
-
   {
     "uuid": "bdfb4b5e-0017-4670-bdaf-ba715c24903d",
     "name": "Bhuva"
@@ -26,7 +25,6 @@
             "uuid": "bdfb4b5e-0017-4670-bdaf-ba715c24903d",
             "name": "Bhuva"
           }
-
     ]
   },
   {
@@ -169,7 +167,8 @@
           },
           {
             "uuid": "9e8f950a-1e21-42b2-a9eb-5f9011e18cab",
-            "name": "No treatment given"
+            "name": "No treatment given",
+            "unique":true
           },
           {
             "uuid": "f334ff65-ce30-4373-bf30-cfc28ab17cac",

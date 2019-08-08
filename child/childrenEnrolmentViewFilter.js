@@ -29,11 +29,18 @@ class ChildrenEnrolmentViewHandler {
         statusBuilder.show().when.ageInMonths.is.lessThanOrEqualTo(6);
     }
 
-    @WithName('Till which age your child has breastfed exclusively')
-    @statusBuilder
-    ab10([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
-    }
+    // @WithName('Till which age your child has breastfed exclusively')
+    // @statusBuilder
+    // ab10([], statusBuilder) {
+    //     statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+    // }
+
+    // // When did you give water to the child
+    // @WithName('When did you give water to the child')
+    // @statusBuilder
+    // ab37([], statusBuilder) {
+    // statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+    // }
 
     @WithName('Do you give food when a child is sick')
     @statusBuilder
@@ -119,8 +126,7 @@ class ChildrenEnrolmentViewHandler {
     ab20([], statusBuilder) {
         statusBuilder.skipAnswers("Farming","Other","Don't know",'Housework');
         statusBuilder.show().when.valueInEnrolment("Involved in any occupational activity").is.yes;
-    }    
-   
+    }       
 
     // Number of times got pregnant
     @WithName('Number of times got pregnant')
@@ -243,13 +249,6 @@ class ChildrenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
 
-    // When did you give water to the child
-    @WithName('When did you give water to the child')
-    @statusBuilder
-    ab37([], statusBuilder) {
-    statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
-    }
-
     // When did you start giving complementary food to the child
     @WithName('When did you start giving complementary food to the child')
     @statusBuilder
@@ -261,14 +260,18 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Who has taken decision to start complementary food to the child')
     @statusBuilder
     ab39([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
+        .and.when.valueInEnrolment("When did you start giving complementary food to the child")
+        .not.containsAnswerConceptName("Yet not started");
     }
 
     // What type of food do you give to the child as complementary food
     @WithName('What type of food do you give to the child as complementary food')
     @statusBuilder
     ab40([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
+        .and.when.valueInEnrolment("When did you start giving complementary food to the child")
+        .not.containsAnswerConceptName("Yet not started");
     }
 
     // Other types of complementary food given to the child
@@ -283,21 +286,27 @@ class ChildrenEnrolmentViewHandler {
     @WithName('How much do you give complementary food to the child')
     @statusBuilder
     ab42([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
+        .and.when.valueInEnrolment("When did you start giving complementary food to the child")
+        .not.containsAnswerConceptName("Yet not started");
     }
 
     // How often do you give complementary food to the children
     @WithName('How often do you give complementary food to the children')
     @statusBuilder
     ab43([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
+        .and.when.valueInEnrolment("When did you start giving complementary food to the child")
+        .not.containsAnswerConceptName("Yet not started");
     }
 
     // What are the points you kept in a mind while preparing a food for the child
     @WithName('What are the points you kept in a mind while preparing a food for the child')
     @statusBuilder
     ab44([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
+        .and.when.valueInEnrolment("When did you start giving complementary food to the child")
+        .not.containsAnswerConceptName("Yet not started");
     }
 
     // Other points you kept in a mind while preparing a food for the child
@@ -342,13 +351,17 @@ class ChildrenEnrolmentViewHandler {
     @WithName('When do you wash child’s hand')
     @statusBuilder
     ab49([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
+        .and.when.valueInEnrolment("When did you start giving complementary food to the child")
+        .not.containsAnswerConceptName("Yet not started");
     }
 
     @WithName('What are the points you kept in a mind while feed the child')
     @statusBuilder
     ab50([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
+        .and.when.valueInEnrolment("When did you start giving complementary food to the child")
+        .not.containsAnswerConceptName("Yet not started");
     }
 
     // Does the child get snacks as take home ration from Anganwadi regularly
