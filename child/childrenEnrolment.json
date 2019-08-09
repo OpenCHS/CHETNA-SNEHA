@@ -292,7 +292,12 @@
         {
           "name": "Current nutritional status of child",
           "uuid": "0e9341cd-152d-4f93-80a7-79aaa76422bc",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
           "concept": {
             "name": "Current nutritional status of child",
             "uuid": "7f9f9b4e-682c-4330-984f-fe6140699e06"
