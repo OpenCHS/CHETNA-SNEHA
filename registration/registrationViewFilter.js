@@ -2,7 +2,8 @@ import {
     StatusBuilderAnnotationFactory, 
     RuleFactory,  
     FormElementsStatusHelper,
-    WithName
+    WithName,
+    FormElementStatus
 } from 'rules-config/rules';
 import lib from '../shared/rules/lib';
 
@@ -16,6 +17,16 @@ class ChetnaRegistrationViewHandler {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new ChetnaRegistrationViewHandler(), individual, formElementGroup);
     }    
+
+    totalMembersInTheFamily(individual, formElement) {
+        let maleCount = individual.getObservationValue('Total male members in the family');
+        let femaleCount = individual.getObservationValue('Total female members in the family');
+        let totalMembersInTheFamily = '';
+        if (_.isNumber(maleCount) && _.isNumber(femaleCount)) {
+            totalMembersInTheFamily = maleCount + femaleCount;
+        }
+        return new FormElementStatus(formElement.uuid, true, totalMembersInTheFamily);
+    }
 
     @WithName('Education')
     @WithRegistrationStatusBuilder

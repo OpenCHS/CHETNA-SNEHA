@@ -91,17 +91,6 @@
           "mandatory": true
         },
         {
-          "name": "Total members in the family",
-          "uuid": "9286eed9-9e9d-4df1-add8-013353afe4e1",
-          "keyValues": [],
-          "concept": {
-            "name": "Total members in the family",
-            "uuid": "e0254e9a-3ec8-4efc-9857-921c5f3c9523"
-          },
-          "displayOrder":1.1,
-          "mandatory": true
-        },
-        {
           "name": "Male",
           "uuid": "e37665a3-b5ff-445d-a215-69ef550b11b2",
           "keyValues": [],
@@ -121,6 +110,22 @@
             "uuid": "1a4b04d6-9d76-4ac8-9664-68d1c8930eef"
           },
           "displayOrder":3 ,
+          "mandatory": true
+        },
+        {
+          "name": "Total members in the family",
+          "uuid": "9286eed9-9e9d-4df1-add8-013353afe4e1",
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
+          "concept": {
+            "name": "Total members in the family",
+            "uuid": "e0254e9a-3ec8-4efc-9857-921c5f3c9523"
+          },
+          "displayOrder":3.2,
           "mandatory": true
         },
         {
