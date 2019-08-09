@@ -2,13 +2,55 @@
   "organisation": "CHETNA-SNEHA",
   "catchments": [
     {
-      "name": "1",
-      "uuid": "3ddb2d1a-0f2e-4c84-b376-c9457a1a3763",
+      "name": "Team 1",
+      "uuid": "06b27cd2-ced3-4ebc-ad6a-298301924a36",
       "type": "Area",
       "locations": [
         {
-          "uuid": "4a7f5c0d-a800-4710-a9bf-a2a7c153f830",
-          "comment": "Area 1"
+          "uuid": "71ec9cec-3841-4435-a08a-09cb23a7d6ca",
+          "comment": "Economically Weaker Section (EWS)"
+        }
+      ]
+    },
+    {
+      "name": "Team 2",
+      "uuid": "6286ce9c-ca0b-4cad-827c-b519e8bc332d",
+      "type": "Area",
+      "locations": [
+        {
+          "uuid": "d093ac48-56c6-445b-bea9-761efeb01155",
+          "comment": "Ganesh nagar"
+        },
+        {
+          "uuid": "b67d593e-99c5-4cb0-acc6-5e82608fbd36",
+          "comment": "Keshvani nagar"
+        },
+        {
+          "uuid": "34665a4b-e786-4553-a30a-acb1eeb6e7dc",
+          "comment": "Mahakali nagar"
+        }
+      ]
+    },
+    {
+      "name": "Master Catchment",
+      "uuid": "9ae1a4d2-42bb-40c4-a9b0-a14f515093e9",
+      "type": "Area",
+      "locations": [
+        {
+          "uuid": "71ec9cec-3841-4435-a08a-09cb23a7d6ca",
+          "comment": "Economically Weaker Section (EWS)"
+        },
+        {
+          "uuid": "d093ac48-56c6-445b-bea9-761efeb01155",
+          "comment": "Ganesh nagar"
+        },
+        {
+          "uuid": "b67d593e-99c5-4cb0-acc6-5e82608fbd36",
+          "comment": "Keshvani nagar"
+        },
+        {
+          "uuid": "34665a4b-e786-4553-a30a-acb1eeb6e7dc",
+          "comment": "Mahakali nagar"
         }
       ]
     }
