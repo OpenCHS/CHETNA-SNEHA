@@ -2,7 +2,7 @@
   {
     "name": "Current nutritional status of child",
     "uuid": "7f9f9b4e-682c-4330-984f-fe6140699e06",
-    "dataType": "Numeric"
+    "dataType": "Text"
   },
   {
     "uuid": "bdfb4b5e-0017-4670-bdaf-ba715c24903d",
