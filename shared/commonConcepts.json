@@ -822,6 +822,19 @@
     ]
   },
   {
+    "name": "Did you use any method of contraception",
+    "uuid": "c8666b0b-4869-438c-92da-9731185d9e25",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
     "uuid": "b8c121f8-15b9-44ef-a5ee-cb7ed1acf452",
     "name": "Pills"
   },

@@ -398,6 +398,7 @@
         {
           "name": "What types of complementary food should be given to the child",
           "uuid": "91fa3f0a-6111-4698-a8da-39f611a4f91c",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "What types of complementary food should be given to the child",
@@ -1137,12 +1138,12 @@
       "displayOrder": 10,
       "formElements": [
         {
-          "name": "Did you use any method of contraception before pregnancy",
+          "name": "Did you use any method of contraception",
           "uuid": "a6c38061-310b-456a-a4a1-f1705f1339f7",
           "type": "SingleSelect",
           "concept": {
-            "name": "Did you use any method of contraception before pregnancy",
-            "uuid": "b27c26df-c639-4596-97e7-91ab818b7bff"
+            "name": "Did you use any method of contraception",
+            "uuid": "c8666b0b-4869-438c-92da-9731185d9e25"
           },
           "displayOrder": 1,
           "mandatory": true
@@ -1181,7 +1182,30 @@
           },
           "displayOrder": 4,
           "mandatory": true
-        }
+        },
+        {
+          "name": "Reason for not using any contraception method",
+          "uuid": "4418c067-cc65-4708-ac88-bb507bffec94",
+          "type":"MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Reason for not using any contraception method",
+            "uuid": "ec0a99c9-b959-4d28-a277-4ffa78b816a4"
+            },
+          "displayOrder":5 ,
+          "mandatory": true
+        },
+        {
+          "name": "Other reason for not using any contraception method",
+          "uuid": "e95be5a2-f4c8-40aa-b834-d37a5b454b21",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8e49ba64-90a4-417e-9b5a-8aa19406936f",
+            "name": "Other reason for not using any contraception method"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        }   
       ]
     },
     {

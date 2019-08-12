@@ -76,11 +76,11 @@ class ChildrenEnrolmentViewHandler {
         statusBuilder.show().when.ageInMonths.is.lessThanOrEqualTo(6);
     }
 
-    // @WithName('Till which age your child has breastfed exclusively')
-    // @statusBuilder
-    // ab10([], statusBuilder) {
-    //     statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
-    // }
+    @WithName('Till which age your child has breastfed exclusively')
+    @statusBuilder
+    ab10([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
 
     // // When did you give water to the child
     // @WithName('When did you give water to the child')
@@ -116,8 +116,8 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Whether child goes to the Anganwadi centre regularly')
     @statusBuilder
     ab17([], statusBuilder) {
-        statusBuilder.show().when.ageInYears.not.lessThanOrEqualTo(3)
-        .and.when.valueInEnrolment("Is child registered in anganwadi centre").is.yes;
+        statusBuilder.show().when.valueInEnrolment("Is child registered in anganwadi centre").is.yes
+        .and.when.ageInYears.is.greaterThanOrEqualTo(3);
     }
 
     @WithName('What does mother get as a snacks')
@@ -179,7 +179,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Number of times got pregnant')
     @statusBuilder
     ab21([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Is mother alive").not.is.no;
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }
 
     // Number of live children
@@ -231,7 +231,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Whether have mamta card')
     @statusBuilder
     ab28([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Is mother alive").not.is.no;
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }
 
     // Reason for not having mamta card 
@@ -239,7 +239,7 @@ class ChildrenEnrolmentViewHandler {
     @statusBuilder
     ab29([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Whether have mamta card").is.no
-        .and.when.valueInEnrolment("Is mother alive").not.is.no;
+        .and.when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }    
 
     // Other reason for not having mamta card
@@ -247,7 +247,7 @@ class ChildrenEnrolmentViewHandler {
     @statusBuilder
     ab30([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Reason for not having mamta card")
-        .containsAnswerConceptName("Other").and.when.valueInEnrolment("Is mother alive").not.is.no;
+        .containsAnswerConceptName("Other").and.when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }
 
     // Place of delivery
@@ -256,7 +256,7 @@ class ChildrenEnrolmentViewHandler {
     ab31([], statusBuilder) {
         statusBuilder.skipAnswers('Sub Center','Primary Health Center','Regional Hospital',
         'NGO Hospital','During Transportation like in Ambulance etc')
-        .and.when.valueInEnrolment("Is mother alive").not.is.no;;
+        .and.when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }
 
     // Type of delivery
@@ -264,7 +264,7 @@ class ChildrenEnrolmentViewHandler {
     @statusBuilder
     ab32([], statusBuilder) {
         statusBuilder.skipAnswers('Instrumental');
-        statusBuilder.show().when.valueInEnrolment("Is mother alive").not.is.no;
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }
 
     // Other type of delivery
@@ -368,7 +368,8 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Do you give complementary food along with breast feeding')
     @statusBuilder
     ab46([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
+        .and.when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }
 
     @WithName('Other points you kept in a mind while feed the child')
@@ -470,8 +471,9 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Do you get snacks as take home ration from Anganwadi centre')
     @statusBuilder
     abc56([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Is mother alive").not.is.no
-        .and.when.ageInMonths.not.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.valueInEnrolment("Is mother alive")
+        .containsAnswerConceptNameOtherThan("No")
+        .and.when.ageInMonths.is.lessThanOrEqualTo(6);
     }
 
     @WithName('What does mother get as a snacks')
@@ -516,6 +518,14 @@ class ChildrenEnrolmentViewHandler {
         .is.yes;
     }
 
+    // Got any benefits of government programme/scheme
+    @WithName('Got any benefits of government programme/scheme')
+    @statusBuilder
+    abc61([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+
     @WithName('Programme/scheme under which received entitlements')
     @statusBuilder
     ab61([], statusBuilder) {
@@ -537,17 +547,24 @@ class ChildrenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
 
+    // Did you use any method of contraception
+    @WithName('Did you use any method of contraception')
+    @statusBuilder
+    abc64([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
     @WithName('Method of contraception used')
     @statusBuilder
     ab64([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
+        statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception")
         .is.yes;
     }
 
     @WithName('From where/whom information about contraception received')
     @statusBuilder
     ab65([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception before pregnancy")
+        statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception")
         .is.yes;
     }
 
@@ -574,6 +591,90 @@ class ChildrenEnrolmentViewHandler {
     @statusBuilder
     ab69([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Is vaccination good for child's health").is.no;
+    }
+
+    @WithName('Reason for not using any contraception method')
+    @statusBuilder
+    ab70([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception")
+        .is.no;
+    }
+
+    @WithName('Other reason for not using any contraception method')
+    @statusBuilder
+    ab71([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Reason for not using any contraception method")
+        .containsAnswerConceptName("Other");
+    }
+
+    // What should be given to the child soon after birth
+    @WithName('What should be given to the child soon after birth')
+    @statusBuilder
+    ab72([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // For how long child should be breast fed exclusively
+    @WithName('For how long child should be breast fed exclusively')
+    @statusBuilder
+    ab73([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // How often child should be breastfed in a day
+    @WithName('How often child should be breastfed in a day')
+    @statusBuilder
+    ab74([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // Should child be breastfed on demand
+    @WithName('Should child be breastfed on demand')
+    @statusBuilder
+    ab75([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // Should child be breastfed on certain time
+    @WithName('Should child be breastfed on certain time')
+    @statusBuilder
+    ab76([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // At what age child should be given water
+    @WithName('At what age child should be given water')
+    @statusBuilder
+    ab77([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // At what age child should be given complementary food
+    @WithName('At what age child should be given complementary food')
+    @statusBuilder
+    ab78([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // What should be kept in mind when preparing a food for child
+    @WithName('What should be kept in mind when preparing a food for child')
+    @statusBuilder
+    ab79([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // What should be kept in mind while feed the child
+    @WithName('What should be kept in mind while feed the child')
+    @statusBuilder
+    ab80([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+    // What types of complementary food should be given to the child
+    @WithName('What types of complementary food should be given to the child')
+    @statusBuilder
+    ab81([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }
 
 }
