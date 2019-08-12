@@ -1,0 +1,13 @@
+{
+    "organisationName": "CHETNA-SNEHA",
+    "operationalEncounterTypes": [
+      {
+           "uuid": "abdfe2d2-e78f-4cba-9aa3-667c506ffba6",
+           "name": "Monthly monitoring of pregnant woman",
+           "encounterType": {
+            "uuid": "3f1d1216-f944-45c1-aa4b-8a49e88632fc",
+            "name": "Monthly monitoring of pregnant woman"
+        } 
+      }
+    ]
+}

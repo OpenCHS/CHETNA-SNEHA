@@ -13,6 +13,14 @@
     "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
   },
   {
+    "uuid": "f18ec24c-8865-4472-8827-716658eef70f",
+    "formUUID": "b9cc8861-f9b7-4e0e-82fa-49e3eabe6968",
+    "programUUID": "82951774-884e-46c4-873b-d18d29327cb7",
+    "encounterTypeUUID": "3f1d1216-f944-45c1-aa4b-8a49e88632fc",
+    "comment": "Monthly monitoring of pregnant woman",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
+  },
+  {
     "uuid": "6df53382-6c17-4522-9ab1-892efc62c4ac",
     "formUUID": "96dae617-1b01-4de7-a783-627e2a78277c",
     "programUUID": "798a853e-c335-4d32-95d7-9425ee614657",
