@@ -19,7 +19,7 @@ const getBMIStatus = (bmiValue) => {
         status = "Underweight";
     }
     else if (bmiValue > 18.5 && bmiValue < 24.9) {
-        status = "Normal weight";
+        status = "Normal";
     }
     else if (bmiValue > 25.0 && bmiValue < 29.9) {
         status = "Overweight";
@@ -321,7 +321,7 @@ class PregnantWomenEnrolmentViewHandler {
         .is.yes;
     }
 
-    @WithName('Why you did not get benefits?')
+    @WithName('Reason for not getting benefits under government programme/scheme')
     @statusBuilder
     a73([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
