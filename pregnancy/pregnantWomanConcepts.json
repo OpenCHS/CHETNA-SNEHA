@@ -1071,8 +1071,8 @@
     "dataType":"Text"
   },
   {
-    "uuid": "c7bfff2a-43f6-4547-a0ad-a6837f22688f",
-    "name": "Infection"
+    "uuid": "9e95cfde-96b8-4364-a00b-f01389174be8",
+    "name": "Any type of infection"
   },
   {
     "uuid": "a617334c-de9b-4bf3-87ee-b4784d08a124",
@@ -1088,8 +1088,8 @@
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "c7bfff2a-43f6-4547-a0ad-a6837f22688f",
-        "name": "Infection"
+        "uuid": "9e95cfde-96b8-4364-a00b-f01389174be8",
+        "name": "Any type of infection"
       },
       {
         "uuid": "a617334c-de9b-4bf3-87ee-b4784d08a124",

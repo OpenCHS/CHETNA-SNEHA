@@ -63,6 +63,12 @@ class ChildrenEnrolmentViewHandler {
             new FormElementStatus(formElement.uuid, true,nutritionalStatus.wfaStatus);
     }
 
+    @WithName('Weight of child at birth')
+    @statusBuilder
+    abc11([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Type of delivery").containsAnswerConceptNameOtherThan("Home");
+    }
+
     @WithName('Sickness in last 3 months')
     @statusBuilder
     ab11([], statusBuilder) {

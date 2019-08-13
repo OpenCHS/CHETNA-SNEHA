@@ -465,12 +465,36 @@
         "name": "No need of immunization"
       }
     ]
-  }
-  
-  
-  
-
-
-  
-  
+  },
+  {
+    "name":"Typhoid",
+    "uuid":"62339322-2dc0-4052-a2be-f37dceb254aa"
+  },
+  {
+    "name":"Warm",
+    "uuid":"0c4c6a65-1b50-403a-b163-41b186aa4f18"
+  },
+  {
+    "name": "Sickness in last 3 months",
+    "uuid": "719fc446-50b0-4212-9e91-47bfd1aa5559",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "0dee2973-eebe-4699-b676-b770fdd1c411",
+        "name": "Malaria"
+      },
+      {
+        "name":"Typhoid",
+        "uuid":"62339322-2dc0-4052-a2be-f37dceb254aa"
+      },
+      {
+        "name":"Warm",
+        "uuid":"0c4c6a65-1b50-403a-b163-41b186aa4f18"
+      },
+      {
+        "name": "Jaundice",
+        "uuid": "352bb8a4-1569-492f-9a53-14e3b134c104"
+      }
+    ]
+  }  
 ]
