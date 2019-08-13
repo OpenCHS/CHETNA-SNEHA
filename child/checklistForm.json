@@ -5,10 +5,21 @@
   "formElementGroups": [
     {
       "uuid": "857a133c-eb99-4021-903b-a5b977ed1adb",
-      "name": "Place of Vaccination",
-      "display": "Place of Vaccination",
+      "name": "Vaccination details",
+      "display": "Vaccination details",
       "displayOrder": 1,
       "formElements": [
+        {
+          "name": "Whether Vaccination applicable",
+          "uuid": "eafb4e52-65f5-4a69-9569-2b26d002866b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "37dd3826-f658-4fe5-a01f-23d5ee5eb226"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
         {
           "name": "Place of Vaccination",
           "uuid": "9b8a0d70-9666-441f-afa3-e447781b56be",
@@ -18,7 +29,7 @@
             "comment": "Place of Vaccination",
             "uuid": "500dbe83-43ab-48d0-be1e-a1e5c58e3487"
           },
-          "displayOrder": 1,
+          "displayOrder": 2,
           "mandatory": true
         },
         {
@@ -27,17 +38,6 @@
           "keyValues": [],
           "concept": {
             "uuid": "2ca6aa37-21c6-448a-a6de-db7a3eaf37ee"
-          },
-          "displayOrder": 2,
-          "mandatory": true
-        },
-        {
-          "name": "Whether Vaccination applicable",
-          "uuid": "eafb4e52-65f5-4a69-9569-2b26d002866b",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "37dd3826-f658-4fe5-a01f-23d5ee5eb226"
           },
           "displayOrder": 3,
           "mandatory": true

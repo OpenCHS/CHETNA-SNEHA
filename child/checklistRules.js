@@ -19,12 +19,33 @@ class CheckListViewFilterChetna {
             .getFormElementsStatusesWithoutDefaults(new CheckListViewFilterChetna(), checklistItem, formElementGroup, today);
     }
 
+    @WithName("Place of Vaccination")
+    @WithStatusBuilder
+    placeOfVaccination([checklistItem], statusBuilder) {
+        const itemName = checklistItem.detail.concept.name;
+        if(itemName === "IPV") {
+            statusBuilder.show().when.valueInChecklistItem("Whether Vaccination applicable").is.yes;
+        } else {
+            statusBuilder.show().whenItem(true).is.truthy;
+        }
+    }
+
     @WithName("Specify Other")
     @WithStatusBuilder
     other([checklistItem], statusBuilder) {
         statusBuilder.show().when.valueInChecklistItem("Place of Vaccination").containsAnswerConceptName("Other");
     }
 
+    @WithName("Whether Vaccination applicable")
+    @WithStatusBuilder
+    whetherVaccinationApplicable([checklistItem], statusBuilder) {
+        const itemName = checklistItem.detail.concept.name;
+        if(itemName === "IPV") {
+            statusBuilder.show().whenItem(true).is.truthy;
+        } else {
+            statusBuilder.show().whenItem(false).is.truthy;
+        }
+    }
 }
 
 @EnrolmentChecklists("fae40f1f-3669-452f-ab99-b5323346ef4c", "Child vaccination schedule", 1.0)
