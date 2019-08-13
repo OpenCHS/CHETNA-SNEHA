@@ -17,12 +17,14 @@ module.exports = IDI.configure({
             "./lactatingMother/lactatingMotherEnrolment.json",
             "./child/checklistForm.json",
             "./child/childrenEnrolment.json",
-            "./mohtlyMonitoringPregnantWoman/monthlyMonitoringPregnancy.json"
+            "./pregnancy/monthlyMonitoringPregnancy.json"
         ],
         "formMappings": ["./shared/formMappings.json"],
         "formDeletions": [],
         "formAdditions": [],
-        "catchments": ["./shared/catchments.json"],
+        "catchments": [
+            // "./shared/catchments.json"
+        ],
         "checklistDetails": ["./child/checklist.json"],
         "concepts": [
             "./child/checklistConcepts.json",
@@ -31,7 +33,7 @@ module.exports = IDI.configure({
             "./pregnancy/pregnantWomanConcepts.json",
             "./lactatingMother/lactatingMotherConcepts.json",
             "./child/childrenEnrolmentConcepts.json",
-            "./mohtlyMonitoringPregnantWoman/monthlyMonitoringPregnancyConcepts.json"
+            "./pregnancy/monthlyMonitoringPregnancyConcepts.json"
         ],
         "locations": ["./locations/villages.json"],
         "programs": ["./programs.json"],

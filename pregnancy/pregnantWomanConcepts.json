@@ -731,6 +731,11 @@
         "name": "ANM"
       },
       {
+        "uuid": "a824c362-dc01-430e-8287-add2c813a1a4",
+        "name": "ANC",
+        "voided": true
+      },
+      {
         "uuid": "89741af9-598c-434c-94e3-2f1a086e540c",
         "name": "ASHA"
       },

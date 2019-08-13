@@ -181,7 +181,12 @@ class PregnantWomenEnrolmentViewHandler {
     a27([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Have you registered pregnancy").is.yes;
     }
-
+    
+    @WithName('Whether have mamta card')
+    @statusBuilder
+    ab28([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Have you registered pregnancy").is.yes;
+    }
 
     @WithName('Is mamta card updated')
     @statusBuilder
