@@ -44,7 +44,7 @@
             "descriptionKey": "Required10Digits"
           },
           "displayOrder":3,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Type of Mobile",
