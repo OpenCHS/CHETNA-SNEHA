@@ -33,7 +33,13 @@ class ChetnaRegistrationViewHandler {
     abc11([], statusBuilder) {
         statusBuilder.skipAnswers('Literate','Uneducated');
         statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(5);
-    }  
+    } 
+    
+    @WithName('Type of ration card')
+    @WithRegistrationStatusBuilder
+    abc110([], statusBuilder) {
+        statusBuilder.skipAnswers('No');
+    } 
 
      @WithName('Marital status')
     @WithRegistrationStatusBuilder
