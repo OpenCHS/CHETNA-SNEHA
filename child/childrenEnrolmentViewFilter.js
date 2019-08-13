@@ -66,7 +66,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Weight of child at birth')
     @statusBuilder
     abc11([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Type of delivery").containsAnswerConceptNameOtherThan("Home");
+        statusBuilder.show().when.valueInEnrolment("Place of delivery").containsAnswerConceptNameOtherThan("Home");
     }
 
     @WithName('Sickness in last 3 months')
