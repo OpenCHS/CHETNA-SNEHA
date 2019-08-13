@@ -14,7 +14,6 @@ module.exports = IDI.configure({
         "forms": [
             "./registration/registrationForm.json",
             "./pregnancy/pregnantWomanEnrolment.json",
-            "./lactatingMother/lactatingMotherEnrolment.json",
             "./child/checklistForm.json",
             "./child/childrenEnrolment.json",
             "./pregnancy/monthlyMonitoringPregnancy.json"
@@ -23,7 +22,7 @@ module.exports = IDI.configure({
         "formDeletions": [],
         "formAdditions": [],
         "catchments": [
-            // "./shared/catchments.json"
+            "./shared/catchments.json"
         ],
         "checklistDetails": ["./child/checklist.json"],
         "concepts": [
@@ -31,7 +30,7 @@ module.exports = IDI.configure({
             "./registration/registrationConcepts.json",
             "./shared/commonConcepts.json",
             "./pregnancy/pregnantWomanConcepts.json",
-            "./lactatingMother/lactatingMotherConcepts.json",
+            "./child/lactatingMotherConcepts.json",
             "./child/childrenEnrolmentConcepts.json",
             "./pregnancy/monthlyMonitoringPregnancyConcepts.json"
         ],
