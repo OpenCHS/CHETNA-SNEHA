@@ -55,5 +55,18 @@
         "name": "Other"
       }
     ]
+  },
+  {
+    "name": "Whether Vaccination applicable",
+    "uuid": "37dd3826-f658-4fe5-a01f-23d5ee5eb226",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
   }
 ]

@@ -30,8 +30,18 @@
           },
           "displayOrder": 2,
           "mandatory": true
+        },
+        {
+          "name": "Whether Vaccination applicable",
+          "uuid": "eafb4e52-65f5-4a69-9569-2b26d002866b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "37dd3826-f658-4fe5-a01f-23d5ee5eb226"
+          },
+          "displayOrder": 3,
+          "mandatory": true
         }
-
       ]
     }
   ]
