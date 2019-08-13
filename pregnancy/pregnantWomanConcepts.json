@@ -1088,6 +1088,11 @@
     "dataType": "Coded",
     "answers": [
       {
+        "uuid": "c7bfff2a-43f6-4547-a0ad-a6837f22688f",
+        "name": "Infection",
+        "voided":true
+      },
+      {
         "uuid": "9e95cfde-96b8-4364-a00b-f01389174be8",
         "name": "Any type of infection"
       },

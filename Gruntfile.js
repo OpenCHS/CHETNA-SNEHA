@@ -22,7 +22,7 @@ module.exports = IDI.configure({
         "formDeletions": [],
         "formAdditions": [],
         "catchments": [
-            "./shared/catchments.json"
+            // "./shared/catchments.json"
         ],
         "checklistDetails": ["./child/checklist.json"],
         "concepts": [
