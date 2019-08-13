@@ -475,10 +475,46 @@
     "uuid":"0c4c6a65-1b50-403a-b163-41b186aa4f18"
   },
   {
+    "name":"Skin disease",
+    "uuid":"8623cba7-2a61-412c-b506-49267f1c682f"
+  },
+  {
+    "name":"Measle",
+    "uuid":"244e65f5-61e7-40a1-b89c-0598792a16c2"
+  },
+  {
+    "name":"Stomache",
+    "uuid":"5cf68a94-7a4e-43e6-8e49-d5d96caa2e2f"
+  },
+  {
+    "name":"Vomitting",
+    "uuid":"35662f0c-31fe-4add-a55f-e84d3be09716"
+  },
+  {
     "name": "Sickness in last 3 months",
     "uuid": "719fc446-50b0-4212-9e91-47bfd1aa5559",
     "dataType": "Coded",
     "answers": [
+      {
+        "name": "Cough",
+        "uuid": "63658ea8-0447-4180-8026-bed500486e13"
+      },
+      {
+        "name":"Measle",
+        "uuid":"244e65f5-61e7-40a1-b89c-0598792a16c2"
+      },
+      {
+        "name":"Skin disease",
+        "uuid":"8623cba7-2a61-412c-b506-49267f1c682f"
+      },
+      {
+        "name":"Stomache",
+        "uuid":"5cf68a94-7a4e-43e6-8e49-d5d96caa2e2f"
+      },
+      {
+        "name":"Vomitting",
+        "uuid":"35662f0c-31fe-4add-a55f-e84d3be09716"
+      },
       {
         "uuid": "0dee2973-eebe-4699-b676-b770fdd1c411",
         "name": "Malaria"

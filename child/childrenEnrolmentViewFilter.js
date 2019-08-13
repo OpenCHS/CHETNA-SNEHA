@@ -72,6 +72,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Sickness in last 3 months')
     @statusBuilder
     ab11([], statusBuilder) {
+        statusBuilder.skipAnswers('No sickness','Abdominal pain');
         statusBuilder.show().when.valueInEnrolment("Did child fall sick in the last 3 months")
         .is.yes;
     }
