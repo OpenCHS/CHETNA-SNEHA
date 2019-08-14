@@ -56,7 +56,6 @@ export class ChetnaChildEnrolmentDecisionHandler {
         const nutritionalStatusForChild = (individual, asOnDate, weight, height) => {
 
             const zScoresForChild = ruleServiceLibraryInterfaceForSharingModules.common.getZScore(individual, asOnDate, weight, height);
-            console.log(zScoresForChild);
 
 
             const wfaGrade = getGradeforZscore(zScoresForChild.wfa);
@@ -84,16 +83,12 @@ export class ChetnaChildEnrolmentDecisionHandler {
             if (value !== undefined) decisions.push({name: name, value: value});
         };
 
-        console.log("Came to ChetnaChildEnrolmentDecisionHandler");
-
         const weight = programEnrolment.getObservationValue("Weight");
         const height = programEnrolment.getObservationValue("Height");
         const enrolmentDateTime = programEnrolment.enrolmentDateTime;
         const individual = programEnrolment.individual;
 
         const nutritionalStatus = nutritionalStatusForChild(individual, enrolmentDateTime, weight, height);
-
-        console.log(nutritionalStatus);
 
         addIfRequired(decisions.enrolmentDecisions, "Weight for age z-score", nutritionalStatus.wfa);
         addIfRequired(decisions.enrolmentDecisions, "Weight for age Grade", nutritionalStatus.wfaGrade);

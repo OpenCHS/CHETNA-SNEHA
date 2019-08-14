@@ -3,7 +3,8 @@ import {
     RuleFactory,  
     FormElementsStatusHelper,
     FormElementStatus,
-    WithName
+    WithName,
+    EnrolmentEligibilityCheck
 } from 'rules-config/rules';
 
 const getGradeforZscore = (zScore) => {
@@ -28,7 +29,6 @@ const zScoreGradeStatusMappingWeightForAge = {
 
 const nutritionalStatusForChild = (individual, asOnDate, weight, height) => {
     const zScoresForChild = ruleServiceLibraryInterfaceForSharingModules.common.getZScore(individual, asOnDate, weight, height);
-    console.log(zScoresForChild);
     const wfaGrade = getGradeforZscore(zScoresForChild.wfa);
     const wfaStatus = zScoreGradeStatusMappingWeightForAge[wfaGrade];
     return {
@@ -52,15 +52,9 @@ class ChildrenEnrolmentViewHandler {
         const enrolmentDateTime = programEnrolment.enrolmentDateTime;
         const individual = programEnrolment.individual;
         
-        console.log(weight,height,enrolmentDateTime,individual);
-            
         const nutritionalStatus = nutritionalStatusForChild(individual, enrolmentDateTime, weight, height);
-        
-        console.log("nutritionalStatus is",nutritionalStatus.wfaStatus);
 
-        return _.isNil(nutritionalStatus) ?
-            new FormElementStatus(formElement.uuid, true) :
-            new FormElementStatus(formElement.uuid, true,nutritionalStatus.wfaStatus);
+        return new FormElementStatus(formElement.uuid, true,nutritionalStatus.wfaStatus);
     }
 
     @WithName('Weight of child at birth')
@@ -686,4 +680,17 @@ class ChildrenEnrolmentViewHandler {
 
 }
 
-module.exports = {ChildrenEnrolmentViewHandler};
+@EnrolmentEligibilityCheck({
+    name: 'ChetnaChildWithLactatingMotherEnrolmentEligibility',
+    uuid: '1f1d7fe7-9d66-4e71-af2e-e3b7ffd3c57c',
+    programUUID: '62755a29-d197-419a-b944-ed665a367787',
+    executionOrder: 100.0,
+    metadata: {}
+})
+class ChetnaChildWithLactatingMotherEnrolmentEligibility {
+    static exec({individual}) {
+        return individual.getAgeInYears() <= 5;
+    }
+}
+
+module.exports = {ChildrenEnrolmentViewHandler, ChetnaChildWithLactatingMotherEnrolmentEligibility};
