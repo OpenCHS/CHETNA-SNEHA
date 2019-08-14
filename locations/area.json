@@ -2,28 +2,28 @@
   {
     "uuid": "71ec9cec-3841-4435-a08a-09cb23a7d6ca",
     "name": "Economically Weaker Section (EWS)",
-    "type": "village",
+    "type": "Area",
     "level": 1,
     "nameLineage": "Economically Weaker Section (EWS)"
   },
   {
     "uuid": "d093ac48-56c6-445b-bea9-761efeb01155",
     "name": "Ganesh nagar",
-    "type": "village",
+    "type": "Area",
     "level": 1,
     "nameLineage": "Ganesh nagar"
   },
   {
     "uuid": "b67d593e-99c5-4cb0-acc6-5e82608fbd36",
     "name": "Keshvani nagar",
-    "type": "village",
+    "type": "Area",
     "level": 1,
     "nameLineage": "Keshvani nagar"
   },
   {
     "uuid": "34665a4b-e786-4553-a30a-acb1eeb6e7dc",
     "name": "Mahakali nagar",
-    "type": "village",
+    "type": "Area",
     "level": 1,
     "nameLineage": "Mahakali nagar"
   }

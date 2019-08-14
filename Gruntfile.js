@@ -34,7 +34,7 @@ module.exports = IDI.configure({
             "./child/childrenEnrolmentConcepts.json",
             "./pregnancy/monthlyMonitoringPregnancyConcepts.json"
         ],
-        "locations": ["./locations/villages.json"],
+        "locations": ["./locations/area.json"],
         "programs": ["./programs.json"],
         "encounterTypes": ["./shared/encounterTypes.json"],
         "operationalEncounterTypes": ["./operationalModules/operationalEncounterTypes.json"],
