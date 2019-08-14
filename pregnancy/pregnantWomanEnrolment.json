@@ -152,7 +152,7 @@
         {
           "name": "Where/Whom to registered your pregnancy",
           "uuid": "97e82aae-7937-43d1-932c-3a1effadadad",
-          "type":"SingleSelect",
+          "type": "MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Where/Whom to registered your pregnancy",
