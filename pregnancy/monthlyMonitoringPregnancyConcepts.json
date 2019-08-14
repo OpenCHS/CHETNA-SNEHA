@@ -135,7 +135,7 @@
     ]
   },
   {
-    "name": "Hb Check up",
+    "name": "Whether Hb check up done",
     "uuid": "a7f9fece-203a-4ccd-91e5-28e4d575f201",
     "dataType": "Coded",
     "answers": [
@@ -182,6 +182,148 @@
     "name": "Calcium supplement during current pregnancy",
     "uuid": "34df61a3-8d05-4149-962b-64ee561cc401",
     "dataType": "Numeric"
+  },
+  {
+    "name": "Whether she participated in SNEHA activities",
+    "uuid": "6bd9baec-528b-44cd-bba6-458a79819c08",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "8084f63a-6958-4dad-92ca-fe1b2438e638",
+    "name": "Health educational session"
+  },
+  {
+    "uuid": "7104ef68-19c2-470c-b350-16e197fe062b",
+    "name": "Home visit"
+  },
+  {
+    "uuid": "507b55ba-5da9-48c6-b6a6-8e15377c34f9",
+    "name": "Mamta Divas"
+  },
+  {
+    "uuid": "912e0b06-98d5-45c8-8160-0b1c5a81a9b3",
+    "name": "Immunization camp"
+  },
+  {
+    "name": "SNEHA activities which she participated in",
+    "uuid": "9535287f-7cc1-4a94-b27a-95e31c4ef43f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "8084f63a-6958-4dad-92ca-fe1b2438e638",
+        "name": "Health educational session"
+      },
+      {
+        "uuid": "7104ef68-19c2-470c-b350-16e197fe062b",
+        "name": "Home visit"
+      },
+      {
+        "uuid": "507b55ba-5da9-48c6-b6a6-8e15377c34f9",
+        "name": "Mamta Divas"
+      },
+      {
+        "uuid": "912e0b06-98d5-45c8-8160-0b1c5a81a9b3",
+        "name": "Immunization camp"
+      }
+    ]
+  },
+  {
+    "uuid": "7f93404a-8951-4fc1-9d7a-2652d412531f",
+    "name": "Early registration"
+  },
+  {
+    "uuid": "9d5eef90-8d4c-489c-9e6c-8e141e458525",
+    "name": "Food during pregnancy"
+  },
+  {
+    "uuid": "3a6dba30-aa8a-47a5-8786-9b0052039760",
+    "name": "Ante natal check up"
+  },
+  {
+    "uuid": "18899926-91b3-4cc0-9374-846dd7b59e24",
+    "name": "Importance of institutional delivery"
+  },
+  {
+    "uuid": "d287c262-9ccc-4d59-a717-64d3579e4baf",
+    "name": "Importance of Iron Folic Acid tablets"
+  },
+  {
+    "uuid": "2e1e80c8-c904-4f59-925d-78a832ae5d5b",
+    "name": "Breast feeding practices"
+  },
+  {
+    "uuid": "3b677b82-77a2-4ba7-9041-e9d76430fcee",
+    "name": "Entitlement of government services"
+  },
+  {
+    "uuid": "a6526348-4671-44fd-ab41-046d14e159af",
+    "name": "Danger sign and symptoms during pregnancy"
+  },
+  {
+    "name": "Information she got in the month through educational session/home visits",
+    "uuid": "4ec70865-5b5d-4475-a38f-f712051c11b0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "7f93404a-8951-4fc1-9d7a-2652d412531f",
+        "name": "Early registration"
+      },
+      {
+        "uuid": "9d5eef90-8d4c-489c-9e6c-8e141e458525",
+        "name": "Food during pregnancy"
+      },
+      {
+        "uuid": "3a6dba30-aa8a-47a5-8786-9b0052039760",
+        "name": "Ante natal check up"
+      },
+      {
+        "uuid": "18899926-91b3-4cc0-9374-846dd7b59e24",
+        "name": "Importance of institutional delivery"
+      },
+      {
+        "uuid": "d287c262-9ccc-4d59-a717-64d3579e4baf",
+        "name": "Importance of Iron Folic Acid tablets"
+      },
+      {
+        "uuid": "2e1e80c8-c904-4f59-925d-78a832ae5d5b",
+        "name": "Breast feeding practices"
+      },
+      {
+        "uuid": "3b677b82-77a2-4ba7-9041-e9d76430fcee",
+        "name": "Entitlement of government services"
+      },
+      {
+        "uuid": "a6526348-4671-44fd-ab41-046d14e159af",
+        "name": "Danger sign and symptoms during pregnancy"
+      },
+      {
+        "uuid": "43ea47d8-8c92-4564-a9df-eee28191f85c",
+        "name": "Anaemia"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember"
+      }
+    ]
   }
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
   
 ]

@@ -5,5 +5,6 @@ module.exports = _.merge({},
     require('../../child/checklistRules'),
     require('../../pregnancy/pregnantWomanViewFilter.js'),
     require('../../child/childrenEnrolmentViewFilter.js'),
-    require('../../child/childDecisions')
+    require('../../child/childDecisions'),
+    require('../../pregnancy/monthlyMonitoringPregnancyViewFIlter.js')
 );
