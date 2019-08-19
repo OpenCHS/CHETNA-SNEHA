@@ -8,7 +8,6 @@ import {
 import lib from '../lib';
 import moment from 'moment';
 
-
 // Below 18.5	Underweight
 // 18.5 – 24.9	Normal or Healthy Weight
 // 25.0 – 29.9	Overweight
@@ -18,18 +17,17 @@ const getBMIStatus = (bmiValue) => {
     if (bmiValue < 18.5) {
         status = "Underweight";
     }
-    else if (bmiValue > 18.5 && bmiValue < 24.9) {
+    else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
         status = "Normal";
     }
-    else if (bmiValue > 25.0 && bmiValue < 29.9) {
+    else if (bmiValue >= 25.0 && bmiValue <= 29.9) {
         status = "Overweight";
     }
-    else if (bmiValue > 30.0) {
+    else if (bmiValue >= 30.0) {
         status = "Obese";
     }
     return status;
 };
-
 
 const statusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
 const PregnantWomenViewFilter = RuleFactory("1d08e3e9-30a0-4fee-b1ce-55aeec627ea1", "ViewFilter");
