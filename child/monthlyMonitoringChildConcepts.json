@@ -1,0 +1,394 @@
+[
+  {
+    "name": "Does child breastfeed exclusively",
+    "uuid": "72283715-2974-4d56-ba46-c0ecec9694c7",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "d5132196-ab01-4ce2-9c23-6782c38c4f00",
+    "name": "10-12 times in a day"
+  },
+  {
+    "uuid": "23d5939a-17df-4be0-8cd9-2e11c43844f7",
+    "name": "8-10 times in a day"
+  },  
+  {
+    "name": "Number of times you breastfeed to your child",
+    "uuid": "0e34d307-7b0f-41ea-b06b-975a79bae32b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "d5132196-ab01-4ce2-9c23-6782c38c4f00",
+        "name": "10-12 times in a day"
+      },
+      {
+        "uuid": "23d5939a-17df-4be0-8cd9-2e11c43844f7",
+        "name": "8-10 times in a day"
+      },
+      {
+        "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",
+        "name": "Every an hour"
+      },
+      {
+        "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
+        "name": "Whenever child is crying"
+      }
+    ]
+  },
+  {
+    "uuid": "f8cfbe00-b063-406d-9252-ffeac756fc5e",
+    "name": "Fried snacks"
+  },
+  {
+    "uuid": "c0c2b72b-29ff-4ad2-a68f-92cd583d4269",
+    "name": "Biscuit and Kurkure"
+  },
+  {
+    "uuid": "7a3b666e-35fa-490c-b861-ebd425bb7b36",
+    "name": "Frymes"
+  },
+  {
+    "uuid": "73395155-32ff-4c5f-9258-bc6bb454c2af",
+    "name": "Waffers and sev-ganthiya"
+  },
+  {
+    "uuid": "3a094229-cfa8-49c2-9298-3caa0d98b61b",
+    "name": "Chocolate and Ice cream"
+  },
+  {
+    "uuid": "5355d99c-6af4-4854-aebf-27b5bbe58d15",
+    "name": "Coldrink"
+  },
+  {
+    "uuid": "66e9ab96-7ef4-49a4-842d-2b3d43c36aa5",
+    "name": "Sweet sopari"
+  },
+  {
+    "uuid": "68443946-cdda-4efa-a734-c6ee141cd98b",
+    "name": "Maggie"
+  },
+  {
+    "uuid": "22457ac7-ccc7-4c49-8c5a-f9fdb599f38f",
+    "name": "Junk food"
+  },
+  {
+    "uuid": "c8ecf1c4-d189-4f48-a71e-ca304d48b1c2",
+    "name": "No habbit of packaged food"
+  },
+  {
+    "name": "Type of packaged food child gets from outside",
+    "uuid": "bef1a5b2-92ba-4082-b6e9-554c2f1526d1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "f8cfbe00-b063-406d-9252-ffeac756fc5e",
+        "name": "Fried snacks"
+      },
+      {
+        "uuid": "c0c2b72b-29ff-4ad2-a68f-92cd583d4269",
+        "name": "Biscuit and Kurkure"
+      },
+      {
+        "uuid": "7a3b666e-35fa-490c-b861-ebd425bb7b36",
+        "name": "Frymes"
+      },
+      {
+        "uuid": "73395155-32ff-4c5f-9258-bc6bb454c2af",
+        "name": "Waffers and sev-ganthiya"
+      },
+      {
+        "uuid": "3a094229-cfa8-49c2-9298-3caa0d98b61b",
+        "name": "Chocolate and Ice cream"
+      },
+      {
+        "uuid": "5355d99c-6af4-4854-aebf-27b5bbe58d15",
+        "name": "Coldrink"
+      },
+      {
+        "uuid": "66e9ab96-7ef4-49a4-842d-2b3d43c36aa5",
+        "name": "Sweet sopari"
+      },
+      {
+        "uuid": "68443946-cdda-4efa-a734-c6ee141cd98b",
+        "name": "Maggie"
+      },
+      {
+        "uuid": "22457ac7-ccc7-4c49-8c5a-f9fdb599f38f",
+        "name": "Junk food"
+      },
+      {
+        "uuid": "c8ecf1c4-d189-4f48-a71e-ca304d48b1c2",
+        "name": "No habbit of packaged food"
+      }
+    ]
+  },
+  {
+    "name": "Type of home based food child gets",
+    "uuid": "82a64d06-0fe4-49ca-b884-b6f703175bb6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "e7a25858-0322-4fe3-94a9-26ae09002698",
+        "name": "Semi-solid food"
+      },
+      {
+        "uuid": "0914ac28-e59a-4e19-a3da-ea131406177e",
+        "name": "Liquid food"
+      },
+      {
+        "uuid": "937ca13a-d0a1-435b-9c41-3658ae5cbfab",
+        "name": "Less spicy food"
+      },
+      {
+        "uuid": "e868c0e0-12dc-43fa-8af8-f1c9de260acc",
+        "name": "All food groups should be covered"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      }
+    ]
+  },
+  {
+    "name": "Whether child got ill in this month",
+    "uuid": "bd621593-77fb-4f22-848b-73a08cf13329",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Illness in last 1 month",
+    "uuid": "f829a398-336a-4483-a262-17f2a5d83f61",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Cough",
+        "uuid": "63658ea8-0447-4180-8026-bed500486e13"
+      },
+      {
+        "name":"Measle",
+        "uuid":"244e65f5-61e7-40a1-b89c-0598792a16c2"
+      },
+      {
+        "name":"Skin disease",
+        "uuid":"8623cba7-2a61-412c-b506-49267f1c682f"
+      },
+      {
+        "name":"Stomache",
+        "uuid":"5cf68a94-7a4e-43e6-8e49-d5d96caa2e2f"
+      },
+      {
+        "name":"Vomitting",
+        "uuid":"35662f0c-31fe-4add-a55f-e84d3be09716"
+      },
+      {
+        "uuid": "0dee2973-eebe-4699-b676-b770fdd1c411",
+        "name": "Malaria"
+      },
+      {
+        "name":"Typhoid",
+        "uuid":"62339322-2dc0-4052-a2be-f37dceb254aa"
+      },
+      {
+        "name":"Warm",
+        "uuid":"0c4c6a65-1b50-403a-b163-41b186aa4f18"
+      },
+      {
+        "name": "Jaundice",
+        "uuid": "352bb8a4-1569-492f-9a53-14e3b134c104"
+      }
+    ]
+  },
+  {
+    "uuid": "89911985-6407-4957-90f2-d7c0751923ba",
+    "name": "Went to Doctor"
+  },
+  {
+    "uuid": "87933d85-071b-4579-8edf-8e13d64fdff8",
+    "name": "Home remedies"
+  },
+  {
+    "uuid": "6ec5fd53-aabb-4faa-8072-6ef5b0223a78",
+    "name": "Went to bhuva"
+  },
+  {
+    "name": "Treatment for the illness",
+    "uuid": "de4ad94f-8de2-47cc-900b-fe0869cb0046",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "84ae89f1-b140-462e-b91d-a11c4043bc35",
+        "name": "Gave medicine"
+      },
+      {
+        "uuid": "f334ff65-ce30-4373-bf30-cfc28ab17cac",
+        "name": "Maintain cleanliness"
+      },
+      {
+        "uuid": "89911985-6407-4957-90f2-d7c0751923ba",
+        "name": "Went to Doctor"
+      },
+      {
+        "uuid": "87933d85-071b-4579-8edf-8e13d64fdff8",
+        "name": "Home remedies"
+      },
+      {
+        "uuid": "6ec5fd53-aabb-4faa-8072-6ef5b0223a78",
+        "name": "Went to bhuva"
+      },
+      {
+        "uuid": "9e8f950a-1e21-42b2-a9eb-5f9011e18cab",
+        "name": "No treatment given"
+      }
+    ]
+  },
+  {
+    "name": "Whether child get breast feeding during illness",
+    "uuid": "becf2d37-3120-4e95-8c6c-c097058d18aa",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Is child getting immunized",
+    "uuid": "5186a664-703c-463e-a622-d4c7e50ff5ca",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Has the child and caretaker participated in SNEHA activities",
+    "uuid": "6e81543e-852f-40af-b42e-a7ae380dd81c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "02819c56-def5-4fe0-acad-cc4cdd3fdeed",
+    "name": "Annaprashan Divas"
+  },
+  {
+    "uuid": "d281807c-f098-475e-8f3d-d1b967d3ca90",
+    "name": " Mass awareness programme"
+  },
+  {
+    "name": "Activities in which child and caretaker participated",
+    "uuid": "d8449fbb-a8e0-4fb4-b836-983a19eb41b6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "8084f63a-6958-4dad-92ca-fe1b2438e638",
+        "name": "Health educational session"
+      },
+      {
+        "uuid": "7104ef68-19c2-470c-b350-16e197fe062b",
+        "name": "Home visit"
+      },
+      {
+        "uuid": "507b55ba-5da9-48c6-b6a6-8e15377c34f9",
+        "name": "Mamta Divas"
+      },
+      {
+        "uuid": "912e0b06-98d5-45c8-8160-0b1c5a81a9b3",
+        "name": "Immunization camp"
+      },
+      {
+        "uuid": "02819c56-def5-4fe0-acad-cc4cdd3fdeed",
+        "name": "Annaprashan Divas"
+      },
+      {
+        "uuid": "d281807c-f098-475e-8f3d-d1b967d3ca90",
+        "name": " Mass awareness programme"
+      }
+    ]
+  },
+  {
+    "uuid": "ef9cca3d-d01d-423d-aa85-4ef5719a818f",
+    "name": "Importnace of breast feeding"
+  },
+  {
+    "uuid": "3ce1965e-8815-4f65-a203-f425e906eb73",
+    "name": "Position for breastfeeding"
+  },
+  {
+    "uuid": "3ec3a310-680d-438f-9057-b1d9e3d097b0",
+    "name": "Hygiene practices"
+  },
+  {
+    "uuid": "1410a243-2285-41bf-a847-0592fe2bd917",
+    "name": "Complementary feeding practices"
+  },
+  {
+    "uuid": "d1d4b6fc-1d74-4c1e-86b7-c36cf088e17a",
+    "name": "Immunization"
+  },
+  {
+    "uuid": "90899050-0f6c-4bb7-90bb-cf1b9908bb0e",
+    "name": "Contraception"
+  },
+  {
+    "name": "Information caretaker got in the month through educational session/home visits",
+    "uuid": "55e7174f-34ef-4da2-8659-a7d166c0d965",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ef9cca3d-d01d-423d-aa85-4ef5719a818f",
+        "name": "Importnace of breast feeding"
+      },
+      {
+        "uuid": "3ce1965e-8815-4f65-a203-f425e906eb73",
+        "name": "Position for breastfeeding"
+      },
+      {
+        "uuid": "3ec3a310-680d-438f-9057-b1d9e3d097b0",
+        "name": "Hygiene practices"
+      },
+      {
+        "uuid": "1410a243-2285-41bf-a847-0592fe2bd917",
+        "name": "Complementary feeding practices"
+      },
+      {
+        "uuid": "d1d4b6fc-1d74-4c1e-86b7-c36cf088e17a",
+        "name": "Immunization"
+      },
+      {
+        "uuid": "90899050-0f6c-4bb7-90bb-cf1b9908bb0e",
+        "name": "Contraception"
+      }
+    ]
+  }
+  
+  
+]

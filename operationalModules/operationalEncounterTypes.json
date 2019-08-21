@@ -8,6 +8,14 @@
             "uuid": "3f1d1216-f944-45c1-aa4b-8a49e88632fc",
             "name": "Monthly monitoring of pregnant woman"
         } 
-      }
+      },
+      {
+        "uuid": "3573d142-d3ee-46d6-aebb-c3d1e897b76d",
+        "name": "Monthly monitoring of child",
+        "encounterType": {
+          "uuid": "36075926-225a-48df-9abd-be09e6e73609",
+          "name": "Monthly monitoring of child"
+     } 
+   }
     ]
 }

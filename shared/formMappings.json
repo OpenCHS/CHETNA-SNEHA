@@ -26,5 +26,13 @@
     "programUUID": "62755a29-d197-419a-b944-ed665a367787",
     "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3",
     "comment": "Child enrolment"
+  },
+  {
+    "uuid": "2fd55097-6c72-4333-b2e5-b0859629577d",
+    "formUUID": "3e9a7b97-87fd-4936-bcec-68a4da7d7a5c",
+    "programUUID": "62755a29-d197-419a-b944-ed665a367787",
+    "encounterTypeUUID": "36075926-225a-48df-9abd-be09e6e73609",
+    "comment": "Monthly monitoring of pregnant woman",
+    "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
   }
 ]
