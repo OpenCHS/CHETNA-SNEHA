@@ -191,40 +191,64 @@
     "dataType": "Coded",
     "answers": [
       {
-        "name": "Cough",
-        "uuid": "63658ea8-0447-4180-8026-bed500486e13"
+        "name": "Fever",
+        "uuid": "0b7f3334-f81e-4d84-a13d-b35011e34456",
+        "abnormal": true
       },
       {
-        "name":"Measle",
-        "uuid":"244e65f5-61e7-40a1-b89c-0598792a16c2"
-      },
-      {
-        "name":"Skin disease",
-        "uuid":"8623cba7-2a61-412c-b506-49267f1c682f"
-      },
-      {
-        "name":"Stomache",
-        "uuid":"5cf68a94-7a4e-43e6-8e49-d5d96caa2e2f"
-      },
-      {
-        "name":"Vomitting",
-        "uuid":"35662f0c-31fe-4add-a55f-e84d3be09716"
-      },
-      {
-        "uuid": "0dee2973-eebe-4699-b676-b770fdd1c411",
-        "name": "Malaria"
-      },
-      {
-        "name":"Typhoid",
-        "uuid":"62339322-2dc0-4052-a2be-f37dceb254aa"
-      },
-      {
-        "name":"Warm",
-        "uuid":"0c4c6a65-1b50-403a-b163-41b186aa4f18"
+        "name": "Diarrhoea",
+        "uuid": "88af3c67-3828-4f4b-8993-1497a86bf2bf",
+        "abnormal": true
       },
       {
         "name": "Jaundice",
-        "uuid": "352bb8a4-1569-492f-9a53-14e3b134c104"
+        "uuid": "352bb8a4-1569-492f-9a53-14e3b134c104",
+        "abnormal": true
+      },
+      {
+        "name": "Common cold",
+        "uuid": "48689220-7064-4a73-90c4-b8857445a0c8",
+        "abnormal": true
+      },
+      {
+        "name": "Cough",
+        "uuid": "63658ea8-0447-4180-8026-bed500486e13",
+        "abnormal": true
+      },
+      {
+        "name":"Measle",
+        "uuid":"244e65f5-61e7-40a1-b89c-0598792a16c2",
+        "abnormal": true
+      },
+      {
+        "name":"Skin disease",
+        "uuid":"8623cba7-2a61-412c-b506-49267f1c682f",
+        "abnormal": true
+      },
+      {
+        "name":"Stomache",
+        "uuid":"5cf68a94-7a4e-43e6-8e49-d5d96caa2e2f",
+        "abnormal": true
+      },
+      {
+        "name":"Vomitting",
+        "uuid":"35662f0c-31fe-4add-a55f-e84d3be09716",
+        "abnormal": true
+      },
+      {
+        "uuid": "0dee2973-eebe-4699-b676-b770fdd1c411",
+        "name": "Malaria",
+        "abnormal": true
+      },
+      {
+        "name":"Typhoid",
+        "uuid":"62339322-2dc0-4052-a2be-f37dceb254aa",
+        "abnormal": true
+      },
+      {
+        "name":"Warm",
+        "uuid":"0c4c6a65-1b50-403a-b163-41b186aa4f18",
+        "abnormal": true
       }
     ]
   },
