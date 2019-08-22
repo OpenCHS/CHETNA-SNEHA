@@ -518,7 +518,8 @@
   },
   {
     "uuid": "696f127f-b91b-413c-9f30-0b10721ae34d",
-    "name": "Don't wash hand"
+    "name": "Don't wash hand",
+    "unique":true
   },
   {
     "name": "When do you wash child’s hand",
