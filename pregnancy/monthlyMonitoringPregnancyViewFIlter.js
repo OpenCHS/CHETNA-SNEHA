@@ -38,7 +38,7 @@ class MonthlyMonitoringPregnancyViewFilter {
     @WithName('Finalized place for delivery')
     @WithStatusBuilder
     _4([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Is decision taken for place of delivery").is.no;
+        statusBuilder.show().when.valueInEntireEnrolment("Is decision taken for place of delivery").is.no;
     }
 
     @WithName('Hb')
