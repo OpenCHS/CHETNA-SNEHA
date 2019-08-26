@@ -71,7 +71,7 @@ class MonthlyMonitoringChildViewFilter {
     @WithName('Month in which child started complementary food')
     @WithStatusBuilder
     _a3([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment("When did you start giving complementary food to the child")
+        statusBuilder.show().when.valueInEnrolment("When did you start giving complementary food to the child")
     .containsAnswerConceptName("Yet not started")
         .or.when.latestValueInPreviousEncounters("Month in which child started complementary food")
     .containsAnswerConceptName("NA");

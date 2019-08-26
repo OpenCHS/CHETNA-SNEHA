@@ -19,7 +19,7 @@ class MonthlyMonitoringPregnancyViewFilter {
     @WithName('Whether she registered her pregnancy')
     @WithStatusBuilder
     _1([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment("Have you registered pregnancy")
+        statusBuilder.show().when.valueInEnrolment("Have you registered pregnancy")
     .containsAnswerConceptNameOtherThan("Yes");
     }
 
@@ -38,7 +38,13 @@ class MonthlyMonitoringPregnancyViewFilter {
     @WithName('Finalized place for delivery')
     @WithStatusBuilder
     _4([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment("Is decision taken for place of delivery").is.no;
+        statusBuilder.show().when.valueInEnrolment("Is decision taken for place of delivery").is.no;
+        //     .and.when.valueInLastEncounter('Finalized place for delivery')
+        // .containsAnswerConceptName('Yet not decided');
+
+        // statusBuilder.show().when.valueInEnrolment("Is decision taken for place of delivery").is.no
+        //     // .and.when.valueInEncounter('Finalized place for delivery').is.notDefined
+        //     .and.when.valueInLastEncounter('Finalized place for delivery').containsAnswerConceptName('Yet not decided');
     }
 
     @WithName('Hb')
@@ -50,7 +56,7 @@ class MonthlyMonitoringPregnancyViewFilter {
     @WithName('Is she enrolled for any government programme/scheme')
     @WithStatusBuilder
     _6([], statusBuilder) {
-        statusBuilder.show().when.valueInEntireEnrolment("Got any benefits of government programme/scheme")
+        statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
         .containsAnswerConceptNameOtherThan("Yes");
     }
 
