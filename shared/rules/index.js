@@ -7,6 +7,7 @@ module.exports = _.merge({},
     require('../../child/childrenEnrolmentViewFilter.js'),
     require('../../child/checklistRules'),
     require('../../child/childDecisions'),
-    require('../../child/monthlyMonitoringChildViewFilter.js')
+    require('../../child/monthlyMonitoringChildViewFilter.js'),
+    require('../../shared/rules/visitScheduler.js')
     
 );
