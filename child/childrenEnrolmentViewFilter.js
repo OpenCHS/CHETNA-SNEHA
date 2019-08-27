@@ -297,10 +297,11 @@ class ChildrenEnrolmentViewHandler {
         .containsAnswerConceptName("Other");
     }
 
-    // When did you start giving complementary food to the child
     @WithName('When did you start giving complementary food to the child')
     @statusBuilder
     ab38([], statusBuilder) {
+        statusBuilder.skipAnswers('4th month','5th month','6th month','7th month',
+        '8th month','9th month', 'NA');
         statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
     }
     

@@ -71,86 +71,88 @@ class MonthlyMonitoringChildViewFilter {
     @WithName('Month in which child started complementary food')
     @WithStatusBuilder
     _a3([], statusBuilder) {
+        statusBuilder.skipAnswers('Before 6 months','5th month','After completion of 6 months','After 9 months',
+        'After 1 year','Yet not started');
         statusBuilder.show().when.valueInEnrolment("When did you start giving complementary food to the child")
     .containsAnswerConceptName("Yet not started")
-        .or.when.latestValueInPreviousEncounters("Month in which child started complementary food")
+        .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
     .containsAnswerConceptName("NA");
     }
 
     @WithName('Who has taken decision to start complementary food to the child')
     @WithStatusBuilder
     _a4([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('What type of food do you give to the child as complementary food')
     @WithStatusBuilder
     _a5([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
         .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('Whether water given to the child in this month')
     @WithStatusBuilder
     _a6([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
         .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('Type of packaged food child gets from outside')
     @WithStatusBuilder
     _a7([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('Type of home based food child gets')
     @WithStatusBuilder
     _a8([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
   }
 
     @WithName('How much do you give complementary food to the child')
     @WithStatusBuilder
     _a9([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
         .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('How often do you give complementary food to the children')
     @WithStatusBuilder
     _a10([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('What are the points you kept in a mind while preparing a food for the child')
     @WithStatusBuilder
     _a11([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('What are the points you kept in a mind while feed the child')
     @WithStatusBuilder
     _a12([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('Do you give complementary food along with breast feeding')
     @WithStatusBuilder
     _a13([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('When do you wash child’s hand')
     @WithStatusBuilder
     _a14([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Month in which child started complementary food")
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
