@@ -1,5 +1,7 @@
 import {
     FormElementsStatusHelper,
+    FormElementStatus,
+    RuleCondition,
     RuleFactory,
     StatusBuilderAnnotationFactory,
     WithName
@@ -35,16 +37,22 @@ class MonthlyMonitoringPregnancyViewFilter {
         statusBuilder.show().when.valueInEncounter("Have you registered pregnancy").is.no;
     }
 
-    @WithName('Finalized place for delivery')
-    @WithStatusBuilder
-    _4([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Is decision taken for place of delivery").is.no;
-        //     .and.when.valueInLastEncounter('Finalized place for delivery')
-        // .containsAnswerConceptName('Yet not decided');
+    @WithName("Finalized place for delivery")
+    _4(programEncounter, formElement) {
+        const context = {programEncounter, formElement};
 
-        // statusBuilder.show().when.valueInEnrolment("Is decision taken for place of delivery").is.no
-        //     // .and.when.valueInEncounter('Finalized place for delivery').is.notDefined
-        //     .and.when.valueInLastEncounter('Finalized place for delivery').containsAnswerConceptName('Yet not decided');
+        if (new RuleCondition(context).when.valueInEnrolment("Is decision taken for place of delivery").is.yes.matches())
+            return new FormElementStatus(formElement.uuid, false);
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("Finalized place for delivery").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("Finalized place for delivery").containsAnswerConceptName("Yet not decided").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        return new FormElementStatus(formElement.uuid, false);
     }
 
     @WithName('Hb')
