@@ -19,16 +19,28 @@ class MonthlyMonitoringPregnancyViewFilter {
     }
 
     @WithName('Whether she registered her pregnancy')
-    @WithStatusBuilder
-    _1([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Have you registered pregnancy")
-    .containsAnswerConceptNameOtherThan("Yes");
+    _1(programEncounter, formElement) {
+        const context = {programEncounter, formElement};
+
+        if (new RuleCondition(context).when.valueInEnrolment("Have you registered pregnancy").is.yes.matches())
+            return new FormElementStatus(formElement.uuid, false);
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("Have you registered pregnancy").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+    
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("Have you registered pregnancy").is.no.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+    
+        return new FormElementStatus(formElement.uuid, false);
     }
 
     @WithName('Place where you registered pregnancy')
     @WithStatusBuilder
     _2([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Have you registered pregnancy").is.yes;
+        statusBuilder.skipAnswers('Urban Health centre','ASHA','Other');
     }
 
     @WithName('Reason for not getting registered your pregnancy')
@@ -44,11 +56,11 @@ class MonthlyMonitoringPregnancyViewFilter {
         if (new RuleCondition(context).when.valueInEnrolment("Is decision taken for place of delivery").is.yes.matches())
             return new FormElementStatus(formElement.uuid, false);
 
-        if (new RuleCondition(context).when.latestValueInPreviousEncounters("Finalized place for delivery").is.notDefined.matches()) {
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("At which place you will do your delivery").is.notDefined.matches()) {
             return new FormElementStatus(formElement.uuid, true);
         }
 
-        if (new RuleCondition(context).when.latestValueInPreviousEncounters("Finalized place for delivery").containsAnswerConceptName("Yet not decided").matches()) {
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("At which place you will do your delivery").containsAnswerConceptName("Yet not decided").matches()) {
             return new FormElementStatus(formElement.uuid, true);
         }
 

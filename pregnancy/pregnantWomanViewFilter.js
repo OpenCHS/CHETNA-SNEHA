@@ -177,6 +177,7 @@ class PregnantWomenEnrolmentViewHandler {
     @WithName('Where/Whom to registered your pregnancy?')
     @statusBuilder
     a27([], statusBuilder) {
+        statusBuilder.skipAnswers('Under SNEHA programme');
         statusBuilder.show().when.valueInEnrolment("Have you registered pregnancy").is.yes;
     }
     
@@ -262,6 +263,7 @@ class PregnantWomenEnrolmentViewHandler {
     @WithName('At which place you will do your delivery')
     @statusBuilder
     a60([], statusBuilder) {
+        statusBuilder.skipAnswers('Yet not decided');
         statusBuilder.show().when.valueInEnrolment("Is decision taken for place of delivery").is.yes;
     }
 

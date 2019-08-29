@@ -28,7 +28,10 @@
     "dataType": "Numeric",
     "unit": "month"
   },
- 
+  {
+    "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
+    "name": "Under SNEHA programme"
+  }, 
   {
     "name": "Where/Whom to registered your pregnancy",
     "uuid": "17b01907-dab2-4c56-8c69-1f9e801aac33",
@@ -57,6 +60,10 @@
       {
         "name": "Other",
         "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+      },
+      {
+        "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
+        "name": "Under SNEHA programme"
       }
     ]
   },
@@ -592,6 +599,10 @@
       {
         "name": "Private hospital",
         "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      },
+      {
+        "name": "Yet not decided",
+        "uuid": "74ca1acb-2a89-4803-b5b0-5dc6770d3ad1"
       },
       {
         "name": "Other",

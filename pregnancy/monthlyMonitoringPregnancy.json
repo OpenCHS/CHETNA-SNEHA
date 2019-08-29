@@ -27,9 +27,9 @@
           "type": "MultiSelect",
           "keyValues": [],
           "concept": {
-            "name": "Place where you registered pregnancy",
-            "uuid": "51d60c44-4303-454d-837e-0e728d92231a"
-          },
+            "name": "Where/Whom to registered your pregnancy",
+            "uuid": "17b01907-dab2-4c56-8c69-1f9e801aac33"   
+        },
           "displayOrder":2,
           "mandatory": true
         },
@@ -50,8 +50,8 @@
           "type": "SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Finalized place for delivery",
-            "uuid": "a09b32b1-6a2b-4749-9789-ebc05b5b7450"
+            "name": "At which place you will do your delivery",
+            "uuid": "2685ed67-a36c-46f1-8b75-309db0d3a325"
           },
           "displayOrder":4,
           "mandatory": true

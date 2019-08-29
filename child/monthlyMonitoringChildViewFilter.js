@@ -1,8 +1,10 @@
 import {
     FormElementsStatusHelper,
     RuleFactory,
+    RuleCondition,
     StatusBuilderAnnotationFactory,
     WithName,
+    FormElementStatusBuilder,
     FormElementStatus
 } from 'rules-config/rules';
 
@@ -69,14 +71,31 @@ class MonthlyMonitoringChildViewFilter {
     }
 
     @WithName('Month in which child started complementary food')
-    @WithStatusBuilder
-    _a3([], statusBuilder) {
-        statusBuilder.skipAnswers('Before 6 months','5th month','After completion of 6 months','After 9 months',
-        'After 1 year','Yet not started');
-        statusBuilder.show().when.valueInEnrolment("When did you start giving complementary food to the child")
-    .containsAnswerConceptName("Yet not started")
-        .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
-    .containsAnswerConceptName("NA");
+    _a3(programEncounter, formElement) {
+        const context = {programEncounter, formElement};
+
+        const statusBuilder = new FormElementStatusBuilder({programEncounter, formElement});
+        statusBuilder.skipAnswers("Before 6 months","5th month","After completion of 6 months","After 9 months",
+            "After 1 year","Yet not started");
+    //    const answersToSkip = ["Before 6 months","5th month","After completion of 6 months","After 9 months",
+    //     "After 1 year","Yet not started"];
+        
+        if (new RuleCondition(context).when.valueInEnrolment("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("Yet not started").matches()){
+                return new FormElementStatus(formElement.uuid, false);
+        }                   
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true ) && statusBuilder.build();
+        }
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptName("NA").matches()) {
+            return new FormElementStatus(formElement.uuid, true) && statusBuilder.build();
+        }
+
+        return new FormElementStatus(formElement.uuid, false);
     }
 
     @WithName('Who has taken decision to start complementary food to the child')
