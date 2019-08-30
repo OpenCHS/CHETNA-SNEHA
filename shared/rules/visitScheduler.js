@@ -9,8 +9,11 @@ const visitDate = ({programEnrolment}) => {
 };
 
 const visitDateDuringEncounter = ({programEncounter}) => {
-    return moment(programEncounter.encounterDateTime).add(1, 'months').toDate();
-};
+    var enrolmentDay = moment(programEncounter.programEnrolment.enrolmentDateTime).date()+ 1; 
+    var dateContext = moment(programEncounter.encounterDateTime).add(1, 'months').toDate();  
+        return moment(dateContext).set('day',enrolmentDay).toDate();
+    };
+
 
 @RuleFactory("1d08e3e9-30a0-4fee-b1ce-55aeec627ea1", "VisitSchedule")
 ("7a0c2772-c346-4183-ac3c-e2aa954fa8cd", "CHETNA SNEHA Pregnant Woman Enrolment Visit schedules", 100.0)
@@ -46,7 +49,7 @@ class ScheduleVisitsDuringChildEnrolment {
 class ScheduleVisitsDuringMonthlyMonitoringPregnantWoman {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
     let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
-    RuleHelper.addSchedule(scheduleBuilder, 'Monthly monitoring of pregnant woman', 'Monthly monitoring of pregnant woman', visitDateDuringEncounter({programEncounter}), 8);
+    RuleHelper.addSchedule(scheduleBuilder, 'Monthly monitoring of pregnant woman', 'Monthly monitoring of pregnant woman', visitDateDuringEncounter({programEncounter}), 10);
     return scheduleBuilder.getAllUnique("encounterType");
     }
 }
@@ -60,7 +63,7 @@ class ScheduleVisitsDuringMonthlyMonitoringChild {
     if(ageOfChild > 24 ) return visitSchedule;
     
     let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
-    RuleHelper.addSchedule(scheduleBuilder, 'Monthly monitoring of child', 'Monthly monitoring of child', visitDateDuringEncounter({programEncounter}), 8);
+    RuleHelper.addSchedule(scheduleBuilder, 'Monthly monitoring of child', 'Monthly monitoring of child', visitDateDuringEncounter({programEncounter}), 10);
     return scheduleBuilder.getAllUnique("encounterType");
     }
 }
