@@ -133,9 +133,9 @@
           "mandatory": true
         },
         {
-          "name": "TT injection",
+          "name": "TT injections given",
           "uuid": "03cc439f-eb58-4c02-beba-de256b6ca2cf",
-          "type":"SingleSelect",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "TT injection",

@@ -110,6 +110,29 @@ class MonthlyMonitoringPregnancyViewFilter {
     _11([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Whether she participated in SNEHA activities").is.yes;
     }
+
+    @WithName('TT injections given')
+    _12(programEncounter, formElement) {
+        const context = {programEncounter, formElement};
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
+                .containsAnswerConceptName("TT1")
+            .and.when.latestValueInPreviousEncounters("TT injection")
+                .containsAnswerConceptName("TT2").matches())
+            return new FormElementStatus(formElement.uuid, false);
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
+            .containsAnswerConceptName("TT booster").matches()) {
+                return new FormElementStatus(formElement.uuid, false);
+        }
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
+            .is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }       
+
+        return new FormElementStatus(formElement.uuid, true);
+    }
 }
 
 export {MonthlyMonitoringPregnancyViewFilter}
