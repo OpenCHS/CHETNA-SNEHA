@@ -10,6 +10,10 @@
     "name": "Don't remember"
   },
   {
+    "name": "Yet not decided",
+    "uuid": "74ca1acb-2a89-4803-b5b0-5dc6770d3ad1"
+  },
+  {
     "name": "Have you registered pregnancy",
     "uuid": "c47e8f81-0b9d-4772-a49a-ad2b7aecc04a",
     "dataType": "Coded",
@@ -1036,10 +1040,6 @@
   {
     "uuid": "f894a948-df72-4d00-92b3-1dfdad0b9cb7",
     "name": "Died after birth"
-  },
-  {
-    "uuid": "afa5dd39-4d4c-4a7a-87e4-5ca0c60bef29",
-    "name": "Still birth"
   },
   {
     "uuid": "1d9a590c-3dfc-45bf-bd81-3df052177980",

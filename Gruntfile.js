@@ -17,7 +17,9 @@ module.exports = IDI.configure({
             "./child/checklistForm.json",
             "./child/childrenEnrolment.json",
             "./pregnancy/monthlyMonitoringPregnancy.json",
-            "./child/monthlyMonitoringChildForm.json"
+            "./child/monthlyMonitoringChildForm.json",
+            "./pregnancy/pregnantWomanExitForm.json",
+            "./child/childProgramExitForm.json"
         ],
         "formMappings": ["./shared/formMappings.json"],
         "formDeletions": [],

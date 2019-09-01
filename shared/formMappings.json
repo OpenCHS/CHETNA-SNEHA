@@ -21,6 +21,13 @@
     "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
   },
   {
+    "uuid": "85a8aa66-a7e0-4869-8824-7ce9b3686e74",
+    "formUUID": "4073d894-2c74-4cc3-90f2-73d649489c59",
+    "encounterTypeUUID": null,
+    "programUUID": "82951774-884e-46c4-873b-d18d29327cb7",
+    "comment": "Pregnant Woman program Exit"
+  },
+  {
     "uuid": "c2d5a23e-cbb3-4eea-923c-6d92af1ca27b",
     "formUUID": "d440e0b4-a404-4bdf-ba5e-f1e5d5cf5cc0",
     "programUUID": "62755a29-d197-419a-b944-ed665a367787",
@@ -32,7 +39,14 @@
     "formUUID": "3e9a7b97-87fd-4936-bcec-68a4da7d7a5c",
     "programUUID": "62755a29-d197-419a-b944-ed665a367787",
     "encounterTypeUUID": "36075926-225a-48df-9abd-be09e6e73609",
-    "comment": "Monthly monitoring of pregnant woman",
+    "comment": "Monthly monitoring of child",
     "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
+  },
+  {
+    "uuid": "ff991dd1-2634-4783-8ba1-f0ebe992bfa4",
+    "formUUID": "54cbf339-4cd2-4e26-bf9c-15f128035b1b",
+    "encounterTypeUUID": null,
+    "programUUID": "62755a29-d197-419a-b944-ed665a367787",
+    "comment": "Child program Exit"
   }
 ]

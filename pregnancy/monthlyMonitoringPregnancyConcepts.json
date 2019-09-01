@@ -1,9 +1,5 @@
 [
- {
-    "name": "Yet not decided",
-    "uuid": "74ca1acb-2a89-4803-b5b0-5dc6770d3ad1"
-  },
-  {
+   {
     "uuid": "929df1b6-374c-4a13-a60d-e6a8ce6a5a7b",
     "name": "Reason for not getting registered your pregnancy",
     "dataType":"Text"

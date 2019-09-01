@@ -1315,5 +1315,53 @@
     "uuid": "3f921ce0-d16f-420c-8d0f-df9b9bcb3da2",
     "name": "What did you cook for the child from the snacks received",
     "dataType":"Text"
-  } 
+  },
+  {
+    "uuid": "b0e1fbcb-b921-498e-836e-094085b27bdb",
+    "name": "Migrated"
+  },
+  {
+    "uuid": "c7472691-f3cd-44ab-83b8-c6a68ded6880",
+    "name": "Program Ended"
+  },
+  {
+    "uuid": "af6c800c-6069-4ea8-8029-65eb740b4cf0",
+    "name": "Delivery"
+  },
+  {
+    "uuid": "afa5dd39-4d4c-4a7a-87e4-5ca0c60bef29",
+    "name": "Still birth"
+  },
+  {
+    "uuid": "e80aaef6-1bfe-44c5-9222-e9e4ee84e9ab",
+    "name": "Not in eligible criteria"
+  },
+  {
+    "name": "Reason for exit",
+    "uuid": "9f815b72-4b4a-4210-a69f-a925d2baae1d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "b0e1fbcb-b921-498e-836e-094085b27bdb",
+        "name": "Migrated"
+      },
+      {
+        "uuid": "af6c800c-6069-4ea8-8029-65eb740b4cf0",
+        "name": "Delivery"
+      },
+      {
+        "uuid": "e80aaef6-1bfe-44c5-9222-e9e4ee84e9ab",
+        "name": "Not in eligible criteria",
+        "abnormal":true
+      },
+      {
+        "name": "Miscarriage",
+        "uuid": "fb079822-6338-46fe-9919-112686850e2d"
+      },
+      {
+        "uuid": "afa5dd39-4d4c-4a7a-87e4-5ca0c60bef29",
+        "name": "Still birth"
+      }
+    ]
+  }
 ]

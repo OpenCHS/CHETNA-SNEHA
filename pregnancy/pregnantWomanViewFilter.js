@@ -2,6 +2,7 @@ import {
     StatusBuilderAnnotationFactory, 
     RuleFactory,  
     FormElementsStatusHelper,
+    FormElementStatusBuilder,
     WithName,
     FormElementStatus
 } from 'rules-config/rules';
@@ -538,4 +539,32 @@ class PregnantWomenEnrolmentViewHandler {
     }
 }
 
-module.exports = {PregnantWomenEnrolmentViewHandler};
+const PWProgramExitViewFilter = RuleFactory("4073d894-2c74-4cc3-90f2-73d649489c59", "ViewFilter");
+@PWProgramExitViewFilter("d27f74df-e890-4c7b-9c12-6d02a4e73e55", "PW Program Exit Filter", 102.0, {})
+ class PregnancyProgramExitViewFilterHandler {
+    static exec(programExit, formElementGroup) {
+        return FormElementsStatusHelper.getFormElementsStatuses(new PregnancyProgramExitViewFilterHandler(), programExit, formElementGroup);
+    }
+
+    reasonForExit(programExit, formElement) {
+        const statusBuilder = this._getStatusBuilder(programExit, formElement);
+        statusBuilder.skipAnswers("Shifted to other geographical area","Completion");
+        return statusBuilder.build();
+    }
+
+    otherReasonPleaseSpecify(programExit, formElement) {
+        const statusBuilder = this._getStatusBuilder(programExit, formElement);
+        statusBuilder.show().when.valueInExit("Reason for exit").containsAnswerConceptName("Other");
+        return statusBuilder.build();
+    }
+
+    _getStatusBuilder(programExit, formElement) {
+        return new FormElementStatusBuilder({
+            programEnrolment: programExit,
+            formElement
+        });
+    }
+
+}
+
+module.exports = {PregnantWomenEnrolmentViewHandler, PregnancyProgramExitViewFilterHandler};
