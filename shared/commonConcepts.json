@@ -1363,5 +1363,36 @@
         "name": "Still birth"
       }
     ]
+  },
+{
+  "uuid": "1b425c0f-97c3-46c6-8ac4-bed72140092a",
+  "name": "Out Of Station"
+},
+{
+  "uuid": "5a4c4e57-a2e7-4172-b668-56f77437c04f",
+  "name": "Field Worker is on Leave"
+},
+  {
+    "name": "Visit cancel reason",
+    "uuid": "739f9a56-c02c-4f81-927b-69842d78c1e8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "1b425c0f-97c3-46c6-8ac4-bed72140092a",
+        "name": "Out Of Station"
+      },
+      {
+        "uuid": "5a4c4e57-a2e7-4172-b668-56f77437c04f",
+        "name": "Field Worker is on Leave"
+      },
+      {
+        "uuid": "64f8a277-cd87-4e98-8667-c40f54c76cf6",
+        "name": "Sick"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "comment": "Other"
+      }
+    ]
   }
 ]
