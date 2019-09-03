@@ -396,34 +396,6 @@
     ]
   },
   {
-    "name": "How often do you give complementary food to the children",
-    "uuid": "0e7e9ed1-9bc2-4258-855d-1d4cf477fe8d",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",
-        "name": "Every an hour"
-      },
-      {
-        "uuid": "6b717a67-38a4-40b3-b979-ee3f730f2a1b",
-        "name": "Every 2 hours"
-      },
-      {
-        "uuid": "51623840-f5a0-4d12-81e1-3afa1dab7e69",
-        "name": "Every 3 to 4 hours"
-      },
-      {
-        "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
-        "name": "Whenever child is crying"
-      },
-      {
-        "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
-        "voided":true
-      }
-    ]
-  },
-  {
     "name": "What are the points you kept in a mind while preparing a food for the child",
     "uuid": "6d44f4c4-2b16-453b-a1ab-90eeee60a340",
     "dataType": "Coded",
@@ -520,9 +492,7 @@
   {
     "uuid": "f662c7ef-52ca-4139-bfd9-2b446615a5cd",
     "name": "Once in a day"
-  },
-
-  
+  },  
   {
     "name": "When do you breastfeed to your child",
     "uuid": "aec3ddd6-b773-4e36-9ab1-9ed33d0eaaec",
@@ -595,8 +565,7 @@
         "unique":true
       }
     ]
-  },
-   
+  },   
   {
     "uuid": "c0b0e549-d209-4754-87bf-9b5f547a57d8",
     "name": "Other things that should be kept in mind while preparing food",

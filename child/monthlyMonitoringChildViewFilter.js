@@ -75,7 +75,7 @@ class MonthlyMonitoringChildViewFilter {
         const context = {programEncounter, formElement};
 
         const statusBuilder = new FormElementStatusBuilder({programEncounter, formElement});
-        statusBuilder.skipAnswers("Before 6 months","5th month","After completion of 6 months","After 9 months",
+        statusBuilder.skipAnswers("Before 6 months","After completion of 6 months","After 9 months",
             "After 1 year","Yet not started");
     //    const answersToSkip = ["Before 6 months","5th month","After completion of 6 months","After 9 months",
     //     "After 1 year","Yet not started"];
@@ -143,6 +143,7 @@ class MonthlyMonitoringChildViewFilter {
     @WithName('How often do you give complementary food to the children')
     @WithStatusBuilder
     _a10([], statusBuilder) {
+        statusBuilder.skipAnswers("Every an hour","Every 2 hours","Every 3 to 4 hours","Whenever child is crying");
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }

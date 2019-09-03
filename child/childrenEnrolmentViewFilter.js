@@ -345,6 +345,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('How often do you give complementary food to the children')
     @statusBuilder
     ab43([], statusBuilder) {
+        statusBuilder.skipAnswers("Less than 3 or 3 times in a day","4 times in a day","More than 4 times in a day");
         statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6)
         .and.when.valueInEnrolment("When did you start giving complementary food to the child")
         .not.containsAnswerConceptName("Yet not started");
