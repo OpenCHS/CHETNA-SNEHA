@@ -18,13 +18,14 @@ module.exports = IDI.configure({
             "./child/childrenEnrolment.json",
             "./pregnancy/monthlyMonitoringPregnancy.json",
             "./child/monthlyMonitoringChildForm.json",
-            "./shared/programExitForm.json"
+            "./shared/programExitForm.json",
+            "./shared/programCancelForm.json"
         ],
         "formMappings": ["./shared/formMappings.json"],
         "formDeletions": [],
         "formAdditions": [],
         "catchments": [
-            "./shared/catchments.json"
+            // "./shared/catchments.json"
         ],
         "checklistDetails": ["./child/checklist.json"],
         "concepts": [

@@ -3,6 +3,7 @@ import {
     RuleFactory,  
     FormElementsStatusHelper,
     FormElementStatusBuilder,
+    FormElementStatus,
     WithName
 } from 'rules-config/rules';
 
@@ -36,9 +37,9 @@ const ProgramExitViewFilter = RuleFactory("54cbf339-4cd2-4e26-bf9c-15f128035b1b"
 
 
 const statusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
-const filters = RuleFactory("aac5c57a-aa01-49bb-ad20-70536dd2907f", "ViewFilter");
-@filters("538c2ee6-1510-4835-9e66-e09e9f6c92cd", "CancellationFormFilters", 121.0, {})
-class CancellationFormFilters {
+const filters = RuleFactory("52d0dcea-f074-4332-8ab7-ba54be9d8cf1", "ViewFilter");
+@filters("6bf17e6e-cb3a-4928-a99c-6e150e1015a2", "Cancel Form filters", 121.0, {})
+class ProgramCancellationFormFilters {
 
     @WithName('Cancel reason')
     @statusBuilder
@@ -46,10 +47,16 @@ class CancellationFormFilters {
         statusBuilder.skipAnswers("Away from village","Absent");
     }
 
+    otherReason(programEncounter, formElement) {
+        const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
+        const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
+        return new FormElementStatus(formElement.uuid, answer === 'Other');
+    }
+
     static exec(programEncounter, formElementGroup, today) {
-        return FormElementsStatusHelper.getFormElementsStatusesWithoutDefaults(new CancellationFormFilters(), programEncounter, formElementGroup, today);
+        return FormElementsStatusHelper.getFormElementsStatusesWithoutDefaults(new ProgramCancellationFormFilters(), programEncounter, formElementGroup, today);
     }
 }
 
 
-module.exports = {ProgramExitViewFilterHandler, CancellationFormFilters};
+module.exports = {ProgramExitViewFilterHandler, ProgramCancellationFormFilters};

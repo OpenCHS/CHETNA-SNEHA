@@ -29,7 +29,7 @@
   },
   {
     "uuid": "377c58c2-82ac-421e-ab37-bea67dc8626b",
-    "formUUID": "aac5c57a-aa01-49bb-ad20-70536dd2907f",
+    "formUUID": "52d0dcea-f074-4332-8ab7-ba54be9d8cf1",
     "encounterTypeUUID": "3f1d1216-f944-45c1-aa4b-8a49e88632fc",
     "programUUID": "82951774-884e-46c4-873b-d18d29327cb7",
     "comment": "Pregnant Woman program Cancel"
@@ -58,7 +58,7 @@
   },
   {
     "uuid": "2b0c5b44-b035-4ded-b400-5d4e108f10b2",
-    "formUUID": "aac5c57a-aa01-49bb-ad20-70536dd2907f",
+    "formUUID": "52d0dcea-f074-4332-8ab7-ba54be9d8cf1",
     "encounterTypeUUID": "36075926-225a-48df-9abd-be09e6e73609",
     "programUUID": "62755a29-d197-419a-b944-ed665a367787",
     "comment": "Child program Cancel"
