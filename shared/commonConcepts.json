@@ -492,11 +492,12 @@
       {
         "name": "Other",
         "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-        "unique" : true
+        "unique" : false
       },
       {
         "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique" : true
       }
     ]
   },

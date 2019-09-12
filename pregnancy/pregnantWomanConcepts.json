@@ -1129,7 +1129,15 @@
     "uuid": "6badabd6-cb32-42ff-acc8-545b1536a368",
     "name": "Other reason for miscarriage",
     "dataType":"Text"
+  },
+  {
+    "name": "Pregnant woman Hb",
+    "uuid": "13a675d2-94ff-411f-be75-4fbcdcd72e26",
+    "dataType": "Numeric",
+    "lowNormal": 11,
+    "unit": "g/dL"
   }
+  
 
   
 ]

@@ -133,6 +133,36 @@ class MonthlyMonitoringPregnancyViewFilter {
 
         return new FormElementStatus(formElement.uuid, true);
     }
+
+    @WithName('Number of ANC check-up')
+    @WithStatusBuilder
+    _13([programEncounter, formElement], statusBuilder) {
+        let numberOfANCCheckups = programEncounter.getObservationValue('Number of ANC check-up');
+        let numberOfANCCheckupsFromEnrolment = programEncounter.programEnrolment.getObservationValue('Number of times checkup done from doctor');
+        if (numberOfANCCheckupsFromEnrolment && numberOfANCCheckups && numberOfANCCheckups < numberOfANCCheckupsFromEnrolment) {
+            statusBuilder.validationError('Number of ANC checkups cannot be less than that mentioned in enrolment');
+        }
+    }
+
+    @WithName('BP Systolic')
+    @WithStatusBuilder
+    _14([programEncounter, formElement], statusBuilder) {
+        let systolic = programEncounter.getObservationValue('Systolic');
+        if (systolic < 50) {
+            statusBuilder.validationError('Systolic BP cannot be less than 50');
+        }
+    }
+
+    @WithName('BP Diastolic')
+    @WithStatusBuilder
+    _15([programEncounter, formElement], statusBuilder) {
+        let diastolic = programEncounter.getObservationValue('Diastolic');
+        if (diastolic < 50) {
+            statusBuilder.validationError('Diastolic BP cannot be less than 50');
+        }
+    }
+
+
 }
 
 export {MonthlyMonitoringPregnancyViewFilter}
