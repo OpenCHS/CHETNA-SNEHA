@@ -57,12 +57,12 @@
           "mandatory": true
         },
         {
-          "name": "Number of ANC check-up",
+          "name": "Whether ANC check-up done in this month",
           "uuid": "cdcde516-ae8e-4d9b-84c3-667141f650ad",
           "keyValues": [],
           "concept": {
-            "name": "Number of ANC check-up",
-            "uuid": "3e3d15b2-ba93-4511-8af6-61153baf143d"
+            "name": "Whether ANC check-up done in this month",
+            "uuid": "8fc2d676-2608-4bb8-864c-bca83091aba1"
           },
           "displayOrder":5,
           "mandatory": true

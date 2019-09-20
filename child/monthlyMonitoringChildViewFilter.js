@@ -64,12 +64,6 @@ class MonthlyMonitoringChildViewFilter {
         statusBuilder.show().when.ageInMonths.is.lessThanOrEqualTo(6);
     }
 
-    @WithName('Number of times you breastfeed to your child')
-    @WithStatusBuilder
-    _a2([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.lessThanOrEqualTo(6);
-    }
-
     @WithName('Month in which child started complementary food')
     _a3(programEncounter, formElement) {
         const context = {programEncounter, formElement};
@@ -115,8 +109,9 @@ class MonthlyMonitoringChildViewFilter {
     @WithName('Whether water given to the child in this month')
     @WithStatusBuilder
     _a6([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
-        .containsAnswerConceptNameOtherThan("NA");
+        //Ideally this should be if first encounter then look at what is mentioned in enrolment or else look at previous encounter
+        statusBuilder.show().when.latestValueInPreviousEncounters("Whether water given to the child in this month").is.notDefined
+            .or.when.latestValueInPreviousEncounters("Whether water given to the child in this month").is.no;
     }
 
     @WithName('Type of packaged food child gets from outside')

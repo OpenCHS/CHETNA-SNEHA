@@ -9,9 +9,9 @@ const visitDate = ({programEnrolment}) => {
 };
 
 const visitDateDuringEncounter = ({programEncounter}) => {
-    var enrolmentDay = moment(programEncounter.programEnrolment.enrolmentDateTime).date()+ 1; 
-    var dateContext = moment(programEncounter.encounterDateTime).add(1, 'months').toDate();  
-        return moment(dateContext).set('day',enrolmentDay).toDate();
+    var enrolmentDay = moment(programEncounter.programEnrolment.enrolmentDateTime).date();
+    var dateContext = moment(programEncounter.encounterDateTime).add(1, 'months').toDate();
+        return moment(dateContext).set('date',enrolmentDay).toDate();
     };
 
 

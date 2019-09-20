@@ -33,7 +33,10 @@
       }
     ]
   },
-  
+  {
+    "uuid": "7a1d24aa-8b3d-4ef9-a622-c9ce46bf14ba",
+    "name": "Not breastfeeding the child"
+  },
   {
     "name": "Number of times you breastfeed to your child",
     "uuid": "0e34d307-7b0f-41ea-b06b-975a79bae32b",
@@ -54,6 +57,10 @@
       {
         "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
         "name": "Whenever child is crying"
+      },
+      {
+        "uuid": "7a1d24aa-8b3d-4ef9-a622-c9ce46bf14ba",
+        "name": "Not breastfeeding the child"
       }
     ]
   },
@@ -146,25 +153,118 @@
     ]
   },
   {
+    "uuid": "f0a6cb3c-2ed3-434a-9e64-e50bbd8e3ad7",
+    "name": "Smashed fruits"
+  },
+  {
+    "uuid": "9c5b3be2-552e-478a-9d56-6b86a2b9d169",
+    "name": "Boiled vegetables"
+  },
+  {
+    "uuid": "8ed7af44-d01c-4e42-a99f-8adcca3573f5",
+    "name": "Roti"
+  },
+  {
+    "uuid": "525eaea3-02cb-4ae5-89ce-bdb1b9e964b6",
+    "name": "Boiled pulses"
+  },
+  {
+    "uuid": "025260ec-6ccd-4328-8060-e0d173caeecc",
+    "name": "Dal water"
+  },
+  {
+    "uuid": "670c9350-07a0-469f-a7b4-e017fc6f3988",
+    "name": "Porridge"
+  },
+  {
+    "uuid": "e17860f1-20f9-4ad8-9bd7-e51a75b65d9c",
+    "name": "Laddu"
+  },
+  {
+    "uuid": "3afefa0e-6493-40b1-a375-1eb2b28d7953",
+    "name": "Dal rice"
+  },
+  {
+    "uuid": "ad47f242-452e-41c8-8c78-4c38938f1321",
+    "name": "Roti and sabji"
+  },
+  {
+    "uuid": "0c5440a5-d054-425f-be85-816df1115d55",
+    "name": "Not eat any home based food",
+    "unique": true
+  },
+  {
     "name": "Type of home based food child gets",
     "uuid": "82a64d06-0fe4-49ca-b884-b6f703175bb6",
     "dataType": "Coded",
     "answers": [
       {
         "uuid": "e7a25858-0322-4fe3-94a9-26ae09002698",
-        "name": "Semi-solid food"
+        "name": "Semi-solid food",
+        "voided": true
       },
       {
         "uuid": "0914ac28-e59a-4e19-a3da-ea131406177e",
-        "name": "Liquid food"
+        "name": "Liquid food",
+        "voided": true
       },
       {
         "uuid": "937ca13a-d0a1-435b-9c41-3658ae5cbfab",
-        "name": "Less spicy food"
+        "name": "Less spicy food",
+        "voided": true
       },
       {
         "uuid": "e868c0e0-12dc-43fa-8af8-f1c9de260acc",
-        "name": "All food groups should be covered"
+        "name": "All food groups should be covered",
+        "voided": true
+      },
+      {
+        "uuid": "f0a6cb3c-2ed3-434a-9e64-e50bbd8e3ad7",
+        "name": "Smashed fruits"
+      },
+      {
+        "uuid": "a8789de3-fa81-4b4c-bd75-7befecce4e13",
+        "name": "Milk"
+      },
+      {
+        "uuid": "fcbd4f55-271c-49ce-8b50-57cdcc1d7b1e",
+        "name": "Khichadi"
+      },
+      {
+        "uuid": "9c5b3be2-552e-478a-9d56-6b86a2b9d169",
+        "name": "Boiled vegetables"
+      },
+      {
+        "uuid": "8ed7af44-d01c-4e42-a99f-8adcca3573f5",
+        "name": "Roti"
+      },
+      {
+        "uuid": "525eaea3-02cb-4ae5-89ce-bdb1b9e964b6",
+        "name": "Boiled pulses"
+      },
+      {
+        "uuid": "025260ec-6ccd-4328-8060-e0d173caeecc",
+        "name": "Dal water"
+      },
+      {
+        "uuid": "670c9350-07a0-469f-a7b4-e017fc6f3988",
+        "name": "Porridge"
+      },
+      {
+        "uuid": "e17860f1-20f9-4ad8-9bd7-e51a75b65d9c",
+        "name": "Laddu"
+      },
+      {
+        "uuid": "3afefa0e-6493-40b1-a375-1eb2b28d7953",
+        "name": "Dal rice"
+      },
+      {
+        "uuid": "ad47f242-452e-41c8-8c78-4c38938f1321",
+        "name": "Roti and sabji"
+      },
+      {
+        "uuid": "0c5440a5-d054-425f-be85-816df1115d55",
+        "name": "Not eat any home based food"
       },
       {
         "name": "Other",
@@ -425,7 +525,13 @@
       {
         "uuid": "90899050-0f6c-4bb7-90bb-cf1b9908bb0e",
         "name": "Contraception"
+      },
+      {
+        "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
+        "name": "Don't remember",
+        "unique": true
       }
+
     ]
   }
  
