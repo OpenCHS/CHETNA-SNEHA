@@ -366,7 +366,7 @@
         {
           "name": "Information caretaker got in the month through educational session/home visits",
           "uuid": "01280ff7-2a93-4a85-a346-0c7bd3d0481b",
-          "type":"SingleSelect",
+          "type":"MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Information caretaker got in the month through educational session/home visits",
