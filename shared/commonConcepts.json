@@ -1374,8 +1374,8 @@
   "name": "Field Worker is on Leave"
 },
   {
-    "name": "Visit cancel reason",
-    "uuid": "739f9a56-c02c-4f81-927b-69842d78c1e8",
+    "name": "Monthly monitoring visit cancel reason",
+    "uuid": "d1cc5802-a793-49b0-b3df-8b247f5ec4eb",
     "dataType": "Coded",
     "answers": [
       {
@@ -1385,6 +1385,10 @@
       {
         "uuid": "5a4c4e57-a2e7-4172-b668-56f77437c04f",
         "name": "Field Worker is on Leave"
+      },
+      {
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "comment": "Other"
       }
     ]
   },

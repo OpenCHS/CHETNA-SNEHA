@@ -13,7 +13,7 @@
           "name": "Cancel reason",
           "uuid": "27a678a7-6d7e-4a88-8900-96d55a072f0b",
           "concept": {
-            "uuid": "739f9a56-c02c-4f81-927b-69842d78c1e8",
+            "uuid": "d1cc5802-a793-49b0-b3df-8b247f5ec4eb",
             "comment": "Visit cancel reason"
           },
           "displayOrder": 1,
