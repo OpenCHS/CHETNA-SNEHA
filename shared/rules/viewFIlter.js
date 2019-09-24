@@ -48,7 +48,7 @@ class ProgramCancellationFormFilters {
     }
 
     otherReason(programEncounter, formElement) {
-        const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
+        const cancelReasonObs = programEncounter.findCancelEncounterObservation('Monthly monitoring visit cancel reason');
         const answer = cancelReasonObs && cancelReasonObs.getReadableValue();
         return new FormElementStatus(formElement.uuid, answer === 'Other');
     }
