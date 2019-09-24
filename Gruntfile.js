@@ -52,5 +52,10 @@ module.exports = IDI.configure({
             "./shared/rules/index.js"
         ],
         "organisationSql": [],
+        "organisationConfig": ["organisationConfig.json"],
+        "translations": [
+            "translations/en.json",
+            "translations/gu_IN.json",
+        ],
     }
 }, rulesConfigInfra);
