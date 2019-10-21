@@ -142,7 +142,7 @@
             "uuid": "b054841d-40ed-434d-8ef7-e16af1d76d13"
           },
           "displayOrder":5,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Whether Hb check up done",
