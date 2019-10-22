@@ -50,10 +50,10 @@ class MonthlyMonitoringChildViewFilter {
     currentNutritionalStatusOfChild(programEncounter, formElement) {
         const weight = programEncounter.getObservationValue("Weight");
         const height = programEncounter.programEnrolment.getObservationValue("Height");
-        const enrolmentDateTime = programEncounter.programEnrolment.enrolmentDateTime;
+        const encounterDateTime = programEncounter.encounterDateTime;
         const individual = programEncounter.programEnrolment.individual;
-        
-        const nutritionalStatus = nutritionalStatusForChild(individual, enrolmentDateTime, weight, height);
+
+        const nutritionalStatus = nutritionalStatusForChild(individual, encounterDateTime, weight, height);
 
         return new FormElementStatus(formElement.uuid, true,nutritionalStatus.wfaStatus);
     }
@@ -73,11 +73,11 @@ class MonthlyMonitoringChildViewFilter {
             "After 1 year","Yet not started");
     //    const answersToSkip = ["Before 6 months","5th month","After completion of 6 months","After 9 months",
     //     "After 1 year","Yet not started"];
-        
+
         if (new RuleCondition(context).when.valueInEnrolment("When did you start giving complementary food to the child")
             .containsAnswerConceptNameOtherThan("Yet not started").matches()){
                 return new FormElementStatus(formElement.uuid, false);
-        }                   
+        }
 
         if (new RuleCondition(context).when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
             .is.notDefined.matches()) {
