@@ -83,7 +83,7 @@ const addIfRequired = (decisions, name, value) => {
 
 @Decision("6426774f-a01d-45ea-bf5c-f49933e0ddb1", "Chetna Child Enrolment Decisions", 100.0, {})
 export class ChetnaChildEnrolmentDecisionHandler {
-    static exec(programEnrolment, decisions, context, today) {       
+    static exec(programEnrolment, decisions, context, today) {
 
         const weight = programEnrolment.getObservationValue("Weight");
         const height = programEnrolment.getObservationValue("Height");
@@ -101,14 +101,14 @@ export class ChetnaChildEnrolmentDecisionHandler {
 
 @MonthlyMonitoringDecision("9b8e1e94-474a-49ef-bda8-41020126d70e", "Chetna Child Monthly Monitoring Decisions", 101.0, {})
 export class ChetnaChildMonthlyMonitoringDecisionHandler {
-    static exec(programEncounter, decisions, context, today) {       
+    static exec(programEncounter, decisions, context, today) {
 
         const weight = programEncounter.getObservationValue("Weight");
         const height = programEncounter.programEnrolment.getObservationValue("Height");
-        const enrolmentDateTime = programEncounter.programEnrolment.enrolmentDateTime;
+        const encounterDateTime = programEncounter.encounterDateTime;
         const individual = programEncounter.programEnrolment.individual;
-        
-        const nutritionalStatus = nutritionalStatusForChild(individual, enrolmentDateTime, weight, height);
+
+        const nutritionalStatus = nutritionalStatusForChild(individual, encounterDateTime, weight, height);
 
         addIfRequired(decisions.enrolmentDecisions, "Weight for age z-score", nutritionalStatus.wfa);
         addIfRequired(decisions.enrolmentDecisions, "Weight for age Grade", nutritionalStatus.wfaGrade);
