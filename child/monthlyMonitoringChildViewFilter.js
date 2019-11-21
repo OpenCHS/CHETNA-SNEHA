@@ -103,7 +103,9 @@ class MonthlyMonitoringChildViewFilter {
     @WithStatusBuilder
     _a5([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
-        .containsAnswerConceptNameOtherThan("NA");
+        .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('Whether water given to the child in this month')
@@ -118,13 +120,17 @@ class MonthlyMonitoringChildViewFilter {
     @WithStatusBuilder
     _a7([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
-    .containsAnswerConceptNameOtherThan("NA");
+    .containsAnswerConceptNameOtherThan("NA")
+        .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('Type of home based food child gets')
     @WithStatusBuilder
     _a8([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+    .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
   }
 
@@ -132,7 +138,9 @@ class MonthlyMonitoringChildViewFilter {
     @WithStatusBuilder
     _a9([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
-        .containsAnswerConceptNameOtherThan("NA");
+    .containsAnswerConceptNameOtherThan("NA")
+        .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+    .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('How often do you give complementary food to the children')
@@ -140,6 +148,8 @@ class MonthlyMonitoringChildViewFilter {
     _a10([], statusBuilder) {
         statusBuilder.skipAnswers("Every an hour","Every 2 hours","Every 3 to 4 hours","Whenever child is crying");
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+    .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
@@ -147,6 +157,8 @@ class MonthlyMonitoringChildViewFilter {
     @WithStatusBuilder
     _a11([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+    .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
@@ -154,6 +166,8 @@ class MonthlyMonitoringChildViewFilter {
     @WithStatusBuilder
     _a12([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+    .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
@@ -161,6 +175,8 @@ class MonthlyMonitoringChildViewFilter {
     @WithStatusBuilder
     _a13([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+    .containsAnswerConceptNameOtherThan("NA")
+        .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
     .containsAnswerConceptNameOtherThan("NA");
     }
 
@@ -168,7 +184,9 @@ class MonthlyMonitoringChildViewFilter {
     @WithStatusBuilder
     _a14([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
-    .containsAnswerConceptNameOtherThan("NA");
+    .containsAnswerConceptNameOtherThan("NA")
+    .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA");
     }
 
     @WithName('Illness in last 1 month')
@@ -192,13 +210,13 @@ class MonthlyMonitoringChildViewFilter {
     @WithName('Method of contraception used')
     @WithStatusBuilder
     _a18([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Did you use any method of contraception").is.yes;
+        statusBuilder.show().when.valueInEncounter("Do you use any method of contraception").is.yes;
     }
 
     @WithName('Reason for not using any contraception method')
     @WithStatusBuilder
     _a19([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter("Did you use any method of contraception").is.no;
+        statusBuilder.show().when.valueInEncounter("Do you use any method of contraception").is.no;
     }
 
     @WithName('Activities in which child and caretaker participated')

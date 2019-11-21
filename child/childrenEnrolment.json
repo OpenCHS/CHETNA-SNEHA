@@ -1138,11 +1138,11 @@
       "displayOrder": 10,
       "formElements": [
         {
-          "name": "Did you use any method of contraception",
+          "name": "Do you use any method of contraception",
           "uuid": "a6c38061-310b-456a-a4a1-f1705f1339f7",
           "type": "SingleSelect",
           "concept": {
-            "name": "Did you use any method of contraception",
+            "name": "Do you use any method of contraception",
             "uuid": "c8666b0b-4869-438c-92da-9731185d9e25"
           },
           "displayOrder": 1,

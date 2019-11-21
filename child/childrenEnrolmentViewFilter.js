@@ -552,7 +552,7 @@ class ChildrenEnrolmentViewHandler {
     }
 
     // Did you use any method of contraception
-    @WithName('Did you use any method of contraception')
+    @WithName('Do you use any method of contraception')
     @statusBuilder
     abc64([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
@@ -561,14 +561,14 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Method of contraception used')
     @statusBuilder
     ab64([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception")
+        statusBuilder.show().when.valueInEnrolment("Do you use any method of contraception")
         .is.yes;
     }
 
     @WithName('From where/whom information about contraception received')
     @statusBuilder
     ab65([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception")
+        statusBuilder.show().when.valueInEnrolment("Do you use any method of contraception")
         .is.yes;
     }
 
@@ -600,7 +600,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Reason for not using any contraception method')
     @statusBuilder
     ab70([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Did you use any method of contraception")
+        statusBuilder.show().when.valueInEnrolment("Do you use any method of contraception")
         .is.no;
     }
 
