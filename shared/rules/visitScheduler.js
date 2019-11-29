@@ -53,6 +53,8 @@ class ScheduleVisitsDuringChildEnrolment {
 ("2f7e54a8-b405-4fac-aec5-a1a89a56b74f", "ScheduleVisitsDuringMonthlyMonitoringPW", 10.0)
 class ScheduleVisitsDuringMonthlyMonitoringPregnantWoman {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
+       
+        if (programEncounter.programEnrolment.programExitDateTime == null )
         return nextVisits(programEncounter, visitSchedule);
     }
 }
@@ -61,6 +63,8 @@ class ScheduleVisitsDuringMonthlyMonitoringPregnantWoman {
 ("e88ab575-59cf-48cc-b156-428b91c4b970", "ScheduleVisitsDuringMonthlyMonitoringChild", 10.0)
 class ScheduleVisitsDuringMonthlyMonitoringChild {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
+       
+        if (programEncounter.programEnrolment.programExitDateTime == null )
         return nextVisits(programEncounter, visitSchedule);
     }
 }
@@ -70,6 +74,7 @@ class ScheduleVisitsDuringMonthlyMonitoringChild {
 ("340f0ca6-6b6d-44e3-b1f2-ea4dc88f36a3", "ScheduleVisitsOnCancel", 10.0)
 class ScheduleVisitsOnCancel {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
+        if (programEncounter.programEnrolment.programExitDateTime == null )
         return nextVisits(programEncounter, visitSchedule);
     }
 }
