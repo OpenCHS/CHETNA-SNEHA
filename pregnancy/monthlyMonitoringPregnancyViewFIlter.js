@@ -111,32 +111,15 @@ class MonthlyMonitoringPregnancyViewFilter {
         statusBuilder.show().when.valueInEncounter("Whether she participated in SNEHA activities").is.yes;
     }
 
-    @WithName('TT injections given')
-    _12(programEncounter, formElement) {
-        const context = {programEncounter, formElement};
-
-        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
-                .containsAnswerConceptName("TT1")
-            .and.when.latestValueInPreviousEncounters("TT injection")
-                .containsAnswerConceptName("TT2").matches())
-            return new FormElementStatus(formElement.uuid, false);
-
-        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
-            .containsAnswerConceptName("TT booster").matches()) {
-                return new FormElementStatus(formElement.uuid, false);
-        }
-
-        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
-            .is.notDefined.matches()) {
-            return new FormElementStatus(formElement.uuid, true);
-        }       
-
-        return new FormElementStatus(formElement.uuid, true);
-    }
-
     @WithName('Place of check-up')
     @WithStatusBuilder
     _13([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
+    }
+
+    @WithName('Weight')
+    @WithStatusBuilder
+    _114([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
     }
 
@@ -147,6 +130,7 @@ class MonthlyMonitoringPregnancyViewFilter {
         if (systolic < 50) {
             statusBuilder.validationError('Systolic BP cannot be less than 50');
         }
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
     }
 
     @WithName('BP Diastolic')
@@ -156,9 +140,75 @@ class MonthlyMonitoringPregnancyViewFilter {
         if (diastolic < 50) {
             statusBuilder.validationError('Diastolic BP cannot be less than 50');
         }
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
     }
 
+    @WithName('Abdominal checkup')
+    @WithStatusBuilder
+    _16([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
+    }
 
+    @WithName('Whether Hb check up done')
+    @WithStatusBuilder
+    _17([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
+    }
+
+    @WithName('IFA tablets')
+    @WithStatusBuilder
+    _18([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
+    }
+
+    @WithName('Calcium supplement')
+    @WithStatusBuilder
+    _19([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
+    }
+
+    @WithName('Deworming tablet')
+    @WithStatusBuilder
+    _20([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
+    }
+
+    @WithName('Ultra scan')
+    @WithStatusBuilder
+    _21([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
+    }
+
+    @WithName('TT injections given')
+    _12(programEncounter, formElement) {
+        const context = {programEncounter, formElement};
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
+                .containsAnswerConceptName("TT1")
+            .and.when.latestValueInPreviousEncounters("TT injection")
+                .containsAnswerConceptName("TT2")
+            .and.when.valueInEncounter("Whether ANC check-up done in this month").is.no.matches())
+            return new FormElementStatus(formElement.uuid, false);
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
+            .containsAnswerConceptName("TT booster")
+            .and.when.valueInEncounter("Whether ANC check-up done in this month").is.no.matches()) {
+                return new FormElementStatus(formElement.uuid, false);
+        }
+
+        if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
+            .is.notDefined.and.when.valueInEncounter("Whether ANC check-up done in this month").is.yes
+            .matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }       
+
+        if (new RuleCondition(context).when.valueInEncounter("Whether ANC check-up done in this month").is.no
+            .matches()) {
+            return new FormElementStatus(formElement.uuid, false);
+        }
+
+            return new FormElementStatus(formElement.uuid, true);
+    }
 }
 
 export {MonthlyMonitoringPregnancyViewFilter}
