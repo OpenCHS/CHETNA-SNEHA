@@ -186,13 +186,11 @@ class MonthlyMonitoringPregnancyViewFilter {
         if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
                 .containsAnswerConceptName("TT1")
             .and.when.latestValueInPreviousEncounters("TT injection")
-                .containsAnswerConceptName("TT2")
-            .and.when.valueInEncounter("Whether ANC check-up done in this month").is.no.matches())
+                .containsAnswerConceptName("TT2").matches())
             return new FormElementStatus(formElement.uuid, false);
 
         if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT injection")
-            .containsAnswerConceptName("TT booster")
-            .and.when.valueInEncounter("Whether ANC check-up done in this month").is.no.matches()) {
+            .containsAnswerConceptName("TT booster").matches()) {
                 return new FormElementStatus(formElement.uuid, false);
         }
 
