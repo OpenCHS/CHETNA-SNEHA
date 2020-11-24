@@ -62,7 +62,18 @@
           "displayOrder":4 ,
           "mandatory": true
         },
-        
+        {
+          "name": "Do you know LMP?",
+          "uuid": "e9c9af5d-4749-41be-9d8c-c3235afe67ff",
+          "type":"SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Do you know LMP?",
+            "uuid": "5846b835-aa65-488a-b825-8444352a28e9"
+          },
+          "displayOrder":4.1,
+          "mandatory": true
+        },
         {
           "name": "LMP",
           "uuid": "e9c9af5d-4749-41be-9d8c-c3235afe67cc",
@@ -169,6 +180,7 @@
             "uuid": "35d093ed-dba4-4d80-9367-ced6f315d240",
             "name": "Other place/person pregnancy registered to"
           },
+          "voided": true,
           "displayOrder":4,
           "mandatory": false
         },
@@ -217,7 +229,8 @@
             "name": "Other reason of not having mamta card"
           },
           "displayOrder":8,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         }
       ]
     },
@@ -325,6 +338,18 @@
           },
           "displayOrder":8,
           "mandatory": false
+        },
+        {
+          "name": "Place of delivery of your youngest child",
+          "uuid": "d2fabe1b-a1f7-4e16-9b9e-b7ee102891a8",
+          "keyValues": [],
+          "type":"SingleSelect",
+          "concept": {
+            "uuid": "1b0ad71b-562e-4e34-b537-b1c35529d0da",
+            "name": "Place of delivery of your youngest child"
+          },
+          "displayOrder":9,
+          "mandatory": false
         }
       ]
     },
@@ -367,7 +392,8 @@
             "uuid": "e8eb0140-1cb6-4900-a60e-61a055c440d0"
           },
           "displayOrder":3,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Other person who did investigation",
@@ -378,7 +404,8 @@
             "name": "Other person who did investigation"
           },
           "displayOrder":4,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         }        
       ]
     },
@@ -649,10 +676,11 @@
             "name": "Other place form where IFA tablets received"
           },
           "displayOrder":4,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
-          "name": "Do you consume IFA tablets? (check the strip of IFA tablet)",
+          "name": "Do you consume IFA tablets everyday? (check the strip of IFA tablet)",
           "uuid": "a0537322-dc6d-4545-9f6d-1bf28cea50ff",
           "type":"SingleSelect",
           "keyValues": [],
@@ -752,7 +780,8 @@
             "name": "Other reasons to choose place of delivery"
           },
           "displayOrder":6,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "Do you get services of mamta divas",
@@ -787,7 +816,8 @@
             "name": "Other services you get on mamta divas"
           },
           "displayOrder":9,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "Who are available on mamta divas",
@@ -810,7 +840,8 @@
             "name": "Other people who are available on mamta divas"
           },
           "displayOrder":11,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "Why you do not attend mamta divas",
@@ -881,7 +912,8 @@
             "uuid": "12ef4b24-859b-4de6-89fa-785c1c818c17"
           },
           "displayOrder": 20,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Pulses mother gets",
@@ -893,7 +925,8 @@
             "uuid": "aec2dbaa-2947-4fff-9b99-130dc90a6fd7"
           },
           "displayOrder": 22,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Salt mother gets",
@@ -963,7 +996,8 @@
             
           },
           "displayOrder":29,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "Programme/scheme under which received entitlements",
@@ -1067,7 +1101,8 @@
             "uuid": "5940388f-21a8-4d83-b2ec-376cd13a5197"
           },
           "displayOrder":5,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "What should be kept in mind while feed the child",
@@ -1079,7 +1114,8 @@
             "uuid": "27070a2b-1e0f-4d27-ab3a-1dd0280dcb44"
           },
           "displayOrder":6,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "What types of complementary food should be given to the child",
@@ -1091,7 +1127,8 @@
             "uuid": "6d5a9fdc-4e64-452a-92f1-20c9fdca5f1f"
           },
           "displayOrder":7,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Other types of complementary food that should be given to the child",
@@ -1103,7 +1140,8 @@
 
           },
           "displayOrder":8,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "How often food should be given to the child",
@@ -1115,7 +1153,8 @@
             "uuid": "30f00327-3e73-4579-9d30-071d2ff355e6"
           },
           "displayOrder":9,
-          "mandatory":true
+          "mandatory":true,
+          "voided": true
         },
         {
           "name": "How much food should be given to the child",
@@ -1127,7 +1166,8 @@
             "uuid": "e0d8f6f0-06f3-4bec-9ac6-62518390de02"
           },
           "displayOrder":10,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How long child should be breast fed",
@@ -1175,6 +1215,31 @@
             "uuid": "4929a7f2-0704-4b89-8967-e09066c520d2"
           },
           "displayOrder":14,
+          "mandatory": true,
+          "voided": true
+        },
+        {
+          "name": "Can mother breastfeed her child if mother is COVID-19 poisitve?",
+          "uuid": "dc6666d5-fe9a-4e94-a487-7a1bbdd9f0bc",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Can mother breastfeed her child if mother is COVID-19 poisitve?",
+            "uuid": "4f43e24e-d3cf-4b38-aca1-79bfae4a7924"
+          },
+          "displayOrder":15,
+          "mandatory": true
+        },
+        {
+          "name": "What types of precautions we have to follow up in this COVID-19 pandemic?",
+          "uuid": "eac20a14-904b-46f6-8b11-4bd8bcff8533",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "What types of precautions we have to follow up in this COVID-19 pandemic?",
+            "uuid": "6f882995-d98c-430f-a57a-78ef910df1fb"
+          },
+          "displayOrder":16,
           "mandatory": true
         }
       ]
@@ -1231,7 +1296,8 @@
 
           },
           "displayOrder":4 ,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "Reason for not using any contraception method",
@@ -1254,7 +1320,8 @@
             "name": "Other reason for not using any contraception method"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         }   
       ]
     },

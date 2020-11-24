@@ -362,7 +362,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       },
       {
         "name": "Don't know",
@@ -524,7 +525,6 @@
     "uuid": "441be07c-3453-4038-a7e0-8507ebfab549",
     "name": "Why don't you give complementary food",
     "dataType":"Text"
-    
   },  
   {
     "uuid": "ac5c25ba-30ef-4b3f-9714-f0410093dbdb",
@@ -537,6 +537,10 @@
   {
     "uuid": "e17c5afe-74e9-4388-b8ad-a08d2149a22f",
     "name": "Washing hands after come back from outside"
+  },
+  {
+    "uuid": "d9d0724b-c1ba-4c0c-8be0-004afe2eb3bc",
+    "name": "While taking bath"
   },
   {
     "uuid": "696f127f-b91b-413c-9f30-0b10721ae34d",
@@ -560,6 +564,10 @@
         "name": "Washing hands after come back from outside"
       },
       {
+        "uuid": "d9d0724b-c1ba-4c0c-8be0-004afe2eb3bc",
+        "name": "While taking bath"
+      },
+      {
         "uuid": "696f127f-b91b-413c-9f30-0b10721ae34d",
         "name": "Don't wash hand",
         "unique":true
@@ -575,5 +583,61 @@
     "uuid": "da907a63-1b50-4893-aa22-965a68ccabfe",
     "name": "Other things that should be kept in mind while feed the child",
     "dataType":"Text"
+  },
+  {
+    "uuid": "68e7a0a7-7a33-4960-ad3f-7093aee7461b",
+    "name": "Stopped breastfeeding"
+  },
+  {
+    "uuid": "c03ccc46-d5f3-4571-b3e4-8d57347c4bae",
+    "name": "Mother is pregnant"
+  },
+  {
+    "uuid": "003705dd-6b00-45e4-bfbf-c73a702635ac",
+    "name": "Not enough mother's milk"
+  },
+  {
+    "uuid": "91440640-3225-4bcc-9f06-396c12a9aaa0",
+    "name": "No time to give breastfeed"
+  },
+  {
+    "uuid": "6898674d-bf61-403a-8897-f3f71be80a36",
+    "name": "Mother is seperated from the child"
+  },
+  {
+    "uuid": "e02f9e2c-4a47-41e2-8d41-824b87964223",
+    "name": "Not having information"
+  },
+  {
+    "uuid": "39c8b0e5-5a2d-4ddc-993b-e6dd0c8b54ac",
+    "name": "Why don't you give breastfeeding",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "68e7a0a7-7a33-4960-ad3f-7093aee7461b",
+        "name": "Stopped breastfeeding"
+      },
+      {
+        "uuid": "c03ccc46-d5f3-4571-b3e4-8d57347c4bae",
+        "name": "Mother is pregnant"
+      },
+      {
+        "uuid": "003705dd-6b00-45e4-bfbf-c73a702635ac",
+        "name": "Not enough mother's milk"
+      },
+      {
+        "uuid": "91440640-3225-4bcc-9f06-396c12a9aaa0",
+        "name": "No time to give breastfeed"
+      },
+      {
+        "uuid": "6898674d-bf61-403a-8897-f3f71be80a36",
+        "name": "Mother is seperated from the child"
+      },
+      {
+        "uuid": "e02f9e2c-4a47-41e2-8d41-824b87964223",
+        "name": "Not having information",
+        "unique":true
+      }
+    ]
   }
 ]

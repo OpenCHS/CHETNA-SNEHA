@@ -223,7 +223,8 @@
             "name": "Other reason for not having mamta card"
           },
           "displayOrder":11,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Place of delivery",
@@ -257,7 +258,8 @@
             "name": "Other type of delivery"
           },
           "displayOrder":14 ,
-          "mandatory": false
+          "mandatory": false,
+          "voided" : true
         }
       ]
     },
@@ -590,7 +592,8 @@
             "name": "Other types of complementary food given to the child"
           },
           "displayOrder": 9,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "How much do you give complementary food to the child",
@@ -626,7 +629,8 @@
             "uuid": "6d44f4c4-2b16-453b-a1ab-90eeee60a340"
           },
           "displayOrder":12,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Other points you kept in a mind while preparing a food for the child",
@@ -637,7 +641,8 @@
             "name": "Other points you kept in a mind while preparing a food for the child"
             },
           "displayOrder": 13,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "What are the points you kept in a mind while feed the child",
@@ -649,7 +654,8 @@
             "uuid": "cf4376af-884d-4197-9b2a-9c43c4893aaa"
           },
           "displayOrder": 14,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Other points you kept in a mind while feed the child",
@@ -661,7 +667,8 @@
             "name": "Other points you kept in a mind while feed the child"
           },
           "displayOrder": 15,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         },
         {
           "name": "Do you give complementary food along with breast feeding",
@@ -696,6 +703,18 @@
             "name": "Why don't you give complementary food"
           },
           "displayOrder": 18,
+          "mandatory": true,
+          "voided": true
+        },
+        {
+          "name": "Why don't you give breastfeeding",
+          "uuid": "e7594b77-f211-41bb-95be-d953f5700ac1",
+          "keyValues": [],
+          "concept": {
+            "uuid": "39c8b0e5-5a2d-4ddc-993b-e6dd0c8b54ac",
+            "name": "Why don't you give breastfeeding"
+          },
+          "displayOrder": 18.1,
           "mandatory": true
         },
         {
@@ -755,6 +774,17 @@
           "mandatory": true
         },
         {
+          "name": "Please specify other sickness",
+          "uuid": "2736d97e-d100-4f22-af0d-bd4189935d23",
+          "keyValues": [],
+          "concept": {
+            "name": "Other sickness",
+            "uuid": "c72d1c33-6279-4066-8407-d83818c31546"
+          },
+          "displayOrder":3.1 ,
+          "mandatory": true
+        },
+        {
           "name": "Do you breastfeed when a child is sick",
           "uuid": "d3bbcc1f-b065-46fe-b557-5d393e8a40d5",
           "type":"SingleSelect",
@@ -800,7 +830,8 @@
             "uuid": "5db293bb-ec47-4ba6-b39f-824f0db80836"
           },
           "displayOrder":7 ,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Do you feed more food to your child after illness",
@@ -812,7 +843,8 @@
             "uuid": "992f6e17-f458-402d-8cad-01202ead4dc4"
           },
           "displayOrder": 8,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         }
       ]
     },
@@ -855,7 +887,8 @@
             "name": "Other treatment given for warm infestation"
           },
           "displayOrder":3 ,
-          "mandatory":true
+          "mandatory":true,
+          "voided": true
         }
         
       ]
@@ -879,15 +912,27 @@
           "mandatory": true
         },
         {
-          "name": "Does the child get snacks as take home ration from Anganwadi regularly",
+          "name": "Do you get balshakti from Anganwadi regularly?",
           "uuid": "4e1116a7-e7a4-4ee3-b47d-20b42eccc5c6",
           "type":"SingleSelect",
           "keyValues": [],
           "concept": {
-            "name": "Does the child get snacks as take home ration from Anganwadi regularly",
+            "name": "Does child get balshakti from Anganwadi regularly",
             "uuid": "0686d1f3-8f38-4429-a5a1-1e70f4d120bd"
           },
           "displayOrder":2 ,
+          "mandatory": true
+        },
+        {
+          "name": "How much quantity of food child gets?",
+          "uuid": "b07df96b-30bb-4635-b9bc-e0849009c1b9",
+          "type":"SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Quantity of food child gets",
+            "uuid": "f4a2920f-e6c7-493b-82c9-4a773dd9465e"
+          },
+          "displayOrder":2.1 ,
           "mandatory": true
         },
         {
@@ -900,7 +945,8 @@
             "uuid": "7255ceda-8f25-44ae-b42d-eee317549556"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Oil child gets",
@@ -912,7 +958,8 @@
             "uuid": "e1d110fe-2fa1-47ef-839c-227bcbb285e5"
           },
           "displayOrder": 4,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Wheat child gets",
@@ -924,7 +971,8 @@
             "uuid": "2b79bdf2-90dd-4b34-8650-31d5189e0e96"
           },
           "displayOrder":5 ,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Pulses child gets",
@@ -936,7 +984,8 @@
             "uuid": "05b1d30a-0f94-4cc9-be6d-08a9a8f342c1"
           },
           "displayOrder":6 ,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Salt child gets",
@@ -948,7 +997,8 @@
             "uuid": "5f10533b-cdd4-40cd-8928-55fccceb69f0"
           },
           "displayOrder": 7,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         }, 
         {
           "name": "What do you cook from that snacks for a child",
@@ -959,7 +1009,8 @@
             "name": "What do you cook from that snacks for a child"
           },
           "displayOrder":8,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Whether child goes to the Anganwadi centre regularly",
@@ -971,7 +1022,8 @@
             "uuid": "c9483833-fc57-4475-8128-dcb7aef559a9"
           },
           "displayOrder":9 ,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Reason for not going to Anganwadi centre regularly",
@@ -983,7 +1035,8 @@
             "uuid": "6f5125a7-1e92-41d7-b1f7-c76e4d4d41f5"
           },
           "displayOrder":10,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Other reason for not going to Anganwadi centre regularly",
@@ -994,7 +1047,8 @@
             "name": "Other reason for not going to Anganwadi centre regularly"
           },
           "displayOrder":11,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         }
       ]
     },
@@ -1015,6 +1069,30 @@
           "displayOrder": 1,
           "mandatory": true
         },
+        {
+          "name": "Do you get Maturshakti supplementary food regularly?",
+          "uuid": "913d8ff1-4d93-45b0-8617-6ab1ada35c26",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Do you get Maturshakti supplementary food regularly?",
+            "uuid": "8a0552f1-4138-4b95-8798-107150410fa2"
+          },
+          "displayOrder":1.2,
+          "mandatory": true
+        },
+        {
+          "name": "How much quantity of food do you get?",
+          "uuid": "dc678bdb-3dc9-4afc-9d00-e507efee45d6",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Quantity of food mother gets",
+            "uuid": "6ec8493f-3702-40ba-b88b-b344e69d0eab"
+          },
+          "displayOrder":1.3,
+          "mandatory": true
+        },
          {
           "name": "What does mother get as a snacks",
           "uuid": "8a1b358f-61ce-4b90-b8c8-12af56b2536f",
@@ -1025,7 +1103,8 @@
             "uuid": "5fe0c780-042a-448f-b7d5-50c3a01a9fea"
           },
           "displayOrder":2,
-          "mandatory": true
+          "mandatory": true,
+           "voided": true
         },
         {
           "name": "How much quantity of Oil mother gets",
@@ -1036,7 +1115,8 @@
             "uuid": "8dcd7314-2ff9-4185-965f-311e989f6500"
           },
           "displayOrder":3,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Wheat mother gets",
@@ -1047,7 +1127,8 @@
             "uuid": "12ef4b24-859b-4de6-89fa-785c1c818c17"
           },
           "displayOrder": 4,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Pulses mother gets",
@@ -1058,7 +1139,8 @@
             "uuid": "aec2dbaa-2947-4fff-9b99-130dc90a6fd7"
           },
           "displayOrder":5,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Salt mother gets",
@@ -1127,7 +1209,8 @@
             
           },
           "displayOrder":11,
-          "mandatory":false
+          "mandatory":false,
+          "voided": true
         }     
       ]
     },
@@ -1181,7 +1264,8 @@
             "name": "Other source from where/whom information about contraception received"
           },
           "displayOrder": 4,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Reason for not using any contraception method",
@@ -1204,7 +1288,8 @@
             "name": "Other reason for not using any contraception method"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         }   
       ]
     },

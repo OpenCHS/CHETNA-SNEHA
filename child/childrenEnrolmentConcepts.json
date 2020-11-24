@@ -24,6 +24,9 @@
           {
             "uuid": "bdfb4b5e-0017-4670-bdaf-ba715c24903d",
             "name": "Bhuva"
+          },
+          {
+             "uuid": "4d476011-7fc4-432b-98c0-9f6f1847cf39"
           }
     ]
   },
@@ -37,6 +40,9 @@
       },
       {
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "4d476011-7fc4-432b-98c0-9f6f1847cf39"
       }
     ]
   },
@@ -176,7 +182,8 @@
           },
           {
             "name": "Other",
-            "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+            "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+            "voided": true
           }  
     ]
   },
@@ -199,7 +206,7 @@
     ]
   },
   {
-    "name": "Does the child get snacks as take home ration from Anganwadi regularly",
+    "name": "Does child get balshakti from Anganwadi regularly",
     "uuid": "0686d1f3-8f38-4429-a5a1-1e70f4d120bd",
     "dataType": "Coded",
     "answers": [

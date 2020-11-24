@@ -6,6 +6,19 @@
     "unit": "month"
   },
   {
+    "name": "Do you know LMP?",
+    "uuid": "5846b835-aa65-488a-b825-8444352a28e9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+     ]
+  },
+  {
     "name": "Yet not decided",
     "uuid": "74ca1acb-2a89-4803-b5b0-5dc6770d3ad1"
   },
@@ -59,7 +72,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       },
       {
         "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
@@ -418,8 +432,13 @@
         "name": "ASHA"
       },
       {
+        "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
+        "name": "Under SNEHA programme"
+      },
+      {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -628,6 +647,10 @@
     "name": "Familiar doctor"
   },
   {
+    "uuid": "7daed15f-9c39-4963-bcdd-b316e7c0e7d0",
+    "name": "Community women advised the place"
+  },
+  {
     "name": "Reasons to choose this place for delivery",
     "uuid": "62c636fd-a9a1-4f7c-925d-8d3a03cc2b91",
     "dataType": "Coded",
@@ -649,8 +672,13 @@
         "name": "Familiar doctor"
       },
       {
+        "uuid": "7daed15f-9c39-4963-bcdd-b316e7c0e7d0",
+        "name": "Community women advised the place"
+      },
+      {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -719,7 +747,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -755,8 +784,13 @@
         "name": "AWW"
       },
       {
+        "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
+        "name": "Under SNEHA programme"
+      },
+      {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -883,8 +917,13 @@
         "name": "Friend"
       },
       {
+        "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
+        "name": "Under SNEHA programme"
+      },
+      {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -920,7 +959,8 @@
       },
       {
         "uuid": "72248b1e-d6c0-4758-bd60-b56b754ef342",
-        "name": "Natural contraception"
+        "name": "Natural contraception",
+        "voided": true
       },
       {
         "uuid": "fcab55b3-a924-4c0c-9521-1d8e82e15dff",
@@ -953,6 +993,14 @@
     "name": "Not suitable"
   },
   {
+    "uuid": "02093f1f-ff57-45b4-9e2b-c01d2038bf88",
+    "name": "Family belief"
+  },
+  {
+    "uuid": "68ea9326-6f75-4480-b715-d982de9391f7",
+    "name": "Can't use till 1st child"
+  },
+  {
     "name": "Reason for not using any contraception method",
     "uuid": "ec0a99c9-b959-4d28-a277-4ffa78b816a4",
     "dataType": "Coded",
@@ -970,6 +1018,14 @@
         "name": "Family members don't allow"
       },
       {
+        "uuid": "02093f1f-ff57-45b4-9e2b-c01d2038bf88",
+        "name": "Family belief"
+      },
+      {
+        "uuid": "68ea9326-6f75-4480-b715-d982de9391f7",
+        "name": "Can't use till 1st child"
+      },
+      {
         "uuid": "06da37bb-fe5e-495c-89f8-4909ff0fd6e2",
         "name": "Husband is not ready"
       },
@@ -979,7 +1035,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided" : true
       }
     ]
   },
@@ -1042,6 +1099,18 @@
     "name": "Low birth weight child"
   },
   {
+    "uuid": "fc079822-6338-46fe-9919-112686850e2d",
+    "name": "Self abortion"
+  },
+  {
+    "uuid": "c6824ee9-a82c-4d37-9571-ea21807721bc",
+    "name": "Died within a month of birth"
+  },
+  {
+    "uuid": "a45acde7-747d-40dc-8be9-8945e5aa29a6",
+    "name": "Any major illness"
+  },
+  {
     "name": "Reason for child's death",
     "uuid": "2858f98e-b558-4ed2-bb18-839bcc05bfae",
     "dataType": "Coded",
@@ -1051,12 +1120,21 @@
         "name": "Miscarriage"
       },
       {
+        "uuid": "fc079822-6338-46fe-9919-112686850e2d",
+        "name": "Self abortion"
+      },
+      {
         "uuid": "3f755631-2d78-414d-8b97-6abd632921a9",
         "name": "Pre term child"
       },
       {
+        "uuid": "c6824ee9-a82c-4d37-9571-ea21807721bc",
+        "name": "Died within a month of birth"
+      },
+      {
         "uuid": "f894a948-df72-4d00-92b3-1dfdad0b9cb7",
-        "name": "Died after birth"
+        "name": "Died after birth",
+        "voided": true
       },
       {
         "uuid": "afa5dd39-4d4c-4a7a-87e4-5ca0c60bef29",
@@ -1067,8 +1145,32 @@
         "name": "Low birth weight child"
       },
       {
+        "uuid": "a45acde7-747d-40dc-8be9-8945e5aa29a6",
+        "name": "Any major illness"
+      },
+      {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
+      }
+    ]
+  },
+  {
+    "uuid": "1b0ad71b-562e-4e34-b537-b1c35529d0da",
+    "name": "Place of delivery of your youngest child",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Government Hospital",
+        "uuid": "df6303d5-0b78-48e0-8a3c-1a7fec61a9f1"
+      },
+      {
+        "name": "Private hospital",
+        "uuid": "8767f6a6-6ca9-41d1-b60e-2c5addf22168"
+      },
+      {
+        "name": "Home",
+        "uuid": "bb75a86c-05af-4b05-b699-860737d19e57"
       }
     ]
   },
@@ -1132,8 +1234,76 @@
     "dataType": "Numeric",
     "lowNormal": 11,
     "unit": "g/dL"
+  },
+  {
+    "name": "Can mother breastfeed her child if mother is COVID-19 poisitve?",
+    "uuid": "4f43e24e-d3cf-4b38-aca1-79bfae4a7924",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+         "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
+      }
+    ]
+  },
+  {
+    "uuid": "7b95ac75-f4d1-4ad9-91f0-51b65acf63e2",
+    "name": "Wear a mask"
+  },
+  {
+    "uuid": "c5af5fee-097a-4e1d-8a37-06c1356bc5ea",
+    "name": "Washing hand frequently"
+  },
+  {
+    "uuid": "da3d9068-2388-4084-88cf-277de64d6510",
+    "name": "Social distance 6ft"
+  },
+  {
+    "uuid": "6badabd6-cb32-42ff-acc8-545b1536a368",
+    "name": "Do not touch eye, nose and face"
+  },
+  {
+    "uuid": "7122348d-e8c3-4c0d-9b59-9fedf5554268",
+    "name": "Elder people, children and pregnant women should not go to outside"
+  },
+  {
+    "uuid": "91c4f88b-1ed6-481d-8d74-da9b9307fa70",
+    "name": "Wash hand with soap for minimum 20 seconds"
+  },
+  {
+    "name": "What types of precautions we have to follow up in this COVID-19 pandemic?",
+    "uuid": "6f882995-d98c-430f-a57a-78ef910df1fb",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "7b95ac75-f4d1-4ad9-91f0-51b65acf63e2",
+        "name": "Wear a mask"
+      },
+      {
+        "uuid": "c5af5fee-097a-4e1d-8a37-06c1356bc5ea",
+        "name": "Washing hand frequently"
+      },
+      {
+        "uuid": "da3d9068-2388-4084-88cf-277de64d6510",
+        "name": "Social distance 6ft"
+      },
+      {
+        "uuid": "6badabd6-cb32-42ff-acc8-545b1536a368",
+        "name": "Do not touch eye, nose and face"
+      },
+      {
+        "uuid": "7122348d-e8c3-4c0d-9b59-9fedf5554268",
+        "name": "Elder people, children and pregnant women should not go to outside"
+      },
+      {
+        "uuid": "91c4f88b-1ed6-481d-8d74-da9b9307fa70",
+        "name": "Wash hand with soap for minimum 20 seconds"
+      }
+    ]
   }
-  
-
-  
 ]

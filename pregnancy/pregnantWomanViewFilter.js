@@ -61,18 +61,25 @@ class PregnantWomenEnrolmentViewHandler {
             new FormElementStatus(formElement.uuid, true) :
             new FormElementStatus(formElement.uuid, true, getBMIStatus(bmi));
     }
-    
+
+    @WithName('LMP')
+    @statusBuilder
+    a1111([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Do you know LMP?")
+            .containsAnswerConceptName("Yes");
+    }
+
     edd(programEnrolment, formElement) {
         const lmpDate = programEnrolment.getObservationValue('Last menstrual period');
         return _.isNil(lmpDate) ?
-            new FormElementStatus(formElement.uuid, true) :
+            new FormElementStatus(formElement.uuid, false) :
             new FormElementStatus(formElement.uuid, true, lib.calculations.estimatedDateOfDelivery(programEnrolment));
     }
 
     currentPregnancyMonth(programEnrolment, formElement, today) {
         const lmpDate = programEnrolment.getObservationValue('Last menstrual period');
         return _.isNil(lmpDate) ?
-            new FormElementStatus(formElement.uuid, true) :
+            new FormElementStatus(formElement.uuid, false) :
             new FormElementStatus(formElement.uuid, true, Math.round(moment(today).diff(lmpDate, 'months', true)));
             // lib.calculations.gestationalAge(programEnrolment, today)
     }
@@ -178,7 +185,7 @@ class PregnantWomenEnrolmentViewHandler {
     @WithName('Where/Whom to registered your pregnancy?')
     @statusBuilder
     a27([], statusBuilder) {
-        statusBuilder.skipAnswers('Under SNEHA programme');
+        // statusBuilder.skipAnswers('Under SNEHA programme');
         statusBuilder.show().when.valueInEnrolment("Have you registered pregnancy").is.yes;
     }
     
@@ -198,6 +205,12 @@ class PregnantWomenEnrolmentViewHandler {
     @statusBuilder
     a29([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Whether have mamta card").is.no;
+    }
+
+    @WithName('Number of times got pregnant')
+    @statusBuilder
+    a300([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
     }
 
     @WithName('Number of live children')

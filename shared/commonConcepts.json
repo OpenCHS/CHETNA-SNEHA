@@ -2,7 +2,8 @@
   {
     "name": "Number of times got pregnant",
     "uuid": "5daeb50c-a6ab-4b27-bd49-31bed2e96394",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "lowAbsolute": 1
   },
   {
     "name": "Number of live children",
@@ -72,6 +73,18 @@
     "name": "At other place"
   },
   {
+    "uuid": "74b5d3c0-829c-46d5-a9f8-4290397fb049",
+    "name": "Not registered the name in AWC"
+  },
+  {
+    "uuid": "98b5d3c0-829c-46d5-a9f8-4290397fb049",
+    "name": "Not given mamta card from health facility"
+  },
+  {
+    "uuid": "99b5d3c0-829c-46d5-a9f8-4290397fb049",
+    "name": "No information about it"
+  },
+  {
     "name": "Reason for not having mamta card",
     "uuid": "b94c9eba-9c44-4262-a870-56b0257cc115",
     "dataType": "Coded",
@@ -81,8 +94,21 @@
         "name": "Lost"
       },
       {
+        "uuid": "74b5d3c0-829c-46d5-a9f8-4290397fb049",
+        "name": "Not registered the name in AWC"
+      },
+      {
+        "uuid": "98b5d3c0-829c-46d5-a9f8-4290397fb049",
+        "name": "Not given mamta card from health facility"
+      },
+      {
+        "uuid": "99b5d3c0-829c-46d5-a9f8-4290397fb049",
+        "name": "No information about it"
+      },
+      {
         "uuid": "8091b14b-005d-44e4-b549-73408e13eb80",
-        "name": "No ANC"
+        "name": "No ANC",
+        "voided": true
       },
       {
         "uuid": "74b5d3c0-829c-46d5-a9f8-4290397fb038",
@@ -90,7 +116,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -917,8 +944,13 @@
         "name": "Elder family members"
       },
       {
+        "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
+        "name": "Under SNEHA programme"
+      },
+      {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -1049,9 +1081,15 @@
       },
       {
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "99b5d3c0-829c-46d5-a9f8-4290397fb049",
+        "name": "No information about it",
+        "voided": true
       }
     ]
-  }, {
+  },
+  {
     "uuid": "70fbe177-f70f-466a-904f-1f8bafec6804",
     "name": "Janani Suraksha Yojana"
   },
@@ -1140,6 +1178,11 @@
     "dataType": "Text"
   },
   {
+    "name": "Other sickness",
+    "uuid": "c72d1c33-6279-4066-8407-d83818c31546",
+    "dataType": "Text"
+  },
+  {
     "name": "Involved in any occupational activity",
     "uuid": "784c7e5a-bf14-4ba5-8228-6451d06fecb4",
     "dataType": "Coded",
@@ -1205,7 +1248,8 @@
     "answers": [
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -1399,6 +1443,56 @@
   {
     "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",
     "name": "Don't remember"
+  },
+  {
+    "name": "Do you get Maturshakti supplementary food regularly?",
+    "uuid": "8a0552f1-4138-4b95-8798-107150410fa2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Quantity of food mother gets",
+    "uuid": "6ec8493f-3702-40ba-b88b-b344e69d0eab",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      }
+    ]
+  },
+  {
+    "name": "Quantity of food child gets",
+    "uuid": "f4a2920f-e6c7-493b-82c9-4a773dd9465e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c4140c7f-1ba3-4497-b08d-aad758202c78",
+        "name": "Half Packet"
+      },
+      {
+        "uuid": "55f40b2a-9eaf-4b3f-855a-819315336f3f",
+        "name": "1 Packet"
+      },
+      {
+        "uuid": "214977b3-f3b5-480b-ac66-4c68000148c0",
+        "name": "2 Packets"
+      }
+    ]
   }
-
 ]
