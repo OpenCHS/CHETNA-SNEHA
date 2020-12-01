@@ -197,7 +197,7 @@
           "mandatory":true
         },
         {
-          "name": "Is mamta card updated",
+          "name": "Is mamta card updated with information about availed government services? (Please check Mamta card)",
           "uuid": "d4c4d612-4403-48f3-9197-b2125d51f42b",
           "type":"SingleSelect",
           "keyValues": [],
@@ -322,13 +322,14 @@
         },
         
         {
-          "name": "Age of youngest child",
+          "name": "Completed age of youngest child",
           "uuid": "f622d7a0-f16e-4171-8613-21436ecce87f",
           "keyValues": [
             {
               "key": "durationOptions",
               "value": [
-                "months"
+                "months",
+                "years"
               ]
             }
           ],
@@ -879,6 +880,30 @@
           "mandatory": true
         },
         {
+          "name": "Do you get Maturshakti supplementary food regularly?",
+          "uuid": "30cd7a36-2967-4a63-a313-755e2888ed8b",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Do you get Maturshakti supplementary food regularly?",
+            "uuid": "8a0552f1-4138-4b95-8798-107150410fa2"
+          },
+          "displayOrder":14.2,
+          "mandatory": true
+        },
+        {
+          "name": "How much quantity of food do you get?",
+          "uuid": "ac0ac993-740c-41a6-b89f-2eaa169f7d2b",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Quantity of food mother gets",
+            "uuid": "6ec8493f-3702-40ba-b88b-b344e69d0eab"
+          },
+          "displayOrder":14.3,
+          "mandatory": true
+        },
+        {
           "name": "What does mother get as a snacks",
           "uuid": "5fed9b06-5bbf-4449-a178-2f639805bba7",
           "type":"MultiSelect",
@@ -888,7 +913,8 @@
             "uuid": "5fe0c780-042a-448f-b7d5-50c3a01a9fea"
           },
           "displayOrder":15,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "How much quantity of Oil mother gets",
@@ -900,7 +926,8 @@
             "uuid": "8dcd7314-2ff9-4185-965f-311e989f6500"
           },
           "displayOrder":18 ,
-          "mandatory": true
+          "mandatory": true,
+          "voided" : true
         },
         {
           "name": "How much quantity of Wheat mother gets",
@@ -949,7 +976,8 @@
             "uuid": "7a2b9323-497b-49fe-8ae8-a17e5166b872"
           },
           "displayOrder":25,
-          "mandatory": true
+          "mandatory": true,
+          "voided" : true
         },
         {
           "name": "Number of times food reveived in the last month",
@@ -960,7 +988,8 @@
               "uuid": "ad54a0b6-4163-4fc0-a0ea-afe52f2c57e6"
           },
           "displayOrder":26,
-          "mandatory": true
+          "mandatory": true,
+          "voided" : true
         },
         {
           "name": "Got any benefits of government programme/scheme",

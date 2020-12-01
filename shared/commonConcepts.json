@@ -85,6 +85,10 @@
     "name": "No information about it"
   },
   {
+    "uuid": "78383ee9-a737-4b1a-aff1-b1a6e568c3c5",
+    "name": "Not registered for mamta card"
+  },
+  {
     "name": "Reason for not having mamta card",
     "uuid": "b94c9eba-9c44-4262-a870-56b0257cc115",
     "dataType": "Coded",
@@ -107,12 +111,15 @@
       },
       {
         "uuid": "8091b14b-005d-44e4-b549-73408e13eb80",
-        "name": "No ANC",
-        "voided": true
+        "name": "No ANC"
       },
       {
         "uuid": "74b5d3c0-829c-46d5-a9f8-4290397fb038",
         "name": "At other place"
+      },
+      {
+        "uuid": "78383ee9-a737-4b1a-aff1-b1a6e568c3c5",
+        "name": "Not registered for mamta card"
       },
       {
         "name": "Other",
@@ -781,6 +788,10 @@
     ]
   },
   {
+    "uuid": "01fbbb29-a13a-47c6-9dd1-c6ea0afe9ba6",
+    "name": "Whenever child wants"
+  },
+  {
     "name": "How often child should be breastfed in a day",
     "uuid": "fc6632c3-1cd7-463d-af28-fba15a9aab67",
     "dataType": "Coded",
@@ -800,6 +811,10 @@
       {
         "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
         "name": "Whenever child is crying"
+      },
+      {
+        "uuid": "01fbbb29-a13a-47c6-9dd1-c6ea0afe9ba6",
+        "name": "Whenever child wants"
       },
       {
         "name": "Don't know",
@@ -1168,6 +1183,7 @@
       {
         "name": "Other",
         "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true,
         "unique": true
       }
     ]

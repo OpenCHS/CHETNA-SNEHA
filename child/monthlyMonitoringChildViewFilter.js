@@ -252,6 +252,63 @@ class MonthlyMonitoringChildViewFilter {
     _a21([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Has the child and caretaker participated in SNEHA activities").is.yes;
     }
+
+
+
+    @WithName('What did child eat in last 24 hrs?')
+    @WithStatusBuilder
+    _a22([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.valueInEnrolment("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("Yet not started");
+    }
+
+    @WithName('At morning (7.00 am to 11 am)')
+    @WithStatusBuilder
+    _a23([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.valueInEnrolment("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("Yet not started");
+    }
+
+    @WithName('At afternoon (11.00 am to 3.00 pm)')
+    @WithStatusBuilder
+    _a24([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.valueInEnrolment("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("Yet not started");
+    }
+
+    @WithName('At evening (3.00 pm to 7.00 pm)')
+    @WithStatusBuilder
+    _a25([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.valueInEnrolment("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("Yet not started");    }
+
+    @WithName('At night (7.00 pm to 12 am)')
+    @WithStatusBuilder
+    _a26([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("NA")
+            .or.when.valueInEnrolment("When did you start giving complementary food to the child")
+            .containsAnswerConceptNameOtherThan("Yet not started");    }
+
+
 }
 
 export {MonthlyMonitoringChildViewFilter}

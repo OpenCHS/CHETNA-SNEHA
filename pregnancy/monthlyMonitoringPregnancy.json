@@ -54,7 +54,8 @@
             "uuid": "2685ed67-a36c-46f1-8b75-309db0d3a325"
           },
           "displayOrder":4,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Whether ANC check-up done in this month",
@@ -78,7 +79,18 @@
           },
           "displayOrder":6,
           "mandatory": true
-        }    
+        },
+        {
+          "name": "Total ANC done",
+          "uuid": "04885f26-185e-4531-b0b6-6ce74117ac36",
+          "keyValues": [],
+          "concept": {
+            "name": "Total ANC done",
+            "uuid": "a7a89341-ae80-47b9-ab16-5e1a4b8452c3"
+          },
+          "displayOrder":6.2,
+          "mandatory": true
+        }
       ]
     },
     {
@@ -199,7 +211,8 @@
             "uuid": "9139e9ca-fafb-4a48-a06d-33d09eb6c8f4"
           },
           "displayOrder":10,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Ultra scan",

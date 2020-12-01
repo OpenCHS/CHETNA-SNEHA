@@ -278,18 +278,12 @@
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
       }
     ]
+  },
+  {
+    "name": "Total ANC done",
+    "uuid": "a7a89341-ae80-47b9-ab16-5e1a4b8452c3",
+    "dataType" : "Numeric"
   }
-
-  
-  
-  
-  
-  
-  
-  
-
-
-
 
   
 ]

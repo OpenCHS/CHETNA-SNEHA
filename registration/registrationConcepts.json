@@ -176,7 +176,33 @@
       "name": "Other"
       }
     ]
-  } 
+  },
+  {
+    "name": "Do you have ration card?",
+    "uuid": "d506154d-e4ef-4e88-90e5-b4a8ee7e0dcb",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Is your name is mentioned in the card?",
+    "uuid": "f44a955f-55d0-4792-bfac-c2168e422b2e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  }
 ]
 
 

@@ -122,6 +122,20 @@ class ChildrenEnrolmentViewHandler {
         .and.when.ageInYears.is.greaterThanOrEqualTo(3);
     }
 
+    @WithName('Do you get balshakti from Anganwadi regularly?')
+    @statusBuilder
+    abcc17([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Is child registered in anganwadi centre").is.yes
+            .and.when.ageInMonths.is.greaterThanOrEqualTo(6);
+    }
+
+    @WithName('How much quantity of food child gets?')
+    @statusBuilder
+    abcd17([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Does child get balshakti from Anganwadi regularly").is.yes;
+    }
+
+
     @WithName('What does mother get as a snacks')
     @statusBuilder
     ab13([], statusBuilder) {
@@ -240,6 +254,7 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Reason for not having mamta card')
     @statusBuilder
     ab29([], statusBuilder) {
+        statusBuilder.skipAnswers('Not registered the name in AWC','Not given mamta card from health facility','No information about it');
         statusBuilder.show().when.valueInEnrolment("Whether have mamta card").is.no
         .and.when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
     }    
@@ -391,6 +406,13 @@ class ChildrenEnrolmentViewHandler {
         .is.yes;
     }
 
+    @WithName("Why don\'t you give breastfeeding")
+    @statusBuilder
+    abcc47([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Do you give complementary food along with breast feeding")
+            .is.no;
+    }
+
     // Why don't you give complementary food
     @WithName('Why don\'t you give complementary food')
     @statusBuilder
@@ -511,8 +533,8 @@ class ChildrenEnrolmentViewHandler {
     @WithName('How much quantity of Salt mother gets')
     @statusBuilder
     ab60([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
-        .containsAnswerConceptName("Salt");
+        statusBuilder.show().when.valueInEnrolment("Do you get snacks as take home ration from Anganwadi centre")
+            .is.yes;
     }
 
     @WithName('What did you cook from the snacks received')
@@ -679,6 +701,32 @@ class ChildrenEnrolmentViewHandler {
     @statusBuilder
     ab81([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Is mother alive").containsAnswerConceptNameOtherThan("No");
+    }
+
+
+    @WithName('What are the reasons for giving outside milk?')
+    @statusBuilder
+    ab8901([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("What did you give to child at birth").containsAnswerConceptName("Outside milk");
+    }
+
+
+    @WithName('Please specify other sickness')
+    @statusBuilder
+    ab819898([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Sickness in last 3 months").containsAnswerConceptName("Other");
+    }
+
+    @WithName('Do you get Maturshakti supplementary food regularly?')
+    @statusBuilder
+    abff17([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Do you get snacks as take home ration from Anganwadi centre").is.yes;
+    }
+
+    @WithName('How much quantity of food do you get?')
+    @statusBuilder
+    abgg17([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Do you get snacks as take home ration from Anganwadi centre").is.yes;
     }
 
 }

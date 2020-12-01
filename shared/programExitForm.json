@@ -22,6 +22,17 @@
             "mandatory": true
           },
           {
+            "name": "Place of delivery",
+            "uuid": "98aa148d-4e4b-401a-85e8-bb7b37a6d3cc",
+            "keyValues": [],
+            "type": "SingleSelect",
+            "concept": {
+              "uuid": "a0405799-1e3c-40ef-90ba-84c9c0931660"
+            },
+            "displayOrder":1.2,
+            "mandatory": true
+          },
+          {
             "name": "Other reason (Please specify)",
             "uuid": "3ff34a5c-966e-4897-b4a4-d7f2aa1f8b13",
             "keyValues": [],

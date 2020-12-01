@@ -193,6 +193,11 @@
     "dataType":"Text"
   },
   {
+    "uuid": "ce10dccc-2bf8-4a64-aa96-2ad3ce92d0b4",
+    "name": "No AWC",
+    "dataType":"NA"
+  },
+  {
     "name": "Is child registered in anganwadi centre",
     "uuid": "dd8c46a3-5b76-4e4c-9547-79e2821ec702",
     "dataType": "Coded",
@@ -202,6 +207,10 @@
       },
       {
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "ce10dccc-2bf8-4a64-aa96-2ad3ce92d0b4",
+        "name": "No AWC"
       }
     ]
   },
@@ -591,5 +600,65 @@
         "voided":true
       }
     ]
-  } 
+  },
+  {
+    "uuid": "215f5ab7-f233-4a87-b966-894d2dd9d7bb",
+    "name": "Less than 6 months"
+  },
+   {
+    "uuid": "c7027892-6c4d-4593-b83f-8a752c2620e0",
+    "name": "7 months to 12 months"
+  },
+  {
+    "uuid": "30656245-d2e8-4e1a-aa06-6bebf86461aa",
+    "name": "13 months to 18 months"
+  },
+  {
+    "uuid": "4c6b56f1-3c7a-46e3-992c-a19ce35b4c1f",
+    "name": "19 to 24 months"
+  },
+  {
+    "uuid": "f5d1c9db-1c9c-4169-ab7a-e2ecc356a87e",
+    "name": "More than 24 months"
+  },
+  {
+    "uuid": "0159efc3-1180-4003-bb4d-9912490a35a6",
+    "name": "Till child demands"
+  },
+  {
+    "name": "Till what age child should be got breastfeeding along with complementary food?",
+    "uuid": "48a7133a-342f-46ca-b865-085f027b7d63",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "215f5ab7-f233-4a87-b966-894d2dd9d7bb",
+        "name": "Less than 6 months"
+      },
+      {
+        "uuid": "8bf71992-501f-441e-a1a9-c7056a07a873",
+        "name": "Till completion of 6 months"
+      },
+      {
+        "uuid": "c7027892-6c4d-4593-b83f-8a752c2620e0",
+        "name": "7 months to 12 months"
+      },
+      {
+        "uuid": "30656245-d2e8-4e1a-aa06-6bebf86461aa",
+        "name": "13 months to 18 months"
+      },
+      {
+        "uuid": "4c6b56f1-3c7a-46e3-992c-a19ce35b4c1f",
+        "name": "19 to 24 months"
+      },
+      {
+        "uuid": "f5d1c9db-1c9c-4169-ab7a-e2ecc356a87e",
+        "name": "More than 24 months"
+      },
+      {
+        "uuid": "0159efc3-1180-4003-bb4d-9912490a35a6",
+        "name": "Till child demands"
+      }
+      ]
+
+  }
 ]

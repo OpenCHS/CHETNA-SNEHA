@@ -98,6 +98,18 @@
     ]
   },
   {
+    "uuid": "dec250e6-430b-4c42-a381-50fe8661b72d",
+    "name": "Female sterilization"
+  },
+  {
+    "uuid": "05ed52ad-c1d6-46fa-ba74-a735a261570b",
+    "name": "Hysterectomy"
+  },
+  {
+    "uuid": "43285c57-9063-48d6-91bf-7d49d135b3ab",
+    "name": "IUCD"
+  },
+  {
     "name": "Method of contraception used",
     "uuid": "7491c731-9292-4d66-9c00-1b7fe6c2e02f",
     "dataType": "Coded",
@@ -124,17 +136,34 @@
       },
       {
         "uuid": "72248b1e-d6c0-4758-bd60-b56b754ef342",
-        "name": "Natural contraception"
+        "name": "Natural contraception",
+        "voided": true
       },
       {
         "uuid": "fcab55b3-a924-4c0c-9521-1d8e82e15dff",
         "name": "Injection"
+      },
+      {
+        "uuid": "dec250e6-430b-4c42-a381-50fe8661b72d",
+        "name": "Female sterilization"
+      },
+      {
+        "uuid": "05ed52ad-c1d6-46fa-ba74-a735a261570b",
+        "name": "Hysterectomy"
+      },
+      {
+        "uuid": "43285c57-9063-48d6-91bf-7d49d135b3ab",
+        "name": "IUCD"
       }
     ]
   },
   {
     "uuid": "a68a8e65-f429-4e0c-9d97-ea3a9f144a5e",
     "name": "On going"
+  },
+  {
+    "uuid": "2e68f06a-e1b1-4b53-be4b-fe1d4a9871a8",
+    "name": "Not given due to poor secretion of mother's milk"
   },
   {
     "name": "Till which age your child has breastfed exclusively",
@@ -170,6 +199,10 @@
       {
         "uuid": "a68a8e65-f429-4e0c-9d97-ea3a9f144a5e",
         "name": "On going"
+      },
+      {
+        "uuid": "2e68f06a-e1b1-4b53-be4b-fe1d4a9871a8",
+        "name": "Not given due to poor secretion of mother's milk"
       },
       {
         "name": "Don't know",
@@ -258,6 +291,10 @@
       {
         "uuid": "4ee05a70-cebb-4c60-9d22-624e7e26255c",
         "name": "After 1 year"
+      },
+      {
+        "uuid": "4ee05a70-cebb-4c60-9d22-624e7e26255c",
+        "name": "Within a month of birth"
       },
       {
         "uuid": "c8e085e4-c580-483b-8188-991bbfb06d29",
@@ -373,6 +410,51 @@
     ]
   },
   {
+    "name": "What did child eat in last 24 hrs?",
+    "uuid": "2ee777f9-2292-4767-9d0e-dd6ae84d0358",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "e7a25858-0322-4fe3-94a9-26ae09002698",
+        "name": "Semi-solid food"
+      },
+      {
+        "uuid": "0914ac28-e59a-4e19-a3da-ea131406177e",
+        "name": "Liquid food"
+      },
+      {
+        "uuid": "937ca13a-d0a1-435b-9c41-3658ae5cbfab",
+        "name": "Less spicy food"
+      },
+      {
+        "uuid": "b940c0bd-d57c-4d7b-9790-02c772413034",
+        "name": "Dense food"
+      },
+      {
+        "uuid": "eaf208e6-8f84-4865-ac9a-03e8869c2d97",
+        "name": "Packaged food-Biscuit"
+      },
+      {
+        "uuid": "e868c0e0-12dc-43fa-8af8-f1c9de260acc",
+        "name": "All food groups should be covered"
+      },
+      {
+        "name": "Other",
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
+        "unique":true
+      }
+    ]
+  },
+  {
+    "uuid": "a7dd5dd3-e5d7-47ed-868f-07f23ebb0155",
+    "name": "1 small plate"
+  },
+  {
     "name": "How much do you give complementary food to the child",
     "uuid": "cd7c946f-3b75-4e74-8e9d-8f0218ea5d80",
     "dataType": "Coded",
@@ -389,6 +471,11 @@
         "uuid": "bc57f5b6-df2d-4b5a-b82c-9cff5438d367",
         "name": " 2 bowls"
       },
+      {
+        "uuid": "a7dd5dd3-e5d7-47ed-868f-07f23ebb0155",
+        "name": "1 small plate"
+      },
+
       {
         "name": "Don't know",
         "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
@@ -637,6 +724,45 @@
         "uuid": "e02f9e2c-4a47-41e2-8d41-824b87964223",
         "name": "Not having information",
         "unique":true
+      }
+    ]
+  },
+  {
+    "uuid": "a7ef6277-05dd-4285-82c9-be5981b89dd9",
+    "name": "Mother's milk is not secreted after birth"
+  },
+  {
+    "uuid": "f5deec4c-8e4a-4a36-8441-b54caa56e99c",
+    "name": "Poor secretion of mother's milk"
+  },
+  {
+    "uuid": "f24436ac-273c-4f3d-b147-a1a744e9ee5d",
+    "name": "Socio-Cultural belief"
+  },
+  {
+    "uuid": "732ffe04-bf58-421a-91af-e872282aa0c1",
+    "name": "Child is admitted to NICU due to LBW and weakness"
+  },
+  {
+    "uuid": "e0349774-9900-4e89-8cdf-e5e7689ccb42",
+    "name": "What are the reasons for giving outside milk?",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "a7ef6277-05dd-4285-82c9-be5981b89dd9",
+        "name": "Mother's milk is not secreted after birth"
+      },
+      {
+        "uuid": "f5deec4c-8e4a-4a36-8441-b54caa56e99c",
+        "name": "Poor secretion of mother's milk"
+      },
+      {
+        "uuid": "f24436ac-273c-4f3d-b147-a1a744e9ee5d",
+        "name": "Socio-Cultural belief"
+      },
+      {
+        "uuid": "732ffe04-bf58-421a-91af-e872282aa0c1",
+        "name": "Child is admitted to NICU due to LBW and weakness"
       }
     ]
   }

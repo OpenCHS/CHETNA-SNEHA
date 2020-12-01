@@ -38,7 +38,7 @@ class PregnantWomenEnrolmentViewHandler {
     static exec(programEnrolment, formElementGroup, today) {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new PregnantWomenEnrolmentViewHandler(), programEnrolment, formElementGroup, today);
-    }    
+    }
 
     bmi(programEnrolment, formElement) {
         let weight = programEnrolment.getObservationValue('Weight');
@@ -83,7 +83,7 @@ class PregnantWomenEnrolmentViewHandler {
             new FormElementStatus(formElement.uuid, true, Math.round(moment(today).diff(lmpDate, 'months', true)));
             // lib.calculations.gestationalAge(programEnrolment, today)
     }
-   
+
     @WithName('Other place/person pregnancy registered to')
     @statusBuilder
     a11([], statusBuilder) {
@@ -195,19 +195,20 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Have you registered pregnancy").is.yes;
     }
 
-    @WithName('Is mamta card updated')
+    @WithName('Is mamta card updated with information about availed government services? (Please check Mamta card)')
     @statusBuilder
-    a28([], statusBuilder) {
+    a281([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Whether have mamta card").is.yes;
     }
 
     @WithName('Reason for not having mamta card')
     @statusBuilder
     a29([], statusBuilder) {
+        statusBuilder.skipAnswers('No ANC','Not registered for mamta card');
         statusBuilder.show().when.valueInEnrolment("Whether have mamta card").is.no;
     }
 
-    @WithName('Number of times got pregnant')
+    @WithName('Place of delivery of your youngest child')
     @statusBuilder
     a300([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
@@ -219,7 +220,7 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
     }
 
-    @WithName('Age of youngest child')
+    @WithName('Completed age of youngest child')
     @statusBuilder
     a31([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Number of times got pregnant").is.greaterThan(1);
@@ -249,7 +250,7 @@ class PregnantWomenEnrolmentViewHandler {
         statusBuilder.show().when.valueInEnrolment("Received IFA tablets at every month").is.yes;
     }
 
-    @WithName('Do you consume IFA tablets? (check the strip of IFA tablet)')
+    @WithName('Do you consume IFA tablets everyday? (check the strip of IFA tablet)')
     @statusBuilder
     a56([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Received IFA tablets at every month").is.yes;
@@ -303,6 +304,20 @@ class PregnantWomenEnrolmentViewHandler {
     @statusBuilder
     a65([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas").is.no;
+    }
+
+    @WithName('Do you get Maturshakti supplementary food regularly?')
+    @statusBuilder
+    a6777([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
+            .is.yes;
+    }
+
+    @WithName('How much quantity of food do you get?')
+    @statusBuilder
+    a6788([], statusBuilder) {
+        statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
+            .is.yes;
     }
 
     @WithName('What does mother get as a snacks')
@@ -405,8 +420,10 @@ class PregnantWomenEnrolmentViewHandler {
     @WithName('How much quantity of Salt mother gets')
     @statusBuilder
     a86([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
-        .containsAnswerConceptName("Salt");
+        // statusBuilder.show().when.valueInEnrolment("What does mother get as a snacks")
+        // .containsAnswerConceptName("Salt");
+        statusBuilder.show().when.valueInEnrolment("Do you get nutrition/snacks from anganwadi centre")
+            .is.yes;
     }
 
     @WithName('Number of times weight measurement')

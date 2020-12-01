@@ -16,7 +16,15 @@ const ProgramExitViewFilter = RuleFactory("54cbf339-4cd2-4e26-bf9c-15f128035b1b"
 
     reasonForExit(programExit, formElement) {
         const statusBuilder = this._getStatusBuilder(programExit, formElement);
-        statusBuilder.skipAnswers("Shifted to other geographical area","Completion");
+        statusBuilder.skipAnswers("Shifted to other geographical area", "Completion");
+        return statusBuilder.build();
+    }
+
+    placeOfDelivery(programExit, formElement) {
+        const statusBuilder = this._getStatusBuilder(programExit, formElement);
+        statusBuilder.skipAnswers('Sub Center','Primary Health Center','Regional Hospital',
+            'NGO Hospital','During Transportation like in Ambulance etc');
+        statusBuilder.show().when.valueInExit("Reason for exit").containsAnswerConceptName("Delivery");
         return statusBuilder.build();
     }
 

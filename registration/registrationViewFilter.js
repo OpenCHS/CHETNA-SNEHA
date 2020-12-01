@@ -38,7 +38,8 @@ class ChetnaRegistrationViewHandler {
     @WithName('Type of ration card')
     @WithRegistrationStatusBuilder
     abc110([], statusBuilder) {
-        statusBuilder.skipAnswers('No');
+        statusBuilder.skipAnswers('No','No name in the card','No card');
+        statusBuilder.show().when.valueInRegistration("Do you have ration card?").is.yes;
     } 
 
      @WithName('Marital status')
@@ -85,7 +86,13 @@ class ChetnaRegistrationViewHandler {
         statusBuilder.skipAnswers("Farming","Other","Don't know",'Housework');
         statusBuilder.show().when.valueInRegistration("Involved in any occupational activity").is.yes
         .and.when.ageInYears.is.greaterThanOrEqualTo(5);
-    }     
+    }
+
+    @WithName('Is your name is mentioned in the card?')
+    @WithRegistrationStatusBuilder
+    abc19([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Do you have ration card?").is.yes;
+    }
 }
 
 @RegistrationValidation("afe6e6d4-69e2-40ac-88ea-494b6408493c", "Registration Form Validation", 100.0)

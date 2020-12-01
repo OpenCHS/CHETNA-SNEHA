@@ -141,6 +141,18 @@
           "mandatory": true
         },
         {
+          "name": "Do you have ration card?",
+          "uuid": "1b3a94dd-78d2-4e5a-9d7f-6671e5f8feed",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Do you have ration card?",
+            "uuid": "d506154d-e4ef-4e88-90e5-b4a8ee7e0dcb"
+          },
+          "displayOrder":4.5,
+          "mandatory": true
+        },
+        {
           "name": "Type of ration card",
           "uuid": "20fc8332-74e9-44d6-9434-c8bf11101b40",
           "type": "MultiSelect",
@@ -150,6 +162,18 @@
             "uuid": "476a0b71-485b-4a0a-ba6f-4f3cf13568ca"
           },
           "displayOrder":5,
+          "mandatory": true
+        },
+        {
+          "name": "Is your name is mentioned in the card?",
+          "uuid": "05a6b836-810c-4a0f-8832-72ad20ee7f8e",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Is your name is mentioned in the card?",
+            "uuid": "f44a955f-55d0-4792-bfac-c2168e422b2e"
+          },
+          "displayOrder":5.2,
           "mandatory": true
         },
         {

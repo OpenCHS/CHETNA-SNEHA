@@ -6,6 +6,7 @@ import {
     StatusBuilderAnnotationFactory,
     WithName
 } from 'rules-config/rules';
+import lib from "../lib";
 
 const filter = RuleFactory('b9cc8861-f9b7-4e0e-82fa-49e3eabe6968', 'ViewFilter');
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
@@ -17,6 +18,23 @@ class MonthlyMonitoringPregnancyViewFilter {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new MonthlyMonitoringPregnancyViewFilter(), programEncounter, formElementGroup, today);
     }
+
+
+    totalAncDone(programEncounter, formElement) {
+
+        let value = programEncounter.programEnrolment.numberOfEncountersOfType('Monthly monitoring of pregnant woman');
+        return new FormElementStatus(formElement.uuid, true, value);
+    }
+
+    // bmi(programEnrolment, formElement) {
+    //     let weight = programEnrolment.getObservationValue('Weight');
+    //     let height = programEnrolment.getObservationValue('Height');
+    //     let bmi = '';
+    //     if (_.isNumber(height) && _.isNumber(weight)) {
+    //         bmi = lib.C.calculateBMI(weight, height);
+    //     }
+    //     return new FormElementStatus(formElement.uuid, true, bmi);
+    // }
 
     @WithName('Whether she registered her pregnancy')
     _1(programEncounter, formElement) {

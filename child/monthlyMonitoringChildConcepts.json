@@ -348,7 +348,8 @@
       {
         "name":"Warm",
         "uuid":"0c4c6a65-1b50-403a-b163-41b186aa4f18",
-        "abnormal": true
+        "abnormal": true,
+        "voided": true
       }
     ]
   },
@@ -533,6 +534,26 @@
       }
 
     ]
+  },
+  {
+    "uuid": "f112318f-2b87-4337-8362-da2c06491eef",
+    "name": "At morning (7.00 am to 11 am)",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "94103c52-01a4-4207-b817-c1cfb70659ee",
+    "name": "At afternoon (11.00 am to 3.00 pm)",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "c7b14e1a-cb07-4bb3-87ae-8e243522b76b",
+    "name": "At evening (3.00 pm to 7.00 pm)",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "250b5ee7-80bf-451b-bfa4-ade253b6ecb6",
+    "name": "At night (7.00 pm to 12 am)",
+    "dataType": "Text"
   }
  
 ]
