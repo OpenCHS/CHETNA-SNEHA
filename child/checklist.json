@@ -1280,6 +1280,147 @@
           }
         }
       ]
+    },
+    {
+      "uuid": "52f2a64a-5dc1-4d43-83bc-3f9b3dfdc0ed",
+      "formUUID": "d712105c-14d9-4c64-b5e0-6150cf88f7a2",
+      "concept": {
+        "uuid": "d18d4bf9-f5c8-4593-989f-1df92b1bb020",
+        "name": "Rota 1"
+      },
+      "status": [
+        {
+          "displayOrder": 1,
+          "start": 42,
+          "end": 63,
+          "state": "Due",
+          "color": "#FBF9DA",
+          "from": {
+            "day": 0
+          },
+          "to": {
+            "day": 0
+          }
+        },
+        {
+          "displayOrder": 2,
+          "start": 63,
+          "end": 70,
+          "state": "Critical",
+          "color": "#F9DBBF",
+          "from": {
+            "day": 0
+          },
+          "to": {
+            "day": 0
+          }
+        },
+        {
+          "displayOrder": 3,
+          "start": 70,
+          "end": 1825,
+          "state": "Overdue",
+          "color": "#FFC2C2",
+          "from": {
+            "day": 0
+          },
+          "to": {
+            "day": 0
+          }
+        }
+      ]
+    },
+    {
+      "uuid": "a2a4a03e-5bb8-4144-b4f6-2dd1faac1d3e",
+      "formUUID": "d712105c-14d9-4c64-b5e0-6150cf88f7a2",
+      "dependentOn": "52f2a64a-5dc1-4d43-83bc-3f9b3dfdc0ed",
+      "minDaysFromStartDate": 70,
+      "minDaysFromDependent": 28,
+      "concept": {
+        "uuid": "0cbd067e-bb65-4ab7-b28b-3543ca2a4d3c",
+        "name": "Rota 2"
+      },
+      "status": [
+        {
+          "displayOrder": 1,
+          "start": 0,
+          "end": 21,
+          "state": "Due",
+          "color": "#FBF9DA",
+          "from": {
+            "day": 0
+          },
+          "to": {
+            "day": 0
+          }
+        },
+        {
+          "displayOrder": 2,
+          "start": 21,
+          "end": 28,
+          "state": "Critical",
+          "color": "#F9DBBF",
+          "from": {
+            "day": 0
+          },
+          "to": {
+            "day": 0
+          }
+        },
+        {
+          "displayOrder": 3,
+          "start": 28,
+          "end": 1825,
+          "state": "Overdue",
+          "color": "#FFC2C2",
+          "from": {
+            "day": 0
+          },
+          "to": {
+            "day": 0
+          }
+        }
+      ]
+    },
+    {
+      "uuid": "def302ad-ab5d-4e24-98c4-22891f7d8ebe",
+      "formUUID": "d712105c-14d9-4c64-b5e0-6150cf88f7a2",
+      "expiresAfter": 365,
+      "dependentOn": "a2a4a03e-5bb8-4144-b4f6-2dd1faac1d3e",
+      "minDaysFromStartDate": 98,
+      "minDaysFromDependent": 28,
+      "concept": {
+        "uuid": "a0ec8d00-6d5e-4db1-9627-db993396b5b2",
+        "name": "Rota 3"
+      },
+      "status": [
+        {
+          "displayOrder": 1,
+          "start": 0,
+          "end": 365,
+          "state": "Due",
+          "color": "#FBF9DA",
+          "from": {
+            "day": 0
+          },
+          "to": {
+            "day": 0
+          }
+        },
+        {
+          "displayOrder": 2,
+          "start": 365,
+          "end": 1825,
+          "state": "Expired",
+          "color": "grey",
+          "from": {
+            "day": 0
+          },
+          "to": {
+            "day": 0
+          }
+        }
+      ]
     }
   ]
 }

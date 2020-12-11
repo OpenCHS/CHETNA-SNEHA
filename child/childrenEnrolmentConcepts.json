@@ -555,11 +555,38 @@
   },
   {
     "uuid": "0301280c-fe86-4bfd-af02-70aabe66a4f0",
-    "name": "4 times in a day"
+    "name": "4 times in a day",
+    "dataType":"NA"
   },
   {
     "uuid": "1d42f615-055e-41e6-aaab-5166259ea8c5",
-    "name": "More than 4 times in a day"
+    "name": "More than 4 times in a day",
+    "dataType":"NA"
+  },
+  {
+    "uuid": "b2c9ca5e-97a8-4dfd-8d83-64834cd1d00e",
+    "name": "One time",
+    "dataType":"NA"
+  },
+  {
+  "uuid": "d74e2d56-a295-4d5b-a6f2-eb4d4163a9a0",
+  "name": "2-3 times",
+    "dataType":"NA"
+  },
+  {
+  "uuid": "26e1a329-c9ef-473b-ba62-4977abed0063",
+  "name": "4-5 times",
+    "dataType":"NA"
+  },
+  {
+  "uuid": "674cb479-de9e-41ff-a51e-89941b80219a",
+  "name": "5-6 times",
+    "dataType":"NA"
+  },
+  {
+  "uuid": "e0e656b1-e0cb-456b-90d0-c7f525181586",
+  "name": "7-8 times",
+    "dataType":"NA"
   },
   {
     "name": "How often do you give complementary food to the children",
@@ -567,16 +594,39 @@
     "dataType": "Coded",
     "answers": [
       {
+        "uuid": "b2c9ca5e-97a8-4dfd-8d83-64834cd1d00e",
+        "name": "One time"
+      },
+      {
+        "uuid": "d74e2d56-a295-4d5b-a6f2-eb4d4163a9a0",
+        "name": "2-3 times"
+      },
+      {
+        "uuid": "26e1a329-c9ef-473b-ba62-4977abed0063",
+        "name": "4-5 times"
+      },
+      {
+        "uuid": "674cb479-de9e-41ff-a51e-89941b80219a",
+        "name": "5-6 times"
+      },
+      {
+        "uuid": "e0e656b1-e0cb-456b-90d0-c7f525181586",
+        "name": "7-8 times"
+      },
+      {
         "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",
-        "name": "Every an hour"
+        "name": "Every an hour",
+        "voided" : true
       },
       {
         "uuid": "6b717a67-38a4-40b3-b979-ee3f730f2a1b",
-        "name": "Every 2 hours"
+        "name": "Every 2 hours",
+        "voided" : true
       },
       {
         "uuid": "51623840-f5a0-4d12-81e1-3afa1dab7e69",
-        "name": "Every 3 to 4 hours"
+        "name": "Every 3 to 4 hours",
+        "voided" : true
       },
       {
         "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
@@ -584,15 +634,18 @@
       },
       {
         "uuid": "1b1d300e-ce35-4922-ac94-d0ba8c05511a",
-        "name": "Less than 3 or 3 times in a day"
+        "name": "Less than 3 or 3 times in a day",
+        "voided" : true
       },
       {
         "uuid": "0301280c-fe86-4bfd-af02-70aabe66a4f0",
-        "name": "4 times in a day"
+        "name": "4 times in a day",
+        "voided" : true
       },
       {
         "uuid": "1d42f615-055e-41e6-aaab-5166259ea8c5",
-        "name": "More than 4 times in a day"
+        "name": "More than 4 times in a day",
+        "voided" : true
       },
       {
         "name": "Don't know",

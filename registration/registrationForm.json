@@ -155,7 +155,7 @@
         {
           "name": "Type of ration card",
           "uuid": "20fc8332-74e9-44d6-9434-c8bf11101b40",
-          "type": "MultiSelect",
+          "type": "SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "Ration Card",

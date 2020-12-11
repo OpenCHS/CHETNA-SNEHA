@@ -620,7 +620,7 @@
   },
   {
     "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
-    "name": "Whenever child is crying"
+    "name": "Whenever child cries"
   },
   {
     "name": "How often food should be given to the child",
@@ -810,11 +810,12 @@
       },
       {
         "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
-        "name": "Whenever child is crying"
+        "name": "Whenever child cries"
       },
       {
         "uuid": "01fbbb29-a13a-47c6-9dd1-c6ea0afe9ba6",
-        "name": "Whenever child wants"
+        "name": "Whenever child wants",
+        "voided": true
       },
       {
         "name": "Don't know",

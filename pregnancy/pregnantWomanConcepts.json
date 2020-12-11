@@ -307,27 +307,32 @@
   {
     "name": "Number of times weight measurement",
     "uuid": "d135e958-1c58-481f-bc5d-f0853978f7dc",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "highAbsolute": 10
   },
   {
     "name": "Number of times BP measurement",
     "uuid": "bc21f0df-7908-4b58-b06b-7997d4dc1584",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "highAbsolute": 10
   },
   {
     "name": "Got TT vaccines",
     "uuid": "c7112e18-2e4c-459f-a41d-d34a9db84b61",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "highAbsolute": 10
   },
   {
     "name": "Number of times blood test",
     "uuid": "949c3604-710c-4825-a303-f76e3a97a7fc",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "highAbsolute": 6
   },
   {
     "name": "Number of times urine test",
     "uuid": "73e49a56-7982-4740-9b73-55815ee96ee2",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "highAbsolute": 6
   },
   {
     "name": "Have got Calcium supplement",
@@ -337,12 +342,14 @@
   {
     "name": "Number of times ultrasound scan",
     "uuid": "6e18b50c-6788-408c-a30d-92cf64c8833e",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "highAbsolute": 6
   },
   {
     "name": "Number of time abdominal check-ups",
     "uuid": "99b9869f-f869-42f1-abfc-3f58ffe8f353",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "highAbsolute": 10
   },
   {
     "name": "Which are the services you availed in previous pregnancy",

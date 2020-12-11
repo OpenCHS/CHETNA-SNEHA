@@ -75,7 +75,8 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Do you breastfeed when a child is sick')
     @statusBuilder
     ab12([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.lessThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.lessThanOrEqualTo(6).and.when.valueInEnrolment("Did child fall sick in the last 3 months")
+            .is.yes;
     }
 
     @WithName('Till which age your child has breastfed exclusively')
@@ -94,25 +95,29 @@ class ChildrenEnrolmentViewHandler {
     @WithName('Do you give food when a child is sick')
     @statusBuilder
     ab121([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6).and.when.valueInEnrolment("Did child fall sick in the last 3 months")
+            .is.yes;
     }
 
     @WithName('What do you feed to the child')
     @statusBuilder
     ab123([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6).and.when.valueInEnrolment("Did child fall sick in the last 3 months")
+            .is.yes;
     }
 
     @WithName('Does child demand more food after sickness')
     @statusBuilder
     ab124([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6).and.when.valueInEnrolment("Did child fall sick in the last 3 months")
+            .is.yes;
     }
 
     @WithName('Do you feed more food to your child after illness')
     @statusBuilder
     ab125([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6);
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6).and.when.valueInEnrolment("Did child fall sick in the last 3 months")
+            .is.yes;
     }
 
     @WithName('Whether child goes to the Anganwadi centre regularly')

@@ -32,7 +32,12 @@
           },
           {
             "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
-            "name": "Under SNEHA programme"
+            "name": "Under SNEHA programme",
+            "voided": true
+          },
+          {
+            "uuid": "507b55ba-5da9-48c6-b6a6-8e15377c34f9",
+            "name": "Mamta Divas"
           },
           {
             "uuid": "0db89e2c-e6fb-4b63-b7ea-27560b1f544c",
@@ -164,6 +169,10 @@
     "name": "Immunization camp"
   },
   {
+    "uuid": "dd068ad5-076b-413a-967a-43d83dc39927",
+    "name": "Gaud bharai"
+  },
+  {
     "name": "SNEHA activities which she participated in",
     "uuid": "9535287f-7cc1-4a94-b27a-95e31c4ef43f",
     "dataType": "Coded",
@@ -181,8 +190,13 @@
         "name": "Mamta Divas"
       },
       {
+        "uuid": "dd068ad5-076b-413a-967a-43d83dc39927",
+        "name": "Gaud bharai"
+      },
+      {
         "uuid": "912e0b06-98d5-45c8-8160-0b1c5a81a9b3",
-        "name": "Immunization camp"
+        "name": "Immunization camp",
+        "voided" : true
       }
     ]
   },
@@ -217,6 +231,10 @@
   {
     "uuid": "a6526348-4671-44fd-ab41-046d14e159af",
     "name": "Danger sign and symptoms during pregnancy"
+  },
+  {
+    "uuid": "4329e38a-f3f0-416f-96c0-ed8b0e3f2714",
+    "name": "COVID-19"
   },
   {
     "name": "Information she got in the month through educational session/home visits",
@@ -258,6 +276,10 @@
       {
         "uuid": "43ea47d8-8c92-4564-a9df-eee28191f85c",
         "name": "Anaemia"
+      },
+      {
+        "uuid": "4329e38a-f3f0-416f-96c0-ed8b0e3f2714",
+        "name": "COVID-19"
       },
       {
         "uuid": "30a50819-c76f-4572-8f6f-ea7d7ce200b5",

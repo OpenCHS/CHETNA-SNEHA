@@ -22,7 +22,11 @@ class MonthlyMonitoringPregnancyViewFilter {
 
     totalAncDone(programEncounter, formElement) {
 
-        let value = programEncounter.programEnrolment.numberOfEncountersOfType('Monthly monitoring of pregnant woman');
+        let value = programEncounter.programEnrolment.numberOfEncountersOfType('Monthly monitoring of pregnant woman') + 1;
+        let enrolmentValue = programEncounter.programEnrolment.getObservationValue("Number of times checkup done from doctor");
+        if (_.isNumber(value) && _.isNumber(enrolmentValue)) {
+            value = value + enrolmentValue ;
+        }
         return new FormElementStatus(formElement.uuid, true, value);
     }
 
