@@ -2,6 +2,13 @@
     "organisationName": "CHETNA SNEHA",
     "operationalEncounterTypes": [
       {
+      "uuid" : "e3e30396-871a-470f-bedf-407fcdda135b",
+      "encounterType" : {
+        "uuid" : "d61754d5-df0e-45f5-93fe-df8c61c8c9cf"
+      },
+      "name" : "Monthly report of field worker"
+      },
+      {
            "uuid": "abdfe2d2-e78f-4cba-9aa3-667c506ffba6",
            "name": "Monthly monitoring of pregnant woman",
            "encounterType": {

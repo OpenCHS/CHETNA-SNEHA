@@ -1,0 +1,163 @@
+[
+  {
+    "name" : "Case study",
+    "uuid" : "38864590-82e2-4855-8d01-89d8964b7dd0",
+    "dataType" : "Text",
+    "active" : true
+  },
+  {
+  "name" : "Case study for adolescents",
+  "uuid" : "410a8518-636d-4406-b8df-1d78e45ee6ae",
+  "dataType" : "Text",
+  "active" : true
+  },
+  {
+  "name" : "Case study for children",
+  "uuid" : "d64269f0-875f-4582-97dd-2cfcd6cd2bed",
+  "dataType" : "Text",
+  "active" : true
+  },
+  {
+  "name" : "Case study for pregnant women",
+  "uuid" : "aff8dc90-1025-4ea0-9aaa-852ee930f573",
+  "dataType" : "Text",
+  "active" : true
+  },
+  {
+  "name" : "Case study for undernourished children",
+  "uuid" : "e62851a4-ab6b-4aad-8e91-16f351afe60e",
+  "dataType" : "Text",
+  "active" : true
+  },
+  {
+    "name" : "Date of reporting",
+    "uuid" : "636af361-e910-4c2a-82ca-43221a64b80f",
+    "dataType" : "Date",
+    "active" : true
+  },
+  {
+    "name" : "Name of field worker",
+    "uuid" : "b0afdd5d-a2c2-4d53-bab6-745a39db749e",
+    "dataType" : "Subject",
+    "active" : true,
+    "voided" : false,
+    "keyValues" : [ {
+      "key" : "subjectTypeUUID",
+      "value" : "ae051909-5e1a-4390-b705-f65155fa7b06"
+    } ]
+  },
+  {
+    "name" : "Location of the field worker",
+    "uuid" : "9c35573f-76da-426f-b90e-f2f9474172ba",
+    "dataType" : "Text"
+  },
+  {
+    "name" : "Number of adolescents who participated in Adolescent Health Day",
+    "uuid" : "5d46db9d-105d-48ab-96e5-ddf5396f83d2",
+    "dataType" : "Numeric",
+    "active" : true
+  },
+  {
+  "name" : "Number of children who did not meet",
+  "uuid" : "2c2c8e8a-4c1b-4bec-aeaf-5ebc2541e7fb",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of children who participated in Annaprashan DIvas",
+  "uuid" : "9dc7240c-8e36-47f7-8263-9f6c0760f580",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of children who participated in Mamta divas",
+  "uuid" : "2f555d7b-8dda-4353-9ee9-43615372207d",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of home visits and weight monitoring of children",
+  "uuid" : "7cb6cd6b-e2de-47ba-884f-90a69dacbd0c",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of home visits done for children",
+  "uuid" : "df7a6dde-e748-486f-9834-151fb70f6983",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of home visits done for pregnant women",
+  "uuid" : "ed1f2008-fb1d-45bd-8bcb-84fc8fb0a020",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of home visits for adolescents",
+  "uuid" : "c05fb0f1-d02d-4d58-aa7f-b95d8c9cd038",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of pregnant women who did not meet",
+  "uuid" : "02abade1-5adb-4008-855c-58afad780582",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of pregnant women who participated in Gaud bharai",
+  "uuid" : "13d0eda4-4799-41a7-aa9e-ff3080df0d29",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of pregnant women who participated in Mamta Divas",
+  "uuid" : "1a5398a0-a7fc-49f5-9261-d54127d9e235",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of Safai bethak sessions",
+  "uuid" : "3baabc7a-3d59-4e96-9893-eb6f68d44b8b",
+  "dataType" : "Numeric",
+  "active" : true
+  },
+  {
+  "name" : "Number of sessions for adolescents",
+  "uuid" : "055fd297-55c5-42a7-aa8a-173d1f4b91e3",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Number of sessions for children with lactating mother",
+  "uuid" : "4cffc67e-563a-4b21-a20b-202edb7bb61a",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Number of sessions for pregnant women",
+  "uuid" : "fb686ed7-38d8-41e6-9072-53c90bb4cae5",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Number of sessions for undernourished children",
+  "uuid" : "3d6e28df-9837-47c1-9338-1d316efc92eb",
+  "dataType" : "Numeric",
+  "active" : true
+},{
+  "name" : "Number of undernourished children who did not meet",
+  "uuid" : "cf3c6401-ef58-492a-ba73-f1149ab526f1",
+  "dataType" : "Numeric",
+  "active" : true
+}, {
+  "name" : "Number of undernourished children who participated in Matrumandal meeting",
+  "uuid" : "acf77b6d-9796-4655-97c9-dd0c2c1b0e74",
+  "dataType" : "Numeric",
+  "active" : true
+},
+  {
+    "name" : "Pending of any activities",
+    "uuid" : "35bbccc7-986a-4baf-86f3-d0b79a699f1b",
+    "dataType" : "Text",
+    "active" : true
+  }
+]

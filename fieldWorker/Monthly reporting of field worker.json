@@ -1,0 +1,357 @@
+{
+  "name" : "Monthly reporting of field worker",
+  "uuid" : "d0b9e3ae-c68e-4a1c-b765-04a6491ed23d",
+  "formType" : "Encounter",
+  "formElementGroups" : [ {
+    "uuid" : "f77717c2-8d7a-45b1-af22-7e65fb75215b",
+    "name" : "Visit Details",
+    "displayOrder" : 1.0,
+    "display" : "Visit Details",
+    "formElements" : [ {
+      "name" : "Name of field worker",
+      "uuid" : "846d9d94-1c3e-43b7-b9b8-4d9b93a52137",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of field worker (voided~69769)",
+        "uuid" : "b0afdd5d-a2c2-4d53-bab6-745a39db749e"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Name of field worker",
+      "uuid" : "16d4ebce-33d3-404e-b0d2-88eaa74be61f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of field worker",
+        "uuid" : "b0afdd5d-a2c2-4d53-bab6-745a39db749e"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Location of the field worker",
+      "uuid" : "43104ef8-3629-4b4a-8f3f-73fa03cb3522",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Location of the field worker",
+        "uuid" : "9c35573f-76da-426f-b90e-f2f9474172ba"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true,
+      "voided": true
+    }, {
+      "name" : "Select a date of the reporting month",
+      "uuid" : "f103c950-23d9-4987-94e6-3b75f7bdf7d4",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Date of reporting",
+        "uuid" : "636af361-e910-4c2a-82ca-43221a64b80f"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  }, {
+    "uuid" : "5383bdaf-6dbe-4504-a059-68404bf8ce15",
+    "name" : "Pregnant women visit details",
+    "displayOrder" : 2.0,
+    "display" : "Pregnant women visit details",
+    "formElements" : [ {
+      "name" : "Number of pregnant women who participated in Mamta Divas",
+      "uuid" : "3f74425b-5122-4f51-83b4-c6c27cd82a53",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of pregnant women who participated in Mamta Divas",
+        "uuid" : "1a5398a0-a7fc-49f5-9261-d54127d9e235"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of pregnant women who participated in Gaud bharai",
+      "uuid" : "ee9cf36f-c92f-427d-b8dd-59f09b46c3d1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of pregnant women who participated in Gaud bharai",
+        "uuid" : "13d0eda4-4799-41a7-aa9e-ff3080df0d29"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of home visits done for pregnant women",
+      "uuid" : "de42e7d8-d551-4e64-80cb-15fab73bbcbd",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of home visits done for pregnant women",
+        "uuid" : "ed1f2008-fb1d-45bd-8bcb-84fc8fb0a020"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of pregnant women who did not meet",
+      "uuid" : "3e2511fc-5e78-4637-b536-5e3ffa129b40",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of pregnant women who did not meet",
+        "uuid" : "02abade1-5adb-4008-855c-58afad780582"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Case study, if any",
+      "uuid" : "3e79c8d5-8e41-46e6-8857-0b32aedc10f1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Case study for pregnant women",
+        "uuid" : "aff8dc90-1025-4ea0-9aaa-852ee930f573"
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  }, {
+    "uuid" : "58e82516-a1c0-4b43-9d1d-976325138c57",
+    "name" : "Child with lactating mother visit details",
+    "displayOrder" : 3.0,
+    "display" : "Child with lactating mother visit details",
+    "formElements" : [ {
+      "name" : "Number of children who participated in Mamta divas",
+      "uuid" : "856494bd-0d51-4cd2-b7ad-2bb741875173",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of children who participated in Mamta divas",
+        "uuid" : "2f555d7b-8dda-4353-9ee9-43615372207d"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of children who participated in Annaprashan Divas",
+      "uuid" : "77de5773-3c9b-4106-9be9-b97fdc036ce6",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of children who participated in Annaprashan DIvas",
+        "uuid" : "9dc7240c-8e36-47f7-8263-9f6c0760f580"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of home visits done for children",
+      "uuid" : "4fd1dfb5-f2cd-4334-9d8b-fb8c7aefe5c1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of home visits done for children",
+        "uuid" : "df7a6dde-e748-486f-9834-151fb70f6983"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of children wo did not meet",
+      "uuid" : "b0872145-e52e-4e3d-88bb-9b2c216f942e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of children who did not meet",
+        "uuid" : "2c2c8e8a-4c1b-4bec-aeaf-5ebc2541e7fb"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Case study, if any",
+      "uuid" : "f234cdae-62e0-43e8-a486-a73ebc3de88e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Case study for children",
+        "uuid" : "d64269f0-875f-4582-97dd-2cfcd6cd2bed"
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  }, {
+    "uuid" : "0677443b-0e02-47c4-bd38-d23eed5473db",
+    "name" : "Undernourished children visit details",
+    "displayOrder" : 4.0,
+    "display" : "Undernourished children visit details",
+    "formElements" : [ {
+      "name" : "Number of home visits and weight monitoring of children",
+      "uuid" : "939dab07-3577-43f0-97ff-d9b32d3507dc",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of home visits and weight monitoring of children",
+        "uuid" : "7cb6cd6b-e2de-47ba-884f-90a69dacbd0c"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of undernourished children who did not meet",
+      "uuid" : "b6916c13-b477-48c9-bdf4-46a1f85bd1c7",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of undernourished children who did not meet",
+        "uuid" : "cf3c6401-ef58-492a-ba73-f1149ab526f1"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of undernourished children who participated in Matrumandal meeting",
+      "uuid" : "7912f4d8-4c3c-4b17-90ed-0b85df3fe00b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of undernourished children who participated in Matrumandal meeting",
+        "uuid" : "acf77b6d-9796-4655-97c9-dd0c2c1b0e74"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Case study, if any",
+      "uuid" : "b6f963c4-2631-4495-8645-f6ddc70af695",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Case study for undernourished children",
+        "uuid" : "e62851a4-ab6b-4aad-8e91-16f351afe60e"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  }, {
+    "uuid" : "fda35d3c-6c03-4d63-b841-31fc423e3eab",
+    "name" : "Health educational sessions with adolescents details",
+    "displayOrder" : 5.0,
+    "display" : " Health educational sessions with adolescents details",
+    "formElements" : [ {
+      "name" : "Number of adolescents who participated in Adolescent Health Day",
+      "uuid" : "ecba3454-76b4-4869-bdc9-41d8c6df5f5d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of adolescents who participated in Adolescent Health Day",
+        "uuid" : "5d46db9d-105d-48ab-96e5-ddf5396f83d2"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of home visits for adolescents",
+      "uuid" : "45594b82-3d20-4d0b-9c01-529e81ec2aa2",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of home visits for adolescents",
+        "uuid" : "c05fb0f1-d02d-4d58-aa7f-b95d8c9cd038"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Case study, if any",
+      "uuid" : "a3100c25-d927-4169-8fa2-1efdfeaeaf1a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Case study for adolescents",
+        "uuid" : "410a8518-636d-4406-b8df-1d78e45ee6ae"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  }, {
+    "uuid" : "7f36c6c6-3219-474e-a89e-519a03a81c10",
+    "name" : "Educational Sessions Details",
+    "displayOrder" : 6.0,
+    "display" : "Educational Sessions Details",
+    "formElements" : [ {
+      "name" : "Number of sessions for pregnant women",
+      "uuid" : "691b28f9-6727-474a-8ec9-38ebfa0cb521",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of sessions for pregnant women",
+        "uuid" : "fb686ed7-38d8-41e6-9072-53c90bb4cae5"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of sessions for children with lactating mother",
+      "uuid" : "86a00335-e6c4-4ea0-a9fc-0f56059ea26c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of sessions for children with lactating mother",
+        "uuid" : "4cffc67e-563a-4b21-a20b-202edb7bb61a"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of sessions for undernourished children",
+      "uuid" : "a802812c-f903-449d-bffd-70053c8604d4",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of sessions for undernourished children",
+        "uuid" : "3d6e28df-9837-47c1-9338-1d316efc92eb"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of sessions for adolescents",
+      "uuid" : "349c012b-c027-4163-8b19-c1381c48f909",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of sessions for adolescents",
+        "uuid" : "055fd297-55c5-42a7-aa8a-173d1f4b91e3"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Number of Safai bethak sessions",
+      "uuid" : "b84bd9e7-6cea-4df6-a6a4-68381e11e8b7",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Number of Safai bethak sessions",
+        "uuid" : "3baabc7a-3d59-4e96-9893-eb6f68d44b8b"
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Pending of any activities (Specify activity and reasons)",
+      "uuid" : "fe804d00-a111-4a51-afa4-94396e37a45a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Pending of any activities",
+        "uuid" : "35bbccc7-986a-4baf-86f3-d0b79a699f1b"
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "Case study, if any",
+      "uuid" : "a8f867e3-da7f-405f-be91-d937dda666c4",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Case study",
+        "uuid" : "38864590-82e2-4855-8d01-89d8964b7dd0"
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : "",
+  "checklistsRule" : ""
+}

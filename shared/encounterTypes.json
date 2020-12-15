@@ -1,5 +1,11 @@
 [
-   {
+  {
+    "name" : "Monthly report of field worker",
+    "uuid" : "d61754d5-df0e-45f5-93fe-df8c61c8c9cf",
+    "encounterEligibilityCheckRule" : "",
+    "active" : true
+  },
+  {
       "uuid": "3f1d1216-f944-45c1-aa4b-8a49e88632fc",
       "name": "Monthly monitoring of pregnant woman"
     },
