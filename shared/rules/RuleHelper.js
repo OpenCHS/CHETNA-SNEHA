@@ -93,6 +93,14 @@ class RuleHelper {
         return scheduleBuilder;
     }
 
+    static createGeneralEncounterScheduleBuilder(individual, visitSchedules) {
+        const scheduleBuilder = new VisitScheduleBuilder({
+            individual,
+        });
+        addSchedules(scheduleBuilder, visitSchedules);
+        return scheduleBuilder;
+    }
+
     static addSchedule(scheduleBuilder, name, encounterType, earliestDate, numberOfDaysForMaxOffset) {
         const maxDate = moment(earliestDate).add(numberOfDaysForMaxOffset, 'days').toDate();
         addSchedule(scheduleBuilder, {name, encounterType, earliestDate, maxDate});

@@ -1,6 +1,6 @@
 [ {
-  "name" : "Field Worker",
+  "name" : "Monthly Reporting",
   "uuid" : "ae051909-5e1a-4390-b705-f65155fa7b06",
   "voided" : false,
-  "type": "Person"
+  "type": "Individual"
 } ]

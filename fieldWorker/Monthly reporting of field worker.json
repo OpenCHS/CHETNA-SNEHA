@@ -53,7 +53,8 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided": true
     } ]
   }, {
     "uuid" : "5383bdaf-6dbe-4504-a059-68404bf8ce15",

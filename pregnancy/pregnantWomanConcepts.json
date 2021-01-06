@@ -1312,5 +1312,18 @@
         "name": "Wash hand with soap for minimum 20 seconds"
       }
     ]
+  },
+  {
+    "name":"Have you participated in SNEHA Mamta Divas?",
+    "uuid": "a5142b1d-5485-4432-88a6-293554331b42",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
   }
 ]

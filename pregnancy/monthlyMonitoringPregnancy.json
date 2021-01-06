@@ -291,6 +291,30 @@
       "displayOrder":4,
       "formElements": [
         {
+          "name": "Have you participated in SNEHA Mamta Divas?",
+          "uuid": "337eaebc-d4d5-499a-9f87-6a36d0dc1710",
+          "type": "SingleSelect",
+          "keyValues": [],
+          "concept": {
+            "name":"Have you participated in SNEHA Mamta Divas?",
+            "uuid": "a5142b1d-5485-4432-88a6-293554331b42"
+          },
+          "displayOrder":0.1,
+          "mandatory": true
+        },
+        {
+          "name": "Reason for not attending SNEHA Mamta Divas",
+          "uuid": "9d85f022-e484-4baf-aa19-2a3a25d8796c",
+          "type": "MultiSelect",
+          "keyValues": [],
+          "concept": {
+            "name": "Why you do not attend mamta divas",
+            "uuid": "bb3542c7-e855-4d0f-91e8-a6b5e376558a"
+          },
+          "displayOrder":0.2,
+          "mandatory": true
+        },
+        {
           "name": "Whether she participated in SNEHA activities",
           "uuid": "44309bbd-5f26-4a19-b00b-73c4f9778ad9",
           "type": "SingleSelect",

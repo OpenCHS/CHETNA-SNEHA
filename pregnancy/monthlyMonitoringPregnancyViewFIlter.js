@@ -21,11 +21,26 @@ class MonthlyMonitoringPregnancyViewFilter {
 
 
     totalAncDone(programEncounter, formElement) {
+        let previousValue = programEncounter.findLatestObservationInEntireEnrolment("Total ANC done") ;
 
-        let value = programEncounter.programEnrolment.numberOfEncountersOfType('Monthly monitoring of pregnant woman') + 1;
         let enrolmentValue = programEncounter.programEnrolment.getObservationValue("Number of times checkup done from doctor");
-        if (_.isNumber(value) && _.isNumber(enrolmentValue)) {
+
+        let isCheckupDone = programEncounter.getObservationReadableValue("Whether ANC check-up done in this month");
+        let currentEncounterValue = 0;
+        if(_.isEqual(isCheckupDone,'Yes'))
+            currentEncounterValue = 1;
+
+        console.log('_.isEqual(isCheckupDone', _.isEqual(isCheckupDone,'Yes'));
+
+        let value = 0;
+        if (previousValue) {
+            value = value + previousValue.getValue() ;
+        }
+        if(_.isNumber(enrolmentValue)){
             value = value + enrolmentValue ;
+        }
+        if(_.isNumber(currentEncounterValue)){
+            value = value + currentEncounterValue ;
         }
         return new FormElementStatus(formElement.uuid, true, value);
     }
@@ -199,6 +214,12 @@ class MonthlyMonitoringPregnancyViewFilter {
     @WithStatusBuilder
     _21([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Whether ANC check-up done in this month").is.yes;
+    }
+
+    @WithName('Reason for not attending SNEHA Mamta Divas')
+    @WithStatusBuilder
+    _2121([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter("Have you participated in SNEHA Mamta Divas?").is.no;
     }
 
     @WithName('TT injections given')

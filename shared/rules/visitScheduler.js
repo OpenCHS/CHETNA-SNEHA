@@ -18,6 +18,31 @@ const nextVisits = (programEncounter, visitSchedule) => {
     return scheduleBuilder.getAllUnique("encounterType");
 };
 
+@RuleFactory("42ed91ba-2385-436b-aec7-b51f1207e3fa", "VisitSchedule")
+("19b58664-784b-4e76-95cb-ee0973ba59a5", "CHETNA SNEHA Monthly Reporting Visit schedules", 100.0)
+class ScheduleVisitsMonthlyReporting {
+    static exec(encounter, visitSchedule = [], scheduleConfig) {
+        let scheduleBuilder = RuleHelper.createGeneralEncounterScheduleBuilder(encounter, visitSchedule);
+        // const nextVisitDate = moment(encounter.registrationDate).add(1, 'months').toDate();
+        const nextVisitDate = moment().startOf('month').add(24, 'days').toDate();
+        RuleHelper.addSchedule(scheduleBuilder, 'Monthly reporting',
+            'Monthly report of field worker', nextVisitDate, 8);
+        return scheduleBuilder.getAllUnique("encounterType");
+    }
+}
+
+@RuleFactory("d0b9e3ae-c68e-4a1c-b765-04a6491ed23d", "VisitSchedule")
+("055af1f4-b858-4c73-ba5d-ec6f387dd31f", "CHETNA SNEHA Next Monthly Reporting Visit schedules", 100.0)
+class ScheduleNextVisitsMonthlyReporting {
+    static exec(encounter, visitSchedule = [], scheduleConfig) {
+        let scheduleBuilder = RuleHelper.createGeneralEncounterScheduleBuilder(encounter, visitSchedule);
+        const nextVisitDate = moment(encounter.earliestVisitDateTime).add(1, 'months').toDate();
+        RuleHelper.addSchedule(scheduleBuilder, 'Monthly reporting',
+            'Monthly report of field worker', nextVisitDate, 8);
+        return scheduleBuilder.getAllUnique("encounterType");
+    }
+}
+
 @RuleFactory("1d08e3e9-30a0-4fee-b1ce-55aeec627ea1", "VisitSchedule")
 ("7a0c2772-c346-4183-ac3c-e2aa954fa8cd", "CHETNA SNEHA Pregnant Woman Enrolment Visit schedules", 100.0)
 class ScheduleVisitsDuringPregnantWomanEnrolment {
@@ -84,5 +109,7 @@ export {
     ScheduleVisitsDuringChildEnrolment,
     ScheduleVisitsDuringMonthlyMonitoringPregnantWoman,
     ScheduleVisitsDuringMonthlyMonitoringChild,
-    ScheduleVisitsOnCancel
+    ScheduleVisitsOnCancel,
+    ScheduleVisitsMonthlyReporting,
+    ScheduleNextVisitsMonthlyReporting
 }
