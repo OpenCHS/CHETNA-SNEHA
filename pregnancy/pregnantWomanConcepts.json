@@ -827,6 +827,10 @@
     "name": "Family not allowed"
   },
   {
+    "uuid": "26afa1ab-356f-41c2-9eb2-5fc544bd678b",
+    "name": "Not like to attend it"
+  },
+  {
     "name": "Why you do not attend mamta divas",
     "uuid": "bb3542c7-e855-4d0f-91e8-a6b5e376558a",
     "dataType": "Coded",
@@ -844,6 +848,10 @@
         "name": "AWW's is not giving good response"
       },
       {
+        "uuid": "26afa1ab-356f-41c2-9eb2-5fc544bd678b",
+        "name": "Not like to attend it"
+      },
+      {
         "uuid": "a2fc807c-7a56-4207-9b84-ba2faa7b5cc1",
         "name": "Not require"
       },
@@ -853,7 +861,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"      
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       }
     ]
   },
@@ -872,6 +881,10 @@
       },
       {
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "uuid": "ce10dccc-2bf8-4a64-aa96-2ad3ce92d0b4",
+        "name": "No AWC"
       }
     ]
   },
@@ -1008,6 +1021,14 @@
     "name": "Can't use till 1st child"
   },
   {
+    "uuid": "6bfdd88c-4abe-4aee-8fa6-bc2496e16b1c",
+    "name": "Husband and wife is saperated"
+  },
+  {
+    "uuid": "d29d7d4f-cdb2-46e1-bb04-f7576fff60eb",
+    "name": "Mother is currently pregnant"
+  },
+  {
     "name": "Reason for not using any contraception method",
     "uuid": "ec0a99c9-b959-4d28-a277-4ffa78b816a4",
     "dataType": "Coded",
@@ -1039,6 +1060,14 @@
       {
         "uuid": "cf0cef29-25c6-4edd-8cb0-b11b1979c840",
         "name": "Not suitable"
+      },
+      {
+        "uuid": "6bfdd88c-4abe-4aee-8fa6-bc2496e16b1c",
+        "name": "Husband and wife is saperated"
+      },
+      {
+        "uuid": "d29d7d4f-cdb2-46e1-bb04-f7576fff60eb",
+        "name": "Mother is currently pregnant"
       },
       {
         "name": "Other",

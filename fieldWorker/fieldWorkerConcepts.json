@@ -36,22 +36,6 @@
     "active" : true
   },
   {
-    "name" : "Name of field worker",
-    "uuid" : "b0afdd5d-a2c2-4d53-bab6-745a39db749e",
-    "dataType" : "Subject",
-    "active" : true,
-    "voided" : false,
-    "keyValues" : [ {
-      "key" : "subjectTypeUUID",
-      "value" : "ae051909-5e1a-4390-b705-f65155fa7b06"
-    } ]
-  },
-  {
-    "name" : "Location of the field worker",
-    "uuid" : "9c35573f-76da-426f-b90e-f2f9474172ba",
-    "dataType" : "Text"
-  },
-  {
     "name" : "Number of adolescents who participated in Adolescent Health Day",
     "uuid" : "5d46db9d-105d-48ab-96e5-ddf5396f83d2",
     "dataType" : "Numeric",

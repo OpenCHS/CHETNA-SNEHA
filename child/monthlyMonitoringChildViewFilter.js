@@ -96,6 +96,53 @@ class MonthlyMonitoringChildViewFilter {
         return new FormElementStatus(formElement.uuid, false);
     }
 
+    @WithName('Do you use any method of contraception')
+    _a18(programEncounter, formElement) {
+        const context = {programEncounter, formElement};
+
+        const statusBuilder = new FormElementStatusBuilder({programEncounter, formElement});
+
+            const enrolmentConditionUsed = new RuleCondition(context).when.valueInEnrolment("Method of contraception used")
+                .not.containsAnswerConceptName("Female sterilization","PPIUCD","Copper-T","Hysterectomy").matches();
+
+            const previousEncounterConditionUsed = new RuleCondition(context).when.latestValueInPreviousEncounters("Method of contraception used")
+                .not.containsAnswerConceptName("Female sterilization","PPIUCD","Copper-T","Hysterectomy").matches();
+
+            const enrolmentConditionNotUsed = new RuleCondition(context).when.valueInEnrolment("Reason for not using any contraception method")
+                .not.containsAnswerConceptName("Husband and wife is saperated","Mother is currently pregnant").matches();
+
+            const encounterConditionNotUsed = new RuleCondition(context).when.latestValueInPreviousEncounters("Reason for not using any contraception method")
+                .not.containsAnswerConceptName("Husband and wife is saperated","Mother is currently pregnant").matches();
+
+
+            const encounterNotDefinedUsed = new RuleCondition(context).when.latestValueInPreviousEncounters("Method of contraception used").is.notDefined.matches();
+            const encounterNotDefinedNotUsed = new RuleCondition(context).when.latestValueInPreviousEncounters("Reason for not using any contraception method").is.notDefined.matches();
+
+        // console.log('enrolmentConditionUsed',enrolmentConditionUsed);
+        // console.log('previousEncounterConditionUsed',previousEncounterConditionUsed);
+        // console.log('enrolmentConditionNotUsed',enrolmentConditionNotUsed);
+        // console.log('encounterConditionNotUsed',encounterConditionNotUsed);
+
+        if (enrolmentConditionUsed && encounterNotDefinedUsed) {
+            return new FormElementStatus(formElement.uuid, true) && statusBuilder.build();
+        }
+
+        if (enrolmentConditionNotUsed && encounterNotDefinedNotUsed) {
+            return new FormElementStatus(formElement.uuid, true) && statusBuilder.build();
+        }
+
+        if ( previousEncounterConditionUsed  && encounterNotDefinedNotUsed) {
+                return new FormElementStatus(formElement.uuid, true) && statusBuilder.build();
+        }
+
+        if ( encounterConditionNotUsed  && encounterNotDefinedUsed) {
+            return new FormElementStatus(formElement.uuid, true) && statusBuilder.build();
+        }
+
+        return new FormElementStatus(formElement.uuid, false);
+
+    }
+
     @WithName('Who has taken decision to start complementary food to the child')
     @WithStatusBuilder
     _a4([], statusBuilder) {
@@ -158,7 +205,8 @@ class MonthlyMonitoringChildViewFilter {
     @WithName('How often do you give complementary food to the children')
     @WithStatusBuilder
     _a10([], statusBuilder) {
-        statusBuilder.skipAnswers("Every an hour", "Every 2 hours", "Every 3 to 4 hours", "Whenever child is crying");
+        statusBuilder.skipAnswers("One time","2-3 times","4-5 times","5-6 times","7-8 times","Whenever child cries");
+
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
             .containsAnswerConceptNameOtherThan("NA")
             .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
@@ -192,6 +240,7 @@ class MonthlyMonitoringChildViewFilter {
     @WithName('Do you give complementary food along with breast feeding')
     @WithStatusBuilder
     _a13([], statusBuilder) {
+        statusBuilder.skipAnswers("NA");
         statusBuilder.show().when.valueInEncounter("When did you start giving complementary food to the child")
             .containsAnswerConceptNameOtherThan("NA")
             .or.when.latestValueInPreviousEncounters("When did you start giving complementary food to the child")
@@ -231,7 +280,7 @@ class MonthlyMonitoringChildViewFilter {
 
     @WithName('Method of contraception used')
     @WithStatusBuilder
-    _a18([], statusBuilder) {
+    _a1777([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Do you use any method of contraception").is.yes;
     }
 

@@ -653,7 +653,7 @@
         {
           "name": "How much do you give complementary food to the child",
           "uuid": "78741f26-6b45-4f3a-a20a-7d83b23765bd",
-          "type":"MultiSelect",
+          "type":"SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "How much do you give complementary food to the child",
@@ -665,7 +665,7 @@
         {
           "name": "How often do you give complementary food to the children",
           "uuid": "173772cd-8f11-4c2f-a6ef-880b10e08060",
-          "type": "MultiSelect",
+          "type": "SingleSelect",
           "keyValues": [],
           "concept": {
             "name": "How often do you give complementary food to the children",
@@ -1248,6 +1248,7 @@
         {
           "name": "Reason for not getting benefits under government programme/scheme",
           "uuid": "74da856c-4114-4387-8d82-68e667d620c1",
+          "type": "MultiSelect",
           "keyValues": [],
           "concept": {
             "name": "Reason for not getting benefits under government programme/scheme",

@@ -21,7 +21,7 @@ class MonthlyMonitoringPregnancyViewFilter {
 
 
     totalAncDone(programEncounter, formElement) {
-        let previousValue = programEncounter.findLatestObservationInEntireEnrolment("Total ANC done") ;
+        let previousValue = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters("Total ANC done",programEncounter) ;
 
         let enrolmentValue = programEncounter.programEnrolment.getObservationValue("Number of times checkup done from doctor");
 
@@ -30,13 +30,11 @@ class MonthlyMonitoringPregnancyViewFilter {
         if(_.isEqual(isCheckupDone,'Yes'))
             currentEncounterValue = 1;
 
-        console.log('_.isEqual(isCheckupDone', _.isEqual(isCheckupDone,'Yes'));
-
         let value = 0;
         if (previousValue) {
             value = value + previousValue.getValue() ;
         }
-        if(_.isNumber(enrolmentValue)){
+        if(_.isNumber(enrolmentValue) && value == 0){
             value = value + enrolmentValue ;
         }
         if(_.isNumber(currentEncounterValue)){
@@ -44,16 +42,6 @@ class MonthlyMonitoringPregnancyViewFilter {
         }
         return new FormElementStatus(formElement.uuid, true, value);
     }
-
-    // bmi(programEnrolment, formElement) {
-    //     let weight = programEnrolment.getObservationValue('Weight');
-    //     let height = programEnrolment.getObservationValue('Height');
-    //     let bmi = '';
-    //     if (_.isNumber(height) && _.isNumber(weight)) {
-    //         bmi = lib.C.calculateBMI(weight, height);
-    //     }
-    //     return new FormElementStatus(formElement.uuid, true, bmi);
-    // }
 
     @WithName('Whether she registered her pregnancy')
     _1(programEncounter, formElement) {
@@ -113,8 +101,11 @@ class MonthlyMonitoringPregnancyViewFilter {
     @WithName('Is she enrolled for any government programme/scheme')
     @WithStatusBuilder
     _6([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
-        .containsAnswerConceptNameOtherThan("Yes");
+        // statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme")
+        // .containsAnswerConceptNameOtherThan("Yes");
+
+        statusBuilder.show().when.valueInEnrolment("Got any benefits of government programme/scheme").is.notDefined.or
+            .when.latestValueInPreviousEncounters("Got any benefits of government programme/scheme").is.notDefined;
     }
 
     @WithName('Programme/scheme under which received entitlements')
@@ -220,6 +211,7 @@ class MonthlyMonitoringPregnancyViewFilter {
     @WithStatusBuilder
     _2121([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Have you participated in SNEHA Mamta Divas?").is.no;
+        statusBuilder.skipAnswers("AWW's is not giving good response");
     }
 
     @WithName('TT injections given')

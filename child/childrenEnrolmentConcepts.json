@@ -147,6 +147,10 @@
       },
       {
         "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      },
+      {
+        "name": "Don't know",
+        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
       }
     ]
   },
@@ -447,7 +451,8 @@
       },
       {
         "uuid": "b061e9d5-0ca4-4c84-960a-b08199d8fca3",
-        "name": "No response"
+        "name": "No response",
+        "unique" : true
       }
     ]
   },
@@ -613,6 +618,22 @@
         "uuid": "e0e656b1-e0cb-456b-90d0-c7f525181586",
         "name": "7-8 times"
       },
+            {
+        "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
+        "name": "Whenever child is crying"
+      },
+      {
+        "uuid": "1b1d300e-ce35-4922-ac94-d0ba8c05511a",
+        "name": "Less than 3 or 3 times in a day"
+      },
+      {
+        "uuid": "0301280c-fe86-4bfd-af02-70aabe66a4f0",
+        "name": "4 times in a day"
+      },
+      {
+        "uuid": "1d42f615-055e-41e6-aaab-5166259ea8c5",
+        "name": "More than 4 times in a day"
+      },
       {
         "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",
         "name": "Every an hour",
@@ -626,25 +647,6 @@
       {
         "uuid": "51623840-f5a0-4d12-81e1-3afa1dab7e69",
         "name": "Every 3 to 4 hours",
-        "voided" : true
-      },
-      {
-        "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
-        "name": "Whenever child is crying"
-      },
-      {
-        "uuid": "1b1d300e-ce35-4922-ac94-d0ba8c05511a",
-        "name": "Less than 3 or 3 times in a day",
-        "voided" : true
-      },
-      {
-        "uuid": "0301280c-fe86-4bfd-af02-70aabe66a4f0",
-        "name": "4 times in a day",
-        "voided" : true
-      },
-      {
-        "uuid": "1d42f615-055e-41e6-aaab-5166259ea8c5",
-        "name": "More than 4 times in a day",
         "voided" : true
       },
       {

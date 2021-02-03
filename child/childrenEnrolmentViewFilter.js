@@ -102,8 +102,9 @@ class ChildrenEnrolmentViewHandler {
     @WithName('What do you feed to the child')
     @statusBuilder
     ab123([], statusBuilder) {
-        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6).and.when.valueInEnrolment("Did child fall sick in the last 3 months")
-            .is.yes;
+        statusBuilder.show().when.ageInMonths.is.greaterThanOrEqualTo(6).and.when.valueInEnrolment("Do you give food when a child is sick")
+            .is.yes.and.when.valueInEnrolment("Where do you take your child if he/she is sick")
+            .not.containsAnswerConceptName("NA");
     }
 
     @WithName('Does child demand more food after sickness')

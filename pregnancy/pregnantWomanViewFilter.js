@@ -304,6 +304,7 @@ class PregnantWomenEnrolmentViewHandler {
     @statusBuilder
     a65([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment("Do you get services of mamta divas").is.no;
+        statusBuilder.skipAnswers('Not like to attend it');
     }
 
     @WithName('Do you get Maturshakti supplementary food regularly?')

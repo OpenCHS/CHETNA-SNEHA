@@ -231,7 +231,7 @@
             "uuid": "6d44f4c4-2b16-453b-a1ab-90eeee60a340"
           },
           "displayOrder": 11,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "What are the points you kept in a mind while feed the child",
@@ -243,7 +243,7 @@
             "uuid": "cf4376af-884d-4197-9b2a-9c43c4893aaa"
           },
           "displayOrder":12 ,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you give complementary food along with breast feeding",
@@ -255,7 +255,7 @@
             "uuid": "df49722d-6ea2-405c-a109-7bcd2f6cf9db"
           },
           "displayOrder": 13,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "When do you wash child’s hand",

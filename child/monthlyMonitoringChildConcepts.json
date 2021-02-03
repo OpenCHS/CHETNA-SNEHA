@@ -38,6 +38,10 @@
     "name": "Not breastfeeding the child"
   },
   {
+    "uuid": "1d424f91-9989-4fd0-bf18-8a2d46dfb509",
+    "name": "< 4 times in a day"
+  },
+  {
     "name": "Number of times you breastfeed to your child",
     "uuid": "0e34d307-7b0f-41ea-b06b-975a79bae32b",
     "dataType": "Coded",
@@ -53,6 +57,14 @@
       {
         "uuid": "0a2047e6-eb8b-4ff8-b26a-6b5eeeacb29e",
         "name": "Every an hour"
+      },
+      {
+        "uuid": "674cb479-de9e-41ff-a51e-89941b80219a",
+        "name": "5-6 times"
+      },
+      {
+        "uuid": "1d424f91-9989-4fd0-bf18-8a2d46dfb509",
+        "name": "< 4 times in a day"
       },
       {
         "uuid": "a3083a87-0261-4fa3-9ef8-bdb5a321887b",
@@ -392,7 +404,8 @@
       },
       {
         "uuid": "9e8f950a-1e21-42b2-a9eb-5f9011e18cab",
-        "name": "No treatment given"
+        "name": "No treatment given",
+        "unique":true
       }
     ]
   },
@@ -458,7 +471,7 @@
       },
       {
         "uuid": "507b55ba-5da9-48c6-b6a6-8e15377c34f9",
-        "name": "Mamta Divas"
+        "name": "SNEHA Mamta Divas"
       },
       {
         "uuid": "912e0b06-98d5-45c8-8160-0b1c5a81a9b3",
@@ -499,6 +512,14 @@
     "name": "Contraception"
   },
   {
+    "uuid": "6d4493ed-e8ec-4fa2-a3d0-ab48999ffe05",
+    "name": "Home based energy dense recipes"
+  },
+  {
+    "uuid": "d6e12860-6c07-4192-ad39-ed084123ea2e",
+    "name": "Care during illness"
+  },
+  {
     "name": "Information caretaker got in the month through educational session/home visits",
     "uuid": "55e7174f-34ef-4da2-8659-a7d166c0d965",
     "dataType": "Coded",
@@ -518,6 +539,14 @@
       {
         "uuid": "1410a243-2285-41bf-a847-0592fe2bd917",
         "name": "Complementary feeding practices"
+      },
+      {
+        "uuid": "6d4493ed-e8ec-4fa2-a3d0-ab48999ffe05",
+        "name": "Home based energy dense recipes"
+      },
+      {
+        "uuid": "d6e12860-6c07-4192-ad39-ed084123ea2e",
+        "name": "Care during illness"
       },
       {
         "uuid": "d1d4b6fc-1d74-4c1e-86b7-c36cf088e17a",

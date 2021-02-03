@@ -24,7 +24,7 @@ class ScheduleVisitsMonthlyReporting {
     static exec(encounter, visitSchedule = [], scheduleConfig) {
         let scheduleBuilder = RuleHelper.createGeneralEncounterScheduleBuilder(encounter, visitSchedule);
         // const nextVisitDate = moment(encounter.registrationDate).add(1, 'months').toDate();
-        const nextVisitDate = moment().startOf('month').add(24, 'days').toDate();
+        const nextVisitDate = moment().startOf('month').add(20, 'days').toDate();
         RuleHelper.addSchedule(scheduleBuilder, 'Monthly reporting',
             'Monthly report of field worker', nextVisitDate, 8);
         return scheduleBuilder.getAllUnique("encounterType");
@@ -47,9 +47,10 @@ class ScheduleNextVisitsMonthlyReporting {
 ("7a0c2772-c346-4183-ac3c-e2aa954fa8cd", "CHETNA SNEHA Pregnant Woman Enrolment Visit schedules", 100.0)
 class ScheduleVisitsDuringPregnantWomanEnrolment {
     static exec(programEnrolment, visitSchedule = [], scheduleConfig) {
+        const nextVisitDate = moment(programEnrolment.enrolmentDateTime).add(4, 'days').toDate();
         let scheduleBuilder = RuleHelper.createEnrolmentScheduleBuilder(programEnrolment, visitSchedule);
         RuleHelper.addSchedule(scheduleBuilder, 'Monthly monitoring of pregnant woman',
-            'Monthly monitoring of pregnant woman', getNextVisitDate(programEnrolment.enrolmentDateTime), 8);
+            'Monthly monitoring of pregnant woman', nextVisitDate, 8);
         return scheduleBuilder.getAllUnique("encounterType");
     }
 }
@@ -58,7 +59,8 @@ class ScheduleVisitsDuringPregnantWomanEnrolment {
 ("f61959cd-1291-452f-b5da-d6320a9b0b09", "CHETNA SNEHA Child Enrolment Visit schedules", 100.0)
 class ScheduleVisitsDuringChildEnrolment {
     static exec(programEnrolment, visitSchedule = [], scheduleConfig) {
-        const nextVisitDate = getNextVisitDate(programEnrolment.enrolmentDateTime);
+        const nextVisitDate = moment(programEnrolment.enrolmentDateTime).add(4, 'days').toDate();
+            //getNextVisitDate(programEnrolment.enrolmentDateTime);
         const ageOfChild = programEnrolment.individual.getAgeInMonths(nextVisitDate);
         if (ageOfChild > 24) {
             return visitSchedule;

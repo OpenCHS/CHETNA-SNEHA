@@ -153,7 +153,8 @@
       },
       {
         "uuid": "43285c57-9063-48d6-91bf-7d49d135b3ab",
-        "name": "IUCD"
+        "name": "IUCD",
+        "voided": true
       }
     ]
   },
@@ -270,7 +271,10 @@
     "uuid": "0e548a76-21b4-4eab-a702-f2dccdc2e861",
     "name": "9th month"
   },
-  
+  {
+    "uuid": "0d28fcb4-9961-4f60-90a3-18b40bfc7319",
+    "name": "Within a month of birth"
+  },
   {
     "name": "When did you start giving complementary food to the child",
     "uuid": "0b1e1783-428b-4428-8de1-4d32525c675a",
@@ -293,7 +297,7 @@
         "name": "After 1 year"
       },
       {
-        "uuid": "4ee05a70-cebb-4c60-9d22-624e7e26255c",
+        "uuid": "0d28fcb4-9961-4f60-90a3-18b40bfc7319",
         "name": "Within a month of birth"
       },
       {
@@ -405,7 +409,7 @@
       {
         "name": "Don't know",
         "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45",
-        "unique":true
+        "voided":true
       }
     ]
   },
@@ -510,7 +514,8 @@
       },
       {
         "name": "Other",
-        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538"
+        "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+        "voided": true
       },
       {
         "name": "Don't know",
@@ -580,7 +585,11 @@
   {
     "uuid": "f662c7ef-52ca-4139-bfd9-2b446615a5cd",
     "name": "Once in a day"
-  },  
+  },
+  {
+    "uuid": "7559dd3b-d09b-4c1d-9413-fce4b6fe8166",
+    "name": "On child's demand"
+  },
   {
     "name": "When do you breastfeed to your child",
     "uuid": "aec3ddd6-b773-4e36-9ab1-9ed33d0eaaec",
@@ -603,8 +612,13 @@
         "name": "Once in a day"
       },
       {
-        "uuid": "451de6f0-b3aa-4eda-91b0-ae811befcebf",
-        "name": "Till child's demand"
+        "uuid": "0159efc3-1180-4003-bb4d-9912490a35a6",
+        "name": "Till child demands",
+        "voided": true
+      },
+      {
+        "uuid": "7559dd3b-d09b-4c1d-9413-fce4b6fe8166",
+        "name": "On child's demand"
       }
     ]
   },
@@ -702,7 +716,8 @@
     "answers": [
       {
         "uuid": "68e7a0a7-7a33-4960-ad3f-7093aee7461b",
-        "name": "Stopped breastfeeding"
+        "name": "Stopped breastfeeding",
+        "voided" : true
       },
       {
         "uuid": "c03ccc46-d5f3-4571-b3e4-8d57347c4bae",
@@ -711,6 +726,10 @@
       {
         "uuid": "003705dd-6b00-45e4-bfbf-c73a702635ac",
         "name": "Not enough mother's milk"
+      },
+      {
+        "uuid": "02093f1f-ff57-45b4-9e2b-c01d2038bf88",
+        "name": "Family belief"
       },
       {
         "uuid": "91440640-3225-4bcc-9f06-396c12a9aaa0",

@@ -251,15 +251,34 @@
     "answers": [
       {
         "uuid": "15398db9-b67c-4fa6-a27c-0b2d906a9eae",
-        "name": "At 7 months"
+        "name": "At 7 months",
+        "voided": true
       },
       {
         "uuid": "3e1e1425-8b4e-41c6-b694-3e4dde6797de",
-        "name": "Before 7 months"
+        "name": "Before 7 months",
+        "voided": true
       },
       {
         "uuid": "1c3ea037-8869-4904-a71e-45c3c790c294",
-        "name": "After 7 months"
+        "name": "After 7 months",
+        "voided": true
+      },
+      {
+        "uuid": "df5252dc-9cc6-4478-9db6-b9ed27e8b6e4",
+        "name": "Before 6 months"
+      },
+      {
+        "uuid": "439cfb65-b652-441b-8a04-d87d81316313",
+        "name": "After 6 months"
+      },
+      {
+        "uuid": "fa6b5601-184b-4637-b4ac-784adb6604ae",
+        "name": "After 9 months"
+      },
+      {
+        "uuid": "4ee05a70-cebb-4c60-9d22-624e7e26255c",
+        "name": "After 1 year"
       },
       {
         "name": "Don't know",
@@ -451,29 +470,6 @@
   {
     "uuid": "1c3ea037-8869-4904-a71e-45c3c790c294",
     "name": "After 7 months"
-  },
-  {
-    "name": "At what age child should be given complementary food",
-    "uuid": "f8954994-e228-48b8-aa01-70c45ab41046",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "15398db9-b67c-4fa6-a27c-0b2d906a9eae",
-        "name": "At 7 months"
-      },
-      {
-        "uuid": "3e1e1425-8b4e-41c6-b694-3e4dde6797de",
-        "name": "Before 7 months"
-      },
-      {
-        "uuid": "1c3ea037-8869-4904-a71e-45c3c790c294",
-        "name": "After 7 months"
-      },
-      {
-        "name": "Don't know",
-        "uuid": "a032ffce-c9f5-46f8-b89d-f82d5e91fc45"
-      }
-    ]
   },
   {
     "uuid": "289c20d9-e652-4774-96d7-79c1b3e8df7f",
@@ -914,6 +910,10 @@
     "name": "Elder family members"
   },
   {
+    "uuid": "fbf8cdd8-a4f6-4419-9b07-8a73320fb95d",
+    "name": "SNEHA programme team member"
+  },
+  {
     "name": "From where/whom information about contraception received",
     "uuid": "18ad6262-1688-48d4-a584-84958ebdeb0c",
     "dataType": "Coded",
@@ -960,8 +960,13 @@
         "name": "Elder family members"
       },
       {
+        "uuid": "fbf8cdd8-a4f6-4419-9b07-8a73320fb95d",
+        "name": "SNEHA programme team member"
+      },
+      {
         "uuid": "0ee15c38-2a54-45be-a81f-f930f1913b2e",
-        "name": "Under SNEHA programme"
+        "name": "Under SNEHA programme",
+        "voided": true
       },
       {
         "name": "Other",

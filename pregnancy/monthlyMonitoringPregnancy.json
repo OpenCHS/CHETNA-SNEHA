@@ -83,13 +83,18 @@
         {
           "name": "Total ANC done",
           "uuid": "04885f26-185e-4531-b0b6-6ce74117ac36",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
           "concept": {
             "name": "Total ANC done",
             "uuid": "a7a89341-ae80-47b9-ab16-5e1a4b8452c3"
           },
           "displayOrder":6.2,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
